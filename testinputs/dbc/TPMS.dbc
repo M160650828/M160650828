@@ -1,0 +1,399 @@
+// *************************************************************************** *
+// *                                                                           *
+// *                      Mentor Graphics Corporation                          *
+// *                          All rights reserved                              *
+// *                                                                           *
+// *************************************************************************** *
+// *                                                                           *
+// * Description:         Partial CANDB File (for TPMS Node)                   *
+// * Generated at:        2025-06-23 16:39                                     *
+// * Node                 TPMS                                                 *
+// *                                                                           *
+// *************************************************************************** *
+// *                                                                           *
+// *             THIS CONFIGURATION MIGHT CONTAIN SOME ERRORS                  *
+// *              IF THE INPUT MODEL WAS NOT PROPERLY FORMED!                  *
+// *                    Do Not Use this File directly!                         *
+// *                                                                           *
+// *************************************************************************** *
+
+
+VERSION "TPMS"
+
+NS_ :
+
+BS_ :
+
+BU_ : TPMS Vector_XXX
+
+BO_ 2009 Diag_Resp_TPMS : 8 TPMS
+ SG_ Diag_Resp_TPMS : 7|64@0+ (1,0) [0|0] "" Vector_XXX
+
+BO_ 1142 NM_Autosar_TPMS : 8 TPMS
+ SG_ NM_Autosar_TPMS : 7|64@0+ (1,0) [0|0] "" Vector_XXX
+
+BO_ 1392 TPMS_Blowout_FLFR : 8 TPMS
+ SG_ TPMS_FrntTyreRecColdP : 44|5@0+ (10.0,200.0) [200.0|500.0] "kpa" Vector_XXX
+
+BO_ 1393 TPMS_Blowout_RLRR : 8 TPMS
+ SG_ TPMS_ReTyreRecColdP : 44|5@0+ (10.0,200.0) [200.0|500.0] "kpa" Vector_XXX
+
+BO_ 1481 TPMS_DTC : 8 TPMS
+ SG_ TPMS_FaultNum1 : 23|12@0+ (1.0,0.0) [0.0|4095.0] "" Vector_XXX
+ SG_ TPMS_FaultNum2 : 27|12@0+ (1.0,0.0) [0.0|4095.0] "" Vector_XXX
+ SG_ TPMS_FaultNum3 : 47|12@0+ (1.0,0.0) [0.0|4095.0] "" Vector_XXX
+ SG_ TPMS_FaultNum4 : 51|12@0+ (1.0,0.0) [0.0|4095.0] "" Vector_XXX
+ SG_ TPMS_FrameIndex : 12|5@0+ (1.0,0.0) [0.0|31.0] "" Vector_XXX
+ SG_ TPMS_SupplierNum : 15|3@0+ (1.0,0.0) [0.0|7.0] "" Vector_XXX
+ SG_ TPMS_TotalFaultNum : 7|8@0+ (1.0,0.0) [0.0|255.0] "" Vector_XXX
+
+BO_ 1360 TPMS_FLFR_550 : 8 TPMS
+ SG_ TPMS_FLTyreP : 31|8@0+ (2.75,0.0) [0.0|698.5] "kpa" Vector_XXX
+ SG_ TPMS_FLTyreSize : 18|3@0+ (1,0) [0|7] "" Vector_XXX
+ SG_ TPMS_FLTyreT : 39|8@0+ (1.0,-60.0) [-60.0|195.0] "℃" Vector_XXX
+ SG_ TPMS_FLWarn : 23|4@0+ (1,0) [0|15] "" Vector_XXX
+ SG_ TPMS_FRTyreP : 55|8@0+ (2.75,0.0) [0.0|698.5] "kpa" Vector_XXX
+ SG_ TPMS_FRTyreSize : 42|3@0+ (1,0) [0|7] "" Vector_XXX
+ SG_ TPMS_FRTyreT : 63|8@0+ (1.0,-60.0) [-60.0|195.0] "℃" Vector_XXX
+ SG_ TPMS_FRWarn : 47|4@0+ (1,0) [0|15] "" Vector_XXX
+
+BO_ 1361 TPMS_RLRR_551 : 8 TPMS
+ SG_ TPMS_RLTyreP : 31|8@0+ (2.75,0.0) [0.0|698.5] "kpa" Vector_XXX
+ SG_ TPMS_RLTyreSize : 18|3@0+ (1,0) [0|7] "" Vector_XXX
+ SG_ TPMS_RLTyreT : 39|8@0+ (1.0,-60.0) [-60.0|195.0] "℃" Vector_XXX
+ SG_ TPMS_RLWarn : 23|4@0+ (1,0) [0|15] "" Vector_XXX
+ SG_ TPMS_RRTyreP : 55|8@0+ (2.75,0.0) [0.0|698.5] "kpa" Vector_XXX
+ SG_ TPMS_RRTyreSize : 42|3@0+ (1,0) [0|7] "" Vector_XXX
+ SG_ TPMS_RRTyreT : 63|8@0+ (1.0,-60.0) [-60.0|195.0] "℃" Vector_XXX
+ SG_ TPMS_RRWarn : 47|4@0+ (1,0) [0|15] "" Vector_XXX
+
+BO_ 2015 Diag_FuncReq_CF : 8 Vector_XXX
+ SG_ Diag_FuncReq_CF : 7|64@0+ (1,0) [0|0] "" TPMS
+
+BO_ 1881 Diag_PhyReq_TPMS : 8 Vector_XXX
+ SG_ Diag_PhyReq_TPMS : 7|64@0+ (1,0) [0|0] "" TPMS
+
+BO_ 1089 NM_Autosar_VIU0 : 8 Vector_XXX
+ SG_ NM_Autosar_VIU0 : 7|64@0+ (1,0) [0|0] "" TPMS
+
+BO_ 1506 TBOX_TimeInfo_VV01 : 8 Vector_XXX
+ SG_ TBOX_TimeDay : 20|5@0+ (1.0,0.0) [1.0|31.0] "Day" TPMS
+ SG_ TBOX_TimeFlag : 57|2@0+ (1,0) [0|3] "" TPMS
+ SG_ TBOX_TimeHour : 28|5@0+ (1.0,0.0) [0.0|23.0] "h" TPMS
+ SG_ TBOX_TimeMinute : 37|6@0+ (1.0,0.0) [0.0|59.0] "min" TPMS
+ SG_ TBOX_TimeMonth : 11|4@0+ (1.0,0.0) [1.0|12.0] "Month" TPMS
+ SG_ TBOX_TimeSecond : 45|6@0+ (1.0,0.0) [0.0|59.0] "s" TPMS
+ SG_ TBOX_TimeYear : 7|8@0+ (1.0,2000.0) [2000.0|2255.0] "Year" TPMS
+ SG_ TBOX_TimeZone : 49|2@0+ (1,0) [0|3] "" TPMS
+ SG_ TBOX_TimeZoneNum : 54|5@0+ (1,0) [0|31] "" TPMS
+
+BO_ 672 VIU0_2A0 : 8 Vector_XXX
+ SG_ VDC_AmbT : 55|8@0+ (0.5,-40.0) [-40.0|87.0] "DegC" TPMS
+ SG_ VIU_CenLockSt : 8|2@0+ (1,0) [0|3] "" TPMS
+
+BO_ 942 VIU0_3AE : 8 Vector_XXX
+ SG_ IPB_VehicleSpeed : 6|13@0+ (0.05625,0.0) [0.0|460.74375000000003] "km/h" TPMS
+ SG_ IPB_VehicleSpeedValid : 7|1@0+ (1,0) [0|1] "" TPMS
+ SG_ VDC_ActualGear : 35|2@0+ (1,0) [0|3] "" TPMS
+ SG_ VDC_TotalRang : 23|20@0+ (1.0,0.0) [0.0|1048575.0] "km" TPMS
+
+BO_ 450 VIU_Info_Prof1A : 8 Vector_XXX
+ SG_ VIU_CarMode : 27|4@0+ (1,0) [0|15] "" TPMS
+ SG_ VIU_Info_Prof1A_Checksum : 7|8@0+ (1.0,0.0) [0.0|255.0] "" TPMS
+ SG_ VIU_Info_Prof1A_Counter : 11|4@0+ (1.0,0.0) [0.0|14.0] "" TPMS
+ SG_ VIU_PowerMode : 39|2@0+ (1,0) [0|3] "" TPMS
+ SG_ VIU_PowerModeFltFlag : 37|2@0+ (1,0) [0|3] "" TPMS
+ SG_ VIU_UsageMode : 31|4@0+ (1,0) [0|15] "" TPMS
+
+BO_ 344 VIU_Route_Body1 : 8 Vector_XXX
+ SG_ IBS_SumOfEdgeFLWSS : 7|16@0+ (1.0,0.0) [0.0|65535.0] "" TPMS
+ SG_ IBS_SumOfEdgeFLWSSValid : 39|1@0+ (1,0) [0|1] "" TPMS
+ SG_ IBS_SumOfEdgeFRWSS : 23|16@0+ (1.0,0.0) [0.0|65535.0] "" TPMS
+ SG_ IBS_SumOfEdgeFRWSSValid : 38|1@0+ (1,0) [0|1] "" TPMS
+
+BO_ 345 VIU_Route_Body2 : 8 Vector_XXX
+ SG_ IBS_SumOfEdgeRLWSS : 7|16@0+ (1.0,0.0) [0.0|65535.0] "" TPMS
+ SG_ IBS_SumOfEdgeRLWSSValid : 39|1@0+ (1,0) [0|1] "" TPMS
+ SG_ IBS_SumOfEdgeRRWSS : 23|16@0+ (1.0,0.0) [0.0|65535.0] "" TPMS
+ SG_ IBS_SumOfEdgeRRWSSValid : 38|1@0+ (1,0) [0|1] "" TPMS
+
+
+// Signal Comments
+CM_ SG_ 1392 TPMS_FrntTyreRecColdP "前轮建议冷胎气压";
+CM_ SG_ 1393 TPMS_ReTyreRecColdP "后轮建议冷胎气压";
+CM_ SG_ 1481 TPMS_FaultNum1 "故障列表1";
+CM_ SG_ 1481 TPMS_FaultNum2 "故障列表2";
+CM_ SG_ 1481 TPMS_FaultNum3 "故障列表3";
+CM_ SG_ 1481 TPMS_FaultNum4 "故障列表4";
+CM_ SG_ 1481 TPMS_FrameIndex "帧序号";
+CM_ SG_ 1481 TPMS_SupplierNum "供应商代码";
+CM_ SG_ 1481 TPMS_TotalFaultNum "当前故障总数";
+CM_ SG_ 1360 TPMS_FLTyreP "左前胎压";
+CM_ SG_ 1360 TPMS_FLTyreSize "左前轮胎规格";
+CM_ SG_ 1360 TPMS_FLTyreT "左前胎温(0x1~0xFE:-59℃~194℃)";
+CM_ SG_ 1360 TPMS_FLWarn "左前胎压传感器报警";
+CM_ SG_ 1360 TPMS_FRTyreP "右前胎压";
+CM_ SG_ 1360 TPMS_FRTyreSize "右前轮胎规格";
+CM_ SG_ 1360 TPMS_FRTyreT "右前胎温(0x1~0xFE:-59℃~194℃)";
+CM_ SG_ 1360 TPMS_FRWarn "右前胎压传感器报警";
+CM_ SG_ 1361 TPMS_RLTyreP "左后胎压";
+CM_ SG_ 1361 TPMS_RLTyreSize "左后轮胎规格";
+CM_ SG_ 1361 TPMS_RLTyreT "左后胎温(0x1~0xFE:-59℃~194℃)";
+CM_ SG_ 1361 TPMS_RLWarn "左后胎压传感器报警";
+CM_ SG_ 1361 TPMS_RRTyreP "右后胎压";
+CM_ SG_ 1361 TPMS_RRTyreSize "右后轮胎规格";
+CM_ SG_ 1361 TPMS_RRTyreT "右后胎温(0x1~0xFE:-59℃~194℃)";
+CM_ SG_ 1361 TPMS_RRWarn "右后胎压传感器报警";
+CM_ SG_ 1506 TBOX_TimeDay "本地时间_日";
+CM_ SG_ 1506 TBOX_TimeFlag "时间有效性标志";
+CM_ SG_ 1506 TBOX_TimeHour "本地时间_时";
+CM_ SG_ 1506 TBOX_TimeMinute "本地时间_分";
+CM_ SG_ 1506 TBOX_TimeMonth "本地时间_月";
+CM_ SG_ 1506 TBOX_TimeSecond "本地时间_秒";
+CM_ SG_ 1506 TBOX_TimeYear "本地时间_年";
+CM_ SG_ 1506 TBOX_TimeZone "东/西时区";
+CM_ SG_ 1506 TBOX_TimeZoneNum "时区编号";
+CM_ SG_ 672 VDC_AmbT "环境温度";
+CM_ SG_ 672 VIU_CenLockSt "中控解闭锁状态";
+CM_ SG_ 942 IPB_VehicleSpeed "车速";
+CM_ SG_ 942 IPB_VehicleSpeedValid "车速有效位";
+CM_ SG_ 942 VDC_ActualGear "真实挡位";
+CM_ SG_ 942 VDC_TotalRang "整个寿命内的车辆总行驶里程";
+CM_ SG_ 450 VIU_CarMode "车辆模式";
+CM_ SG_ 450 VIU_Info_Prof1A_Checksum "CRC8 Checksum(Data ID:0x00C2)";
+CM_ SG_ 450 VIU_Info_Prof1A_Counter "RollingCounter";
+CM_ SG_ 450 VIU_PowerMode "电源模式";
+CM_ SG_ 450 VIU_PowerModeFltFlag "电源模式故障状态";
+CM_ SG_ 450 VIU_UsageMode "用户模式";
+CM_ SG_ 344 IBS_SumOfEdgeFLWSS "左前轮速脉冲计数";
+CM_ SG_ 344 IBS_SumOfEdgeFLWSSValid "左前轮速脉冲计数有效位";
+CM_ SG_ 344 IBS_SumOfEdgeFRWSS "右前轮速脉冲计数";
+CM_ SG_ 344 IBS_SumOfEdgeFRWSSValid "右前轮速脉冲计数有效位";
+CM_ SG_ 345 IBS_SumOfEdgeRLWSS "左后轮速脉冲计数";
+CM_ SG_ 345 IBS_SumOfEdgeRLWSSValid "左后轮速脉冲计数有效位";
+CM_ SG_ 345 IBS_SumOfEdgeRRWSS "右后轮速脉冲计数";
+CM_ SG_ 345 IBS_SumOfEdgeRRWSSValid "右后轮速脉冲计数有效位";
+
+// Attribute definitions
+BA_DEF_ BO_ "CANFD_BRS" ENUM "1","0"; // 
+BA_DEF_ BO_ "DiagRequest" ENUM "Yes","No"; // 
+BA_DEF_ BO_ "DiagResponse" ENUM "Yes","No"; // 
+BA_DEF_ BO_ "DiagState" ENUM "Yes","No"; // 
+BA_DEF_ BO_ "GenMsgSendType" ENUM "Cycle","Event","CE"; // 
+BA_DEF_ SG_ "GenSigSendType" ENUM "Cycle","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition"; // 
+BA_DEF_ BO_ "MSG IL Support" ENUM "Yes","No"; // 
+BA_DEF_ BO_ "NmMessage" ENUM "Yes","No"; // 
+BA_DEF_  "Baudrate" FLOAT 1000 1000000; // [bps]
+BA_DEF_ BO_ "GenMsgCycleTime" FLOAT 0 300000; // [ms]
+BA_DEF_ BO_ "GenMsgStartDelayTime" FLOAT 0 300000; // [ms]
+BA_DEF_ BO_ "GenMsgDelayTime" FLOAT 0 300000; // [ms]
+BA_DEF_ SG_ "GenSigStartValue" FLOAT -1.7976931348623157E308 18446744073709551615;
+BA_DEF_ BU_ "NmAsrNodeIdentifier" INT 0 255;
+BA_DEF_ BU_ "NmAsrNode" ENUM "No","Yes";
+BA_DEF_ BO_ "GenMsgNrOfRepetition" INT 0 100000;
+BA_DEF_ BO_ "GenMsgCycleTimeFast" FLOAT 0 300000;
+BA_DEF_  "DBName" STRING;
+BA_DEF_  "BusType" STRING;
+BA_DEF_  "ProtocolType" STRING;
+
+BA_DEF_DEF_ "CANFD_BRS" "1";
+BA_DEF_DEF_ "DiagRequest" "No";
+BA_DEF_DEF_ "DiagResponse" "No";
+BA_DEF_DEF_ "DiagState" "No";
+BA_DEF_DEF_ "GenMsgSendType" "Cycle";
+BA_DEF_DEF_ "GenSigSendType" "Cycle";
+BA_DEF_DEF_ "MSG IL Support" "Yes";
+BA_DEF_DEF_ "NmMessage" "No";
+BA_DEF_DEF_ "GenSigStartValue" 0;
+BA_DEF_DEF_ "NmAsrNodeIdentifier" 0;
+BA_DEF_DEF_ "NmAsrNode" "No";
+BA_DEF_DEF_ "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_ "DBName" "";
+BA_DEF_DEF_ "BusType" "";
+BA_DEF_DEF_ "ProtocolType" "";
+
+// Network
+BA_ "DBName" "TPMS";
+BA_ "BusType" "CAN";
+BA_ "ProtocolType" "CAN";
+BA_ "Baudrate" 500000;
+// ECU: TPMS
+BA_ "NmAsrNodeIdentifier" BU_ TPMS 118;
+BA_ "NmAsrNode" BU_ TPMS 1;
+// Frame: Diag_Resp_TPMS
+BA_ "CANFD_BRS" BO_ 2009 1;
+BA_ "DiagResponse" BO_ 2009 0;
+BA_ "GenMsgSendType" BO_ 2009 1;
+BA_ "GenMsgDelayTime" BO_ 2009 20.000;
+// Frame: NM_Autosar_TPMS
+BA_ "CANFD_BRS" BO_ 1142 1;
+BA_ "GenMsgSendType" BO_ 1142 1;
+BA_ "NmMessage" BO_ 1142 0;
+BA_ "GenMsgDelayTime" BO_ 1142 10.000;
+// Frame: TPMS_Blowout_FLFR
+BA_ "CANFD_BRS" BO_ 1392 1;
+BA_ "GenMsgSendType" BO_ 1392 0;
+BA_ "GenMsgCycleTime" BO_ 1392 200.000;
+BA_ "GenMsgStartDelayTime" BO_ 1392 0.000;
+BA_ "GenSigStartValue" SG_ 1392 TPMS_FrntTyreRecColdP 31;
+// Frame: TPMS_Blowout_RLRR
+BA_ "CANFD_BRS" BO_ 1393 1;
+BA_ "GenMsgSendType" BO_ 1393 0;
+BA_ "GenMsgCycleTime" BO_ 1393 200.000;
+BA_ "GenMsgStartDelayTime" BO_ 1393 0.000;
+BA_ "GenSigStartValue" SG_ 1393 TPMS_ReTyreRecColdP 31;
+// Frame: TPMS_DTC
+BA_ "CANFD_BRS" BO_ 1481 1;
+BA_ "GenMsgSendType" BO_ 1481 0;
+BA_ "GenMsgCycleTime" BO_ 1481 500.000;
+BA_ "GenMsgStartDelayTime" BO_ 1481 0.000;
+BA_ "GenSigStartValue" SG_ 1481 TPMS_FaultNum1 0;
+BA_ "GenSigStartValue" SG_ 1481 TPMS_FaultNum2 0;
+BA_ "GenSigStartValue" SG_ 1481 TPMS_FaultNum3 0;
+BA_ "GenSigStartValue" SG_ 1481 TPMS_FaultNum4 0;
+BA_ "GenSigStartValue" SG_ 1481 TPMS_FrameIndex 0;
+BA_ "GenSigStartValue" SG_ 1481 TPMS_SupplierNum 0;
+BA_ "GenSigStartValue" SG_ 1481 TPMS_TotalFaultNum 0;
+// Frame: TPMS_FLFR_550
+BA_ "CANFD_BRS" BO_ 1360 1;
+BA_ "GenMsgSendType" BO_ 1360 0;
+BA_ "GenMsgCycleTime" BO_ 1360 200.000;
+BA_ "GenMsgStartDelayTime" BO_ 1360 0.000;
+BA_ "GenSigStartValue" SG_ 1360 TPMS_FLTyreP 0;
+BA_ "GenSigStartValue" SG_ 1360 TPMS_FLTyreSize 0;
+BA_ "GenSigStartValue" SG_ 1360 TPMS_FLTyreT 0;
+BA_ "GenSigStartValue" SG_ 1360 TPMS_FLWarn 0;
+BA_ "GenSigStartValue" SG_ 1360 TPMS_FRTyreP 0;
+BA_ "GenSigStartValue" SG_ 1360 TPMS_FRTyreSize 0;
+BA_ "GenSigStartValue" SG_ 1360 TPMS_FRTyreT 0;
+BA_ "GenSigStartValue" SG_ 1360 TPMS_FRWarn 0;
+// Frame: TPMS_RLRR_551
+BA_ "CANFD_BRS" BO_ 1361 1;
+BA_ "GenMsgSendType" BO_ 1361 0;
+BA_ "GenMsgCycleTime" BO_ 1361 200.000;
+BA_ "GenMsgStartDelayTime" BO_ 1361 0.000;
+BA_ "GenSigStartValue" SG_ 1361 TPMS_RLTyreP 0;
+BA_ "GenSigStartValue" SG_ 1361 TPMS_RLTyreSize 0;
+BA_ "GenSigStartValue" SG_ 1361 TPMS_RLTyreT 0;
+BA_ "GenSigStartValue" SG_ 1361 TPMS_RLWarn 0;
+BA_ "GenSigStartValue" SG_ 1361 TPMS_RRTyreP 0;
+BA_ "GenSigStartValue" SG_ 1361 TPMS_RRTyreSize 0;
+BA_ "GenSigStartValue" SG_ 1361 TPMS_RRTyreT 0;
+BA_ "GenSigStartValue" SG_ 1361 TPMS_RRWarn 0;
+// Frame: Diag_FuncReq_CF
+BA_ "CANFD_BRS" BO_ 2015 1;
+BA_ "DiagState" BO_ 2015 0;
+BA_ "GenMsgSendType" BO_ 2015 1;
+BA_ "GenMsgDelayTime" BO_ 2015 20.000;
+// Frame: Diag_PhyReq_TPMS
+BA_ "CANFD_BRS" BO_ 1881 1;
+BA_ "DiagRequest" BO_ 1881 0;
+BA_ "GenMsgSendType" BO_ 1881 1;
+BA_ "GenMsgDelayTime" BO_ 1881 20.000;
+// Frame: NM_Autosar_VIU0
+BA_ "CANFD_BRS" BO_ 1089 1;
+BA_ "GenMsgSendType" BO_ 1089 1;
+BA_ "NmMessage" BO_ 1089 0;
+BA_ "GenMsgDelayTime" BO_ 1089 10.000;
+// Frame: TBOX_TimeInfo_VV01
+BA_ "CANFD_BRS" BO_ 1506 1;
+BA_ "GenMsgSendType" BO_ 1506 0;
+BA_ "GenMsgCycleTime" BO_ 1506 500.000;
+BA_ "GenMsgStartDelayTime" BO_ 1506 0.000;
+BA_ "GenSigStartValue" SG_ 1506 TBOX_TimeDay 1;
+BA_ "GenSigStartValue" SG_ 1506 TBOX_TimeFlag 0;
+BA_ "GenSigStartValue" SG_ 1506 TBOX_TimeHour 0;
+BA_ "GenSigStartValue" SG_ 1506 TBOX_TimeMinute 0;
+BA_ "GenSigStartValue" SG_ 1506 TBOX_TimeMonth 1;
+BA_ "GenSigStartValue" SG_ 1506 TBOX_TimeSecond 0;
+BA_ "GenSigStartValue" SG_ 1506 TBOX_TimeYear 0;
+BA_ "GenSigStartValue" SG_ 1506 TBOX_TimeZone 0;
+BA_ "GenSigStartValue" SG_ 1506 TBOX_TimeZoneNum 0;
+// Frame: VIU0_2A0
+BA_ "CANFD_BRS" BO_ 672 1;
+BA_ "GenMsgSendType" BO_ 672 0;
+BA_ "GenMsgCycleTime" BO_ 672 50.000;
+BA_ "GenMsgStartDelayTime" BO_ 672 0.000;
+BA_ "GenSigStartValue" SG_ 672 VDC_AmbT 80;
+BA_ "GenSigStartValue" SG_ 672 VIU_CenLockSt 0;
+// Frame: VIU0_3AE
+BA_ "CANFD_BRS" BO_ 942 1;
+BA_ "GenMsgSendType" BO_ 942 0;
+BA_ "GenMsgCycleTime" BO_ 942 100.000;
+BA_ "GenMsgStartDelayTime" BO_ 942 5.000;
+BA_ "GenSigStartValue" SG_ 942 IPB_VehicleSpeed 0;
+BA_ "GenSigStartValue" SG_ 942 IPB_VehicleSpeedValid 0;
+BA_ "GenSigStartValue" SG_ 942 VDC_ActualGear 0;
+BA_ "GenSigStartValue" SG_ 942 VDC_TotalRang 0;
+// Frame: VIU_Info_Prof1A
+BA_ "CANFD_BRS" BO_ 450 1;
+BA_ "GenMsgSendType" BO_ 450 0;
+BA_ "GenMsgCycleTime" BO_ 450 20.000;
+BA_ "GenMsgStartDelayTime" BO_ 450 0.000;
+BA_ "GenSigStartValue" SG_ 450 VIU_CarMode 14;
+BA_ "GenSigStartValue" SG_ 450 VIU_Info_Prof1A_Checksum 0;
+BA_ "GenSigStartValue" SG_ 450 VIU_Info_Prof1A_Counter 0;
+BA_ "GenSigStartValue" SG_ 450 VIU_PowerMode 0;
+BA_ "GenSigStartValue" SG_ 450 VIU_PowerModeFltFlag 0;
+BA_ "GenSigStartValue" SG_ 450 VIU_UsageMode 1;
+// Frame: VIU_Route_Body1
+BA_ "CANFD_BRS" BO_ 344 1;
+BA_ "GenMsgSendType" BO_ 344 0;
+BA_ "GenMsgCycleTime" BO_ 344 10.000;
+BA_ "GenMsgStartDelayTime" BO_ 344 0.000;
+BA_ "GenSigStartValue" SG_ 344 IBS_SumOfEdgeFLWSS 0;
+BA_ "GenSigStartValue" SG_ 344 IBS_SumOfEdgeFLWSSValid 0;
+BA_ "GenSigStartValue" SG_ 344 IBS_SumOfEdgeFRWSS 0;
+BA_ "GenSigStartValue" SG_ 344 IBS_SumOfEdgeFRWSSValid 0;
+// Frame: VIU_Route_Body2
+BA_ "CANFD_BRS" BO_ 345 1;
+BA_ "GenMsgSendType" BO_ 345 0;
+BA_ "GenMsgCycleTime" BO_ 345 10.000;
+BA_ "GenMsgStartDelayTime" BO_ 345 5.000;
+BA_ "GenSigStartValue" SG_ 345 IBS_SumOfEdgeRLWSS 0;
+BA_ "GenSigStartValue" SG_ 345 IBS_SumOfEdgeRLWSSValid 0;
+BA_ "GenSigStartValue" SG_ 345 IBS_SumOfEdgeRRWSS 0;
+BA_ "GenSigStartValue" SG_ 345 IBS_SumOfEdgeRRWSSValid 0;
+
+VAL_ 1392 TPMS_FrntTyreRecColdP 31 "TPMS_FrntTyreRecColdP_31_Invalid";
+VAL_ 1393 TPMS_ReTyreRecColdP 31 "TPMS_ReTyreRecColdP_31_Invalid";
+VAL_ 1360 TPMS_FLTyreP 255 "TPMS_FLTyreP_255_Invalid";
+VAL_ 1360 TPMS_FLTyreSize 0 "TPMS_FLTyreSize_0_Initial" 1 "TPMS_FLTyreSize_1_Size1" 2 "TPMS_FLTyreSize_2_Size2" 3 "TPMS_FLTyreSize_3_Size3" 4 "TPMS_FLTyreSize_4_Reserved" 7 "TPMS_FLTyreSize_7_Invalid";
+VAL_ 1360 TPMS_FLTyreT 255 "TPMS_FLTyreT_255_Invalid";
+VAL_ 1360 TPMS_FLWarn 0 "TPMS_FLWarn_0_Initial" 1 "TPMS_FLWarn_1_Normal" 2 "TPMS_FLWarn_2_SysErr胎压传感器丢失" 3 "TPMS_FLWarn_3_LowBattVolt低电量" 4 "TPMS_FLWarn_4_HighTyreP高压" 5 "TPMS_FLWarn_5_HighT高温" 6 "TPMS_FLWarn_6_RapidLeak快速漏气（预留）" 7 "TPMS_FLWarn_7_LowTyreP低压" 8 "TPMS_FLWarn_8_LowTyreP_Rmn低压提醒" 9 "TPMS_FLWarn_9_NoLearning未学习" 10 "TPMS_FLWarn_10_Reserved预留";
+VAL_ 1360 TPMS_FRTyreP 255 "TPMS_FRTyreP_255_Invalid";
+VAL_ 1360 TPMS_FRTyreSize 0 "TPMS_FRTyreSize_0_Initial" 1 "TPMS_FRTyreSize_1_Size1" 2 "TPMS_FRTyreSize_2_Size2" 3 "TPMS_FRTyreSize_3_Size3" 4 "TPMS_FRTyreSize_4_Reserved" 7 "TPMS_FRTyreSize_7_Invalid";
+VAL_ 1360 TPMS_FRTyreT 255 "TPMS_FRTyreT_255_Invalid";
+VAL_ 1360 TPMS_FRWarn 0 "TPMS_FRWarn_0_Initial" 1 "TPMS_FRWarn_1_Normal" 2 "TPMS_FRWarn_2_SysErr胎压传感器丢失" 3 "TPMS_FRWarn_3_LowBattVolt低电量" 4 "TPMS_FRWarn_4_HighTyreP高压" 5 "TPMS_FRWarn_5_HighT高温" 6 "TPMS_FRWarn_6_RapidLeak快速漏气（预留）" 7 "TPMS_FRWarn_7_LowTyreP低压" 8 "TPMS_FRWarn_8_LowTyreP_Rmn低压提醒" 9 "TPMS_FRWarn_9_NoLearning未学习" 10 "TPMS_FRWarn_10_Reserved预留";
+VAL_ 1361 TPMS_RLTyreP 255 "TPMS_RLTyreP_255_Invalid";
+VAL_ 1361 TPMS_RLTyreSize 0 "TPMS_RLTyreSize_0_Initial" 1 "TPMS_RLTyreSize_1_Size1" 2 "TPMS_RLTyreSize_2_Size2" 3 "TPMS_RLTyreSize_3_Size3" 4 "TPMS_RLTyreSize_4_Reserved" 7 "TPMS_RLTyreSize_7_Invalid";
+VAL_ 1361 TPMS_RLTyreT 255 "TPMS_RLTyreT_255_Invalid";
+VAL_ 1361 TPMS_RLWarn 0 "TPMS_RLWarn_0_Initial" 1 "TPMS_RLWarn_1_Normal" 2 "TPMS_RLWarn_2_SysErr胎压传感器丢失" 3 "TPMS_RLWarn_3_LowBattVolt低电量" 4 "TPMS_RLWarn_4_HighTyreP高压" 5 "TPMS_RLWarn_5_HighT高温" 6 "TPMS_RLWarn_6_RapidLeak快速漏气（预留）" 7 "TPMS_RLWarn_7_LowTyreP低压" 8 "TPMS_RLWarn_8_LowTyreP_Rmn低压提醒" 9 "TPMS_RLWarn_9_NoLearning未学习" 10 "TPMS_RLWarn_10_Reserved预留";
+VAL_ 1361 TPMS_RRTyreP 255 "TPMS_RRTyreP_255_Invalid";
+VAL_ 1361 TPMS_RRTyreSize 0 "TPMS_RRTyreSize_0_Initial" 1 "TPMS_RRTyreSize_1_Size1" 2 "TPMS_RRTyreSize_2_Size2" 3 "TPMS_RRTyreSize_3_Size3" 4 "TPMS_RRTyreSize_4_Reserved" 7 "TPMS_RRTyreSize_7_Invalid";
+VAL_ 1361 TPMS_RRTyreT 255 "TPMS_RRTyreT_255_Invalid";
+VAL_ 1361 TPMS_RRWarn 0 "TPMS_RRWarn_0_Initial" 1 "TPMS_RRWarn_1_Normal" 2 "TPMS_RRWarn_2_SysErr胎压传感器丢失" 3 "TPMS_RRWarn_3_LowBattVolt低电量" 4 "TPMS_RRWarn_4_HighTyreP高压" 5 "TPMS_RRWarn_5_HighT高温" 6 "TPMS_RRWarn_6_RapidLeak快速漏气（预留）" 7 "TPMS_RRWarn_7_LowTyreP低压" 8 "TPMS_RRWarn_8_LowTyreP_Rmn低压提醒" 9 "TPMS_RRWarn_9_NoLearning未学习" 10 "TPMS_RRWarn_10_Reserved预留";
+VAL_ 1506 TBOX_TimeFlag 0 "TBOX_TimeFlag_0_Invalid" 1 "TBOX_TimeFlag_1_Valid" 2 "TBOX_TimeFlag_2_With_Offset(Reserved)" 3 "TBOX_TimeFlag_3_Reserved";
+VAL_ 1506 TBOX_TimeZone 0 "TBOX_TimeZone_0_Initial" 1 "TBOX_TimeZone_1_East" 2 "TBOX_TimeZone_2_West" 3 "TBOX_TimeZone_3_Reserved";
+VAL_ 1506 TBOX_TimeZoneNum 0 "TBOX_TimeZoneNum_0_TimeZone_0" 1 "TBOX_TimeZoneNum_1_TimeZone_1" 2 "TBOX_TimeZoneNum_2_TimeZone_2" 3 "TBOX_TimeZoneNum_3_TimeZone_3" 4 "TBOX_TimeZoneNum_4_TimeZone_4" 5 "TBOX_TimeZoneNum_5_TimeZone_5" 6 "TBOX_TimeZoneNum_6_TimeZone_6" 7 "TBOX_TimeZoneNum_7_TimeZone_7" 8 "TBOX_TimeZoneNum_8_TimeZone_8" 9 "TBOX_TimeZoneNum_9_TimeZone_9" 10 "TBOX_TimeZoneNum_10_TimeZone_10" 11 "TBOX_TimeZoneNum_11_TimeZone_11" 12 "TBOX_TimeZoneNum_12_TimeZone_12" 13 "TBOX_TimeZoneNum_13_TimeZone_13" 14 "TBOX_TimeZoneNum_14_TimeZone_14" 15 "TBOX_TimeZoneNum_15_Reserved";
+VAL_ 672 VDC_AmbT 255 "VDC_AmbT_255_Invalid";
+VAL_ 672 VIU_CenLockSt 0 "VIU_CenLockSt_0_Initial" 1 "VIU_CenLockSt_1_Unlocked" 2 "VIU_CenLockSt_2_Locked" 3 "VIU_CenLockSt_3_Invalid";
+VAL_ 942 IPB_VehicleSpeed 8191 "IPB_VehicleSpeed_8191_Invalid";
+VAL_ 942 IPB_VehicleSpeedValid 0 "IPB_VehicleSpeedValid_0_Invalid" 1 "IPB_VehicleSpeedValid_1_Valid";
+VAL_ 942 VDC_ActualGear 0 "VDC_ActualGear_0_P" 1 "VDC_ActualGear_1_R" 2 "VDC_ActualGear_2_N" 3 "VDC_ActualGear_3_D";
+VAL_ 942 VDC_TotalRang 1048575 "VDC_TotalRang_1048575_Invalid";
+VAL_ 450 VIU_CarMode 0 "VIU_CarMode_0_Factory" 1 "VIU_CarMode_1_Transport" 2 "VIU_CarMode_2_Dynotest" 3 "VIU_CarMode_3_Normal" 4 "VIU_CarMode_4_ExhibitionInDoor" 5 "VIU_CarMode_5_ExhibitionOutDoor" 6 "VIU_CarMode_6_reserved" 14 "VIU_CarMode_14_Initial" 15 "VIU_CarMode_15_Invalid";
+VAL_ 450 VIU_Info_Prof1A_Counter 15 "VIU_Info_Prof1A_Counter_15_Invalid";
+VAL_ 450 VIU_PowerMode 0 "VIU_PowerMode_0_OFF" 1 "VIU_PowerMode_1_ON" 2 "VIU_PowerMode_2_Reserved" 3 "VIU_PowerMode_3_Invalid";
+VAL_ 450 VIU_PowerModeFltFlag 0 "VIU_PowerModeFltFlag_0_False" 1 "VIU_PowerModeFltFlag_1_True" 2 "VIU_PowerModeFltFlag_2_Reserved" 3 "VIU_PowerModeFltFlag_3_Invalid";
+VAL_ 450 VIU_UsageMode 0 "VIU_UsageMode_0_Abandoned" 1 "VIU_UsageMode_1_Inactive" 2 "VIU_UsageMode_2_Convenience" 3 "VIU_UsageMode_3_Driving" 4 "VIU_UsageMode_4_OTA_Updating" 5 "VIU_UsageMode_5_Remote" 6 "VIU_UsageMode_6_RemoteDriving" 7 "VIU_UsageMode_7_reserved" 15 "VIU_UsageMode_15_Invalid";
+VAL_ 344 IBS_SumOfEdgeFLWSS 65535 "IBS_SumOfEdgeFLWSS_65535_Invalid";
+VAL_ 344 IBS_SumOfEdgeFLWSSValid 0 "IBS_SumOfEdgeFLWSSValid_0_Invalid" 1 "IBS_SumOfEdgeFLWSSValid_1_Valid";
+VAL_ 344 IBS_SumOfEdgeFRWSS 65535 "IBS_SumOfEdgeFRWSS_65535_Invalid";
+VAL_ 344 IBS_SumOfEdgeFRWSSValid 0 "IBS_SumOfEdgeFRWSSValid_0_Invalid" 1 "IBS_SumOfEdgeFRWSSValid_1_Valid";
+VAL_ 345 IBS_SumOfEdgeRLWSS 65535 "IBS_SumOfEdgeRLWSS_65535_Invalid";
+VAL_ 345 IBS_SumOfEdgeRLWSSValid 0 "IBS_SumOfEdgeRLWSSValid_0_Invalid" 1 "IBS_SumOfEdgeRLWSSValid_1_Valid";
+VAL_ 345 IBS_SumOfEdgeRRWSS 65535 "IBS_SumOfEdgeRRWSS_65535_Invalid";
+VAL_ 345 IBS_SumOfEdgeRRWSSValid 0 "IBS_SumOfEdgeRRWSSValid_0_Invalid" 1 "IBS_SumOfEdgeRRWSSValid_1_Valid";
+
+

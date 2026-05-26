@@ -1,0 +1,381 @@
+// *************************************************************************** *
+// *                                                                           *
+// *                      Mentor Graphics Corporation                          *
+// *                          All rights reserved                              *
+// *                                                                           *
+// *************************************************************************** *
+// *                                                                           *
+// * Description:         Partial CANDB File (for TBOX Node)                   *
+// * Generated at:        2025-06-23 15:49                                     *
+// * Node                 TBOX                                                 *
+// *                                                                           *
+// *************************************************************************** *
+// *                                                                           *
+// *             THIS CONFIGURATION MIGHT CONTAIN SOME ERRORS                  *
+// *              IF THE INPUT MODEL WAS NOT PROPERLY FORMED!                  *
+// *                    Do Not Use this File directly!                         *
+// *                                                                           *
+// *************************************************************************** *
+
+
+VERSION "TBOX"
+
+NS_ :
+
+BS_ :
+
+BU_ : TBOX Vector_XXX
+
+BO_ 1121 NM_Autosar_TBOX : 8 TBOX
+ SG_ NM_Autosar_TBOX : 7|64@0+ (1,0) [0|0] "" Vector_XXX
+
+BO_ 1505 TBOX_FuncReq : 8 TBOX
+ SG_ TBOX_FuncReq_CDCRtcWakeup : 21|1@0+ (1,0) [0|1] "" Vector_XXX
+ SG_ TBOX_FuncReq_DepartureSdl : 11|1@0+ (1,0) [0|1] "" Vector_XXX
+ SG_ TBOX_FuncReq_DigKeySECom : 19|1@0+ (1,0) [0|1] "" Vector_XXX
+ SG_ TBOX_FuncReq_MDCRtcWakeup : 22|1@0+ (1,0) [0|1] "" Vector_XXX
+ SG_ TBOX_FuncReq_OTA : 9|1@0+ (1,0) [0|1] "" Vector_XXX
+ SG_ TBOX_FuncReq_RemACCtrl : 0|1@0+ (1,0) [0|1] "" Vector_XXX
+ SG_ TBOX_FuncReq_RemAVP : 17|1@0+ (1,0) [0|1] "" Vector_XXX
+ SG_ TBOX_FuncReq_RemChrgDcha : 12|1@0+ (1,0) [0|1] "" Vector_XXX
+ SG_ TBOX_FuncReq_RemChrgIfCtrl : 4|1@0+ (1,0) [0|1] "" Vector_XXX
+ SG_ TBOX_FuncReq_RemDiag : 8|1@0+ (1,0) [0|1] "" Vector_XXX
+ SG_ TBOX_FuncReq_RemDoorLockCtrl : 6|1@0+ (1,0) [0|1] "" Vector_XXX
+ SG_ TBOX_FuncReq_RemHornLiCtrl : 7|1@0+ (1,0) [0|1] "" Vector_XXX
+ SG_ TBOX_FuncReq_RemHVBattHeat : 3|1@0+ (1,0) [0|1] "" Vector_XXX
+ SG_ TBOX_FuncReq_RemInquery : 13|1@0+ (1,0) [0|1] "" Vector_XXX
+ SG_ TBOX_FuncReq_RemLvPowerPort : 29|1@0+ (1,0) [0|1] "" Vector_XXX
+ SG_ TBOX_FuncReq_RemRearViewHeating : 31|1@0+ (1,0) [0|1] "" Vector_XXX
+ SG_ TBOX_FuncReq_RemScenarioMod : 18|1@0+ (1,0) [0|1] "" Vector_XXX
+ SG_ TBOX_FuncReq_RemSeatHeat : 2|1@0+ (1,0) [0|1] "" Vector_XXX
+ SG_ TBOX_FuncReq_RemSeatVentn : 1|1@0+ (1,0) [0|1] "" Vector_XXX
+ SG_ TBOX_FuncReq_RemStart : 16|1@0+ (1,0) [0|1] "" Vector_XXX
+ SG_ TBOX_FuncReq_RemSteerWhlHeat : 14|1@0+ (1,0) [0|1] "" Vector_XXX
+ SG_ TBOX_FuncReq_RemWinCtrl : 5|1@0+ (1,0) [0|1] "" Vector_XXX
+ SG_ TBOX_FuncReq_SentryMod : 10|1@0+ (1,0) [0|1] "" Vector_XXX
+
+BO_ 1506 TBOX_TimeInfo : 8 TBOX
+ SG_ TBOX_DSTFlag : 55|1@0+ (1,0) [0|1] "" Vector_XXX
+ SG_ TBOX_TimeDay : 20|5@0+ (1.0,0.0) [1.0|31.0] "Day" Vector_XXX
+ SG_ TBOX_TimeFlag : 57|2@0+ (1,0) [0|3] "" Vector_XXX
+ SG_ TBOX_TimeHour : 28|5@0+ (1.0,0.0) [0.0|23.0] "h" Vector_XXX
+ SG_ TBOX_TimeMinute : 37|6@0+ (1.0,0.0) [0.0|59.0] "min" Vector_XXX
+ SG_ TBOX_TimeMonth : 11|4@0+ (1.0,0.0) [1.0|12.0] "Month" Vector_XXX
+ SG_ TBOX_TimeSecond : 45|6@0+ (1.0,0.0) [0.0|59.0] "s" Vector_XXX
+ SG_ TBOX_TimeYear : 7|8@0+ (1.0,2000.0) [2000.0|2255.0] "Year" Vector_XXX
+ SG_ TBOX_TimeZone : 49|2@0+ (1,0) [0|3] "" Vector_XXX
+ SG_ TBOX_TimeZoneMinute : 63|6@0+ (1.0,0.0) [0.0|63.0] "" Vector_XXX
+ SG_ TBOX_TimeZoneNum : 54|5@0+ (1,0) [0|31] "" Vector_XXX
+
+BO_ 409 ADAS_IMU : 32 Vector_XXX
+ SG_ ADAS_IMU_RollingCounter : 23|8@0+ (1.0,0.0) [0.0|255.0] "" TBOX
+ SG_ IMU_AccVld : 214|1@0+ (1,0) [0|1] "" TBOX
+ SG_ IMU_AccX : 55|16@0+ (0.002,-65.536) [-65.536|65.53399999999999] "m/s2" TBOX
+ SG_ IMU_AccY : 71|16@0+ (0.002,-65.536) [-65.536|65.53399999999999] "m/s2" TBOX
+ SG_ IMU_AccZ : 87|16@0+ (0.002,-65.536) [-65.536|65.53399999999999] "m/s2" TBOX
+ SG_ IMU_AttitudeVld : 212|1@0+ (1,0) [0|1] "" TBOX
+ SG_ IMU_GyroVld : 213|1@0+ (1,0) [0|1] "" TBOX
+ SG_ IMU_GyroX : 103|16@0+ (0.01,-327.68) [-327.68|327.67] "dps" TBOX
+ SG_ IMU_GyroY : 119|16@0+ (0.01,-327.68) [-327.68|327.67] "dps" TBOX
+ SG_ IMU_GyroZ : 135|16@0+ (0.01,-327.68) [-327.68|327.67] "dps" TBOX
+ SG_ IMU_Pitch : 167|16@0+ (0.01,-180.0) [-180.0|180.0] "degree" TBOX
+ SG_ IMU_PositionType : 211|4@0+ (1,0) [0|15] "" TBOX
+ SG_ IMU_Roll : 151|16@0+ (0.01,-180.0) [-180.0|180.0] "degree" TBOX
+ SG_ IMU_Timestamp : 231|32@0+ (1.0,0.0) [0.0|4294967295.0] "" TBOX
+ SG_ IMU_TimestampVld : 215|1@0+ (1,0) [0|1] "" TBOX
+ SG_ IMU_Yaw : 183|16@0+ (0.01,0.0) [0.0|360.0] "degree" TBOX
+
+BO_ 162 NFCPS_BLE : 64 Vector_XXX
+ SG_ NFCPS_BLE_Auth : 7|64@0+ (1.0,0.0) [0.0|1.0] "" TBOX
+
+BO_ 168 NFCPS_BLE_ComErr_0x0A8 : 64 Vector_XXX
+ SG_ NFCPS_BLE_ComErr : 7|64@0+ (1.0,0.0) [0.0|1.0] "" TBOX
+
+BO_ 1095 NM_Autosar_VIU : 8 Vector_XXX
+ SG_ NM_Autosar_VIU : 7|64@0+ (1,0) [0|0] "" TBOX
+
+BO_ 357 VIU_ABM_TBOX : 8 Vector_XXX
+ SG_ ABM_CrashTyp : 31|5@0+ (1,0) [0|31] "" TBOX
+ SG_ VIU_ABM_Checksum : 7|16@0+ (1.0,0.0) [0.0|65535.0] "" TBOX
+ SG_ VIU_ABM_RollingCounter : 23|8@0+ (1.0,0.0) [0.0|255.0] "" TBOX
+
+
+// Signal Comments
+CM_ SG_ 1505 TBOX_FuncReq_CDCRtcWakeup "因CDC定时唤醒业务请求网络";
+CM_ SG_ 1505 TBOX_FuncReq_DepartureSdl "因一键备车业务请求网络";
+CM_ SG_ 1505 TBOX_FuncReq_DigKeySECom "因数字钥匙SE芯片通信需求请求网络";
+CM_ SG_ 1505 TBOX_FuncReq_MDCRtcWakeup "因MDC定时唤醒业务请求网络";
+CM_ SG_ 1505 TBOX_FuncReq_OTA "因OTA业务请求网络";
+CM_ SG_ 1505 TBOX_FuncReq_RemACCtrl "因远程空调控制业务请求网络";
+CM_ SG_ 1505 TBOX_FuncReq_RemAVP "因远程AVP业务请求网络";
+CM_ SG_ 1505 TBOX_FuncReq_RemChrgDcha "因远程充放电业务请求网络";
+CM_ SG_ 1505 TBOX_FuncReq_RemChrgIfCtrl "因远程充电口盖控制业务请求网络";
+CM_ SG_ 1505 TBOX_FuncReq_RemDiag "因远程诊断业务请求网络";
+CM_ SG_ 1505 TBOX_FuncReq_RemDoorLockCtrl "因远程门锁控制业务请求网络";
+CM_ SG_ 1505 TBOX_FuncReq_RemHornLiCtrl "因远程寻车(闪灯鸣笛)业务请求网络";
+CM_ SG_ 1505 TBOX_FuncReq_RemHVBattHeat "因远程电池加热业务请求网络";
+CM_ SG_ 1505 TBOX_FuncReq_RemInquery "因远程查看业务请求网络";
+CM_ SG_ 1505 TBOX_FuncReq_RemLvPowerPort "远程车载电源延时控制业务请求网络";
+CM_ SG_ 1505 TBOX_FuncReq_RemRearViewHeating "因远程后视镜加热业务请求网络";
+CM_ SG_ 1505 TBOX_FuncReq_RemScenarioMod "因远程情景模式业务请求网络";
+CM_ SG_ 1505 TBOX_FuncReq_RemSeatHeat "因远程座椅加热业务请求网络";
+CM_ SG_ 1505 TBOX_FuncReq_RemSeatVentn "因远程座椅通风业务请求网络";
+CM_ SG_ 1505 TBOX_FuncReq_RemStart "因远程启动指令业务请求网络";
+CM_ SG_ 1505 TBOX_FuncReq_RemSteerWhlHeat "因远程方向盘加热业务请求网络";
+CM_ SG_ 1505 TBOX_FuncReq_RemWinCtrl "因远程车窗控制业务请求网络";
+CM_ SG_ 1505 TBOX_FuncReq_SentryMod "因哨兵模式业务请求网络";
+CM_ SG_ 1506 TBOX_DSTFlag "夏令时标志位";
+CM_ SG_ 1506 TBOX_TimeDay "本地时间_日";
+CM_ SG_ 1506 TBOX_TimeFlag "时间有效性标志";
+CM_ SG_ 1506 TBOX_TimeHour "本地时间_时";
+CM_ SG_ 1506 TBOX_TimeMinute "本地时间_分";
+CM_ SG_ 1506 TBOX_TimeMonth "本地时间_月";
+CM_ SG_ 1506 TBOX_TimeSecond "本地时间_秒";
+CM_ SG_ 1506 TBOX_TimeYear "本地时间_年";
+CM_ SG_ 1506 TBOX_TimeZone "东/西时区";
+CM_ SG_ 1506 TBOX_TimeZoneMinute "时区信息_分钟";
+CM_ SG_ 1506 TBOX_TimeZoneNum "时区编号";
+CM_ SG_ 409 ADAS_IMU_RollingCounter "Rolling Counter";
+CM_ SG_ 409 IMU_AccVld "accvalid";
+CM_ SG_ 409 IMU_AccX "X轴加速度信号(后)";
+CM_ SG_ 409 IMU_AccY "Y轴加速度信号(右)";
+CM_ SG_ 409 IMU_AccZ "Z轴加速度信号(上)";
+CM_ SG_ 409 IMU_AttitudeVld "attitudevalid";
+CM_ SG_ 409 IMU_GyroVld "gyrovalid";
+CM_ SG_ 409 IMU_GyroX "X轴角速度信号(后)";
+CM_ SG_ 409 IMU_GyroY "Y轴角速度信号(右)";
+CM_ SG_ 409 IMU_GyroZ "Z轴角速度信号(上)";
+CM_ SG_ 409 IMU_Pitch "俯仰角(上坡为正,下坡为负)";
+CM_ SG_ 409 IMU_PositionType "当前定位结果状态";
+CM_ SG_ 409 IMU_Roll "横滚角(右侧高时为正,相反为负)";
+CM_ SG_ 409 IMU_Timestamp "IMU数据发生时刻时间戳
+(utc timestamp & 0x00000000FFFFFFFF)";
+CM_ SG_ 409 IMU_TimestampVld "timestampvalid";
+CM_ SG_ 409 IMU_Yaw "航向角(车辆指北为零,向东为正顺时针)";
+CM_ SG_ 162 NFCPS_BLE_Auth "NFCPS发送认证指令给BLE";
+CM_ SG_ 168 NFCPS_BLE_ComErr "NFCPS与BLE通信错误";
+CM_ SG_ 357 ABM_CrashTyp "碰撞类型
+Crash Type";
+CM_ SG_ 357 VIU_ABM_Checksum "CRC16 Checksum (DataID: 0x0065)";
+CM_ SG_ 357 VIU_ABM_RollingCounter "Rolling Counter";
+
+// Attribute definitions
+BA_DEF_ BO_ "CANFD_BRS" ENUM "0","1"; // 
+BA_DEF_ BO_ "DiagRequest" ENUM "Yes","No"; // 
+BA_DEF_ BO_ "DiagResponse" ENUM "Yes","No"; // 
+BA_DEF_ BO_ "DiagState" ENUM "Yes","No"; // 
+BA_DEF_ BO_ "GenMsgSendType" ENUM "Cycle","Event","CE"; // 
+BA_DEF_ SG_ "GenSigSendType" ENUM "Cycle","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition"; // 
+BA_DEF_ BO_ "MSG IL Support" ENUM "Yes","No"; // 
+BA_DEF_ BO_ "NmMessage" ENUM "Yes","No"; // 
+BA_DEF_  "Baudrate" FLOAT 1000 1000000; // [bps]
+BA_DEF_  "BaudRateCANFD" FLOAT 1000 10000000; // [bps]
+BA_DEF_ BO_ "VFrameFormat" ENUM "StandardCAN","ExtendedCAN","reserved","J1939PG","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","StandardCAN_FD","ExtendedCAN_FD";
+BA_DEF_ BO_ "GenMsgCycleTime" FLOAT 0 300000; // [ms]
+BA_DEF_ BO_ "GenMsgStartDelayTime" FLOAT 0 300000; // [ms]
+BA_DEF_ BO_ "GenMsgDelayTime" FLOAT 0 300000; // [ms]
+BA_DEF_ SG_ "GenSigStartValue" FLOAT -1.7976931348623157E308 18446744073709551615;
+BA_DEF_ BU_ "NmAsrNodeIdentifier" INT 0 255;
+BA_DEF_ BU_ "NmAsrNode" ENUM "No","Yes";
+BA_DEF_ BO_ "GenMsgNrOfRepetition" INT 0 100000;
+BA_DEF_ BO_ "GenMsgCycleTimeFast" FLOAT 0 300000;
+BA_DEF_  "DBName" STRING;
+BA_DEF_  "BusType" STRING;
+BA_DEF_  "ProtocolType" STRING;
+
+BA_DEF_DEF_ "CANFD_BRS" "1";
+BA_DEF_DEF_ "DiagRequest" "No";
+BA_DEF_DEF_ "DiagResponse" "No";
+BA_DEF_DEF_ "DiagState" "No";
+BA_DEF_DEF_ "GenMsgSendType" "Cycle";
+BA_DEF_DEF_ "GenSigSendType" "Cycle";
+BA_DEF_DEF_ "MSG IL Support" "Yes";
+BA_DEF_DEF_ "NmMessage" "No";
+BA_DEF_DEF_ "VFrameFormat" "J1939PG";
+BA_DEF_DEF_ "GenSigStartValue" 0;
+BA_DEF_DEF_ "NmAsrNodeIdentifier" 0;
+BA_DEF_DEF_ "NmAsrNode" "No";
+BA_DEF_DEF_ "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_ "DBName" "";
+BA_DEF_DEF_ "BusType" "";
+BA_DEF_DEF_ "ProtocolType" "";
+
+// Network
+BA_ "DBName" "TBOX";
+BA_ "BusType" "CAN FD";
+BA_ "ProtocolType" "CAN";
+BA_ "Baudrate" 500000;
+BA_ "BaudRateCANFD" 2000000;
+// ECU: TBOX
+BA_ "NmAsrNodeIdentifier" BU_ TBOX 97;
+BA_ "NmAsrNode" BU_ TBOX 1;
+// Frame: NM_Autosar_TBOX
+BA_ "CANFD_BRS" BO_ 1121 0;
+BA_ "GenMsgSendType" BO_ 1121 1;
+BA_ "NmMessage" BO_ 1121 0;
+BA_ "VFrameFormat" BO_ 1121 14;
+BA_ "GenMsgDelayTime" BO_ 1121 10.000;
+// Frame: TBOX_FuncReq
+BA_ "CANFD_BRS" BO_ 1505 0;
+BA_ "GenMsgSendType" BO_ 1505 2;
+BA_ "VFrameFormat" BO_ 1505 14;
+BA_ "GenMsgCycleTime" BO_ 1505 500.000;
+BA_ "GenMsgStartDelayTime" BO_ 1505 0.000;
+BA_ "GenMsgNrOfRepetition" BO_ 1505 3;
+BA_ "GenMsgCycleTimeFast" BO_ 1505 20.000;
+BA_ "GenSigSendType" SG_ 1505 TBOX_FuncReq_CDCRtcWakeup 4;
+BA_ "GenSigStartValue" SG_ 1505 TBOX_FuncReq_CDCRtcWakeup 0;
+BA_ "GenSigSendType" SG_ 1505 TBOX_FuncReq_DepartureSdl 4;
+BA_ "GenSigStartValue" SG_ 1505 TBOX_FuncReq_DepartureSdl 0;
+BA_ "GenSigSendType" SG_ 1505 TBOX_FuncReq_DigKeySECom 4;
+BA_ "GenSigStartValue" SG_ 1505 TBOX_FuncReq_DigKeySECom 0;
+BA_ "GenSigSendType" SG_ 1505 TBOX_FuncReq_MDCRtcWakeup 4;
+BA_ "GenSigStartValue" SG_ 1505 TBOX_FuncReq_MDCRtcWakeup 0;
+BA_ "GenSigSendType" SG_ 1505 TBOX_FuncReq_OTA 4;
+BA_ "GenSigStartValue" SG_ 1505 TBOX_FuncReq_OTA 0;
+BA_ "GenSigSendType" SG_ 1505 TBOX_FuncReq_RemACCtrl 4;
+BA_ "GenSigStartValue" SG_ 1505 TBOX_FuncReq_RemACCtrl 0;
+BA_ "GenSigSendType" SG_ 1505 TBOX_FuncReq_RemAVP 4;
+BA_ "GenSigStartValue" SG_ 1505 TBOX_FuncReq_RemAVP 0;
+BA_ "GenSigSendType" SG_ 1505 TBOX_FuncReq_RemChrgDcha 4;
+BA_ "GenSigStartValue" SG_ 1505 TBOX_FuncReq_RemChrgDcha 0;
+BA_ "GenSigSendType" SG_ 1505 TBOX_FuncReq_RemChrgIfCtrl 4;
+BA_ "GenSigStartValue" SG_ 1505 TBOX_FuncReq_RemChrgIfCtrl 0;
+BA_ "GenSigSendType" SG_ 1505 TBOX_FuncReq_RemDiag 4;
+BA_ "GenSigStartValue" SG_ 1505 TBOX_FuncReq_RemDiag 0;
+BA_ "GenSigSendType" SG_ 1505 TBOX_FuncReq_RemDoorLockCtrl 4;
+BA_ "GenSigStartValue" SG_ 1505 TBOX_FuncReq_RemDoorLockCtrl 0;
+BA_ "GenSigSendType" SG_ 1505 TBOX_FuncReq_RemHornLiCtrl 4;
+BA_ "GenSigStartValue" SG_ 1505 TBOX_FuncReq_RemHornLiCtrl 0;
+BA_ "GenSigSendType" SG_ 1505 TBOX_FuncReq_RemHVBattHeat 4;
+BA_ "GenSigStartValue" SG_ 1505 TBOX_FuncReq_RemHVBattHeat 0;
+BA_ "GenSigSendType" SG_ 1505 TBOX_FuncReq_RemInquery 4;
+BA_ "GenSigStartValue" SG_ 1505 TBOX_FuncReq_RemInquery 0;
+BA_ "GenSigSendType" SG_ 1505 TBOX_FuncReq_RemLvPowerPort 4;
+BA_ "GenSigStartValue" SG_ 1505 TBOX_FuncReq_RemLvPowerPort 0;
+BA_ "GenSigSendType" SG_ 1505 TBOX_FuncReq_RemRearViewHeating 4;
+BA_ "GenSigStartValue" SG_ 1505 TBOX_FuncReq_RemRearViewHeating 0;
+BA_ "GenSigSendType" SG_ 1505 TBOX_FuncReq_RemScenarioMod 4;
+BA_ "GenSigStartValue" SG_ 1505 TBOX_FuncReq_RemScenarioMod 0;
+BA_ "GenSigSendType" SG_ 1505 TBOX_FuncReq_RemSeatHeat 4;
+BA_ "GenSigStartValue" SG_ 1505 TBOX_FuncReq_RemSeatHeat 0;
+BA_ "GenSigSendType" SG_ 1505 TBOX_FuncReq_RemSeatVentn 4;
+BA_ "GenSigStartValue" SG_ 1505 TBOX_FuncReq_RemSeatVentn 0;
+BA_ "GenSigSendType" SG_ 1505 TBOX_FuncReq_RemStart 4;
+BA_ "GenSigStartValue" SG_ 1505 TBOX_FuncReq_RemStart 0;
+BA_ "GenSigSendType" SG_ 1505 TBOX_FuncReq_RemSteerWhlHeat 4;
+BA_ "GenSigStartValue" SG_ 1505 TBOX_FuncReq_RemSteerWhlHeat 0;
+BA_ "GenSigSendType" SG_ 1505 TBOX_FuncReq_RemWinCtrl 4;
+BA_ "GenSigStartValue" SG_ 1505 TBOX_FuncReq_RemWinCtrl 0;
+BA_ "GenSigSendType" SG_ 1505 TBOX_FuncReq_SentryMod 4;
+BA_ "GenSigStartValue" SG_ 1505 TBOX_FuncReq_SentryMod 0;
+// Frame: TBOX_TimeInfo
+BA_ "CANFD_BRS" BO_ 1506 0;
+BA_ "VFrameFormat" BO_ 1506 14;
+BA_ "GenMsgSendType" BO_ 1506 0;
+BA_ "GenMsgCycleTime" BO_ 1506 500.000;
+BA_ "GenMsgStartDelayTime" BO_ 1506 0.000;
+BA_ "GenSigStartValue" SG_ 1506 TBOX_DSTFlag 0;
+BA_ "GenSigStartValue" SG_ 1506 TBOX_TimeDay 1;
+BA_ "GenSigStartValue" SG_ 1506 TBOX_TimeFlag 0;
+BA_ "GenSigStartValue" SG_ 1506 TBOX_TimeHour 0;
+BA_ "GenSigStartValue" SG_ 1506 TBOX_TimeMinute 0;
+BA_ "GenSigStartValue" SG_ 1506 TBOX_TimeMonth 1;
+BA_ "GenSigStartValue" SG_ 1506 TBOX_TimeSecond 0;
+BA_ "GenSigStartValue" SG_ 1506 TBOX_TimeYear 0;
+BA_ "GenSigStartValue" SG_ 1506 TBOX_TimeZone 0;
+BA_ "GenSigStartValue" SG_ 1506 TBOX_TimeZoneMinute 0;
+BA_ "GenSigStartValue" SG_ 1506 TBOX_TimeZoneNum 0;
+// Frame: ADAS_IMU
+BA_ "VFrameFormat" BO_ 409 14;
+BA_ "GenMsgSendType" BO_ 409 1;
+BA_ "GenSigStartValue" SG_ 409 ADAS_IMU_RollingCounter 0;
+BA_ "GenSigStartValue" SG_ 409 IMU_AccVld 0;
+BA_ "GenSigStartValue" SG_ 409 IMU_AccX 32768;
+BA_ "GenSigStartValue" SG_ 409 IMU_AccY 32768;
+BA_ "GenSigStartValue" SG_ 409 IMU_AccZ 32768;
+BA_ "GenSigStartValue" SG_ 409 IMU_AttitudeVld 0;
+BA_ "GenSigStartValue" SG_ 409 IMU_GyroVld 0;
+BA_ "GenSigStartValue" SG_ 409 IMU_GyroX 32768;
+BA_ "GenSigStartValue" SG_ 409 IMU_GyroY 32768;
+BA_ "GenSigStartValue" SG_ 409 IMU_GyroZ 32768;
+BA_ "GenSigStartValue" SG_ 409 IMU_Pitch 18000;
+BA_ "GenSigStartValue" SG_ 409 IMU_PositionType 0;
+BA_ "GenSigStartValue" SG_ 409 IMU_Roll 18000;
+BA_ "GenSigStartValue" SG_ 409 IMU_Timestamp 0;
+BA_ "GenSigStartValue" SG_ 409 IMU_TimestampVld 0;
+BA_ "GenSigStartValue" SG_ 409 IMU_Yaw 0;
+// Frame: NFCPS_BLE
+BA_ "GenMsgSendType" BO_ 162 1;
+BA_ "VFrameFormat" BO_ 162 14;
+BA_ "GenMsgDelayTime" BO_ 162 0.000;
+BA_ "GenSigStartValue" SG_ 162 NFCPS_BLE_Auth 0;
+BA_ "GenSigSendType" SG_ 162 NFCPS_BLE_Auth 1;
+// Frame: NFCPS_BLE_ComErr_0x0A8
+BA_ "GenMsgSendType" BO_ 168 1;
+BA_ "VFrameFormat" BO_ 168 14;
+BA_ "GenMsgDelayTime" BO_ 168 0.000;
+BA_ "GenMsgNrOfRepetition" BO_ 168 3;
+BA_ "GenMsgCycleTimeFast" BO_ 168 20.000;
+BA_ "GenSigStartValue" SG_ 168 NFCPS_BLE_ComErr 0;
+BA_ "GenSigSendType" SG_ 168 NFCPS_BLE_ComErr 1;
+// Frame: NM_Autosar_VIU
+BA_ "CANFD_BRS" BO_ 1095 0;
+BA_ "GenMsgSendType" BO_ 1095 1;
+BA_ "NmMessage" BO_ 1095 0;
+BA_ "VFrameFormat" BO_ 1095 14;
+BA_ "GenMsgDelayTime" BO_ 1095 10.000;
+// Frame: VIU_ABM_TBOX
+BA_ "VFrameFormat" BO_ 357 14;
+BA_ "GenMsgSendType" BO_ 357 0;
+BA_ "GenMsgCycleTime" BO_ 357 10.000;
+BA_ "GenMsgStartDelayTime" BO_ 357 0.000;
+BA_ "GenSigStartValue" SG_ 357 ABM_CrashTyp 0;
+BA_ "GenSigStartValue" SG_ 357 VIU_ABM_Checksum 0;
+BA_ "GenSigStartValue" SG_ 357 VIU_ABM_RollingCounter 0;
+
+VAL_ 1505 TBOX_FuncReq_CDCRtcWakeup 0 "TBOX_FuncReq_CDCRtcWakeup_0_Inactive" 1 "TBOX_FuncReq_CDCRtcWakeup_1_Active";
+VAL_ 1505 TBOX_FuncReq_DepartureSdl 0 "TBOX_FuncReq_DepartureSdl_0_Inactive" 1 "TBOX_FuncReq_DepartureSdl_1_Active";
+VAL_ 1505 TBOX_FuncReq_DigKeySECom 0 "TBOX_FuncReq_DigKeySECom_0_Inactive" 1 "TBOX_FuncReq_DigKeySECom_1_Active";
+VAL_ 1505 TBOX_FuncReq_MDCRtcWakeup 0 "TBOX_FuncReq_MDCRtcWakeup_0_Inactive" 1 "TBOX_FuncReq_MDCRtcWakeup_1_Active";
+VAL_ 1505 TBOX_FuncReq_OTA 0 "TBOX_FuncReq_OTA_0_Inactive" 1 "TBOX_FuncReq_OTA_1_Active";
+VAL_ 1505 TBOX_FuncReq_RemACCtrl 0 "TBOX_FuncReq_RemACCtrl_0_Inactive" 1 "TBOX_FuncReq_RemACCtrl_1_Active";
+VAL_ 1505 TBOX_FuncReq_RemAVP 0 "TBOX_FuncReq_RemAVP_0_Inactive" 1 "TBOX_FuncReq_RemAVP_1_Active";
+VAL_ 1505 TBOX_FuncReq_RemChrgDcha 0 "TBOX_FuncReq_RemChrgDcha_0_Inactive" 1 "TBOX_FuncReq_RemChrgDcha_1_Active";
+VAL_ 1505 TBOX_FuncReq_RemChrgIfCtrl 0 "TBOX_FuncReq_RemChrgIfCtrl_0_Inactive" 1 "TBOX_FuncReq_RemChrgIfCtrl_1_Active";
+VAL_ 1505 TBOX_FuncReq_RemDiag 0 "TBOX_FuncReq_RemDiag_0_Inactive" 1 "TBOX_FuncReq_RemDiag_1_Active";
+VAL_ 1505 TBOX_FuncReq_RemDoorLockCtrl 0 "TBOX_FuncReq_RemDoorLockCtrl_0_Inactive" 1 "TBOX_FuncReq_RemDoorLockCtrl_1_Active";
+VAL_ 1505 TBOX_FuncReq_RemHornLiCtrl 0 "TBOX_FuncReq_RemHornLiCtrl_0_Inactive" 1 "TBOX_FuncReq_RemHornLiCtrl_1_Active";
+VAL_ 1505 TBOX_FuncReq_RemHVBattHeat 0 "TBOX_FuncReq_RemHVBattHeat_0_Inactive" 1 "TBOX_FuncReq_RemHVBattHeat_1_Active";
+VAL_ 1505 TBOX_FuncReq_RemInquery 0 "TBOX_FuncReq_RemInquery_0_Inactive" 1 "TBOX_FuncReq_RemInquery_1_Active";
+VAL_ 1505 TBOX_FuncReq_RemLvPowerPort 0 "TBOX_FuncReq_RemLvPowerPort_0_Inactive" 1 "TBOX_FuncReq_RemLvPowerPort_1_Active";
+VAL_ 1505 TBOX_FuncReq_RemRearViewHeating 0 "TBOX_FuncReq_RemRearViewHeating_0_Inactive" 1 "TBOX_FuncReq_RemRearViewHeating_1_Active";
+VAL_ 1505 TBOX_FuncReq_RemScenarioMod 0 "TBOX_FuncReq_RemScenarioMod_0_Inactive" 1 "TBOX_FuncReq_RemScenarioMod_1_Active";
+VAL_ 1505 TBOX_FuncReq_RemSeatHeat 0 "TBOX_FuncReq_RemSeatHeat_0_Inactive" 1 "TBOX_FuncReq_RemSeatHeat_1_Active";
+VAL_ 1505 TBOX_FuncReq_RemSeatVentn 0 "TBOX_FuncReq_RemSeatVentn_0_Inactive" 1 "TBOX_FuncReq_RemSeatVentn_1_Active";
+VAL_ 1505 TBOX_FuncReq_RemStart 0 "TBOX_FuncReq_RemStart_0_Inactive" 1 "TBOX_FuncReq_RemStart_1_Active";
+VAL_ 1505 TBOX_FuncReq_RemSteerWhlHeat 0 "TBOX_FuncReq_RemSteerWhlHeat_0_Inactive" 1 "TBOX_FuncReq_RemSteerWhlHeat_1_Active";
+VAL_ 1505 TBOX_FuncReq_RemWinCtrl 0 "TBOX_FuncReq_RemWinCtrl_0_Inactive" 1 "TBOX_FuncReq_RemWinCtrl_1_Active";
+VAL_ 1505 TBOX_FuncReq_SentryMod 0 "TBOX_FuncReq_SentryMod_0_Inactive" 1 "TBOX_FuncReq_SentryMod_1_Active";
+VAL_ 1506 TBOX_DSTFlag 0 "TBOX_DSTFlag_0_Invalid" 1 "TBOX_DSTFlag_1_Valid";
+VAL_ 1506 TBOX_TimeFlag 0 "TBOX_TimeFlag_0_Invalid" 1 "TBOX_TimeFlag_1_Valid" 2 "TBOX_TimeFlag_2_With_Offset(Reserved)" 3 "TBOX_TimeFlag_3_Reserved";
+VAL_ 1506 TBOX_TimeZone 0 "TBOX_TimeZone_0_Initial" 1 "TBOX_TimeZone_1_East" 2 "TBOX_TimeZone_2_West" 3 "TBOX_TimeZone_3_Reserved";
+VAL_ 1506 TBOX_TimeZoneNum 0 "TBOX_TimeZoneNum_0_TimeZone_0" 1 "TBOX_TimeZoneNum_1_TimeZone_1" 2 "TBOX_TimeZoneNum_2_TimeZone_2" 3 "TBOX_TimeZoneNum_3_TimeZone_3" 4 "TBOX_TimeZoneNum_4_TimeZone_4" 5 "TBOX_TimeZoneNum_5_TimeZone_5" 6 "TBOX_TimeZoneNum_6_TimeZone_6" 7 "TBOX_TimeZoneNum_7_TimeZone_7" 8 "TBOX_TimeZoneNum_8_TimeZone_8" 9 "TBOX_TimeZoneNum_9_TimeZone_9" 10 "TBOX_TimeZoneNum_10_TimeZone_10" 11 "TBOX_TimeZoneNum_11_TimeZone_11" 12 "TBOX_TimeZoneNum_12_TimeZone_12" 13 "TBOX_TimeZoneNum_13_TimeZone_13" 14 "TBOX_TimeZoneNum_14_TimeZone_14" 15 "TBOX_TimeZoneNum_15_Reserved";
+VAL_ 409 IMU_AccVld 0 "IMU_AccVld_0_Invalid" 1 "IMU_AccVld_1_Valid";
+VAL_ 409 IMU_AccX 65535 "IMU_AccX_65535_Invalid";
+VAL_ 409 IMU_AccY 65535 "IMU_AccY_65535_Invalid";
+VAL_ 409 IMU_AccZ 65535 "IMU_AccZ_65535_Invalid";
+VAL_ 409 IMU_AttitudeVld 0 "IMU_AttitudeVld_0_Invalid" 1 "IMU_AttitudeVld_1_Valid";
+VAL_ 409 IMU_GyroVld 0 "IMU_GyroVld_0_Invalid" 1 "IMU_GyroVld_1_Valid";
+VAL_ 409 IMU_GyroX 65535 "IMU_GyroX_65535_Invalid";
+VAL_ 409 IMU_GyroY 65535 "IMU_GyroY_65535_Invalid";
+VAL_ 409 IMU_GyroZ 65535 "IMU_GyroZ_65535_Invalid";
+VAL_ 409 IMU_Pitch 65535 "IMU_Pitch_65535_Invalid";
+VAL_ 409 IMU_PositionType 0 "IMU_PositionType_0_No_Solution" 1 "IMU_PositionType_1_Gnss" 2 "IMU_PositionType_2_RTK" 3 "IMU_PositionType_3_Reserved";
+VAL_ 409 IMU_Roll 65535 "IMU_Roll_65535_Invalid";
+VAL_ 409 IMU_Timestamp 4294967295 "IMU_Timestamp_4294967295_Invalid";
+VAL_ 409 IMU_TimestampVld 0 "IMU_TimestampVld_0_Invalid" 1 "IMU_TimestampVld_1_Valid";
+VAL_ 409 IMU_Yaw 65535 "IMU_Yaw_65535_Invalid";
+VAL_ 357 ABM_CrashTyp 0 "ABM_CrashTyp_0_Initial_No_Crash" 1 "ABM_CrashTyp_1_Front_crash" 2 "ABM_CrashTyp_2_Side_crash" 3 "ABM_CrashTyp_3_Front+side_crash" 4 "ABM_CrashTyp_4_Rear_crash" 5 "ABM_CrashTyp_5_Front+rear_crash" 6 "ABM_CrashTyp_6_Side+rear_crash" 7 "ABM_CrashTyp_7_Front+side+rear_crash" 8 "ABM_CrashTyp_8_Rollover_crash" 9 "ABM_CrashTyp_9_Rollover+front_crash" 10 "ABM_CrashTyp_10_Rollover+side_crash" 11 "ABM_CrashTyp_11_Rollover+side+front_crash" 12 "ABM_CrashTyp_12_Rollover+rear_crash" 13 "ABM_CrashTyp_13_Rollover+rear+front_crash" 14 "ABM_CrashTyp_14_Rollover+rear+side_crash" 15 "ABM_CrashTyp_15_Rollover+rear+side+front_crash" 16 "ABM_CrashTyp_16_Reserved";
+
+

@@ -1,0 +1,2060 @@
+VERSION ""
+
+
+NS_ : 
+        NS_DESC_
+        CM_
+        BA_DEF_
+        BA_
+        VAL_
+        CAT_DEF_
+        CAT_
+        FILTER
+        BA_DEF_DEF_
+        EV_DATA_
+        ENVVAR_DATA_
+        SGTYPE_
+        SGTYPE_VAL_
+        BA_DEF_SGTYPE_
+        BA_SGTYPE_
+        SIG_TYPE_REF_
+        VAL_TABLE_
+        SIG_GROUP_
+        SIG_VALTYPE_
+        SIGTYPE_VALTYPE_
+        BO_TX_BU_
+        BA_DEF_REL_
+        BA_REL_
+        BA_DEF_DEF_REL_
+        BU_SG_REL_
+        BU_EV_REL_
+        BU_BO_REL_
+        SG_MUL_VAL_
+
+BS_:
+
+BU_: GW VCU_Chassis ABS_ESC PAS FLC FMR SRS EPB EPS 
+
+
+BO_ 81 VCU_1: 8 VCU_Chassis
+ SG_ VCU_AccPosition : 7|8@0+ (1,0) [0|100] "%" ABS_ESC,PAS,FLC,EPB
+ SG_ VCU_EmgyIGNOffReqRspVaild : 13|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_EmgyIGNOffReqRsp : 15|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ VCU_KScontrol_Cmd_Valid : 32|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_ReadySts : 33|1@0+ (1,0) [0|1] "" ABS_ESC,FLC,EPB,EPS
+ SG_ VCU_MCUEnableReq : 34|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_MotorTqCompensationReq : 35|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_BrakepedalStsValid : 36|1@0+ (1,0) [0|1] "" ABS_ESC,PAS,FLC,SRS,EPB,EPS
+ SG_ VCU_BrakepedalSts : 38|2@0+ (1,0) [0|3] "" ABS_ESC,PAS,FLC,SRS,EPB,EPS
+ SG_ VCU_AccPositionValid : 39|1@0+ (1,0) [0|1] "" ABS_ESC,PAS,FLC,EPB
+ SG_ VCU_BrakeLightReq : 40|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_HighVoltLoopLockFault : 41|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_ParkCmd : 43|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ VCU_ChargeAllowedValid : 44|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_ChargeAllowed : 45|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_KScontrol_Cmd : 47|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ VCU_1_RollingCounter : 51|4@0+ (1,0) [0|15] "" ABS_ESC,PAS,FLC,SRS,EPB,EPS
+ SG_ VCU_ActualGearPositionValid : 52|1@0+ (1,0) [0|1] "" ABS_ESC,PAS,FLC,EPB,EPS
+ SG_ VCU_ActualGearPosition : 55|3@0+ (1,0) [0|7] "" ABS_ESC,PAS,FLC,EPB,EPS
+ SG_ VCU_1_CheckSUM : 63|8@0+ (1,0) [0|255] "" ABS_ESC,PAS,FLC,SRS,EPB,EPS
+
+BO_ 83 VCU_2: 8 VCU_Chassis
+ SG_ VCU_BrakePressure : 23|8@0+ (0.5,0) [0|127] "Kpa" GW,ABS_ESC
+ SG_ VCU_Accel_Padel_Override : 24|1@0+ (1,0) [0|1] "" GW,FLC
+ SG_ VCU_BeControlledStatus : 25|1@0+ (1,0) [0|1] "" GW,PAS
+ SG_ VCU_Rx_PASTargetGearPosition : 28|3@0+ (1,0) [0|7] "" GW,PAS
+ SG_ VCU_Rx_PASTargetGearResState : 29|1@0+ (1,0) [0|1] "" GW,PAS
+ SG_ VCU_RegenTorqueUninventedVaild : 30|1@0+ (1,0) [0|1] "" GW,ABS_ESC
+ SG_ VCU_RegenTorqueUninvented : 31|1@0+ (1,0) [0|1] "" GW,ABS_ESC
+ SG_ VCU_BrakepedalPosValid : 32|1@0+ (1,0) [0|1] "" GW,ABS_ESC
+ SG_ VCU_TqReductionRqstResponse : 36|1@0+ (1,0) [0|1] "" GW,ABS_ESC
+ SG_ VCU_QDCFLC : 37|1@0+ (1,0) [0|1] "" GW,FLC
+ SG_ VCU_Request_Response : 38|1@0+ (1,0) [0|1] "" GW,FLC
+ SG_ VCU_Kickdown_AEB : 39|1@0+ (1,0) [0|1] "" GW,FLC
+ SG_ VCU_BrakepedalPos : 47|8@0+ (1,0) [0|100] "%" GW,ABS_ESC
+ SG_ VCU_2_RollingCounter : 51|4@0+ (1,0) [0|15] "" GW,ABS_ESC,PAS,FLC
+ SG_ VCU_2_CheckSUM : 63|8@0+ (1,0) [0|255] "" GW,ABS_ESC,PAS,FLC
+ SG_ VCU_BrakeEnergyRegenCrntMaxTq : 7|16@0+ (0.05,0) [0|300] "Nm" GW,ABS_ESC
+
+BO_ 85 VCU_3: 8 VCU_Chassis
+ SG_ VCU_MotOutputTqReq : 23|16@0+ (0.1,-350) [-350|350] "Nm" PAS
+ SG_ VCU_AllowedTqRiseGradient : 39|16@0+ (1,0) [0|8000] "Nm/s" Vector__XXX
+ SG_ VCU_3_RollingCounter : 51|4@0+ (1,0) [0|15] "" PAS
+ SG_ VCU_MotOperModeReq : 55|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ VCU_3_CheckSUM : 63|8@0+ (1,0) [0|255] "" PAS
+ SG_ VCU_MotOutputSpdReq : 7|16@0+ (1,-15000) [-15000|15000] "rpm" Vector__XXX
+
+BO_ 369 VCU_4: 8 VCU_Chassis
+ SG_ VCU_PTCOpnAlwd : 1|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_EACOpnAlwd : 2|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_DCDCOpModReq : 23|2@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_KScontrol_lowside_status : 24|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_StartReqAllowed : 25|1@0+ (1,0) [0|1] "" GW
+ SG_ VCU_DCDCOutPwrLim : 21|12@0+ (1,0) [0|4000] "w" Vector__XXX
+ SG_ VCU_VehRunMod : 4|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ VCU_VehSts : 39|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ KP2_Testonly : 44|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ KP1_Testonly : 45|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ KM_Testonly : 46|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ KD_Testonly : 47|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_4_RollingCounter : 51|4@0+ (1,0) [0|15] "" GW,PAS,FLC,EPB
+ SG_ VCU_FaultLevel : 6|2@0+ (1,0) [0|3] "" PAS,FLC,EPB
+ SG_ VCU_4_CheckSUM : 63|8@0+ (1,0) [0|255] "" GW,PAS,FLC,EPB
+ SG_ VCU_TMMPwrLim : 15|8@0+ (0.1,0) [0|15] "Kw" Vector__XXX
+
+BO_ 195 VCU_6: 8 VCU_Chassis
+ SG_ VCU_ACC_Cancel_Switch : 0|1@0+ (1,0) [0|1] "" FLC
+ SG_ VCU_ACC_Set_Setspeed_Dec_Switch : 2|2@0+ (1,0) [0|2] "" FLC
+ SG_ VCU_ACC_Switch_Available : 13|1@0+ (1,0) [0|1] "" FLC
+ SG_ VCU_ACC_Headway_Dec_Switch : 14|1@0+ (1,0) [0|1] "" FLC
+ SG_ VCU_ACC_Headway_Inc_Switch : 15|1@0+ (1,0) [0|1] "" FLC
+ SG_ VCU_ACC_RES_Inc_Switch : 4|2@0+ (1,0) [0|2] "" FLC
+ SG_ VCU_6_RollingCounter : 51|4@0+ (1,0) [0|15] "" FLC
+ SG_ VCU_6_CheckSUM : 63|8@0+ (1,0) [0|255] "" FLC
+ SG_ VCU_ACC_Main_Switch : 7|1@0+ (1,0) [0|1] "" FLC
+
+BO_ 87 GW_Chassis_MCU_1: 8 GW
+ SG_ MCU_MotorPresentTorque : 23|16@0+ (0.1,-350) [-350|350] "Nm" ABS_ESC,PAS,FLC,EPB
+ SG_ MCU_MotorCurrentPower : 39|16@0+ (0.1,-2000) [-2000|2000] "Kw" Vector__XXX
+ SG_ MCU_1_RollingCounter : 51|4@0+ (1,0) [0|15] "" ABS_ESC,PAS,FLC,EPB
+ SG_ MCU_MotorPresentSts : 53|2@0+ (1,0) [0|3] "" EPB
+ SG_ MCU_MotTqValid : 54|1@0+ (1,0) [0|1] "" ABS_ESC,PAS,FLC,EPB
+ SG_ MCU_MotSpdValid : 55|1@0+ (1,0) [0|1] "" ABS_ESC,FLC
+ SG_ MCU_1_CheckSUM : 63|8@0+ (1,0) [0|255] "" ABS_ESC,PAS,FLC,EPB
+ SG_ MCU_MotorSpd : 7|16@0+ (1,-15000) [-15000|15000] "rpm" ABS_ESC,FLC
+
+BO_ 89 GW_Chassis_MCU_2: 8 GW
+ SG_ MCU_Volt : 23|10@0+ (1,0) [0|500] "V" Vector__XXX
+ SG_ MCU_MaxAvlTq : 29|10@0+ (1,0) [0|350] "Nm" ABS_ESC,FLC
+ SG_ MCU_FaultLevel : 41|2@0+ (1,0) [0|3] "" FLC
+ SG_ MCU_MinAvlTq : 35|10@0+ (1,-350) [-350|0] "Nm" FLC
+ SG_ MCU_2_RollingCounter : 51|4@0+ (1,0) [0|15] "" FLC
+ SG_ MCU_MotorOperMode : 55|4@0+ (1,0) [0|8] "" Vector__XXX
+ SG_ MCU_2_CheckSUM : 63|8@0+ (1,0) [0|255] "" FLC
+ SG_ MCU_Current : 7|16@0+ (0.1,-500) [-500|500] "A" Vector__XXX
+
+BO_ 197 GW_Chassis_TMM_BCM_MCU_GSM: 8 GW
+ SG_ MCU_MotorTemp : 7|8@0+ (1,-50) [-50|200] "℃" ABS_ESC
+ SG_ BMS_MaxPresentTemp : 23|8@0+ (1,-50) [-50|200] "℃" ABS_ESC
+ SG_ BMS_SOC : 31|8@0+ (1,0) [0|100] "%" ABS_ESC
+ SG_ GSM_KnobPosition : 34|3@0+ (1,0) [0|7] "" PAS
+ SG_ GSM_PButtonState : 36|2@0+ (1,0) [0|2] "" PAS
+ SG_ TMM_OutsideTemperature : 15|8@0+ (0.5,-50) [-50|70] "" PAS,FLC
+
+BO_ 579 GW_Chassis_BCM_1: 8 GW
+ SG_ BCM_DrDoorAjarSts : 0|1@0+ (1,0) [0|1] "" VCU_Chassis,ABS_ESC,PAS,FLC,EPB
+ SG_ BCM_PsDoorAjarSts : 1|1@0+ (1,0) [0|1] "" VCU_Chassis,PAS,FLC
+ SG_ BCM_PositionLampFault : 10|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BCM_LisenseLampFault : 11|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BCM_RFogLampFault : 12|1@0+ (1,0) [0|1] "" FLC
+ SG_ BCM_ReverseLampFault : 13|1@0+ (1,0) [0|1] "" FLC
+ SG_ BCM_LDirectionLampFault : 14|1@0+ (1,0) [0|1] "" FLC
+ SG_ BCM_RDirectionLampFault : 15|1@0+ (1,0) [0|1] "" FLC
+ SG_ BCM_BrakeLampFault : 16|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BCM_LFFogLampFault : 17|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BCM_RFFogLampFault : 18|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BCM_PositionLampSts : 19|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BCM_RLDoorAjarSts : 2|1@0+ (1,0) [0|1] "" VCU_Chassis,PAS,FLC
+ SG_ BCM_BacklightLampSts : 20|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BCM_BrakeLampSts : 21|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BCM_HBrakeLampSts : 22|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BCM_LCornerLampSts : 23|1@0+ (1,0) [0|1] "" FLC
+ SG_ BCM_RCornerLampSts : 24|1@0+ (1,0) [0|1] "" FLC
+ SG_ BCM_FFogLampSts : 25|1@0+ (1,0) [0|1] "" FLC
+ SG_ BCM_RFogLampSts : 26|1@0+ (1,0) [0|1] "" FLC
+ SG_ BCM_ReverseLampSts : 27|1@0+ (1,0) [0|1] "" FLC
+ SG_ BCM_TurnSwSts : 29|2@0+ (1,0) [0|2] "" PAS,FLC
+ SG_ BCM_RRDoorAjarSts : 3|1@0+ (1,0) [0|1] "" VCU_Chassis,PAS,FLC
+ SG_ BCM_LDirectionLampSts : 30|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BCM_RDirectionLampSts : 31|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BCM_LDayRunLightSts : 32|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BCM_RDayRunLightSts : 33|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BCM_DefrostSts : 34|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BCM_DomeLightSts : 35|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BCM_TrunkLampSts : 36|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BCM_WndScDefrostSts : 37|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BCM_LowBeamSts : 39|1@0+ (1,0) [0|1] "" FLC
+ SG_ BCM_RearDoorAjarSts : 4|1@0+ (1,0) [0|1] "" PAS,FLC
+ SG_ BCM_HighBeamSts : 40|1@0+ (1,0) [0|1] "" FLC
+ SG_ BCM_HazardIndSts : 41|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BCM_DefrostIndSts : 42|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BCM_CenterLockIndSts : 43|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BCM_SSBIndSts : 44|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BCM_WndScDefrostIndSts : 45|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BCM_LBlindSpotMonitorIndSts : 46|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BCM_RBlindSpotMonitorIndSts : 47|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BCM_RollingCounter : 51|4@0+ (1,0) [0|15] "" ABS_ESC
+ SG_ BCM_BonnetAjarSts : 5|1@0+ (1,0) [0|1] "" VCU_Chassis,FLC
+ SG_ BCM_FL_DOOR_KNOB_OPEN_Req : 52|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BCM_DOOR_KNOB_OPEN_Req : 53|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BCM_DOOR_KNOB_CLOSE_Req : 54|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BCM_TrunkSw : 55|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BCM_CheckSUM : 63|8@0+ (1,0) [0|255] "" ABS_ESC
+ SG_ BCM_DrDoorLockSts : 6|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BCM_ChargeLockSts : 7|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BCM_DoorLockSts : 9|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 615 GW_Chassis_BCM_PEPS: 8 GW
+ SG_ BCM_AmbientLightLevel : 1|2@0+ (1,0) [0|2] "" FLC
+ SG_ PEPS_PDUstatus : 12|3@0+ (1,0) [0|7] "" VCU_Chassis,PAS,EPB
+ SG_ BCM_RainLevel : 15|3@0+ (1,0) [0|4] "" FLC
+ SG_ BCM_FrontWiperSts : 3|2@0+ (1,0) [0|3] "" FLC
+ SG_ BCM_FrontWiperSw : 6|3@0+ (1,0) [0|7] "" FLC
+ SG_ BCM_RearWiperSts : 7|1@0+ (1,0) [0|1] "" FLC
+ SG_ BCM_Auto_HeadBeamSwitchPosition : 9|1@0+ (1,0) [0|1] "" FLC
+
+BO_ 595 GW_Chassis_ICU_1: 8 GW
+ SG_ ICU_KiloMeter : 23|24@0+ (0.1,0) [0|999999.9] "km" VCU_Chassis
+ SG_ ICU_LowSOC_Ind : 42|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ICU_BrakeFluidLowLevel : 43|1@0+ (1,0) [0|1] "" ABS_ESC
+ SG_ ICU_QDCFLC : 44|1@0+ (1,0) [0|1] "" FLC
+ SG_ ICU_theme_status : 46|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ ICU_Display_WARNING : 47|1@0+ (1,0) [0|1] "" FLC
+ SG_ ICU_1_RollingCounter : 51|4@0+ (1,0) [0|15] "" FLC
+ SG_ ICU_1_CheckSUM : 63|8@0+ (1,0) [0|255] "" FLC
+ SG_ ICU_VehSped_Displayed_Valid : 7|1@0+ (1,0) [0|1] "kph" FLC
+ SG_ ICU_VehSped_Displayed : 6|15@0+ (0.01,0) [0|327.66] "kph" FLC
+
+BO_ 145 GW_Chassis_IHU_9_SET: 8 GW
+ SG_ IHU_ESC_OFF_SWIT_Valid : 0|1@0+ (1,0) [0|1] "" ABS_ESC,FLC
+ SG_ IHU_ESC_OFF_SWIT : 1|1@0+ (1,0) [0|1] "" ABS_ESC,FLC
+ SG_ IHU_BSD_Key_Valid : 11|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ IHU_BSD_Key : 12|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ IHU_SET_EPSmode_Valid : 13|1@0+ (1,0) [0|1] "" EPS
+ SG_ IHU_SET_EPSmode : 15|2@0+ (1,0) [0|3] "" EPS
+ SG_ IHU_LDW_workSet_Valid : 16|1@0+ (1,0) [0|1] "" FLC
+ SG_ IHU_LDW_workSet : 17|1@0+ (1,0) [0|1] "" FLC
+ SG_ IHU_ChangeLine_workSet_Valid : 18|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ IHU_ChangeLine_workSet : 19|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ IHU_VSG_ToneShift_Valid : 2|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ IHU_DoorOpenWarning_Valid : 20|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ IHU_DoorOpenWarning : 21|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ IHU_Rear_traffic_Assist_Valid : 22|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ IHU_Rear_traffic_Assist : 23|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ IHU_TopicMode_Shift_Req_Valid : 25|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ IHU_TopicMode_Shift_Req : 27|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ IHU_TSR_workSet_Valid : 28|1@0+ (1,0) [0|1] "" FLC
+ SG_ IHU_TSR_workSet : 29|1@0+ (1,0) [0|1] "" FLC
+ SG_ IHU_VSG_ToneShift : 4|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ IHU_FCW_workSet_Valid : 30|1@0+ (1,0) [0|1] "" FLC
+ SG_ IHU_FCW_workSet : 31|1@0+ (1,0) [0|1] "" FLC
+ SG_ IHU_PASDisclaimer_Valid : 32|1@0+ (1,0) [0|1] "" PAS
+ SG_ IHU_PASDisclaimer : 33|1@0+ (1,0) [0|1] "" PAS
+ SG_ IHU_Regen_Switch_Valid : 34|1@0+ (1,0) [0|1] "" VCU_Chassis
+ SG_ IHU_Regen_Switch : 36|2@0+ (1,0) [0|3] "" VCU_Chassis
+ SG_ IHU_VehMode_Ctrl_Valid : 37|1@0+ (1,0) [0|1] "" VCU_Chassis
+ SG_ IHU_VehMode_Ctrl : 39|2@0+ (1,0) [0|3] "" VCU_Chassis
+ SG_ IHU_PASConfirm_Valid : 41|1@0+ (1,0) [0|1] "" PAS
+ SG_ IHU_PASConfirm : 43|2@0+ (1,0) [0|3] "" PAS
+ SG_ IHU_PASModeSelect_Valid : 44|1@0+ (1,0) [0|1] "" PAS
+ SG_ IHU_PASModeSelect : 47|3@0+ (1,0) [0|7] "" PAS
+ SG_ IHU_AEB_workSet_Valid : 48|1@0+ (1,0) [0|1] "" FLC
+ SG_ IHU_AEB_workSet : 49|1@0+ (1,0) [0|1] "" FLC
+ SG_ IHU_VSG_Set_Valid : 5|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ IHU_IHC_workSet_Valid : 50|1@0+ (1,0) [0|1] "" FLC
+ SG_ IHU_IHC_workSet : 51|1@0+ (1,0) [0|1] "" FLC
+ SG_ IHU_SOD_Key_Valid : 52|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ IHU_SOD_Key : 53|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ IHU_LCA_Key_Valid : 54|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ IHU_LCA_Key : 55|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ IHU_PARK_TherManageReq : 59|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ IHU_VSG_Set : 7|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ IHU_Tailgate_Set_Valid : 60|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ IHU_Tailgate_Set : 61|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ IHU_PR_workSet_Valid : 62|1@0+ (1,0) [0|1] "" FLC
+ SG_ IHU_PR_workSet : 63|1@0+ (1,0) [0|1] "" FLC
+ SG_ IHU_WPC_workSet_Valid : 8|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ IHU_WPC_workSet : 10|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 593 GW_Chassis_AVM_1: 8 GW
+ SG_ AVM_View_State_Rsp : 2|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ AVM_Dynamic_trajectory_Rsp : 14|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AVM_2D3D_State_Rsp : 15|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AVM_ERROR : 4|2@0+ (1,0) [0|3] "" PAS
+ SG_ AVM_RESPONSE : 5|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AVM_CHECK_IHU_READY : 6|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AVM_STAUTS : 7|1@0+ (1,0) [0|1] "" PAS
+
+BO_ 577 PAS_1: 8 PAS
+ SG_ PAS_RLCDistance : 3|4@0+ (1,0) [0|15] "" GW
+ SG_ PAS_RRCDistance : 15|4@0+ (1,0) [0|15] "" GW
+ SG_ PAS_FLCDistance : 19|4@0+ (1,0) [0|15] "" GW
+ SG_ PAS_FLMDistance : 23|4@0+ (1,0) [0|15] "" GW
+ SG_ PAS_FRMDistance : 27|4@0+ (1,0) [0|15] "" GW
+ SG_ PAS_FRCDistance : 31|4@0+ (1,0) [0|15] "" GW
+ SG_ PAS_WarnType : 35|4@0+ (1,0) [0|15] "" GW
+ SG_ PAS_WarnFrequency : 37|2@0+ (1,0) [0|3] "" GW
+ SG_ PAS_SystemFaultFlag : 39|2@0+ (1,0) [0|3] "" GW
+ SG_ PAS_RLMDistance : 7|4@0+ (1,0) [0|15] "" GW
+ SG_ PAS_MODE : 42|3@0+ (1,0) [0|7] "" GW
+ SG_ PAS_RLSDistance : 46|3@0+ (1,0) [0|7] "" GW
+ SG_ PAS_RRSDistance : 50|3@0+ (1,0) [0|7] "" GW
+ SG_ PAS_FLSDistance : 54|3@0+ (1,0) [0|7] "" GW
+ SG_ PAS_FRSDistance : 58|3@0+ (1,0) [0|7] "" GW
+ SG_ PAS_RRMDistance : 11|4@0+ (1,0) [0|15] "" GW
+
+BO_ 183 PAS_2: 8 PAS
+ SG_ PAS_ParkSideInd : 1|2@0+ (1,0) [0|3] "" GW
+ SG_ PAS_RecoverInterrupt_Indication : 15|3@0+ (1,0) [0|7] "" GW
+ SG_ PAS_QuitInd : 20|5@0+ (1,0) [0|31] "" GW
+ SG_ PAS_ParkSlotSearchInd : 3|2@0+ (1,0) [0|3] "" GW
+ SG_ PAS_TargetGearPositionReq : 23|3@0+ (1,0) [0|7] "" GW,VCU_Chassis
+ SG_ PAS_ParkPercentage : 30|7@0+ (1,0) [0|101] "%" GW
+ SG_ PAS_DeadManButtonPress : 31|1@0+ (1,0) [0|1] "" GW
+ SG_ PAS_SteerControlReq : 5|2@0+ (1,0) [0|3] "" GW,EPS
+ SG_ PAS_TargetSteerAngle : 39|16@0+ (0.1,-780) [-780|780] "degree" GW,EPS
+ SG_ PAS_2_RollingCounter : 51|4@0+ (1,0) [0|15] "" GW,VCU_Chassis,EPS
+ SG_ PAS_Mode_State : 54|3@0+ (1,0) [0|7] "" GW
+ SG_ PAS_TargetSteerAngleValid : 55|1@0+ (1,0) [0|1] "" GW,EPS
+ SG_ PAS_2_CheckSUM : 63|8@0+ (1,0) [0|255] "" GW,VCU_Chassis,EPS
+ SG_ PAS_GearBoxReq : 7|2@0+ (1,0) [0|2] "" GW,VCU_Chassis
+ SG_ PAS_DrRqst : 12|5@0+ (1,0) [0|31] "" GW
+
+BO_ 185 PAS_3: 8 PAS
+ SG_ PAS_Sts : 2|3@0+ (1,0) [0|7] "" GW,VCU_Chassis,ABS_ESC,EPS
+ SG_ PAS_MaxControlSpd : 23|8@0+ (0.1,0) [0|25.5] "KPH" GW,ABS_ESC
+ SG_ PAS_PASFunOpenSts : 3|1@0+ (1,0) [0|1] "" GW
+ SG_ PAS_ESCReqMode : 34|3@0+ (1,0) [0|7] "" GW,ABS_ESC,EPB
+ SG_ PAS_Fault : 35|1@0+ (1,0) [0|1] "" GW,VCU_Chassis,ABS_ESC,EPS
+ SG_ PAS_TargetDistance : 31|12@0+ (1,0) [0|4095] "cm" GW,ABS_ESC
+ SG_ PAS_ESCControlReq : 5|2@0+ (1,0) [0|2] "" GW,ABS_ESC
+ SG_ PAS_3_RollingCounter : 51|4@0+ (1,0) [0|15] "" GW,VCU_Chassis,ABS_ESC,EPS
+ SG_ PAS_TargetAddDecValue : 47|12@0+ (0.01,-20.48) [-20.48|20.47] "m/s^2" GW,VCU_Chassis,ABS_ESC
+ SG_ PAS_3_CheckSUM : 63|8@0+ (1,0) [0|255] "" GW,VCU_Chassis,ABS_ESC,EPS
+ SG_ PAS_SWAngleSpdLimit : 15|8@0+ (4,0) [0|1016] "°/s" GW,EPS
+
+BO_ 187 EPB_1: 8 EPB
+ SG_ EPB_WorkMode : 1|2@0+ (1,0) [0|3] "" GW,VCU_Chassis
+ SG_ EPB_FaultIndLight : 11|2@0+ (1,0) [0|3] "" GW,PAS
+ SG_ EPB_ActuatorSts : 14|3@0+ (1,0) [0|7] "" GW,VCU_Chassis,ABS_ESC,PAS,FLC
+ SG_ EPB_ParkBrakeValid : 15|1@0+ (1,0) [0|1] "" GW,ABS_ESC,PAS,FLC
+ SG_ EPB_DisplayInfo : 21|4@0+ (1,0) [0|15] "" GW
+ SG_ EPB_MaxPowerPark : 2|1@0+ (1,0) [0|1] "" GW,VCU_Chassis
+ SG_ EPB_DecSpdReqValid : 22|1@0+ (1,0) [0|1] "" GW,ABS_ESC
+ SG_ EPB_DecSpdReq : 23|1@0+ (1,0) [0|1] "" GW,ABS_ESC
+ SG_ EPB_LightBrakeLamp : 3|1@0+ (1,0) [0|1] "" GW
+ SG_ EPB_AutoParkKey : 5|2@0+ (1,0) [0|3] "" GW,ABS_ESC,FLC
+ SG_ EPB_RollingCounter : 51|4@0+ (1,0) [0|15] "" GW,VCU_Chassis,ABS_ESC,PAS,FLC
+ SG_ EPB_CheckSUM : 63|8@0+ (1,0) [0|255] "" GW,VCU_Chassis,ABS_ESC,PAS,FLC
+ SG_ EPB_ManualParkKey : 7|2@0+ (1,0) [0|3] "" GW,ABS_ESC,PAS,FLC
+ SG_ EPB_ParkIndLight : 9|2@0+ (1,0) [0|3] "" GW
+
+BO_ 189 SRS_1: 8 SRS
+ SG_ SRS_CrashOutputSts : 4|5@0+ (1,0) [0|31] "" GW,VCU_Chassis
+ SG_ SRS_OCPPDSts : 13|2@0+ (1,0) [0|3] "" GW
+ SG_ SRS_L_RearPsSeatBeltRSt : 19|2@0+ (1,0) [0|3] "" GW
+ SG_ SRS_M_RearPsSeatBeltRSt : 21|2@0+ (1,0) [0|3] "" GW
+ SG_ SRS_R_RearPsSeatBeltRSt : 23|2@0+ (1,0) [0|3] "" GW
+ SG_ SRS_RollingCounter : 51|4@0+ (1,0) [0|15] "" GW,ABS_ESC,PAS,FLC
+ SG_ SRS_AirbagFailSts : 6|2@0+ (1,0) [0|3] "" GW,FLC
+ SG_ SRS_CheckSUM : 63|8@0+ (1,0) [0|255] "" GW,ABS_ESC,PAS,FLC
+ SG_ SRS_Chime : 7|1@0+ (1,0) [0|1] "" GW
+ SG_ SRS_DrSeatBeltRSts : 9|2@0+ (1,0) [0|3] "" GW,VCU_Chassis,ABS_ESC,PAS,FLC,EPB
+
+BO_ 95 EPS_1: 8 EPS
+ SG_ EPS_SteerWheelRotSpd : 23|8@0+ (4,0) [0|1016] "°/s" ABS_ESC,PAS,FLC
+ SG_ EPS_SASFaultSts : 27|1@0+ (1,0) [0|1] "" ABS_ESC,PAS,FLC
+ SG_ EPS_CalibrationSts : 28|1@0+ (1,0) [0|1] "" ABS_ESC,PAS,FLC
+ SG_ EPS_SteerWheelRotSpdValid : 29|1@0+ (1,0) [0|1] "" ABS_ESC,PAS,FLC
+ SG_ EPS_SteeringAngleValid : 30|1@0+ (1,0) [0|1] "" GW,ABS_ESC,PAS,FLC
+ SG_ EPS_PASSteeringSts : 31|1@0+ (1,0) [0|1] "/" PAS
+ SG_ EPS_1_RollingCounter : 51|4@0+ (1,0) [0|15] "" ABS_ESC,PAS,FLC
+ SG_ EPS_1_CheckSUM : 63|8@0+ (1,0) [0|255] "" ABS_ESC,PAS,FLC
+ SG_ EPS_SteerWheelAngle : 7|16@0+ (0.1,-900) [-900|900] "°" GW,ABS_ESC,PAS,FLC
+
+BO_ 371 EPS_2: 8 EPS
+ SG_ EPS_SteeringTorque : 7|8@0+ (0.1,-8) [-8|8] "Nm" PAS
+ SG_ EPS_InhibitCode : 14|3@0+ (1,0) [0|7] "" PAS
+ SG_ EPS_SteeringTorqueValid : 15|1@0+ (1,0) [0|1] "" PAS
+ SG_ EPS_MotorCurrent : 11|12@0+ (0.1,0) [0|120] "A" PAS
+ SG_ EPS_ModeSts : 25|2@0+ (1,0) [0|3] "" GW
+ SG_ EPS_FaultIndLight : 27|2@0+ (1,0) [0|3] "" GW
+ SG_ EPS_RespControlSts : 30|3@0+ (1,0) [0|7] "" PAS
+ SG_ EPS_ModSetInhibit : 31|1@0+ (1,0) [0|1] "" GW
+ SG_ EPS_ControledMode : 39|2@0+ (1,0) [0|2] "" PAS
+ SG_ EPS_2_RollingCounter : 51|4@0+ (1,0) [0|15] "" PAS
+ SG_ EPS_2_CheckSUM : 63|8@0+ (1,0) [0|255] "" PAS
+
+BO_ 373 FLC_1: 8 FLC
+ SG_ FLC_ACCAutoCancel : 1|2@0+ (1,0) [0|2] "" GW
+ SG_ FLC_ACCSetHeadway : 18|3@0+ (1,0) [0|7] "" GW
+ SG_ FLC_ACCCIPVIndicator : 19|1@0+ (1,0) [0|1] "" GW
+ SG_ FLC_FaultSts : 3|2@0+ (1,0) [0|3] "" GW,VCU_Chassis,ABS_ESC
+ SG_ FLC_AEBState : 22|3@0+ (1,0) [0|4] "" GW,ABS_ESC
+ SG_ FLC_ACCOverrideInd : 23|1@0+ (1,0) [0|1] "" GW
+ SG_ FLC_PRWorkSet_Fdback : 24|1@0+ (1,0) [0|1] "" GW
+ SG_ FLC_AEBWorkSet_Fdback : 25|1@0+ (1,0) [0|1] "" GW
+ SG_ FLC_IHCWorkSet_Fdback : 26|1@0+ (1,0) [0|1] "" GW
+ SG_ FLC_FCWWorkSet_Fdback : 27|1@0+ (1,0) [0|1] "" GW
+ SG_ FLC_TSRWorkSet_Fdback : 28|1@0+ (1,0) [0|1] "" GW
+ SG_ FLC_LDWWorkSet_Fdback : 29|1@0+ (1,0) [0|1] "" GW
+ SG_ FLC_ACCTakeoverInd : 30|1@0+ (1,0) [0|1] "" GW
+ SG_ FLC_ACCGoInd : 31|1@0+ (1,0) [0|1] "" GW
+ SG_ FLC_ACCSts : 6|3@0+ (1,0) [0|7] "" GW,VCU_Chassis,ABS_ESC,PAS
+ SG_ FLC_1_RollingCounter : 51|4@0+ (1,0) [0|15] "" GW,VCU_Chassis,ABS_ESC,PAS
+ SG_ FLC_1_CheckSUM : 63|8@0+ (1,0) [0|255] "" GW,VCU_Chassis,ABS_ESC,PAS
+ SG_ FLC_ACCDrCancel : 7|1@0+ (1,0) [0|1] "" GW
+ SG_ FLC_ACCSetSpd : 15|8@0+ (1,0) [0|255] "km/h" GW
+
+BO_ 191 FLC_2: 8 FLC
+ SG_ FLC_ACCTorqueReqSts : 24|1@0+ (1,0) [0|1] "" VCU_Chassis
+ SG_ FLC_FSRFaultSts : 27|3@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ FLC_ACCDecReq : 23|12@0+ (0.01,-20.48) [-20.48|20.47] "m/s2" ABS_ESC
+ SG_ FLC_ACCStandstillReq : 38|1@0+ (1,0) [0|1] "" ABS_ESC
+ SG_ FLC_ACCDecReqSts : 39|1@0+ (1,0) [0|1] "" ABS_ESC
+ SG_ FLC_2_RollingCounter : 51|4@0+ (1,0) [0|15] "" VCU_Chassis,ABS_ESC
+ SG_ FLC_2_CheckSUM : 63|8@0+ (1,0) [0|255] "" VCU_Chassis,ABS_ESC
+ SG_ FLC_ACCTorqueReq : 7|16@0+ (0.0625,-2048) [-2048|2047.9375] "Nm" VCU_Chassis
+
+BO_ 193 FLC_3: 8 FLC
+ SG_ FLC_3_RollingCounter : 39|4@0+ (1,0) [0|15] "" ABS_ESC
+ SG_ FLC_AEBDecReqSts : 4|1@0+ (1,0) [0|1] "" ABS_ESC
+ SG_ FLC_AEBPrefillReq : 5|1@0+ (1,0) [0|1] "" ABS_ESC
+ SG_ FLC_4_CheckSUM : 63|8@0+ (1,0) [0|255] "" ABS_ESC
+ SG_ FLC_AEBJerkReq : 6|1@0+ (1,0) [0|1] "" ABS_ESC
+ SG_ FLC_AEBDecReq : 3|12@0+ (0.01,-20.48) [-20.48|20.46] "m/s2" ABS_ESC
+
+BO_ 375 FLC_4: 8 FLC
+ SG_ FLC_TSRSpdLimit : 7|8@0+ (1,0) [0|120] "km/h" GW
+ SG_ FLC_FCWWarnLevel : 11|2@0+ (1,0) [0|3] "" GW
+ SG_ FLC_PRWarnLevel : 15|2@0+ (1,0) [0|3] "" GW
+ SG_ FLC_LDWWarn : 17|2@0+ (1,0) [0|3] "" GW
+ SG_ FLC_IHCHighbeamReq : 19|2@0+ (1,0) [0|2] "" GW
+ SG_ FLC_PRSts : 22|3@0+ (1,0) [0|4] "" GW
+ SG_ FLC_FCWSts : 26|3@0+ (1,0) [0|4] "" GW
+ SG_ FLC_IHCSts : 29|3@0+ (1,0) [0|4] "" GW
+ SG_ FLC_LDWSts : 34|3@0+ (1,0) [0|4] "" GW
+ SG_ FLC_LDWLineDetectSts : 37|3@0+ (1,0) [0|3] "" GW
+ SG_ FLC_TSRSts : 47|3@0+ (1,0) [0|4] "" GW
+
+BO_ 97 ABS_1: 8 ABS_ESC
+ SG_ ABS_WhlSpdFrntRiRawValidFlag : 24|1@0+ (1,0) [0|1] "" GW,VCU_Chassis,PAS,FLC,FMR,EPB
+ SG_ ABS_WhlSpdFrntRiRaw : 23|15@0+ (0.01,0) [0|327.66] "kph" GW,VCU_Chassis,PAS,FLC,FMR,EPB
+ SG_ ESC_SlopeGradeAngle : 39|8@0+ (1,-45) [-45|45] "degree" GW,VCU_Chassis,PAS,FLC,FMR
+ SG_ ABS_1_RollingCounter : 51|4@0+ (1,0) [0|15] "" GW,VCU_Chassis,PAS,FLC,FMR,EPB
+ SG_ ESC_MasterCylinderPressure : 47|12@0+ (0.1,-100) [-100|309.4] "bar" GW,VCU_Chassis,PAS,FLC,FMR
+ SG_ ABS_1_CheckSUM : 63|8@0+ (1,0) [0|255] "" GW,VCU_Chassis,PAS,FLC,FMR,EPB
+ SG_ ABS_WhlSpdFrntLeRawValidFlag : 8|1@0+ (1,0) [0|1] "" GW,VCU_Chassis,PAS,FLC,FMR,EPB
+ SG_ ABS_WhlSpdFrntLeRaw : 7|15@0+ (0.01,0) [0|327.66] "kph" GW,VCU_Chassis,PAS,FLC,FMR,EPB
+
+BO_ 99 ABS_2: 8 ABS_ESC
+ SG_ ABS_WhlSpdReRiRawValidFlag : 24|1@0+ (1,0) [0|1] "" GW,VCU_Chassis,PAS,FLC,FMR,EPB
+ SG_ ABS_WhlSpdReRiRaw : 23|15@0+ (0.01,0) [0|327.66] "kph" GW,VCU_Chassis,PAS,FLC,FMR,EPB
+ SG_ ABS_VehSpdLgtValidFlag : 40|1@0+ (1,0) [0|1] "" GW,VCU_Chassis,PAS,FLC,FMR,SRS,EPB,EPS
+ SG_ ABS_VehSpdLgt : 39|15@0+ (0.01,0) [0|327.66] "kph" GW,VCU_Chassis,PAS,FLC,FMR,SRS,EPB,EPS
+ SG_ ABS_2_RollingCounter : 51|4@0+ (1,0) [0|15] "" GW,VCU_Chassis,PAS,FLC,EPB,EPS
+ SG_ ESC_ESCFailure : 53|1@0+ (1,0) [0|1] "" GW,VCU_Chassis,PAS,EPB
+ SG_ ESC_TCSFailure : 54|1@0+ (1,0) [0|1] "" GW,VCU_Chassis,PAS,FLC
+ SG_ ABS_ABSFailure : 55|1@0+ (1,0) [0|1] "" GW,VCU_Chassis,PAS,FLC,EPB
+ SG_ ABS_2_CheckSUM : 63|8@0+ (1,0) [0|255] "" GW,VCU_Chassis,PAS,FLC,EPB,EPS
+ SG_ ABS_WhlSpdReLeRawValidFlag : 8|1@0+ (1,0) [0|1] "" GW,VCU_Chassis,PAS,FLC,FMR,EPB
+ SG_ ABS_WhlSpdReLeRaw : 7|15@0+ (0.01,0) [0|327.66] "kph" GW,VCU_Chassis,PAS,FLC,FMR,EPB
+
+BO_ 101 ABS_3: 8 ABS_ESC
+ SG_ ABS_BR1_St_EmergencyBrakeLight : 24|1@0+ (1,0) [0|1] "" GW
+ SG_ ESC_OFF_Stat : 33|1@0+ (1,0) [0|1] "" GW,FLC
+ SG_ ESC_HHC_Control_Status : 34|1@0+ (1,0) [0|1] "" GW
+ SG_ ABS_EBDWarningLamp : 35|1@0+ (1,0) [0|1] "" GW
+ SG_ ESC_ESCWarningLamp : 36|1@0+ (1,0) [0|1] "" GW
+ SG_ ABS_ABSWarningLamp : 37|1@0+ (1,0) [0|1] "" GW
+ SG_ ESC_AutoHarazedBlinking : 39|2@0+ (1,0) [0|3] "" GW
+ SG_ ABS_3_RollingCounter : 51|4@0+ (1,0) [0|15] "" GW
+ SG_ ABS_3_CheckSUM : 63|8@0+ (1,0) [0|255] "" GW
+ SG_ ESC_HHC_Status_Fault : 8|1@0+ (1,0) [0|1] "" GW
+
+BO_ 103 ABS_4: 8 ABS_ESC
+ SG_ ABS_RLWheelSpdPulseValidFlag : 11|1@0+ (1,0) [0|1] "" GW,VCU_Chassis,PAS,EPB
+ SG_ ABS_RRWheelSpdPulseValidFlag : 12|1@0+ (1,0) [0|1] "" GW,VCU_Chassis,PAS,EPB
+ SG_ ABS_RRWheelSpdPulse : 7|11@0+ (1,0) [0|2046] "" GW,VCU_Chassis,PAS,EPB
+ SG_ ABS_RLWheelSpdPulse : 10|11@0+ (1,0) [0|2046] "" GW,VCU_Chassis,PAS,EPB
+ SG_ ABS_FLWheelSpdPulseValidFlag : 35|1@0+ (1,0) [0|1] "" GW,VCU_Chassis,PAS,EPB
+ SG_ ABS_FRWheelSpdPulseValidFlag : 36|1@0+ (1,0) [0|1] "" GW,VCU_Chassis,PAS,EPB
+ SG_ ABS_FRWheelSpdPulse : 31|11@0+ (1,0) [0|2046] "" GW,VCU_Chassis,PAS,EPB
+ SG_ ABS_FLWheelSpdPulse : 34|11@0+ (1,0) [0|2046] "" GW,VCU_Chassis,PAS,EPB
+ SG_ ABS_4_RollingCounter : 51|4@0+ (1,0) [0|15] "" GW,VCU_Chassis,PAS,EPB
+ SG_ ABS_4_CheckSUM : 63|8@0+ (1,0) [0|255] "" GW,VCU_Chassis,PAS,EPB
+
+BO_ 105 ABS_5: 8 ABS_ESC
+ SG_ ESC_LongAcc : 23|12@0+ (0.01,-4) [-4|4] "m/s^2" VCU_Chassis,PAS,FLC,EPB
+ SG_ ESC_LaterAcc : 27|12@0+ (0.01,-4) [-4|4] "m/s^2" VCU_Chassis,PAS,FLC
+ SG_ ESC_ACC_Request_Response : 40|1@0+ (1,0) [0|1] "" PAS,FLC,FMR
+ SG_ ESC_Available : 41|1@0+ (1,0) [0|1] "" PAS,FLC,FMR,EPB
+ SG_ ESC_Active : 42|1@0+ (1,0) [0|1] "" GW,PAS,FLC,FMR,EPB
+ SG_ ABS_Active : 43|1@0+ (1,0) [0|1] "" PAS,FLC,FMR,EPB
+ SG_ ABS_Diag_Session_Status : 44|1@0+ (1,0) [0|1] "" GW,VCU_Chassis,PAS
+ SG_ ESC_LaterAccVd : 45|1@0+ (1,0) [0|1] "" VCU_Chassis,PAS,FLC
+ SG_ ESC_YawRateVd : 46|1@0+ (1,0) [0|1] "" GW,VCU_Chassis,PAS,FLC
+ SG_ ESC_LongAccVd : 47|1@0+ (1,0) [0|1] "" VCU_Chassis,PAS,FLC,EPB
+ SG_ ABS_5_RollingCounter : 51|4@0+ (1,0) [0|15] "" VCU_Chassis,PAS,FLC,FMR,EPB
+ SG_ ESC_AEB_Jerk_Response : 53|1@0+ (1,0) [0|1] "" PAS,FLC,FMR
+ SG_ ESC_AEB_Prefill_Response : 54|1@0+ (1,0) [0|1] "" PAS,FLC,FMR
+ SG_ ESC_AEB_Request_Response : 55|1@0+ (1,0) [0|1] "" PAS,FLC,FMR
+ SG_ ABS_5_CheckSUM : 63|8@0+ (1,0) [0|255] "" VCU_Chassis,PAS,FLC,FMR,EPB
+ SG_ ESC_YawRate : 7|16@0+ (0.01,-128) [-128|128] "deg/sec" GW,VCU_Chassis,PAS,FLC
+
+BO_ 107 ABS_6: 8 ABS_ESC
+ SG_ ABS_EBDFailure : 16|1@0+ (1,0) [0|1] "" GW,VCU_Chassis,PAS
+ SG_ ABS_TorqReqMode : 18|2@0+ (1,0) [0|3] "" VCU_Chassis
+ SG_ ABS_RegenBrakeCtrlStatus : 19|1@0+ (1,0) [0|1] "" VCU_Chassis
+ SG_ ABS_RegenDragCtrlStatus : 20|1@0+ (1,0) [0|1] "" VCU_Chassis
+ SG_ ABS_RegenTorqInterActive : 21|1@0+ (1,0) [0|1] "" VCU_Chassis
+ SG_ ABS_TcsTorqReqActive : 22|1@0+ (1,0) [0|1] "" GW,VCU_Chassis,FLC
+ SG_ ABS_TorqRequestValValid : 23|1@0+ (1,0) [0|1] "" VCU_Chassis
+ SG_ ABS_EPB_Apply_Req : 26|2@0+ (1,0) [0|2] "" VCU_Chassis,EPB
+ SG_ ESC_AH_Status : 27|1@0+ (1,0) [0|1] "" GW,VCU_Chassis,EPB
+ SG_ ESC_AH_Availability : 28|1@0+ (1,0) [0|1] "" GW,EPB
+ SG_ ESC_AH_Enabled : 29|1@0+ (1,0) [0|1] "" GW,EPB
+ SG_ ESC_DPB_inhibit : 30|1@0+ (1,0) [0|1] "" EPB
+ SG_ ESC_DPB_Active : 31|1@0+ (1,0) [0|1] "" GW,EPB
+ SG_ ESC_PAS_Response : 34|3@0+ (1,0) [0|5] "" PAS
+ SG_ ESC_brakestate_feedback : 36|1@0+ (1,0) [0|1] "" PAS
+ SG_ ESC_InhibitCode5 : 40|1@0+ (1,0) [0|1] "" PAS
+ SG_ ESC_InhibitCode4 : 41|1@0+ (1,0) [0|1] "" PAS
+ SG_ ESC_InhibitCode3 : 42|1@0+ (1,0) [0|1] "" PAS
+ SG_ ESC_InhibitCode2 : 43|1@0+ (1,0) [0|1] "" PAS
+ SG_ ESC_InhibitCode1 : 44|1@0+ (1,0) [0|1] "" PAS
+ SG_ ESC_BrakeActive : 45|1@0+ (1,0) [0|1] "" GW,PAS
+ SG_ ESC_QDCFLC : 46|1@0+ (1,0) [0|1] "" FLC
+ SG_ ESC_Hold : 47|1@0+ (1,0) [0|1] "" GW,VCU_Chassis,FLC
+ SG_ ABS_6_RollingCounter : 51|4@0+ (1,0) [0|15] "" VCU_Chassis,PAS,FLC,EPB
+ SG_ ABS_lngit_ECU_available : 53|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ABS_lngit_ECU_Errstate : 54|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ABS_lngit_ECU_state : 55|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ABS_6_CheckSUM : 63|8@0+ (1,0) [0|255] "" VCU_Chassis,PAS,FLC,EPB
+ SG_ ABS_TorqRequestVal : 7|16@0+ (0.1,-350) [-350|350] "Nm" VCU_Chassis
+
+BO_ 109 ABS_7: 8 ABS_ESC
+ SG_ ESC_Wheel_Speed_FL_Direction : 1|2@0+ (1,0) [0|3] "" PAS
+ SG_ ESC_Moving_Direction : 15|2@0+ (1,0) [0|3] "" PAS,FLC
+ SG_ ESC_Wheel_Speed_FR_Direction : 3|2@0+ (1,0) [0|3] "" PAS
+ SG_ ESC_Wheel_Speed_RL_Direction : 5|2@0+ (1,0) [0|3] "" PAS
+ SG_ ABS_7_RollingCounter : 51|4@0+ (1,0) [0|15] "" PAS,FLC
+ SG_ ABS_7_CheckSUM : 63|8@0+ (1,0) [0|255] "" PAS,FLC
+ SG_ ESC_Wheel_Speed_RR_Direction : 7|2@0+ (1,0) [0|3] "" PAS
+
+BO_ 2015 Func_DiagReq: 8 GW
+ SG_ Diag_FuncReq_Data_0 : 7|8@0+ (1,0) [0|255] "" VCU_Chassis,ABS_ESC,PAS,FLC,SRS,EPB,EPS
+ SG_ Diag_FuncReq_Data_2 : 23|8@0+ (1,0) [0|255] "" VCU_Chassis,ABS_ESC,PAS,FLC,SRS,EPB,EPS
+ SG_ Diag_FuncReq_Data_3 : 31|8@0+ (1,0) [0|255] "" VCU_Chassis,ABS_ESC,PAS,FLC,SRS,EPB,EPS
+ SG_ Diag_FuncReq_Data_4 : 39|8@0+ (1,0) [0|255] "" VCU_Chassis,ABS_ESC,PAS,FLC,SRS,EPB,EPS
+ SG_ Diag_FuncReq_Data_5 : 47|8@0+ (1,0) [0|255] "" VCU_Chassis,ABS_ESC,PAS,FLC,SRS,EPB,EPS
+ SG_ Diag_FuncReq_Data_6 : 55|8@0+ (1,0) [0|255] "" VCU_Chassis,ABS_ESC,PAS,FLC,SRS,EPB,EPS
+ SG_ Diag_FuncReq_Data_7 : 63|8@0+ (1,0) [0|255] "" VCU_Chassis,ABS_ESC,PAS,FLC,SRS,EPB,EPS
+ SG_ Diag_FuncReq_Data_1 : 15|8@0+ (1,0) [0|255] "" VCU_Chassis,ABS_ESC,PAS,FLC,SRS,EPB,EPS
+
+BO_ 1844 SRS_DiagReq: 8 GW
+ SG_ Diag_PhyReq_SRS_Data_0 : 7|8@0+ (1,0) [0|255] "" SRS
+ SG_ Diag_PhyReq_SRS_Data_2 : 23|8@0+ (1,0) [0|255] "" SRS
+ SG_ Diag_PhyReq_SRS_Data_3 : 31|8@0+ (1,0) [0|255] "" SRS
+ SG_ Diag_PhyReq_SRS_Data_4 : 39|8@0+ (1,0) [0|255] "" SRS
+ SG_ Diag_PhyReq_SRS_Data_5 : 47|8@0+ (1,0) [0|255] "" SRS
+ SG_ Diag_PhyReq_SRS_Data_6 : 55|8@0+ (1,0) [0|255] "" SRS
+ SG_ Diag_PhyReq_SRS_Data_7 : 63|8@0+ (1,0) [0|255] "" SRS
+ SG_ Diag_PhyReq_SRS_Data_1 : 15|8@0+ (1,0) [0|255] "" SRS
+
+BO_ 1972 SRS_DiagResp: 8 SRS
+ SG_ Diag_Resp_SRS_Data_0 : 7|8@0+ (1,0) [0|255] "" GW
+ SG_ Diag_Resp_SRS_Data_2 : 23|8@0+ (1,0) [0|255] "" GW
+ SG_ Diag_Resp_SRS_Data_3 : 31|8@0+ (1,0) [0|255] "" GW
+ SG_ Diag_Resp_SRS_Data_4 : 39|8@0+ (1,0) [0|255] "" GW
+ SG_ Diag_Resp_SRS_Data_5 : 47|8@0+ (1,0) [0|255] "" GW
+ SG_ Diag_Resp_SRS_Data_6 : 55|8@0+ (1,0) [0|255] "" GW
+ SG_ Diag_Resp_SRS_Data_7 : 63|8@0+ (1,0) [0|255] "" GW
+ SG_ Diag_Resp_SRS_Data_1 : 15|8@0+ (1,0) [0|255] "" GW
+
+BO_ 1907 ABS_DiagReq: 8 GW
+ SG_ Diag_PhyReq_ABS_Data_0 : 7|8@0+ (1,0) [0|255] "" ABS_ESC
+ SG_ Diag_PhyReq_ABS_Data_2 : 23|8@0+ (1,0) [0|255] "" ABS_ESC
+ SG_ Diag_PhyReq_ABS_Data_3 : 31|8@0+ (1,0) [0|255] "" ABS_ESC
+ SG_ Diag_PhyReq_ABS_Data_4 : 39|8@0+ (1,0) [0|255] "" ABS_ESC
+ SG_ Diag_PhyReq_ABS_Data_5 : 47|8@0+ (1,0) [0|255] "" ABS_ESC
+ SG_ Diag_PhyReq_ABS_Data_6 : 55|8@0+ (1,0) [0|255] "" ABS_ESC
+ SG_ Diag_PhyReq_ABS_Data_7 : 63|8@0+ (1,0) [0|255] "" ABS_ESC
+ SG_ Diag_PhyReq_ABS_Data_1 : 15|8@0+ (1,0) [0|255] "" ABS_ESC
+
+BO_ 1971 ABS_DiagResp: 8 ABS_ESC
+ SG_ Diag_Resp_ABS_Data_0 : 7|8@0+ (1,0) [0|255] "" GW
+ SG_ Diag_Resp_ABS_Data_2 : 23|8@0+ (1,0) [0|255] "" GW
+ SG_ Diag_Resp_ABS_Data_3 : 31|8@0+ (1,0) [0|255] "" GW
+ SG_ Diag_Resp_ABS_Data_4 : 39|8@0+ (1,0) [0|255] "" GW
+ SG_ Diag_Resp_ABS_Data_5 : 47|8@0+ (1,0) [0|255] "" GW
+ SG_ Diag_Resp_ABS_Data_6 : 55|8@0+ (1,0) [0|255] "" GW
+ SG_ Diag_Resp_ABS_Data_7 : 63|8@0+ (1,0) [0|255] "" GW
+ SG_ Diag_Resp_ABS_Data_1 : 15|8@0+ (1,0) [0|255] "" GW
+
+BO_ 1847 PAS_DiagReq: 8 GW
+ SG_ Diag_PhyReq_PAS_Data_0 : 7|8@0+ (1,0) [0|255] "" PAS
+ SG_ Diag_PhyReq_PAS_Data_2 : 23|8@0+ (1,0) [0|255] "" PAS
+ SG_ Diag_PhyReq_PAS_Data_3 : 31|8@0+ (1,0) [0|255] "" PAS
+ SG_ Diag_PhyReq_PAS_Data_4 : 39|8@0+ (1,0) [0|255] "" PAS
+ SG_ Diag_PhyReq_PAS_Data_5 : 47|8@0+ (1,0) [0|255] "" PAS
+ SG_ Diag_PhyReq_PAS_Data_6 : 55|8@0+ (1,0) [0|255] "" PAS
+ SG_ Diag_PhyReq_PAS_Data_7 : 63|8@0+ (1,0) [0|255] "" PAS
+ SG_ Diag_PhyReq_PAS_Data_1 : 15|8@0+ (1,0) [0|255] "" PAS
+
+BO_ 1975 PAS_DiagResp: 8 PAS
+ SG_ Diag_Resp_PAS_Data_0 : 7|8@0+ (1,0) [0|255] "" GW
+ SG_ Diag_Resp_PAS_Data_2 : 23|8@0+ (1,0) [0|255] "" GW
+ SG_ Diag_Resp_PAS_Data_3 : 31|8@0+ (1,0) [0|255] "" GW
+ SG_ Diag_Resp_PAS_Data_4 : 39|8@0+ (1,0) [0|255] "" GW
+ SG_ Diag_Resp_PAS_Data_5 : 47|8@0+ (1,0) [0|255] "" GW
+ SG_ Diag_Resp_PAS_Data_6 : 55|8@0+ (1,0) [0|255] "" GW
+ SG_ Diag_Resp_PAS_Data_7 : 63|8@0+ (1,0) [0|255] "" GW
+ SG_ Diag_Resp_PAS_Data_1 : 15|8@0+ (1,0) [0|255] "" GW
+
+BO_ 1846 FLC_DiagReq: 8 GW
+ SG_ Diag_PhyReq_FLC_Data_0 : 7|8@0+ (1,0) [0|255] "" FLC
+ SG_ Diag_PhyReq_FLC_Data_2 : 23|8@0+ (1,0) [0|255] "" FLC
+ SG_ Diag_PhyReq_FLC_Data_3 : 31|8@0+ (1,0) [0|255] "" FLC
+ SG_ Diag_PhyReq_FLC_Data_4 : 39|8@0+ (1,0) [0|255] "" FLC
+ SG_ Diag_PhyReq_FLC_Data_5 : 47|8@0+ (1,0) [0|255] "" FLC
+ SG_ Diag_PhyReq_FLC_Data_6 : 55|8@0+ (1,0) [0|255] "" FLC
+ SG_ Diag_PhyReq_FLC_Data_7 : 63|8@0+ (1,0) [0|255] "" FLC
+ SG_ Diag_PhyReq_FLC_Data_1 : 15|8@0+ (1,0) [0|255] "" FLC
+
+BO_ 1974 FLC_DiagResp: 8 FLC
+ SG_ Diag_Resp_FLC_Data_0 : 7|8@0+ (1,0) [0|255] "" GW
+ SG_ Diag_Resp_FLC_Data_2 : 23|8@0+ (1,0) [0|255] "" GW
+ SG_ Diag_Resp_FLC_Data_3 : 31|8@0+ (1,0) [0|255] "" GW
+ SG_ Diag_Resp_FLC_Data_4 : 39|8@0+ (1,0) [0|255] "" GW
+ SG_ Diag_Resp_FLC_Data_5 : 47|8@0+ (1,0) [0|255] "" GW
+ SG_ Diag_Resp_FLC_Data_6 : 55|8@0+ (1,0) [0|255] "" GW
+ SG_ Diag_Resp_FLC_Data_7 : 63|8@0+ (1,0) [0|255] "" GW
+ SG_ Diag_Resp_FLC_Data_1 : 15|8@0+ (1,0) [0|255] "" GW
+
+BO_ 1842 EPB_DiagReq: 8 GW
+ SG_ Diag_PhyReq_EPB_Data_0 : 7|8@0+ (1,0) [0|255] "" EPB
+ SG_ Diag_PhyReq_EPB_Data_2 : 23|8@0+ (1,0) [0|255] "" EPB
+ SG_ Diag_PhyReq_EPB_Data_3 : 31|8@0+ (1,0) [0|255] "" EPB
+ SG_ Diag_PhyReq_EPB_Data_4 : 39|8@0+ (1,0) [0|255] "" EPB
+ SG_ Diag_PhyReq_EPB_Data_5 : 47|8@0+ (1,0) [0|255] "" EPB
+ SG_ Diag_PhyReq_EPB_Data_6 : 55|8@0+ (1,0) [0|255] "" EPB
+ SG_ Diag_PhyReq_EPB_Data_7 : 63|8@0+ (1,0) [0|255] "" EPB
+ SG_ Diag_PhyReq_EPB_Data_1 : 15|8@0+ (1,0) [0|255] "" EPB
+
+BO_ 1970 EPB_DiagResp: 8 EPB
+ SG_ Diag_Resp_EPB_Data_0 : 7|8@0+ (1,0) [0|255] "" GW
+ SG_ Diag_Resp_EPB_Data_2 : 23|8@0+ (1,0) [0|255] "" GW
+ SG_ Diag_Resp_EPB_Data_3 : 31|8@0+ (1,0) [0|255] "" GW
+ SG_ Diag_Resp_EPB_Data_4 : 39|8@0+ (1,0) [0|255] "" GW
+ SG_ Diag_Resp_EPB_Data_5 : 47|8@0+ (1,0) [0|255] "" GW
+ SG_ Diag_Resp_EPB_Data_6 : 55|8@0+ (1,0) [0|255] "" GW
+ SG_ Diag_Resp_EPB_Data_7 : 63|8@0+ (1,0) [0|255] "" GW
+ SG_ Diag_Resp_EPB_Data_1 : 15|8@0+ (1,0) [0|255] "" GW
+
+BO_ 1841 EPS_DiagReq: 8 GW
+ SG_ Diag_PhyReq_EPS_Data_0 : 7|8@0+ (1,0) [0|255] "" EPS
+ SG_ Diag_PhyReq_EPS_Data_2 : 23|8@0+ (1,0) [0|255] "" EPS
+ SG_ Diag_PhyReq_EPS_Data_3 : 31|8@0+ (1,0) [0|255] "" EPS
+ SG_ Diag_PhyReq_EPS_Data_4 : 39|8@0+ (1,0) [0|255] "" EPS
+ SG_ Diag_PhyReq_EPS_Data_5 : 47|8@0+ (1,0) [0|255] "" EPS
+ SG_ Diag_PhyReq_EPS_Data_6 : 55|8@0+ (1,0) [0|255] "" EPS
+ SG_ Diag_PhyReq_EPS_Data_7 : 63|8@0+ (1,0) [0|255] "" EPS
+ SG_ Diag_PhyReq_EPS_Data_1 : 15|8@0+ (1,0) [0|255] "" EPS
+
+BO_ 1969 EPS_DiagResp: 8 EPS
+ SG_ Diag_Resp_EPS_Data_0 : 7|8@0+ (1,0) [0|255] "" GW
+ SG_ Diag_Resp_EPS_Data_2 : 23|8@0+ (1,0) [0|255] "" GW
+ SG_ Diag_Resp_EPS_Data_3 : 31|8@0+ (1,0) [0|255] "" GW
+ SG_ Diag_Resp_EPS_Data_4 : 39|8@0+ (1,0) [0|255] "" GW
+ SG_ Diag_Resp_EPS_Data_5 : 47|8@0+ (1,0) [0|255] "" GW
+ SG_ Diag_Resp_EPS_Data_6 : 55|8@0+ (1,0) [0|255] "" GW
+ SG_ Diag_Resp_EPS_Data_7 : 63|8@0+ (1,0) [0|255] "" GW
+ SG_ Diag_Resp_EPS_Data_1 : 15|8@0+ (1,0) [0|255] "" GW
+
+
+CM_ "Version:V1.4,Date:2017/8/30,Author:刘贵涛,Check:,Review:高宏国,Approval:张坦华,Description:()1、改变EPS_RespControlSts的信号值描述；
+2、改变EPS_SteeringTorque的信号值描述；
+3、改变VCU_Rx_PASTargetGearResState的信号值描述；
+4、PAS增加接收信号VCU_Rx_PASTargetGearResState；
+5、改变信号SRS_AirbagFailSts的初始值；
+6、删除VCU的诊断请求和响应；
+7、ABS增加接收VCU_RegenTorqueUninventedVaild信号；
+8、ABS/ESC诊断地址更改为ABS_DiagReq 0x773,ABS_DiagResp 0x7B3；
+9、VCU增加接收信号ABS_EPB_Apply_Req；
+10、IHU_9_SET报文中增加IHU_PARK_TherManageReq；
+11、VCU4中增加四个信号：KD状态（DCDC路预充接触器），KM状态，KP1状态（MCU路预充接触器），KP2状态（DCDC路预充接触器）；
+12、EPB的诊断请求和响应ID改变；
+13、EPS_2： EPS_SteeringTorque 方向盘扭矩信号描述（不是信号值描述）增加（Left:+,  Right:-）；
+14、EPB_DisplayInfo 信号值描述更新；
+15、删除信号VCU_ACC_Set_Switch，VCU_ACC_Resume_Switch；
+16、网关增加接收ABS_EBDFailure信号；
+17、vcu_startreqallowed的信号初始值更新为1；
+18、SRS不再接收ICU_Display_WARNING；
+19、VCU_ACC_Set_Setspeed_Inc_Switch信号名称改为 VCU_ACC_RES_Inc_Switch；
+20、ESC_EBDWarningLamp信号名称改为ABS_EBDWarningLamp；;
+Version:V1.3,Date:2017/5/22,Author:刘贵涛,Check:,Review:高宏国,Approval:张坦华,Description:()1.EPS_FaultIndLight的信号值描述更新；
+2.删除VCU_MotorOutputMaxTqReq和VCU_MotorOutputMinTqReq两个信号；
+3.SRS_CrashOutputSts信号增加VCU作为接收节点；
+4.SRS_CrashOutputSts信号更新信号值描述；
+5.SRS_AirbagFailSts、SRS_OCPPDSts信号初始值和信号值描述更新；
+6.SRS_DrSeatBeltRSts、SRS_L_RearPsSeatBeltRSt、SRS_M_RearPsSeatBeltRSt、SRS_R_RearPsSeatBeltRSt信号更新信号值描述；
+7.删除SRS_DrAirbagSts 、SRS_PsAirbagSts 、SRS_PsSeatBeltRSt 信号；
+8.ABS_4报文增加GW接收；
+9.VCU_4、VCU_6增加rolling counter 和checksum；
+10.FLC增加接收ABS_7 rollingcounter和checksum；
+11.FLC增加接收IHU_ESC_OFF_SWIT和IHU_ESC_OFF_SWIT_Valid 信号；
+12.FLC增加接收MCU_2 MCU故障等级；
+13.FLC增加接收BCM_4  Auto 大灯开关位置；
+14.FLC增加发送FLC_IHCHighbeamReq_Valid信号；
+15.EPS_1中删除EPS_AbortFeedback ；
+16.GW接收VCU_2；
+17.BCM_RainLevel 0x3: 由Medium rain 改为Reserved；
+18.IHU_9_SET增加IHU_Tailgate_Set，IHU_Tailgate_Set_Valid ；
+19.SRS增加接收制动踏板信号VCU_BrakepedalSts、VCU_BrakepedalStsValid，以及VCU_1 checksum和rolling counter；
+20.FLC增加接收ESC功能开关信号 ESC_OFF_Stat；
+21.VCU1报文中增加VCU_EmgyIGNOffReqRsp信号；
+22.增加诊断报文；
+23.PAS2报文增加PAS_2_RollingCounter和PAS_2_CheckSUM信号；
+24.PAS3报文的PAS_RollingCounter和PAS_CheckSUM信号名称更改；
+25.删除FLC_IHCHighBeamReq_valid，FLC_IHCHighBeamReq信号长度由一位改为两位，信号值描述 0x0:无请求，0x1：请求打开，0x2：请求关闭；
+26.VCU_EmgyIGNOffReqRsp增加号有效性标志；
+27.更新SRS_1信号值描述；;
+Version:V1.2,Date:2017/2/9,Author:刘贵涛,Check:,Review:高宏国,Approval:张坦华,Description:()1.删除VCU_5;
+2.VCU_2增加发送VCU_RegenTorqueUninventedValid;
+3.OBC_1中OBC_WorkMode=0x3加热模式 更改为热管理模式;
+4.BMS信号 充电信号、电池充电枪连接状态、电池充电方式请求 信号值描述增加逆变模式;
+5.OBC的工作状态信号增加TMM接收；
+6.TBox增加接收如下信号
+a)车辆状态信号（VCU发送）
+b)高压互锁报警（VCU发送）
+c)充电枪连接状态信号（BMS发送）
+d)GW鉴权结果及鉴权失败原因信号（GW发送）
+e)四门两盖状态信号（BCM发送）
+7.VCU增加接收OBC的输出电压和电流；
+8.VCU增加接收TBOX的远程空调控制指令；
+9.BMS发送的充电枪连接状态信号，信号的状态0描述改为No Connect。
+10.ICU增加接收信号信号“故障报警-SOC过低”
+11.VCU增加发送信号“低压电池指示灯”，0：OFF,1:ON.仪表接收。
+12.TBOX增加接收信号“ICU_BrakeFluidLowLevel”
+13.TBox删除信号“双闪请求信号”。
+14.BCM_RainSensor信号名称改为BCM_RainLevel
+14.ICU1报文添加ICU_LowSOC_Ind信号；
+15.FLC_1报文中添加FLC_LDWWorkSet_Fdback，FLC_TSRWorkSet_Fdback，FLC_FCWWorkSet_Fdback，FLC_IHCWorkSet_Fdback，FLC_AEBWorkSet_Fdback，FLC_PRWorkSet_Fdback信号；;
+Version:V1.1,Date:2017/1/26,Author:刘贵涛,Check:,Review:高宏国,Approval:张坦华,Description:()根据现场讨论内容进行的更改;
+Version:V1.0,Date:2018/1/14,Author:刘贵涛,Check:,Review:高宏国,Approval:张坦华,Description:()初始版本;
+ ";
+
+CM_ SG_ 81 VCU_AccPosition "加速踏板行程值";
+CM_ SG_ 81 VCU_AccPositionValid "加速踏板行程值有效性标志位";
+CM_ SG_ 81 VCU_BrakepedalSts "制动踏板状态";
+CM_ SG_ 81 VCU_BrakepedalStsValid "制动踏板状态有效性标志位";
+CM_ SG_ 81 VCU_MotorTqCompensationReq "电机扭矩补偿使能（预留）";
+CM_ SG_ 81 VCU_MCUEnableReq "MCU使能请求";
+CM_ SG_ 81 VCU_ReadySts "ready指示";
+CM_ SG_ 81 VCU_KScontrol_Cmd "主负继电器控制命令（包含BMS高压下电请求应答）";
+CM_ SG_ 81 VCU_KScontrol_Cmd_Valid "主负继电器控制命令有效位";
+CM_ SG_ 81 VCU_ChargeAllowed "充电允许";
+CM_ SG_ 81 VCU_ChargeAllowedValid "充电允许有效位";
+CM_ SG_ 81 VCU_ParkCmd "P档指令";
+CM_ SG_ 81 VCU_ActualGearPosition "实际档位状态";
+CM_ SG_ 81 VCU_ActualGearPositionValid "实际档位状态有效性标志位";
+CM_ SG_ 81 VCU_HighVoltLoopLockFault "高压互锁故障";
+CM_ SG_ 81 VCU_BrakeLightReq "刹车灯请求";
+CM_ SG_ 81 VCU_EmgyIGNOffReqRsp "紧急下电请求的响应";
+CM_ SG_ 81 VCU_EmgyIGNOffReqRspVaild "紧急下电请求的响应有效性";
+CM_ SG_ 81 VCU_1_RollingCounter "循环计数器";
+CM_ SG_ 81 VCU_1_CheckSUM "校检和 checksum = (Byte0+Byte1 …+ Byte6) XOR 0xFF";
+CM_ SG_ 83 VCU_BrakeEnergyRegenCrntMaxTq "制动能量回收当前最大扭矩";
+CM_ SG_ 83 VCU_BrakePressure "制动压力（来自真空度传感器）";
+CM_ SG_ 83 VCU_RegenTorqueUninvented "可以进行能量回收的标志，ESC通过该信号判断进行制动能量回收";
+CM_ SG_ 83 VCU_RegenTorqueUninventedVaild "可以进行能量回收的标志信号有效性";
+CM_ SG_ 83 VCU_TqReductionRqstResponse "对扭矩降低请求的回应";
+CM_ SG_ 83 VCU_Rx_PASTargetGearResState "自动泊车档位响应状态
+";
+CM_ SG_ 83 VCU_Rx_PASTargetGearPosition "VCU接收到PAS请求的目标档位值";
+CM_ SG_ 83 VCU_BeControlledStatus "VCU受控状态";
+CM_ SG_ 83 VCU_Accel_Padel_Override "This signal indicates if acceleration pedal torque is larger than ACC torque request";
+CM_ SG_ 83 VCU_Kickdown_AEB "request for kickdown (AEB)";
+CM_ SG_ 83 VCU_Request_Response "The signal indicates if VCU is responsing the system request or not";
+CM_ SG_ 83 VCU_QDCFLC "VCU检测到FLC所发报文checksum、Alivecounter错误的信号";
+CM_ SG_ 83 VCU_BrakepedalPos "制动踏板行程信号";
+CM_ SG_ 83 VCU_BrakepedalPosValid "制动踏板行程信号有效性标志位";
+CM_ SG_ 83 VCU_2_RollingCounter "循环计数器";
+CM_ SG_ 83 VCU_2_CheckSUM "校检和 checksum = (Byte0+Byte1 …+ Byte6) XOR 0xFF";
+CM_ SG_ 85 VCU_MotOperModeReq "电机工作模式请求";
+CM_ SG_ 85 VCU_MotOutputSpdReq "电机输出转速请求";
+CM_ SG_ 85 VCU_MotOutputTqReq "电机输出扭矩请求";
+CM_ SG_ 85 VCU_AllowedTqRiseGradient "扭矩允许上升梯度";
+CM_ SG_ 85 VCU_3_RollingCounter "循环计数器";
+CM_ SG_ 85 VCU_3_CheckSUM "校检和 checksum = (Byte0+Byte1 …+ Byte6) XOR 0xFF";
+CM_ SG_ 369 VCU_FaultLevel "VCU故障等级";
+CM_ SG_ 369 VCU_VehRunMod "车辆运行模式";
+CM_ SG_ 369 VCU_EACOpnAlwd "EAC开启允许";
+CM_ SG_ 369 VCU_PTCOpnAlwd "PTC开启允许";
+CM_ SG_ 369 VCU_TMMPwrLim "TMM功率限制";
+CM_ SG_ 369 VCU_DCDCOpModReq "DCDC工作模式请求";
+CM_ SG_ 369 VCU_DCDCOutPwrLim "DCDC输出功率限制";
+CM_ SG_ 369 VCU_StartReqAllowed "PEPS的Start请求允许";
+CM_ SG_ 369 VCU_KScontrol_lowside_status "主负继电器低端状态";
+CM_ SG_ 369 VCU_VehSts "车辆状态";
+CM_ SG_ 369 KD_Testonly "KD状态（DCDC路预充接触器）";
+CM_ SG_ 369 KM_Testonly "KM状态";
+CM_ SG_ 369 KP1_Testonly "KP1状态（MCU路预充接触器）";
+CM_ SG_ 369 KP2_Testonly "KP2状态（DCDC路预充接触器）";
+CM_ SG_ 369 VCU_4_RollingCounter "循环计数器";
+CM_ SG_ 369 VCU_4_CheckSUM "校检和 checksum = (Byte0+Byte1 …+ Byte6) XOR 0xFF";
+CM_ SG_ 195 VCU_ACC_Main_Switch "ACC main switch status";
+CM_ SG_ 195 VCU_ACC_RES_Inc_Switch "ACC Resume switch status or ACC setspeed increasement  switch status.";
+CM_ SG_ 195 VCU_ACC_Set_Setspeed_Dec_Switch "ACC Set switch status or ACC setspeed decreasement switch status.";
+CM_ SG_ 195 VCU_ACC_Cancel_Switch "ACC cancel switch status";
+CM_ SG_ 195 VCU_ACC_Headway_Inc_Switch "ACC headway increasement switch status";
+CM_ SG_ 195 VCU_ACC_Headway_Dec_Switch "ACC headway decreasement switch status";
+CM_ SG_ 195 VCU_ACC_Switch_Available "indicates if ACC switch is available";
+CM_ SG_ 195 VCU_6_RollingCounter "循环计数器";
+CM_ SG_ 195 VCU_6_CheckSUM "校检和 checksum = (Byte0+Byte1 …+ Byte6) XOR 0xFF";
+CM_ SG_ 87 MCU_MotorSpd "驱动电机当前转速";
+CM_ SG_ 87 MCU_MotSpdValid "驱动电机转速有效";
+CM_ SG_ 87 MCU_MotorPresentTorque "驱动电机当前转矩";
+CM_ SG_ 87 MCU_MotTqValid "驱动电机扭矩有效";
+CM_ SG_ 87 MCU_MotorCurrentPower "驱动电机实时功率";
+CM_ SG_ 87 MCU_MotorPresentSts "驱动电机当前状态";
+CM_ SG_ 87 MCU_1_RollingCounter "循环计数器";
+CM_ SG_ 87 MCU_1_CheckSUM "校检和 checksum = (Byte0+Byte1 …+ Byte6) XOR 0xFF";
+CM_ SG_ 89 MCU_Volt "MCU母线电压";
+CM_ SG_ 89 MCU_Current "MCU母线电流";
+CM_ SG_ 89 MCU_MaxAvlTq "最大可用扭矩";
+CM_ SG_ 89 MCU_MinAvlTq "最小可用扭矩";
+CM_ SG_ 89 MCU_FaultLevel "MCU故障等级";
+CM_ SG_ 89 MCU_MotorOperMode "驱动电机工作模式";
+CM_ SG_ 89 MCU_2_RollingCounter "循环计数器";
+CM_ SG_ 89 MCU_2_CheckSUM "校检和 checksum = (Byte0+Byte1 …+ Byte6) XOR 0xFF";
+CM_ SG_ 197 MCU_MotorTemp "驱动电机温度";
+CM_ SG_ 197 TMM_OutsideTemperature "环境温度（精度较低）";
+CM_ SG_ 197 BMS_MaxPresentTemp "电池当前最高温度";
+CM_ SG_ 197 BMS_SOC "电池包SOC";
+CM_ SG_ 197 GSM_KnobPosition "换挡旋钮当前位置信息（自复位型）";
+CM_ SG_ 197 GSM_PButtonState "P档按键状态（自复位型）";
+CM_ SG_ 579 BCM_DrDoorAjarSts "Driver door ajar";
+CM_ SG_ 579 BCM_PsDoorAjarSts "Passenger  door ajar";
+CM_ SG_ 579 BCM_RLDoorAjarSts "RL door ajar";
+CM_ SG_ 579 BCM_RRDoorAjarSts "RR door ajar";
+CM_ SG_ 579 BCM_RearDoorAjarSts "Rear door ajar";
+CM_ SG_ 579 BCM_BonnetAjarSts "indicates if bonnet is closed";
+CM_ SG_ 579 BCM_DrDoorLockSts "Driver door lock status";
+CM_ SG_ 579 BCM_ChargeLockSts "Charge lock status";
+CM_ SG_ 579 BCM_DoorLockSts "Door Lock/Unlock Status
+(BCM实际输出的状态，可能与实际情况不相符)";
+CM_ SG_ 579 BCM_PositionLampFault "Position lamp fault state";
+CM_ SG_ 579 BCM_LisenseLampFault "LisenseLamp lamp fault state";
+CM_ SG_ 579 BCM_RFogLampFault "Rear Fog Lamp  fault state";
+CM_ SG_ 579 BCM_ReverseLampFault "Reverse Lamp  fault state";
+CM_ SG_ 579 BCM_LDirectionLampFault "Left Direction Lamp  fault state(周期由50改为100ms)";
+CM_ SG_ 579 BCM_RDirectionLampFault "Right Direction Lamp  fault state(周期由50改为100ms)";
+CM_ SG_ 579 BCM_BrakeLampFault "Brake Lamp  fault state";
+CM_ SG_ 579 BCM_LFFogLampFault "Left Front Fog Lamp  fault state";
+CM_ SG_ 579 BCM_RFFogLampFault "Right Front Fog Lamp  fault state";
+CM_ SG_ 579 BCM_PositionLampSts "Position lamp status";
+CM_ SG_ 579 BCM_BacklightLampSts "Back Light Lamp  Status";
+CM_ SG_ 579 BCM_BrakeLampSts "BrakeLamp Status";
+CM_ SG_ 579 BCM_HBrakeLampSts "HBrakeLamp  Status";
+CM_ SG_ 579 BCM_LCornerLampSts "Left Corner Lamp";
+CM_ SG_ 579 BCM_RCornerLampSts "Right Corner Lamp";
+CM_ SG_ 579 BCM_FFogLampSts "Front Fog Lamp  Status";
+CM_ SG_ 579 BCM_RFogLampSts "Rear Fog Lamp  Status";
+CM_ SG_ 579 BCM_ReverseLampSts "Reverse Lamp  Status";
+CM_ SG_ 579 BCM_TurnSwSts "TurnSwSts";
+CM_ SG_ 579 BCM_LDirectionLampSts "Left Direction Lamp  Status";
+CM_ SG_ 579 BCM_RDirectionLampSts "Right Direction Lamp  Status";
+CM_ SG_ 579 BCM_LDayRunLightSts "Left Day Run Light  Status";
+CM_ SG_ 579 BCM_RDayRunLightSts "Right Day Run Light  Status";
+CM_ SG_ 579 BCM_DefrostSts "Defrost  Status除霜";
+CM_ SG_ 579 BCM_DomeLightSts "Dome light  Status";
+CM_ SG_ 579 BCM_TrunkLampSts "Trunk Lamp  Status";
+CM_ SG_ 579 BCM_WndScDefrostSts "Window Screen Defrost Status";
+CM_ SG_ 579 BCM_LowBeamSts "Low Beam Status";
+CM_ SG_ 579 BCM_HighBeamSts "High Beam Status";
+CM_ SG_ 579 BCM_HazardIndSts "Hazard IND Status";
+CM_ SG_ 579 BCM_DefrostIndSts "Defrost  Indicator Status";
+CM_ SG_ 579 BCM_CenterLockIndSts "Center Lock  Indicator Status";
+CM_ SG_ 579 BCM_SSBIndSts "SSB IND Status";
+CM_ SG_ 579 BCM_WndScDefrostIndSts "Window Screen Defrost Indicator Status";
+CM_ SG_ 579 BCM_LBlindSpotMonitorIndSts "Left Blind spot monitoring indicator Status";
+CM_ SG_ 579 BCM_RBlindSpotMonitorIndSts "Right Blind spot monitoring indicator Status";
+CM_ SG_ 579 BCM_TrunkSw "Trunk Switch";
+CM_ SG_ 579 BCM_RollingCounter "循环计数器";
+CM_ SG_ 579 BCM_CheckSUM "校检和 checksum = (Byte0+Byte1 …+ Byte6) XOR 0xFF";
+CM_ SG_ 615 BCM_RearWiperSts "Rear wiper state";
+CM_ SG_ 615 BCM_FrontWiperSw "Front wiper switch";
+CM_ SG_ 615 BCM_FrontWiperSts "Front wiper state";
+CM_ SG_ 615 BCM_AmbientLightLevel "indicate illuminate level";
+CM_ SG_ 615 BCM_RainLevel "indicate rain level";
+CM_ SG_ 615 PEPS_PDUstatus "Power distribution feedback from PDU status";
+CM_ SG_ 615 BCM_Auto_HeadBeamSwitchPosition "Auto 大灯开关位置";
+CM_ SG_ 595 ICU_VehSped_Displayed_Valid "indicates if vehicle speed displayed is valid";
+CM_ SG_ 595 ICU_VehSped_Displayed "ICU displayed vehicle speed";
+CM_ SG_ 595 ICU_KiloMeter "KiloMeter Value of The Car累计里程";
+CM_ SG_ 595 ICU_Display_WARNING "显示屏故障状态(IC是否可用+安全气囊故障灯状态信号)";
+CM_ SG_ 595 ICU_theme_status "主题模式状态";
+CM_ SG_ 595 ICU_QDCFLC "ICU检测到FLC所发报文checksum、Alivecounter错误的信号";
+CM_ SG_ 595 ICU_BrakeFluidLowLevel "制动液位低信号";
+CM_ SG_ 595 ICU_LowSOC_Ind "SOC过低信号(根据电量计算，区别于BMS的故障信号)";
+CM_ SG_ 595 ICU_1_RollingCounter "循环计数器";
+CM_ SG_ 595 ICU_1_CheckSUM "校检和 checksum = (Byte0+Byte1 …+ Byte6) XOR 0xFF";
+CM_ SG_ 145 IHU_VSG_Set "发声器关闭与开启";
+CM_ SG_ 145 IHU_VSG_Set_Valid "发声器关闭与开启有效性信号";
+CM_ SG_ 145 IHU_VSG_ToneShift "发声器切换音色";
+CM_ SG_ 145 IHU_VSG_ToneShift_Valid "发声器切换音色有效性信号";
+CM_ SG_ 145 IHU_SET_EPSmode "EPS助力模式设置信号";
+CM_ SG_ 145 IHU_SET_EPSmode_Valid "EPS助力模式设置信号有效性信号";
+CM_ SG_ 145 IHU_ESC_OFF_SWIT "ESC_OFF开关";
+CM_ SG_ 145 IHU_ESC_OFF_SWIT_Valid "ESC_OFF开关有效性信号";
+CM_ SG_ 145 IHU_BSD_Key "BSD启动/关闭";
+CM_ SG_ 145 IHU_BSD_Key_Valid "BSD启动/关闭有效性信号";
+CM_ SG_ 145 IHU_WPC_workSet "无线充电功能开启/关闭";
+CM_ SG_ 145 IHU_WPC_workSet_Valid "无线充电功能开启/关闭有效性信号";
+CM_ SG_ 145 IHU_Rear_traffic_Assist "后方交通穿行辅助RCTA Key";
+CM_ SG_ 145 IHU_Rear_traffic_Assist_Valid "后方交通穿行辅助RCTA Key有效性信号";
+CM_ SG_ 145 IHU_DoorOpenWarning "开门警示DOW Key";
+CM_ SG_ 145 IHU_DoorOpenWarning_Valid "开门警示DOW Key有效性信号";
+CM_ SG_ 145 IHU_ChangeLine_workSet "变道辅助 Key";
+CM_ SG_ 145 IHU_ChangeLine_workSet_Valid "变道辅助 Key有效性信号";
+CM_ SG_ 145 IHU_LDW_workSet "车道偏离报警 Key";
+CM_ SG_ 145 IHU_LDW_workSet_Valid "车道偏离报警 Key有效性信号";
+CM_ SG_ 145 IHU_FCW_workSet "前碰撞预警 Key";
+CM_ SG_ 145 IHU_FCW_workSet_Valid "前碰撞预警 Key有效性信号";
+CM_ SG_ 145 IHU_TSR_workSet "交通标识识别 Key";
+CM_ SG_ 145 IHU_TSR_workSet_Valid "交通标识识别 Key有效性信号";
+CM_ SG_ 145 IHU_TopicMode_Shift_Req "主题模式切换请求信号Key";
+CM_ SG_ 145 IHU_TopicMode_Shift_Req_Valid "主题模式切换请求信号Key有效性信号";
+CM_ SG_ 145 IHU_VehMode_Ctrl "整车模式切换控制";
+CM_ SG_ 145 IHU_VehMode_Ctrl_Valid "整车模式切换控制有效性信号";
+CM_ SG_ 145 IHU_Regen_Switch "能量回收控制开关";
+CM_ SG_ 145 IHU_Regen_Switch_Valid "能量回收控制开关有效性信号";
+CM_ SG_ 145 IHU_PASModeSelect "PAS模式选择";
+CM_ SG_ 145 IHU_PASModeSelect_Valid "PAS模式选择有效性信号";
+CM_ SG_ 145 IHU_PASDisclaimer "PAS免责申明选择";
+CM_ SG_ 145 IHU_PASDisclaimer_Valid "PAS免责申明选择有效性信号";
+CM_ SG_ 145 IHU_PASConfirm "PAS确认选择";
+CM_ SG_ 145 IHU_PASConfirm_Valid "PAS确认选择有效性信号";
+CM_ SG_ 145 IHU_LCA_Key "LCA启动/关闭";
+CM_ SG_ 145 IHU_LCA_Key_Valid "LCA启动/关闭有效性信号";
+CM_ SG_ 145 IHU_SOD_Key "SOD启动/关闭";
+CM_ SG_ 145 IHU_SOD_Key_Valid "SOD启动/关闭有效性信号";
+CM_ SG_ 145 IHU_IHC_workSet "智能大灯控制 Key";
+CM_ SG_ 145 IHU_IHC_workSet_Valid "智能大灯控制 Key有效性信号";
+CM_ SG_ 145 IHU_AEB_workSet "自动紧急刹车 Key";
+CM_ SG_ 145 IHU_AEB_workSet_Valid "自动紧急刹车 Key有效性信号";
+CM_ SG_ 145 IHU_PR_workSet "行人探测系统 Key";
+CM_ SG_ 145 IHU_PR_workSet_Valid "行人探测系统 Key有效性信号";
+CM_ SG_ 145 IHU_Tailgate_Set "电动尾门开关设置";
+CM_ SG_ 145 IHU_Tailgate_Set_Valid "电动尾门开关设置有效性";
+CM_ SG_ 145 IHU_PARK_TherManageReq "驻车热管理开启和关闭请求";
+CM_ SG_ 593 AVM_STAUTS "AVM status ON or OFF";
+CM_ SG_ 593 AVM_CHECK_IHU_READY "AVM check IHU is ready";
+CM_ SG_ 593 AVM_RESPONSE "AVM response";
+CM_ SG_ 593 AVM_ERROR "AVM error";
+CM_ SG_ 593 AVM_View_State_Rsp "View change（视图切换）";
+CM_ SG_ 593 AVM_2D3D_State_Rsp "2D/3D change（2D/3D切换）";
+CM_ SG_ 593 AVM_Dynamic_trajectory_Rsp "动态轨迹线";
+CM_ SG_ 577 PAS_RLCDistance "左后角sensor障碍物距离";
+CM_ SG_ 577 PAS_RLMDistance "后左中sensor障碍物距离";
+CM_ SG_ 577 PAS_RRMDistance "后右中sensor障碍物距离";
+CM_ SG_ 577 PAS_RRCDistance "右后角sensor障碍物距离";
+CM_ SG_ 577 PAS_FLCDistance "左前sensor障碍物距离";
+CM_ SG_ 577 PAS_FLMDistance "左前中sensor障碍物距离";
+CM_ SG_ 577 PAS_FRMDistance "右前中sensor障碍物距离";
+CM_ SG_ 577 PAS_FRCDistance "右前sensor障碍物距离";
+CM_ SG_ 577 PAS_WarnType "报警方式识别";
+CM_ SG_ 577 PAS_WarnFrequency "前后角识别";
+CM_ SG_ 577 PAS_SystemFaultFlag "倒车雷达系统故障";
+CM_ SG_ 577 PAS_MODE "倒车雷达的工作模式";
+CM_ SG_ 577 PAS_RLSDistance "左后侧sensor障碍物距离";
+CM_ SG_ 577 PAS_RRSDistance "右后侧sensor障碍物距离";
+CM_ SG_ 577 PAS_FLSDistance "左前侧sensor障碍物距离";
+CM_ SG_ 577 PAS_FRSDistance "右前侧sensor障碍物距离";
+CM_ SG_ 183 PAS_ParkSideInd "已选择的PAS泊车的位置提示";
+CM_ SG_ 183 PAS_ParkSlotSearchInd "PAS泊车寻找SLOT提示";
+CM_ SG_ 183 PAS_SteerControlReq "PAS转向控制请求";
+CM_ SG_ 183 PAS_GearBoxReq "PAS换挡控制请求";
+CM_ SG_ 183 PAS_DrRqst "自动泊车过程控制请求";
+CM_ SG_ 183 PAS_RecoverInterrupt_Indication "PAS暂停提示
+暂停：30秒时间，ESC处于保压状态；";
+CM_ SG_ 183 PAS_QuitInd "PAS完全退出提示";
+CM_ SG_ 183 PAS_TargetGearPositionReq "请求目标挡位值 ";
+CM_ SG_ 183 PAS_ParkPercentage "泊车进度条显示";
+CM_ SG_ 183 PAS_DeadManButtonPress "PAS安全开关";
+CM_ SG_ 183 PAS_TargetSteerAngle "PAS目标转向角度(方向盘往零点左转为正，零点右转为负)";
+CM_ SG_ 183 PAS_TargetSteerAngleValid "PAS目标转向角度有效位";
+CM_ SG_ 183 PAS_Mode_State "PAS模式状态";
+CM_ SG_ 183 PAS_2_RollingCounter "循环计数器";
+CM_ SG_ 183 PAS_2_CheckSUM "校检和 checksum = (Byte0+Byte1 …+ Byte6) XOR 0xFF";
+CM_ SG_ 185 PAS_Sts "PAS状态";
+CM_ SG_ 185 PAS_PASFunOpenSts "PAS功能开启状态";
+CM_ SG_ 185 PAS_ESCControlReq "PAS请求ESC控制";
+CM_ SG_ 185 PAS_SWAngleSpdLimit "PAS设定的方向盘转角速度最大限定值";
+CM_ SG_ 185 PAS_MaxControlSpd "请求泊车最大控制速度";
+CM_ SG_ 185 PAS_TargetDistance "请求泊车目标距离";
+CM_ SG_ 185 PAS_Fault "自动泊车故障信号";
+CM_ SG_ 185 PAS_ESCReqMode "PAS请求当前ESC进入的刹车模式（保留舒适刹车和紧急刹车信号，ESC用该信号做对比）";
+CM_ SG_ 185 PAS_TargetAddDecValue "请求泊车目标加减速度";
+CM_ SG_ 185 PAS_3_RollingCounter "循环计数器";
+CM_ SG_ 185 PAS_3_CheckSUM "校检和 checksum = (Byte0+Byte1 …+ Byte6) XOR 0xFF";
+CM_ SG_ 187 EPB_WorkMode "工作模式";
+CM_ SG_ 187 EPB_MaxPowerPark "最大力驻车状态";
+CM_ SG_ 187 EPB_LightBrakeLamp "请求制动尾灯点亮";
+CM_ SG_ 187 EPB_AutoParkKey "模式开关（带ESC的表示AVH开关；不带ESC的表示EPB开关）
+（此信号和已经删除的EPB_AVHSwitchStsValid 、EPB_AVHSwitchSts 信号含义相同）";
+CM_ SG_ 187 EPB_ManualParkKey "驻车开关";
+CM_ SG_ 187 EPB_ParkIndLight "驻车指示灯";
+CM_ SG_ 187 EPB_FaultIndLight "故障指示灯";
+CM_ SG_ 187 EPB_ActuatorSts "当前工作状态
+（此信号包括DynamicBraking）";
+CM_ SG_ 187 EPB_ParkBrakeValid "驻车功能有效（表示EPB能否响应外部请求驻车）";
+CM_ SG_ 187 EPB_DecSpdReqValid "电子减速请求有效位（请求ESC制动减速请求是否有效，针对CDP功能）";
+CM_ SG_ 187 EPB_DecSpdReq "电子减速请求";
+CM_ SG_ 187 EPB_DisplayInfo "EPB提示信号";
+CM_ SG_ 187 EPB_RollingCounter "循环计数器";
+CM_ SG_ 187 EPB_CheckSUM "校检和 checksum = (Byte0+Byte1 …+ Byte6) XOR 0xFF";
+CM_ SG_ 189 SRS_AirbagFailSts "Indicate airbag ECU failure status";
+CM_ SG_ 189 SRS_DrSeatBeltRSts "Indicate driver seat belt status";
+CM_ SG_ 189 SRS_OCPPDSts "重量传感器状态";
+CM_ SG_ 189 SRS_L_RearPsSeatBeltRSt "后排左安全带状态";
+CM_ SG_ 189 SRS_M_RearPsSeatBeltRSt "后排中安全带状态";
+CM_ SG_ 189 SRS_R_RearPsSeatBeltRSt "后排右安全带状态";
+CM_ SG_ 189 SRS_RollingCounter "循环计数器";
+CM_ SG_ 189 SRS_CheckSUM "校检和 checksum = (Byte0+Byte1 …+ Byte6) XOR 0xFF";
+CM_ SG_ 95 EPS_SteerWheelAngle "实际方向盘转角（Left:+,  Right:-）";
+CM_ SG_ 95 EPS_SteerWheelRotSpd "方向盘转角速度";
+CM_ SG_ 95 EPS_PASSteeringSts "方向盘状态反馈Reserved";
+CM_ SG_ 95 EPS_SteeringAngleValid "实际方向盘转角信号有效性";
+CM_ SG_ 95 EPS_SteerWheelRotSpdValid "方向盘转角速度信号有效性";
+CM_ SG_ 95 EPS_CalibrationSts "方向盘转角标定位";
+CM_ SG_ 95 EPS_SASFaultSts "方向盘转角传感器错误标志";
+CM_ SG_ 95 EPS_1_RollingCounter "循环计数器";
+CM_ SG_ 95 EPS_1_CheckSUM "校检和 checksum = (Byte0+Byte1 …+ Byte6) XOR 0xFF";
+CM_ SG_ 371 EPS_SteeringTorque "方向盘扭矩 Left:+,  Right:-";
+CM_ SG_ 371 EPS_InhibitCode "EPS失效代码";
+CM_ SG_ 371 EPS_SteeringTorqueValid "方向盘扭矩信号有效性";
+CM_ SG_ 371 EPS_MotorCurrent "转向电机电流";
+CM_ SG_ 371 EPS_ModeSts "EPS助力模式状态";
+CM_ SG_ 371 EPS_FaultIndLight "EPS故障灯指示";
+CM_ SG_ 371 EPS_RespControlSts "EPS应答控制状态";
+CM_ SG_ 371 EPS_ModSetInhibit "EPS模式切换允许信号";
+CM_ SG_ 371 EPS_ControledMode "EPS受控模式                        ";
+CM_ SG_ 371 EPS_2_RollingCounter "循环计数器";
+CM_ SG_ 371 EPS_2_CheckSUM "校检和 checksum = (Byte0+Byte1 …+ Byte6) XOR 0xFF";
+CM_ SG_ 373 FLC_ACCAutoCancel "indicate auto cancel";
+CM_ SG_ 373 FLC_FaultSts "indicate system error status";
+CM_ SG_ 373 FLC_ACCSts "indicate system working state";
+CM_ SG_ 373 FLC_ACCDrCancel "indicate driver cancel operation";
+CM_ SG_ 373 FLC_ACCSetSpd "driver selected cruise speed";
+CM_ SG_ 373 FLC_ACCSetHeadway "driver selected follow headway";
+CM_ SG_ 373 FLC_ACCCIPVIndicator "indicate CIPV detection status";
+CM_ SG_ 373 FLC_AEBState "indicate system working state";
+CM_ SG_ 373 FLC_ACCOverrideInd "indicate driver override operation";
+CM_ SG_ 373 FLC_ACCTakeoverInd "indicate driver takeover operation";
+CM_ SG_ 373 FLC_ACCGoInd "GO notifier for stop & go function";
+CM_ SG_ 373 FLC_LDWWorkSet_Fdback "LDW的设置状态反馈";
+CM_ SG_ 373 FLC_TSRWorkSet_Fdback "TSR的设置状态反馈";
+CM_ SG_ 373 FLC_FCWWorkSet_Fdback "FCW的设置状态反馈";
+CM_ SG_ 373 FLC_IHCWorkSet_Fdback "IHC的设置状态反馈";
+CM_ SG_ 373 FLC_AEBWorkSet_Fdback "AEB的设置状态反馈";
+CM_ SG_ 373 FLC_PRWorkSet_Fdback "PR的设置状态反馈";
+CM_ SG_ 373 FLC_1_RollingCounter "循环计数器";
+CM_ SG_ 373 FLC_1_CheckSUM "校检和 checksum = (Byte0+Byte1 …+ Byte6) XOR 0xFF";
+CM_ SG_ 191 FLC_ACCTorqueReq "torque request value";
+CM_ SG_ 191 FLC_ACCTorqueReqSts "indicate if there is a torque request";
+CM_ SG_ 191 FLC_ACCDecReqSts "indicate if there is a decelerate request";
+CM_ SG_ 191 FLC_ACCStandstillReq "standstill request";
+CM_ SG_ 191 FLC_ACCDecReq "decelerate request value";
+CM_ SG_ 191 FLC_FSRFaultSts "indicate front MMW radar error status";
+CM_ SG_ 191 FLC_2_RollingCounter "循环计数器";
+CM_ SG_ 191 FLC_2_CheckSUM "校检和 checksum = (Byte0+Byte1 …+ Byte6) XOR 0xFF";
+CM_ SG_ 193 FLC_AEBDecReqSts "indicate if there is a decelerate request";
+CM_ SG_ 193 FLC_AEBPrefillReq "prefill request";
+CM_ SG_ 193 FLC_AEBJerkReq "jerk request";
+CM_ SG_ 193 FLC_AEBDecReq "decelerate request value";
+CM_ SG_ 193 FLC_3_RollingCounter "循环计数器";
+CM_ SG_ 193 FLC_4_CheckSUM "校检和 checksum = (Byte0+Byte1 …+ Byte6) XOR 0xFF";
+CM_ SG_ 375 FLC_TSRSpdLimit "indicate recognized speed limit";
+CM_ SG_ 375 FLC_FCWWarnLevel "indicate the current warning level";
+CM_ SG_ 375 FLC_PRWarnLevel "indicate the current warning level";
+CM_ SG_ 375 FLC_LDWWarn "indicate the current warning direction";
+CM_ SG_ 375 FLC_PRSts "indicate system working state";
+CM_ SG_ 375 FLC_IHCHighbeamReq "turn on or shut down high beam request";
+CM_ SG_ 375 FLC_FCWSts "indicate system working state";
+CM_ SG_ 375 FLC_IHCSts "indicate system working state";
+CM_ SG_ 375 FLC_LDWSts "indicate system working state";
+CM_ SG_ 375 FLC_LDWLineDetectSts "indicate system lane mark detection status";
+CM_ SG_ 375 FLC_TSRSts "indicate system working state";
+CM_ SG_ 97 ABS_WhlSpdFrntLeRaw "左前轮当前轮速";
+CM_ SG_ 97 ABS_WhlSpdFrntLeRawValidFlag "左前轮当前轮速有效性";
+CM_ SG_ 97 ABS_WhlSpdFrntRiRaw "右前轮当前轮速";
+CM_ SG_ 97 ABS_WhlSpdFrntRiRawValidFlag "右前轮当前轮速有效性";
+CM_ SG_ 97 ESC_SlopeGradeAngle "坡度信号（车头高于车尾为负，车头低于车尾为正）";
+CM_ SG_ 97 ESC_MasterCylinderPressure "制动主缸压力";
+CM_ SG_ 97 ABS_1_RollingCounter "循环计数器";
+CM_ SG_ 97 ABS_1_CheckSUM "校检和 checksum = (Byte0+Byte1 …+ Byte6) XOR 0xFF";
+CM_ SG_ 99 ABS_WhlSpdReLeRaw "左后轮当前轮速";
+CM_ SG_ 99 ABS_WhlSpdReLeRawValidFlag "左后轮当前轮速有效性";
+CM_ SG_ 99 ABS_WhlSpdReRiRaw "右后轮当前轮速";
+CM_ SG_ 99 ABS_WhlSpdReRiRawValidFlag "右后轮当前轮速有效性";
+CM_ SG_ 99 ABS_VehSpdLgt "当前车速";
+CM_ SG_ 99 ABS_VehSpdLgtValidFlag "车速有效性标志";
+CM_ SG_ 99 ABS_ABSFailure "ABS失效";
+CM_ SG_ 99 ESC_TCSFailure "TCS失效";
+CM_ SG_ 99 ESC_ESCFailure "ESC失效
+";
+CM_ SG_ 99 ABS_2_RollingCounter "循环计数器";
+CM_ SG_ 99 ABS_2_CheckSUM "校检和 checksum = (Byte0+Byte1 …+ Byte6) XOR 0xFF";
+CM_ SG_ 101 ESC_AutoHarazedBlinking "自动危险警示灯闪烁";
+CM_ SG_ 101 ABS_ABSWarningLamp "ABS警告灯";
+CM_ SG_ 101 ESC_ESCWarningLamp "ESC警告灯";
+CM_ SG_ 101 ABS_EBDWarningLamp "EBD警告灯";
+CM_ SG_ 101 ESC_HHC_Control_Status "上坡辅助功能激活状态";
+CM_ SG_ 101 ESC_HHC_Status_Fault "上坡辅助错误状态";
+CM_ SG_ 101 ABS_BR1_St_EmergencyBrakeLight "紧急制动灯请求";
+CM_ SG_ 101 ABS_3_RollingCounter "循环计数器";
+CM_ SG_ 101 ABS_3_CheckSUM "校检和 checksum = (Byte0+Byte1 …+ Byte6) XOR 0xFF";
+CM_ SG_ 103 ABS_RRWheelSpdPulse "右后轮速脉冲";
+CM_ SG_ 103 ABS_RLWheelSpdPulse "左后轮速脉冲";
+CM_ SG_ 103 ABS_FRWheelSpdPulse "右前轮速脉冲";
+CM_ SG_ 103 ABS_FLWheelSpdPulse "左前轮速脉冲";
+CM_ SG_ 103 ABS_RRWheelSpdPulseValidFlag "右后轮速脉冲有效性";
+CM_ SG_ 103 ABS_RLWheelSpdPulseValidFlag "左后轮速脉冲有效性";
+CM_ SG_ 103 ABS_FRWheelSpdPulseValidFlag "右前轮速脉冲有效性";
+CM_ SG_ 103 ABS_FLWheelSpdPulseValidFlag "左前轮速脉冲有效性";
+CM_ SG_ 103 ABS_4_RollingCounter "循环计数器";
+CM_ SG_ 103 ABS_4_CheckSUM "校检和 checksum = (Byte0+Byte1 …+ Byte6) XOR 0xFF";
+CM_ SG_ 105 ESC_LongAccVd "纵向加速度值有效性";
+CM_ SG_ 105 ESC_LongAcc "纵向加速度值";
+CM_ SG_ 105 ESC_YawRate "横摆角值";
+CM_ SG_ 105 ESC_YawRateVd "横摆角值有效性";
+CM_ SG_ 105 ESC_LaterAcc "横向加速度值";
+CM_ SG_ 105 ESC_LaterAccVd "横向加速度值有效性";
+CM_ SG_ 105 ABS_Diag_Session_Status "诊断对话状态";
+CM_ SG_ 105 ABS_Active "ABS本地功能激活";
+CM_ SG_ 105 ESC_Active "ESC本地功能激活";
+CM_ SG_ 105 ESC_Available "ESC可以正常使用";
+CM_ SG_ 105 ESC_ACC_Request_Response "ESC控制器是否响应ACC的加速度请求";
+CM_ SG_ 105 ESC_AEB_Request_Response "ESC控制器是否响应AEB的加速度请求";
+CM_ SG_ 105 ESC_AEB_Prefill_Response "ESC控制器是否响应AEB的预填充请求";
+CM_ SG_ 105 ESC_AEB_Jerk_Response "ESC控制器是否响应AEB的制动抖动请求";
+CM_ SG_ 105 ABS_5_RollingCounter "循环计数器";
+CM_ SG_ 105 ABS_5_CheckSUM "校检和 checksum = (Byte0+Byte1 …+ Byte6) XOR 0xFF";
+CM_ SG_ 107 ABS_TorqRequestVal "请求扭拒值";
+CM_ SG_ 107 ABS_TorqRequestValValid "请求扭矩值有效性";
+CM_ SG_ 107 ABS_TcsTorqReqActive "TCS扭矩请求激活";
+CM_ SG_ 107 ABS_RegenTorqInterActive "能量回收扭矩干预激活
+能量回收时ABS、ESC控制为保持稳定性或ABS功能时干预VCU扭矩数值都会显示干预激活";
+CM_ SG_ 107 ABS_RegenDragCtrlStatus "能量回收牵引力控制是否激活
+RDC功能，松油门踏板，低附路面能量回收干预时";
+CM_ SG_ 107 ABS_RegenBrakeCtrlStatus "能量回收制动控制是否激活
+RBC功能，踩制动踏板时能量回收干预时";
+CM_ SG_ 107 ABS_TorqReqMode "扭矩请求模式";
+CM_ SG_ 107 ABS_EBDFailure "EBD失效
+与EBD警告灯信号是否重复：不重复，都要，警告灯亮不代表失效，比如诊断模式，DVT模式等";
+CM_ SG_ 107 ESC_DPB_Active "DPB激活：仪表显示“紧急制动开启”";
+CM_ SG_ 107 ESC_DPB_inhibit "DPB禁止（ESC能否响应EPB的DPB请求，回复1就是ESC无法实现DPB请求）";
+CM_ SG_ 107 ESC_AH_Enabled "AH使能";
+CM_ SG_ 107 ESC_AH_Availability "AH功能是否可用";
+CM_ SG_ 107 ESC_AH_Status "AH状态";
+CM_ SG_ 107 ABS_EPB_Apply_Req "ESC对EPB的请求
+在什么工况下ESC会请求EPB驻车，如果在请求EPB执行的过程中出现驾驶员踩油门，如何操作？
+AVH 保压3分钟后发EPB拉紧请求
+当起步时如果ESC保持制动，则ESC自动释放，如EPB已介入，则EPB自动释放";
+CM_ SG_ 107 ESC_brakestate_feedback "紧急或正常刹车反馈";
+CM_ SG_ 107 ESC_Hold "indicates if ESP can hold the vehicle in standstill";
+CM_ SG_ 107 ESC_PAS_Response "ESC模块状态";
+CM_ SG_ 107 ESC_QDCFLC "ESC检测到FLC所发报文checksum、Alivecounter错误的信号";
+CM_ SG_ 107 ESC_BrakeActive "ESC主动制动";
+CM_ SG_ 107 ESC_InhibitCode1 "ESC禁用代码：CAN信号输入异常";
+CM_ SG_ 107 ESC_InhibitCode2 "ESC禁用代码：EPB激活";
+CM_ SG_ 107 ESC_InhibitCode3 "ESC禁用代码：EPB失效";
+CM_ SG_ 107 ESC_InhibitCode4 "ESC禁用代码：速度超限";
+CM_ SG_ 107 ESC_InhibitCode5 "ESC禁用代码：其它原因";
+CM_ SG_ 107 ABS_lngit_ECU_state "纵向控制器状态信号(保留，本项目不发送)";
+CM_ SG_ 107 ABS_lngit_ECU_Errstate "纵向控制器错误状态信号(保留，本项目不发送)";
+CM_ SG_ 107 ABS_lngit_ECU_available "纵向控制器可用功能指示信号(保留，本项目不发送)";
+CM_ SG_ 107 ABS_6_RollingCounter "循环计数器";
+CM_ SG_ 107 ABS_6_CheckSUM "校检和 checksum = (Byte0+Byte1 …+ Byte6) XOR 0xFF";
+CM_ SG_ 109 ESC_Wheel_Speed_RR_Direction "右后轮方向信号(只有ESC高配发送)";
+CM_ SG_ 109 ESC_Wheel_Speed_RL_Direction "左后轮方向信号(只有ESC高配发送)";
+CM_ SG_ 109 ESC_Wheel_Speed_FR_Direction "右前轮方向信号(只有ESC高配发送)";
+CM_ SG_ 109 ESC_Wheel_Speed_FL_Direction "左前轮方向信号(只有ESC高配发送)";
+CM_ SG_ 109 ESC_Moving_Direction "real vehicle moving direction(只有ESC高配发送)";
+CM_ SG_ 109 ABS_7_RollingCounter "循环计数器";
+CM_ SG_ 109 ABS_7_CheckSUM "校检和 checksum = (Byte0+Byte1 …+ Byte6) XOR 0xFF";
+CM_ SG_ 2015 Diag_FuncReq_Data_0 "Diagnostic Functional Request Data
+功能寻址诊断请求";
+CM_ SG_ 2015 Diag_FuncReq_Data_1 "Diagnostic Functional Request Data
+功能寻址诊断请求";
+CM_ SG_ 2015 Diag_FuncReq_Data_2 "Diagnostic Functional Request Data
+功能寻址诊断请求";
+CM_ SG_ 2015 Diag_FuncReq_Data_3 "Diagnostic Functional Request Data
+功能寻址诊断请求";
+CM_ SG_ 2015 Diag_FuncReq_Data_4 "Diagnostic Functional Request Data
+功能寻址诊断请求";
+CM_ SG_ 2015 Diag_FuncReq_Data_5 "Diagnostic Functional Request Data
+功能寻址诊断请求";
+CM_ SG_ 2015 Diag_FuncReq_Data_6 "Diagnostic Functional Request Data
+功能寻址诊断请求";
+CM_ SG_ 2015 Diag_FuncReq_Data_7 "Diagnostic Functional Request Data
+功能寻址诊断请求";
+CM_ SG_ 1844 Diag_PhyReq_SRS_Data_0 "Diagnostic Physical Request Data to SRS
+SRS物理寻址诊断请求";
+CM_ SG_ 1844 Diag_PhyReq_SRS_Data_1 "Diagnostic Physical Request Data to SRS
+SRS物理寻址诊断请求";
+CM_ SG_ 1844 Diag_PhyReq_SRS_Data_2 "Diagnostic Physical Request Data to SRS
+SRS物理寻址诊断请求";
+CM_ SG_ 1844 Diag_PhyReq_SRS_Data_3 "Diagnostic Physical Request Data to SRS
+SRS物理寻址诊断请求";
+CM_ SG_ 1844 Diag_PhyReq_SRS_Data_4 "Diagnostic Physical Request Data to SRS
+SRS物理寻址诊断请求";
+CM_ SG_ 1844 Diag_PhyReq_SRS_Data_5 "Diagnostic Physical Request Data to SRS
+SRS物理寻址诊断请求";
+CM_ SG_ 1844 Diag_PhyReq_SRS_Data_6 "Diagnostic Physical Request Data to SRS
+SRS物理寻址诊断请求";
+CM_ SG_ 1844 Diag_PhyReq_SRS_Data_7 "Diagnostic Physical Request Data to SRS
+SRS物理寻址诊断请求";
+CM_ SG_ 1972 Diag_Resp_SRS_Data_0 "Diagnostic Response Data From SRS
+SRS诊断响应";
+CM_ SG_ 1972 Diag_Resp_SRS_Data_1 "Diagnostic Response Data From SRS
+SRS诊断响应";
+CM_ SG_ 1972 Diag_Resp_SRS_Data_2 "Diagnostic Response Data From SRS
+SRS诊断响应";
+CM_ SG_ 1972 Diag_Resp_SRS_Data_3 "Diagnostic Response Data From SRS
+SRS诊断响应";
+CM_ SG_ 1972 Diag_Resp_SRS_Data_4 "Diagnostic Response Data From SRS
+SRS诊断响应";
+CM_ SG_ 1972 Diag_Resp_SRS_Data_5 "Diagnostic Response Data From SRS
+SRS诊断响应";
+CM_ SG_ 1972 Diag_Resp_SRS_Data_6 "Diagnostic Response Data From SRS
+SRS诊断响应";
+CM_ SG_ 1972 Diag_Resp_SRS_Data_7 "Diagnostic Response Data From SRS
+SRS诊断响应";
+CM_ SG_ 1907 Diag_PhyReq_ABS_Data_0 "Diagnostic Physical Request Data to ABS
+ABS物理寻址诊断请求";
+CM_ SG_ 1907 Diag_PhyReq_ABS_Data_1 "Diagnostic Physical Request Data to ABS
+ABS物理寻址诊断请求";
+CM_ SG_ 1907 Diag_PhyReq_ABS_Data_2 "Diagnostic Physical Request Data to ABS
+ABS物理寻址诊断请求";
+CM_ SG_ 1907 Diag_PhyReq_ABS_Data_3 "Diagnostic Physical Request Data to ABS
+ABS物理寻址诊断请求";
+CM_ SG_ 1907 Diag_PhyReq_ABS_Data_4 "Diagnostic Physical Request Data to ABS
+ABS物理寻址诊断请求";
+CM_ SG_ 1907 Diag_PhyReq_ABS_Data_5 "Diagnostic Physical Request Data to ABS
+ABS物理寻址诊断请求";
+CM_ SG_ 1907 Diag_PhyReq_ABS_Data_6 "Diagnostic Physical Request Data to ABS
+ABS物理寻址诊断请求";
+CM_ SG_ 1907 Diag_PhyReq_ABS_Data_7 "Diagnostic Physical Request Data to ABS
+ABS物理寻址诊断请求";
+CM_ SG_ 1971 Diag_Resp_ABS_Data_0 "Diagnostic Response Data From ABS
+ABS诊断响应";
+CM_ SG_ 1971 Diag_Resp_ABS_Data_1 "Diagnostic Response Data From ABS
+ABS诊断响应";
+CM_ SG_ 1971 Diag_Resp_ABS_Data_2 "Diagnostic Response Data From ABS
+ABS诊断响应";
+CM_ SG_ 1971 Diag_Resp_ABS_Data_3 "Diagnostic Response Data From ABS
+ABS诊断响应";
+CM_ SG_ 1971 Diag_Resp_ABS_Data_4 "Diagnostic Response Data From ABS
+ABS诊断响应";
+CM_ SG_ 1971 Diag_Resp_ABS_Data_5 "Diagnostic Response Data From ABS
+ABS诊断响应";
+CM_ SG_ 1971 Diag_Resp_ABS_Data_6 "Diagnostic Response Data From ABS
+ABS诊断响应";
+CM_ SG_ 1971 Diag_Resp_ABS_Data_7 "Diagnostic Response Data From ABS
+ABS诊断响应";
+CM_ SG_ 1847 Diag_PhyReq_PAS_Data_0 "Diagnostic Physical Request Data to PAS
+PAS物理寻址诊断请求";
+CM_ SG_ 1847 Diag_PhyReq_PAS_Data_1 "Diagnostic Physical Request Data to PAS
+PAS物理寻址诊断请求";
+CM_ SG_ 1847 Diag_PhyReq_PAS_Data_2 "Diagnostic Physical Request Data to PAS
+PAS物理寻址诊断请求";
+CM_ SG_ 1847 Diag_PhyReq_PAS_Data_3 "Diagnostic Physical Request Data to PAS
+PAS物理寻址诊断请求";
+CM_ SG_ 1847 Diag_PhyReq_PAS_Data_4 "Diagnostic Physical Request Data to PAS
+PAS物理寻址诊断请求";
+CM_ SG_ 1847 Diag_PhyReq_PAS_Data_5 "Diagnostic Physical Request Data to PAS
+PAS物理寻址诊断请求";
+CM_ SG_ 1847 Diag_PhyReq_PAS_Data_6 "Diagnostic Physical Request Data to PAS
+PAS物理寻址诊断请求";
+CM_ SG_ 1847 Diag_PhyReq_PAS_Data_7 "Diagnostic Physical Request Data to PAS
+PAS物理寻址诊断请求";
+CM_ SG_ 1975 Diag_Resp_PAS_Data_0 "Diagnostic Response Data From PAS
+PAS诊断响应";
+CM_ SG_ 1975 Diag_Resp_PAS_Data_1 "Diagnostic Response Data From PAS
+PAS诊断响应";
+CM_ SG_ 1975 Diag_Resp_PAS_Data_2 "Diagnostic Response Data From PAS
+PAS诊断响应";
+CM_ SG_ 1975 Diag_Resp_PAS_Data_3 "Diagnostic Response Data From PAS
+PAS诊断响应";
+CM_ SG_ 1975 Diag_Resp_PAS_Data_4 "Diagnostic Response Data From PAS
+PAS诊断响应";
+CM_ SG_ 1975 Diag_Resp_PAS_Data_5 "Diagnostic Response Data From PAS
+PAS诊断响应";
+CM_ SG_ 1975 Diag_Resp_PAS_Data_6 "Diagnostic Response Data From PAS
+PAS诊断响应";
+CM_ SG_ 1975 Diag_Resp_PAS_Data_7 "Diagnostic Response Data From PAS
+PAS诊断响应";
+CM_ SG_ 1846 Diag_PhyReq_FLC_Data_0 "Diagnostic Physical Request Data to FLC
+FLC物理寻址诊断请求";
+CM_ SG_ 1846 Diag_PhyReq_FLC_Data_1 "Diagnostic Physical Request Data to FLC
+FLC物理寻址诊断请求";
+CM_ SG_ 1846 Diag_PhyReq_FLC_Data_2 "Diagnostic Physical Request Data to FLC
+FLC物理寻址诊断请求";
+CM_ SG_ 1846 Diag_PhyReq_FLC_Data_3 "Diagnostic Physical Request Data to FLC
+FLC物理寻址诊断请求";
+CM_ SG_ 1846 Diag_PhyReq_FLC_Data_4 "Diagnostic Physical Request Data to FLC
+FLC物理寻址诊断请求";
+CM_ SG_ 1846 Diag_PhyReq_FLC_Data_5 "Diagnostic Physical Request Data to FLC
+FLC物理寻址诊断请求";
+CM_ SG_ 1846 Diag_PhyReq_FLC_Data_6 "Diagnostic Physical Request Data to FLC
+FLC物理寻址诊断请求";
+CM_ SG_ 1846 Diag_PhyReq_FLC_Data_7 "Diagnostic Physical Request Data to FLC
+FLC物理寻址诊断请求";
+CM_ SG_ 1974 Diag_Resp_FLC_Data_0 "Diagnostic Response Data From FLC
+FLC诊断响应";
+CM_ SG_ 1974 Diag_Resp_FLC_Data_1 "Diagnostic Response Data From FLC
+FLC诊断响应";
+CM_ SG_ 1974 Diag_Resp_FLC_Data_2 "Diagnostic Response Data From FLC
+FLC诊断响应";
+CM_ SG_ 1974 Diag_Resp_FLC_Data_3 "Diagnostic Response Data From FLC
+FLC诊断响应";
+CM_ SG_ 1974 Diag_Resp_FLC_Data_4 "Diagnostic Response Data From FLC
+FLC诊断响应";
+CM_ SG_ 1974 Diag_Resp_FLC_Data_5 "Diagnostic Response Data From FLC
+FLC诊断响应";
+CM_ SG_ 1974 Diag_Resp_FLC_Data_6 "Diagnostic Response Data From FLC
+FLC诊断响应";
+CM_ SG_ 1974 Diag_Resp_FLC_Data_7 "Diagnostic Response Data From FLC
+FLC诊断响应";
+CM_ SG_ 1842 Diag_PhyReq_EPB_Data_0 "Diagnostic Physical Request Data to EPB
+EPB物理寻址诊断请求";
+CM_ SG_ 1842 Diag_PhyReq_EPB_Data_1 "Diagnostic Physical Request Data to EPB
+EPB物理寻址诊断请求";
+CM_ SG_ 1842 Diag_PhyReq_EPB_Data_2 "Diagnostic Physical Request Data to EPB
+EPB物理寻址诊断请求";
+CM_ SG_ 1842 Diag_PhyReq_EPB_Data_3 "Diagnostic Physical Request Data to EPB
+EPB物理寻址诊断请求";
+CM_ SG_ 1842 Diag_PhyReq_EPB_Data_4 "Diagnostic Physical Request Data to EPB
+EPB物理寻址诊断请求";
+CM_ SG_ 1842 Diag_PhyReq_EPB_Data_5 "Diagnostic Physical Request Data to EPB
+EPB物理寻址诊断请求";
+CM_ SG_ 1842 Diag_PhyReq_EPB_Data_6 "Diagnostic Physical Request Data to EPB
+EPB物理寻址诊断请求";
+CM_ SG_ 1842 Diag_PhyReq_EPB_Data_7 "Diagnostic Physical Request Data to EPB
+EPB物理寻址诊断请求";
+CM_ SG_ 1970 Diag_Resp_EPB_Data_0 "Diagnostic Response Data From EPB
+EPB诊断响应";
+CM_ SG_ 1970 Diag_Resp_EPB_Data_1 "Diagnostic Response Data From EPB
+EPB诊断响应";
+CM_ SG_ 1970 Diag_Resp_EPB_Data_2 "Diagnostic Response Data From EPB
+EPB诊断响应";
+CM_ SG_ 1970 Diag_Resp_EPB_Data_3 "Diagnostic Response Data From EPB
+EPB诊断响应";
+CM_ SG_ 1970 Diag_Resp_EPB_Data_4 "Diagnostic Response Data From EPB
+EPB诊断响应";
+CM_ SG_ 1970 Diag_Resp_EPB_Data_5 "Diagnostic Response Data From EPB
+EPB诊断响应";
+CM_ SG_ 1970 Diag_Resp_EPB_Data_6 "Diagnostic Response Data From EPB
+EPB诊断响应";
+CM_ SG_ 1970 Diag_Resp_EPB_Data_7 "Diagnostic Response Data From EPB
+EPB诊断响应";
+CM_ SG_ 1841 Diag_PhyReq_EPS_Data_0 "Diagnostic Physical Request Data to EPS
+EPS物理寻址诊断请求";
+CM_ SG_ 1841 Diag_PhyReq_EPS_Data_1 "Diagnostic Physical Request Data to EPS
+EPS物理寻址诊断请求";
+CM_ SG_ 1841 Diag_PhyReq_EPS_Data_2 "Diagnostic Physical Request Data to EPS
+EPS物理寻址诊断请求";
+CM_ SG_ 1841 Diag_PhyReq_EPS_Data_3 "Diagnostic Physical Request Data to EPS
+EPS物理寻址诊断请求";
+CM_ SG_ 1841 Diag_PhyReq_EPS_Data_4 "Diagnostic Physical Request Data to EPS
+EPS物理寻址诊断请求";
+CM_ SG_ 1841 Diag_PhyReq_EPS_Data_5 "Diagnostic Physical Request Data to EPS
+EPS物理寻址诊断请求";
+CM_ SG_ 1841 Diag_PhyReq_EPS_Data_6 "Diagnostic Physical Request Data to EPS
+EPS物理寻址诊断请求";
+CM_ SG_ 1841 Diag_PhyReq_EPS_Data_7 "Diagnostic Physical Request Data to EPS
+EPS物理寻址诊断请求";
+CM_ SG_ 1969 Diag_Resp_EPS_Data_0 "Diagnostic Response Data From EPS
+EPS诊断响应";
+CM_ SG_ 1969 Diag_Resp_EPS_Data_1 "Diagnostic Response Data From EPS
+EPS诊断响应";
+CM_ SG_ 1969 Diag_Resp_EPS_Data_2 "Diagnostic Response Data From EPS
+EPS诊断响应";
+CM_ SG_ 1969 Diag_Resp_EPS_Data_3 "Diagnostic Response Data From EPS
+EPS诊断响应";
+CM_ SG_ 1969 Diag_Resp_EPS_Data_4 "Diagnostic Response Data From EPS
+EPS诊断响应";
+CM_ SG_ 1969 Diag_Resp_EPS_Data_5 "Diagnostic Response Data From EPS
+EPS诊断响应";
+CM_ SG_ 1969 Diag_Resp_EPS_Data_6 "Diagnostic Response Data From EPS
+EPS诊断响应";
+CM_ SG_ 1969 Diag_Resp_EPS_Data_7 "Diagnostic Response Data From EPS
+EPS诊断响应";
+
+
+BA_DEF_ BO_  "NmMessage" ENUM "No","Yes";
+BA_DEF_ BO_  "DiagState" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagRequest" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagResponse" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Cycle","NoSendType","IfActive";
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 0;
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cycle","OnChange","OnWrite","IfActive","OnChangeWithRepetition","OnWriteWithRepetition","IfActiveWithRepetition";
+BA_DEF_ SG_  "GenSigStartValue" INT 0 0;
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 0;
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 0 0;
+BA_DEF_ BO_  "GenMsgNrOfRepetition" INT 0 0;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 0;
+BA_DEF_  "DBName" STRING ;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ SG_  "GenSigTimeoutValue" INT 0 1000000000;
+BA_DEF_ BO_  "GenMsgCycleTimeActive" INT 0 0;
+BA_DEF_ BU_  "ILUsed" ENUM  "No","Yes";
+BA_DEF_ BU_  "DiagStationAddress" HEX 0 255;
+BA_DEF_ BU_  "NmNode" ENUM  "Not","Yes";
+BA_DEF_ BU_  "NmStationAddress" HEX 0 65535;
+BA_DEF_ BU_  "NmCAN" INT 0 2;
+BA_DEF_  "Manufacturer" STRING ;
+BA_DEF_  "NmType" STRING ;
+BA_DEF_  "NmBaseAddress" HEX 0 2047;
+BA_DEF_  "NmMessageCount" INT 0 255;
+BA_DEF_ BO_  "_Cdb_Sc_CTm_FAW_v3_0" INT 0 0;
+BA_DEF_ BO_  "_Cdb_Sc_CTm_FAW_v2_3" INT 0 0;
+BA_DEF_ BO_  "_Cdb_Sc_CTm_FAW_v3_1" INT 0 0;
+BA_DEF_ BO_  "_Cdb_Sc_CTm_FAW_v2_2" INT 0 0;
+BA_DEF_ BO_  "_Cdb_Sc_CTm_FAW_v2_1" INT 0 0;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 65535;
+BA_DEF_  "BusType" STRING ;
+
+
+BA_DEF_DEF_  "NmMessage" "No";
+BA_DEF_DEF_  "DiagState" "No";
+BA_DEF_DEF_  "DiagRequest" "No";
+BA_DEF_DEF_  "DiagResponse" "No";
+BA_DEF_DEF_  "GenMsgSendType" "Cycle";
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenSigSendType" "Cycle";
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 0;
+BA_DEF_DEF_  "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "DBName" "";
+BA_DEF_DEF_  "NodeLayerModules" "oseknm01.dll,osek_tp.dll,CANoeILNLVector.dll";
+BA_DEF_DEF_  "GenSigTimeoutValue" 0;
+BA_DEF_DEF_  "GenMsgCycleTimeActive" 0;
+BA_DEF_DEF_  "ILUsed" "No";
+BA_DEF_DEF_  "DiagStationAddress" 0;
+BA_DEF_DEF_  "NmNode" "Not";
+BA_DEF_DEF_  "NmStationAddress" 0;
+BA_DEF_DEF_  "NmCAN" 0;
+BA_DEF_DEF_  "Manufacturer" "";
+BA_DEF_DEF_  "NmType" "";
+BA_DEF_DEF_  "NmBaseAddress" 1024;
+BA_DEF_DEF_  "NmMessageCount" 128;
+BA_DEF_DEF_  "_Cdb_Sc_CTm_FAW_v3_0" 0;
+BA_DEF_DEF_  "_Cdb_Sc_CTm_FAW_v2_3" 0;
+BA_DEF_DEF_  "_Cdb_Sc_CTm_FAW_v3_1" 0;
+BA_DEF_DEF_  "_Cdb_Sc_CTm_FAW_v2_2" 0;
+BA_DEF_DEF_  "_Cdb_Sc_CTm_FAW_v2_1" 0;
+BA_DEF_DEF_  "GenMsgILSupport" "No";
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "BusType" "CAN";
+BA_ "DBName" "Chassis";
+BA_ "GenMsgCycleTime" BO_ 81 10;
+BA_ "GenMsgCycleTime" BO_ 83 10;
+BA_ "GenMsgCycleTime" BO_ 85 10;
+BA_ "GenSigStartValue" SG_ 85 VCU_MotOutputTqReq 3500;
+BA_ "GenSigStartValue" SG_ 85 VCU_MotOutputSpdReq 15000;
+BA_ "GenMsgCycleTime" BO_ 369 50;
+BA_ "GenSigStartValue" SG_ 369 VCU_StartReqAllowed 1;
+BA_ "GenMsgCycleTime" BO_ 195 20;
+BA_ "GenMsgCycleTime" BO_ 87 10;
+BA_ "GenSigStartValue" SG_ 87 MCU_MotorPresentTorque 3500;
+BA_ "GenSigStartValue" SG_ 87 MCU_MotorSpd 15000;
+BA_ "GenMsgCycleTime" BO_ 89 10;
+BA_ "GenMsgCycleTime" BO_ 197 20;
+BA_ "GenSigStartValue" SG_ 197 MCU_MotorTemp 70;
+BA_ "GenSigStartValue" SG_ 197 TMM_OutsideTemperature 150;
+BA_ "GenMsgCycleTime" BO_ 579 100;
+BA_ "GenMsgCycleTime" BO_ 615 100;
+BA_ "GenMsgCycleTime" BO_ 595 100;
+BA_ "GenMsgSendType" BO_ 145 1;
+BA_ "GenSigSendType" SG_ 145 IHU_ESC_OFF_SWIT_Valid 1;
+BA_ "GenSigSendType" SG_ 145 IHU_ESC_OFF_SWIT 1;
+BA_ "GenSigSendType" SG_ 145 IHU_BSD_Key_Valid 1;
+BA_ "GenSigSendType" SG_ 145 IHU_BSD_Key 1;
+BA_ "GenSigSendType" SG_ 145 IHU_SET_EPSmode_Valid 1;
+BA_ "GenSigSendType" SG_ 145 IHU_SET_EPSmode 1;
+BA_ "GenSigStartValue" SG_ 145 IHU_SET_EPSmode 1;
+BA_ "GenSigSendType" SG_ 145 IHU_LDW_workSet_Valid 1;
+BA_ "GenSigSendType" SG_ 145 IHU_LDW_workSet 1;
+BA_ "GenSigSendType" SG_ 145 IHU_ChangeLine_workSet_Valid 1;
+BA_ "GenSigSendType" SG_ 145 IHU_ChangeLine_workSet 1;
+BA_ "GenSigSendType" SG_ 145 IHU_VSG_ToneShift_Valid 1;
+BA_ "GenSigSendType" SG_ 145 IHU_DoorOpenWarning_Valid 1;
+BA_ "GenSigSendType" SG_ 145 IHU_DoorOpenWarning 1;
+BA_ "GenSigSendType" SG_ 145 IHU_Rear_traffic_Assist_Valid 1;
+BA_ "GenSigSendType" SG_ 145 IHU_Rear_traffic_Assist 1;
+BA_ "GenSigSendType" SG_ 145 IHU_TopicMode_Shift_Req_Valid 1;
+BA_ "GenSigSendType" SG_ 145 IHU_TopicMode_Shift_Req 1;
+BA_ "GenSigSendType" SG_ 145 IHU_TSR_workSet_Valid 1;
+BA_ "GenSigSendType" SG_ 145 IHU_TSR_workSet 1;
+BA_ "GenSigSendType" SG_ 145 IHU_VSG_ToneShift 1;
+BA_ "GenSigSendType" SG_ 145 IHU_FCW_workSet_Valid 1;
+BA_ "GenSigSendType" SG_ 145 IHU_FCW_workSet 1;
+BA_ "GenSigSendType" SG_ 145 IHU_PASDisclaimer_Valid 1;
+BA_ "GenSigSendType" SG_ 145 IHU_PASDisclaimer 1;
+BA_ "GenSigSendType" SG_ 145 IHU_Regen_Switch_Valid 1;
+BA_ "GenSigSendType" SG_ 145 IHU_Regen_Switch 1;
+BA_ "GenSigSendType" SG_ 145 IHU_VehMode_Ctrl_Valid 1;
+BA_ "GenSigSendType" SG_ 145 IHU_VehMode_Ctrl 1;
+BA_ "GenSigSendType" SG_ 145 IHU_PASConfirm_Valid 1;
+BA_ "GenSigSendType" SG_ 145 IHU_PASConfirm 1;
+BA_ "GenSigSendType" SG_ 145 IHU_PASModeSelect_Valid 1;
+BA_ "GenSigSendType" SG_ 145 IHU_PASModeSelect 1;
+BA_ "GenSigSendType" SG_ 145 IHU_AEB_workSet_Valid 1;
+BA_ "GenSigSendType" SG_ 145 IHU_AEB_workSet 1;
+BA_ "GenSigSendType" SG_ 145 IHU_VSG_Set_Valid 1;
+BA_ "GenSigSendType" SG_ 145 IHU_IHC_workSet_Valid 1;
+BA_ "GenSigSendType" SG_ 145 IHU_IHC_workSet 1;
+BA_ "GenSigSendType" SG_ 145 IHU_SOD_Key_Valid 1;
+BA_ "GenSigSendType" SG_ 145 IHU_SOD_Key 1;
+BA_ "GenSigSendType" SG_ 145 IHU_LCA_Key_Valid 1;
+BA_ "GenSigSendType" SG_ 145 IHU_LCA_Key 1;
+BA_ "GenSigSendType" SG_ 145 IHU_PARK_TherManageReq 1;
+BA_ "GenSigSendType" SG_ 145 IHU_VSG_Set 1;
+BA_ "GenSigSendType" SG_ 145 IHU_Tailgate_Set_Valid 1;
+BA_ "GenSigSendType" SG_ 145 IHU_Tailgate_Set 1;
+BA_ "GenSigSendType" SG_ 145 IHU_PR_workSet_Valid 1;
+BA_ "GenSigSendType" SG_ 145 IHU_PR_workSet 1;
+BA_ "GenSigSendType" SG_ 145 IHU_WPC_workSet_Valid 1;
+BA_ "GenSigSendType" SG_ 145 IHU_WPC_workSet 1;
+BA_ "GenMsgCycleTime" BO_ 593 100;
+BA_ "GenMsgCycleTime" BO_ 577 100;
+BA_ "GenMsgCycleTime" BO_ 183 20;
+BA_ "GenMsgCycleTime" BO_ 185 20;
+BA_ "GenMsgCycleTime" BO_ 187 20;
+BA_ "GenMsgCycleTime" BO_ 189 20;
+BA_ "GenSigStartValue" SG_ 189 SRS_OCPPDSts 1;
+BA_ "GenSigStartValue" SG_ 189 SRS_AirbagFailSts 2;
+BA_ "GenMsgCycleTime" BO_ 95 10;
+BA_ "GenSigStartValue" SG_ 95 EPS_SteeringAngleValid 1;
+BA_ "GenMsgCycleTime" BO_ 371 50;
+BA_ "GenSigStartValue" SG_ 371 EPS_SteeringTorqueValid 1;
+BA_ "GenSigStartValue" SG_ 371 EPS_ModeSts 1;
+BA_ "GenSigStartValue" SG_ 371 EPS_ModSetInhibit 1;
+BA_ "GenMsgCycleTime" BO_ 373 50;
+BA_ "GenSigStartValue" SG_ 373 FLC_ACCSetHeadway 4;
+BA_ "GenMsgCycleTime" BO_ 191 20;
+BA_ "GenMsgCycleTime" BO_ 193 20;
+BA_ "GenMsgCycleTime" BO_ 375 50;
+BA_ "GenMsgCycleTime" BO_ 97 10;
+BA_ "GenSigStartValue" SG_ 97 ESC_MasterCylinderPressure 1000;
+BA_ "GenMsgCycleTime" BO_ 99 10;
+BA_ "GenMsgCycleTime" BO_ 101 10;
+BA_ "GenMsgCycleTime" BO_ 103 10;
+BA_ "GenMsgCycleTime" BO_ 105 10;
+BA_ "GenMsgCycleTime" BO_ 107 10;
+BA_ "GenSigStartValue" SG_ 107 ABS_TorqRequestVal 3500;
+BA_ "GenMsgCycleTime" BO_ 109 10;
+BA_ "GenSigStartValue" SG_ 109 ESC_Wheel_Speed_FL_Direction 2;
+BA_ "GenSigStartValue" SG_ 109 ESC_Moving_Direction 2;
+BA_ "GenSigStartValue" SG_ 109 ESC_Wheel_Speed_FR_Direction 2;
+BA_ "GenSigStartValue" SG_ 109 ESC_Wheel_Speed_RL_Direction 2;
+BA_ "GenSigStartValue" SG_ 109 ESC_Wheel_Speed_RR_Direction 2;
+BA_ "DiagState" BO_ 2015 1;
+BA_ "DiagResponse" BO_ 2015 1;
+BA_ "GenMsgSendType" BO_ 2015 1;
+BA_ "GenSigSendType" SG_ 2015 Diag_FuncReq_Data_0 2;
+BA_ "GenSigSendType" SG_ 2015 Diag_FuncReq_Data_2 2;
+BA_ "GenSigSendType" SG_ 2015 Diag_FuncReq_Data_3 2;
+BA_ "GenSigSendType" SG_ 2015 Diag_FuncReq_Data_4 2;
+BA_ "GenSigSendType" SG_ 2015 Diag_FuncReq_Data_5 2;
+BA_ "GenSigSendType" SG_ 2015 Diag_FuncReq_Data_6 2;
+BA_ "GenSigSendType" SG_ 2015 Diag_FuncReq_Data_7 2;
+BA_ "GenSigSendType" SG_ 2015 Diag_FuncReq_Data_1 2;
+BA_ "DiagState" BO_ 1844 1;
+BA_ "DiagResponse" BO_ 1844 1;
+BA_ "GenMsgSendType" BO_ 1844 1;
+BA_ "GenSigSendType" SG_ 1844 Diag_PhyReq_SRS_Data_0 2;
+BA_ "GenSigSendType" SG_ 1844 Diag_PhyReq_SRS_Data_2 2;
+BA_ "GenSigSendType" SG_ 1844 Diag_PhyReq_SRS_Data_3 2;
+BA_ "GenSigSendType" SG_ 1844 Diag_PhyReq_SRS_Data_4 2;
+BA_ "GenSigSendType" SG_ 1844 Diag_PhyReq_SRS_Data_5 2;
+BA_ "GenSigSendType" SG_ 1844 Diag_PhyReq_SRS_Data_6 2;
+BA_ "GenSigSendType" SG_ 1844 Diag_PhyReq_SRS_Data_7 2;
+BA_ "GenSigSendType" SG_ 1844 Diag_PhyReq_SRS_Data_1 2;
+BA_ "DiagState" BO_ 1972 1;
+BA_ "DiagResponse" BO_ 1972 1;
+BA_ "GenMsgSendType" BO_ 1972 1;
+BA_ "GenSigSendType" SG_ 1972 Diag_Resp_SRS_Data_0 2;
+BA_ "GenSigSendType" SG_ 1972 Diag_Resp_SRS_Data_2 2;
+BA_ "GenSigSendType" SG_ 1972 Diag_Resp_SRS_Data_3 2;
+BA_ "GenSigSendType" SG_ 1972 Diag_Resp_SRS_Data_4 2;
+BA_ "GenSigSendType" SG_ 1972 Diag_Resp_SRS_Data_5 2;
+BA_ "GenSigSendType" SG_ 1972 Diag_Resp_SRS_Data_6 2;
+BA_ "GenSigSendType" SG_ 1972 Diag_Resp_SRS_Data_7 2;
+BA_ "GenSigSendType" SG_ 1972 Diag_Resp_SRS_Data_1 2;
+BA_ "DiagState" BO_ 1907 1;
+BA_ "DiagResponse" BO_ 1907 1;
+BA_ "GenMsgSendType" BO_ 1907 1;
+BA_ "GenSigSendType" SG_ 1907 Diag_PhyReq_ABS_Data_0 2;
+BA_ "GenSigSendType" SG_ 1907 Diag_PhyReq_ABS_Data_2 2;
+BA_ "GenSigSendType" SG_ 1907 Diag_PhyReq_ABS_Data_3 2;
+BA_ "GenSigSendType" SG_ 1907 Diag_PhyReq_ABS_Data_4 2;
+BA_ "GenSigSendType" SG_ 1907 Diag_PhyReq_ABS_Data_5 2;
+BA_ "GenSigSendType" SG_ 1907 Diag_PhyReq_ABS_Data_6 2;
+BA_ "GenSigSendType" SG_ 1907 Diag_PhyReq_ABS_Data_7 2;
+BA_ "GenSigSendType" SG_ 1907 Diag_PhyReq_ABS_Data_1 2;
+BA_ "DiagState" BO_ 1971 1;
+BA_ "DiagResponse" BO_ 1971 1;
+BA_ "GenMsgSendType" BO_ 1971 1;
+BA_ "GenSigSendType" SG_ 1971 Diag_Resp_ABS_Data_0 2;
+BA_ "GenSigSendType" SG_ 1971 Diag_Resp_ABS_Data_2 2;
+BA_ "GenSigSendType" SG_ 1971 Diag_Resp_ABS_Data_3 2;
+BA_ "GenSigSendType" SG_ 1971 Diag_Resp_ABS_Data_4 2;
+BA_ "GenSigSendType" SG_ 1971 Diag_Resp_ABS_Data_5 2;
+BA_ "GenSigSendType" SG_ 1971 Diag_Resp_ABS_Data_6 2;
+BA_ "GenSigSendType" SG_ 1971 Diag_Resp_ABS_Data_7 2;
+BA_ "GenSigSendType" SG_ 1971 Diag_Resp_ABS_Data_1 2;
+BA_ "DiagState" BO_ 1847 1;
+BA_ "DiagResponse" BO_ 1847 1;
+BA_ "GenMsgSendType" BO_ 1847 1;
+BA_ "GenSigSendType" SG_ 1847 Diag_PhyReq_PAS_Data_0 2;
+BA_ "GenSigSendType" SG_ 1847 Diag_PhyReq_PAS_Data_2 2;
+BA_ "GenSigSendType" SG_ 1847 Diag_PhyReq_PAS_Data_3 2;
+BA_ "GenSigSendType" SG_ 1847 Diag_PhyReq_PAS_Data_4 2;
+BA_ "GenSigSendType" SG_ 1847 Diag_PhyReq_PAS_Data_5 2;
+BA_ "GenSigSendType" SG_ 1847 Diag_PhyReq_PAS_Data_6 2;
+BA_ "GenSigSendType" SG_ 1847 Diag_PhyReq_PAS_Data_7 2;
+BA_ "GenSigSendType" SG_ 1847 Diag_PhyReq_PAS_Data_1 2;
+BA_ "DiagState" BO_ 1975 1;
+BA_ "DiagResponse" BO_ 1975 1;
+BA_ "GenMsgSendType" BO_ 1975 1;
+BA_ "GenSigSendType" SG_ 1975 Diag_Resp_PAS_Data_0 2;
+BA_ "GenSigSendType" SG_ 1975 Diag_Resp_PAS_Data_2 2;
+BA_ "GenSigSendType" SG_ 1975 Diag_Resp_PAS_Data_3 2;
+BA_ "GenSigSendType" SG_ 1975 Diag_Resp_PAS_Data_4 2;
+BA_ "GenSigSendType" SG_ 1975 Diag_Resp_PAS_Data_5 2;
+BA_ "GenSigSendType" SG_ 1975 Diag_Resp_PAS_Data_6 2;
+BA_ "GenSigSendType" SG_ 1975 Diag_Resp_PAS_Data_7 2;
+BA_ "GenSigSendType" SG_ 1975 Diag_Resp_PAS_Data_1 2;
+BA_ "DiagState" BO_ 1846 1;
+BA_ "DiagResponse" BO_ 1846 1;
+BA_ "GenMsgSendType" BO_ 1846 1;
+BA_ "GenSigSendType" SG_ 1846 Diag_PhyReq_FLC_Data_0 2;
+BA_ "GenSigSendType" SG_ 1846 Diag_PhyReq_FLC_Data_2 2;
+BA_ "GenSigSendType" SG_ 1846 Diag_PhyReq_FLC_Data_3 2;
+BA_ "GenSigSendType" SG_ 1846 Diag_PhyReq_FLC_Data_4 2;
+BA_ "GenSigSendType" SG_ 1846 Diag_PhyReq_FLC_Data_5 2;
+BA_ "GenSigSendType" SG_ 1846 Diag_PhyReq_FLC_Data_6 2;
+BA_ "GenSigSendType" SG_ 1846 Diag_PhyReq_FLC_Data_7 2;
+BA_ "GenSigSendType" SG_ 1846 Diag_PhyReq_FLC_Data_1 2;
+BA_ "DiagState" BO_ 1974 1;
+BA_ "DiagResponse" BO_ 1974 1;
+BA_ "GenMsgSendType" BO_ 1974 1;
+BA_ "GenSigSendType" SG_ 1974 Diag_Resp_FLC_Data_0 2;
+BA_ "GenSigSendType" SG_ 1974 Diag_Resp_FLC_Data_2 2;
+BA_ "GenSigSendType" SG_ 1974 Diag_Resp_FLC_Data_3 2;
+BA_ "GenSigSendType" SG_ 1974 Diag_Resp_FLC_Data_4 2;
+BA_ "GenSigSendType" SG_ 1974 Diag_Resp_FLC_Data_5 2;
+BA_ "GenSigSendType" SG_ 1974 Diag_Resp_FLC_Data_6 2;
+BA_ "GenSigSendType" SG_ 1974 Diag_Resp_FLC_Data_7 2;
+BA_ "GenSigSendType" SG_ 1974 Diag_Resp_FLC_Data_1 2;
+BA_ "DiagState" BO_ 1842 1;
+BA_ "DiagResponse" BO_ 1842 1;
+BA_ "GenMsgSendType" BO_ 1842 1;
+BA_ "GenSigSendType" SG_ 1842 Diag_PhyReq_EPB_Data_0 2;
+BA_ "GenSigSendType" SG_ 1842 Diag_PhyReq_EPB_Data_2 2;
+BA_ "GenSigSendType" SG_ 1842 Diag_PhyReq_EPB_Data_3 2;
+BA_ "GenSigSendType" SG_ 1842 Diag_PhyReq_EPB_Data_4 2;
+BA_ "GenSigSendType" SG_ 1842 Diag_PhyReq_EPB_Data_5 2;
+BA_ "GenSigSendType" SG_ 1842 Diag_PhyReq_EPB_Data_6 2;
+BA_ "GenSigSendType" SG_ 1842 Diag_PhyReq_EPB_Data_7 2;
+BA_ "GenSigSendType" SG_ 1842 Diag_PhyReq_EPB_Data_1 2;
+BA_ "DiagState" BO_ 1970 1;
+BA_ "DiagResponse" BO_ 1970 1;
+BA_ "GenMsgSendType" BO_ 1970 1;
+BA_ "GenSigSendType" SG_ 1970 Diag_Resp_EPB_Data_0 2;
+BA_ "GenSigSendType" SG_ 1970 Diag_Resp_EPB_Data_2 2;
+BA_ "GenSigSendType" SG_ 1970 Diag_Resp_EPB_Data_3 2;
+BA_ "GenSigSendType" SG_ 1970 Diag_Resp_EPB_Data_4 2;
+BA_ "GenSigSendType" SG_ 1970 Diag_Resp_EPB_Data_5 2;
+BA_ "GenSigSendType" SG_ 1970 Diag_Resp_EPB_Data_6 2;
+BA_ "GenSigSendType" SG_ 1970 Diag_Resp_EPB_Data_7 2;
+BA_ "GenSigSendType" SG_ 1970 Diag_Resp_EPB_Data_1 2;
+BA_ "DiagState" BO_ 1841 1;
+BA_ "DiagResponse" BO_ 1841 1;
+BA_ "GenMsgSendType" BO_ 1841 1;
+BA_ "GenSigSendType" SG_ 1841 Diag_PhyReq_EPS_Data_0 2;
+BA_ "GenSigSendType" SG_ 1841 Diag_PhyReq_EPS_Data_2 2;
+BA_ "GenSigSendType" SG_ 1841 Diag_PhyReq_EPS_Data_3 2;
+BA_ "GenSigSendType" SG_ 1841 Diag_PhyReq_EPS_Data_4 2;
+BA_ "GenSigSendType" SG_ 1841 Diag_PhyReq_EPS_Data_5 2;
+BA_ "GenSigSendType" SG_ 1841 Diag_PhyReq_EPS_Data_6 2;
+BA_ "GenSigSendType" SG_ 1841 Diag_PhyReq_EPS_Data_7 2;
+BA_ "GenSigSendType" SG_ 1841 Diag_PhyReq_EPS_Data_1 2;
+BA_ "DiagState" BO_ 1969 1;
+BA_ "DiagResponse" BO_ 1969 1;
+BA_ "GenMsgSendType" BO_ 1969 1;
+BA_ "GenSigSendType" SG_ 1969 Diag_Resp_EPS_Data_0 2;
+BA_ "GenSigSendType" SG_ 1969 Diag_Resp_EPS_Data_2 2;
+BA_ "GenSigSendType" SG_ 1969 Diag_Resp_EPS_Data_3 2;
+BA_ "GenSigSendType" SG_ 1969 Diag_Resp_EPS_Data_4 2;
+BA_ "GenSigSendType" SG_ 1969 Diag_Resp_EPS_Data_5 2;
+BA_ "GenSigSendType" SG_ 1969 Diag_Resp_EPS_Data_6 2;
+BA_ "GenSigSendType" SG_ 1969 Diag_Resp_EPS_Data_7 2;
+BA_ "GenSigSendType" SG_ 1969 Diag_Resp_EPS_Data_1 2;
+VAL_ 81 VCU_AccPositionValid 1 "有效" 0 "无效" ;
+VAL_ 81 VCU_BrakepedalSts 1 "制动" 0 "未制动" ;
+VAL_ 81 VCU_BrakepedalStsValid 1 "有效" 0 "无效" ;
+VAL_ 81 VCU_MotorTqCompensationReq 1 "enable" 0 "disable" ;
+VAL_ 81 VCU_MCUEnableReq 1 "enable" 0 "disable" ;
+VAL_ 81 VCU_ReadySts 1 "READY" 0 "Not Ready" ;
+VAL_ 81 VCU_KScontrol_Cmd 3 "无效" 2 "Close" 1 "Open" 0 "无" ;
+VAL_ 81 VCU_KScontrol_Cmd_Valid 1 "有效" 0 "无效" ;
+VAL_ 81 VCU_ChargeAllowed 1 "Allowed" 0 "Not Allowed" ;
+VAL_ 81 VCU_ChargeAllowedValid 1 "有效" 0 "无效" ;
+VAL_ 81 VCU_ParkCmd 3 "Maintain current status" 2 "Park release" 1 "Parking" 0 "Standby" ;
+VAL_ 81 VCU_ActualGearPosition 7 "P档" 6 "R档" 5 "N档" 4 "D档" 3 "保留" 2 "保留" 1 "保留" 0 "故障" ;
+VAL_ 81 VCU_ActualGearPositionValid 1 "有效" 0 "无效" ;
+VAL_ 81 VCU_HighVoltLoopLockFault 1 "故障" 0 "无故障" ;
+VAL_ 81 VCU_BrakeLightReq 1 "request" 0 "not request" ;
+VAL_ 81 VCU_EmgyIGNOffReqRsp 3 "允许IG下电" 2 "处理中" 0 "Default（无应急下电请求发送此值）0x01: 不允许IG下电" ;
+VAL_ 81 VCU_EmgyIGNOffReqRspVaild 1 "有效" 0 "无效" ;
+VAL_ 83 VCU_BrakeEnergyRegenCrntMaxTq 32767 "Invalid" ;
+VAL_ 83 VCU_BrakePressure 255 "Invalid" ;
+VAL_ 83 VCU_RegenTorqueUninvented 1 "Regen Contrl Enable" 0 "No control Command Request" ;
+VAL_ 83 VCU_RegenTorqueUninventedVaild 1 "Valid" 0 "NotValid" ;
+VAL_ 83 VCU_TqReductionRqstResponse 1 "Failure( Due to  a failure detected by a EV diagnosis function, the desired torque intervention is no longer executed)" 0 "OK(torque reduction active normally)" ;
+VAL_ 83 VCU_Rx_PASTargetGearResState 1 "响应PAS档位请求" 0 "不响应PAS档位请求" ;
+VAL_ 83 VCU_Rx_PASTargetGearPosition 7 "无效" 4 "Target Gear D" 3 "Target Gear N" 2 "Target Gear R" 1 "Target Gear P" 0 "No Request" ;
+VAL_ 83 VCU_BeControlledStatus 1 "Controlled Active" 0 "No Controlled" ;
+VAL_ 83 VCU_Accel_Padel_Override 1 "Override" 0 "No override" ;
+VAL_ 83 VCU_Kickdown_AEB 1 "Kickdown" 0 "No kickdown" ;
+VAL_ 83 VCU_Request_Response 1 "Response" 0 "No response" ;
+VAL_ 83 VCU_QDCFLC 1 "error" 0 "no error" ;
+VAL_ 83 VCU_BrakepedalPosValid 1 "有效" 0 "无效" ;
+VAL_ 85 VCU_MotOperModeReq 8 "SpeedCtl" 7 "DisCharge" 6 "PrePowerDown" 5 "Failure" 4 "TrqCtl" 3 "standby" 2 "Precharge" 1 "Ready To Precharge" 0 "Initing" ;
+VAL_ 85 VCU_MotOutputSpdReq 65535 "Invalid" ;
+VAL_ 85 VCU_MotOutputTqReq 65535 "Invalid" ;
+VAL_ 369 VCU_FaultLevel 3 "Level 3 error(high)" 2 "Level 2 error" 1 "Level 1 error(Low)" 0 "No error" ;
+VAL_ 369 VCU_VehRunMod 3 "Fuel" 2 "hybrid" 1 "electric" 0 "Reserved" ;
+VAL_ 369 VCU_EACOpnAlwd 1 "Allowed" 0 "Not Allowed" ;
+VAL_ 369 VCU_PTCOpnAlwd 1 "Allowed" 0 "Not Allowed" ;
+VAL_ 369 VCU_DCDCOpModReq 1 "Work" 0 "standby" ;
+VAL_ 369 VCU_StartReqAllowed 1 "Allowed" 0 "Prohibited" ;
+VAL_ 369 VCU_KScontrol_lowside_status 1 "闭合" 0 "打开" ;
+VAL_ 369 VCU_VehSts 255 "无效" 254 "异常" 3 "其他状态" 2 "熄火" 1 "车辆启动状态" ;
+VAL_ 369 KD_Testonly 1 "闭合" 0 "断开" ;
+VAL_ 369 KM_Testonly 1 "闭合" 0 "断开" ;
+VAL_ 369 KP1_Testonly 1 "闭合" 0 "断开" ;
+VAL_ 369 KP2_Testonly 1 "闭合" 0 "断开" ;
+VAL_ 195 VCU_ACC_Main_Switch 1 "On" 0 "Off" ;
+VAL_ 195 VCU_ACC_RES_Inc_Switch 2 "On continuous" 1 "On single" 0 "Off" ;
+VAL_ 195 VCU_ACC_Set_Setspeed_Dec_Switch 2 "On continuous" 1 "On single" 0 "Off" ;
+VAL_ 195 VCU_ACC_Cancel_Switch 1 "On" 0 "Off" ;
+VAL_ 195 VCU_ACC_Headway_Inc_Switch 1 "On" 0 "Off" ;
+VAL_ 195 VCU_ACC_Headway_Dec_Switch 1 "On" 0 "Off" ;
+VAL_ 195 VCU_ACC_Switch_Available 1 "Available" 0 "Unavailable" ;
+VAL_ 87 MCU_MotorSpd 65535 "Invalid" ;
+VAL_ 87 MCU_MotSpdValid 1 "有效" 0 "无效" ;
+VAL_ 87 MCU_MotorPresentTorque 65535 "Invalid" ;
+VAL_ 87 MCU_MotTqValid 1 "有效" 0 "无效" ;
+VAL_ 87 MCU_MotorCurrentPower 65535 "Invalid" ;
+VAL_ 87 MCU_MotorPresentSts 3 "Not Used" 2 "发电状态" 1 "电动状态" 0 "待机模式" ;
+VAL_ 89 MCU_FaultLevel 3 "三级故障" 2 "二级故障" 1 "一级故障" 0 "未设置" ;
+VAL_ 89 MCU_MotorOperMode 8 "SpeedCtl" 7 "DisCharge" 6 "PrePowerDown" 5 "Failure" 4 "TrqCtl" 3 "standby" 2 "Precharge" 1 "Ready To Precharge" 0 "Initing" ;
+VAL_ 197 TMM_OutsideTemperature 255 "Invalid" ;
+VAL_ 197 BMS_MaxPresentTemp 255 "Invalid" ;
+VAL_ 197 GSM_KnobPosition 7 "信号故障" 6 "预留" 5 "旋钮处于右旋行程二位置" 4 "旋钮处于右旋行程一位置" 3 "旋钮处于原点位置" 2 "旋钮处于左旋行程一位置" 1 "旋钮处于左旋行程二位置" 0 "Void" ;
+VAL_ 197 GSM_PButtonState 2 "按键按下" 1 "按键未按下" 0 "Void" ;
+VAL_ 579 BCM_DrDoorAjarSts 1 "ajar" 0 "closed" ;
+VAL_ 579 BCM_PsDoorAjarSts 1 "ajar" 0 "closed" ;
+VAL_ 579 BCM_RLDoorAjarSts 1 "ajar" 0 "closed" ;
+VAL_ 579 BCM_RRDoorAjarSts 1 "ajar" 0 "closed" ;
+VAL_ 579 BCM_RearDoorAjarSts 1 "ajar" 0 "closed" ;
+VAL_ 579 BCM_BonnetAjarSts 1 "ajar" 0 "closed" ;
+VAL_ 579 BCM_DrDoorLockSts 1 "unlock" 0 "lock" ;
+VAL_ 579 BCM_ChargeLockSts 1 "Lock" 0 "Unlock" ;
+VAL_ 579 BCM_DoorLockSts 3 "Other three door unlock" 2 "All door unlock" 1 "Only Driver door unlock" 0 "lock" ;
+VAL_ 579 BCM_PositionLampFault 1 "fault" 0 "not fault" ;
+VAL_ 579 BCM_LisenseLampFault 1 "fault" 0 "not fault" ;
+VAL_ 579 BCM_RFogLampFault 1 "fault" 0 "not fault" ;
+VAL_ 579 BCM_ReverseLampFault 1 "fault" 0 "not fault" ;
+VAL_ 579 BCM_LDirectionLampFault 1 "fault" 0 "not fault" ;
+VAL_ 579 BCM_RDirectionLampFault 1 "fault" 0 "not fault" ;
+VAL_ 579 BCM_BrakeLampFault 1 "fault" 0 "not fault" ;
+VAL_ 579 BCM_LFFogLampFault 1 "fault" 0 "not fault" ;
+VAL_ 579 BCM_RFFogLampFault 1 "fault" 0 "not fault" ;
+VAL_ 579 BCM_PositionLampSts 1 "Lamp On" 0 "Lamp Off" ;
+VAL_ 579 BCM_BacklightLampSts 1 "Lamp On" 0 "Lamp Off" ;
+VAL_ 579 BCM_BrakeLampSts 1 "Lamp On" 0 "Lamp Off" ;
+VAL_ 579 BCM_HBrakeLampSts 1 "Lamp On" 0 "Lamp Off" ;
+VAL_ 579 BCM_LCornerLampSts 1 "Lamp On" 0 "Lamp Off" ;
+VAL_ 579 BCM_RCornerLampSts 1 "Lamp On" 0 "Lamp Off" ;
+VAL_ 579 BCM_FFogLampSts 1 "Lamp On" 0 "Lamp Off" ;
+VAL_ 579 BCM_RFogLampSts 1 "Lamp On" 0 "Lamp Off" ;
+VAL_ 579 BCM_ReverseLampSts 1 "Lamp On" 0 "Lamp Off" ;
+VAL_ 579 BCM_TurnSwSts 2 "Right turn on" 1 "Left turn on" 0 "OFF" ;
+VAL_ 579 BCM_LDirectionLampSts 1 "Lamp On" 0 "Lamp Off" ;
+VAL_ 579 BCM_RDirectionLampSts 1 "Lamp On" 0 "Lamp Off" ;
+VAL_ 579 BCM_LDayRunLightSts 1 "Lamp On" 0 "Lamp Off" ;
+VAL_ 579 BCM_RDayRunLightSts 1 "Lamp On" 0 "Lamp Off" ;
+VAL_ 579 BCM_DefrostSts 1 "Lamp On" 0 "Lamp Off" ;
+VAL_ 579 BCM_DomeLightSts 1 "Lamp On" 0 "Lamp Off" ;
+VAL_ 579 BCM_TrunkLampSts 1 "Lamp On" 0 "Lamp Off" ;
+VAL_ 579 BCM_WndScDefrostSts 1 "Lamp On" 0 "Lamp Off" ;
+VAL_ 579 BCM_LowBeamSts 1 "Lamp On" 0 "Lamp Off" ;
+VAL_ 579 BCM_HighBeamSts 1 "Lamp On" 0 "Lamp Off" ;
+VAL_ 579 BCM_HazardIndSts 1 "Lamp On" 0 "Lamp Off" ;
+VAL_ 579 BCM_DefrostIndSts 1 "Lamp On" 0 "Lamp Off" ;
+VAL_ 579 BCM_CenterLockIndSts 1 "Lamp On" 0 "Lamp Off" ;
+VAL_ 579 BCM_SSBIndSts 1 "Lamp On" 0 "Lamp Off" ;
+VAL_ 579 BCM_WndScDefrostIndSts 1 "Lamp On" 0 "Lamp Off" ;
+VAL_ 579 BCM_LBlindSpotMonitorIndSts 1 "Lamp On" 0 "Lamp Off" ;
+VAL_ 579 BCM_RBlindSpotMonitorIndSts 1 "Lamp On" 0 "Lamp Off" ;
+VAL_ 579 BCM_TrunkSw 1 "pressed" 0 "not pressed" ;
+VAL_ 579 BCM_DOOR_KNOB_CLOSE_Req 1 "Req" 0 "No Req" ;
+VAL_ 579 BCM_DOOR_KNOB_OPEN_Req 1 "Req" 0 "No Req" ;
+VAL_ 579 BCM_FL_DOOR_KNOB_OPEN_Req 1 "Req" 0 "No Req" ;
+VAL_ 615 BCM_RearWiperSts 1 "Open" 0 "Close" ;
+VAL_ 615 BCM_FrontWiperSw 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "fast" 3 "slow" 2 "int or auto" 1 "mist（Reserved）" 0 "off" ;
+VAL_ 615 BCM_FrontWiperSts 3 "Reserved" 2 "fast" 1 "slow" 0 "close" ;
+VAL_ 615 BCM_AmbientLightLevel 2 "Night" 1 "Day" 0 "Unknown" ;
+VAL_ 615 BCM_RainLevel 4 "Heavy rain" 3 "Reserved" 2 "Light rain" 1 "No rain" 0 "Unknown" ;
+VAL_ 615 PEPS_PDUstatus 7 "无效" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "Reserved" 2 "ON" 1 "Reserved" 0 "OFF" ;
+VAL_ 615 BCM_Auto_HeadBeamSwitchPosition 1 "Auto" 0 "NO" ;
+VAL_ 595 ICU_VehSped_Displayed_Valid 1 "有效" 0 "无效" ;
+VAL_ 595 ICU_VehSped_Displayed 32767 "Invalid" ;
+VAL_ 595 ICU_KiloMeter 16777215 "Invalid" ;
+VAL_ 595 ICU_Display_WARNING 1 "Fault" 0 "No Fault" ;
+VAL_ 595 ICU_theme_status 3 "无效 no change" 2 "模式3" 1 "模式2" 0 "模式1" ;
+VAL_ 595 ICU_QDCFLC 1 "error" 0 "no error" ;
+VAL_ 595 ICU_BrakeFluidLowLevel 1 "Low" 0 "Normal" ;
+VAL_ 595 ICU_LowSOC_Ind 1 "Low" 0 "Normal" ;
+VAL_ 145 IHU_VSG_Set 3 "无效 no change" 2 "Not used" 1 "开启" 0 "关闭" ;
+VAL_ 145 IHU_VSG_Set_Valid 1 "有效" 0 "无效" ;
+VAL_ 145 IHU_VSG_ToneShift 3 "Tone4" 2 "Tone3" 1 "Tone2" 0 "Tone1" ;
+VAL_ 145 IHU_VSG_ToneShift_Valid 1 "有效" 0 "无效" ;
+VAL_ 145 IHU_SET_EPSmode 3 "运动模式" 2 "舒适模式" 1 "标准模式" 0 "Reserved" ;
+VAL_ 145 IHU_SET_EPSmode_Valid 1 "有效" 0 "无效" ;
+VAL_ 145 IHU_ESC_OFF_SWIT 1 "on" 0 "off" ;
+VAL_ 145 IHU_ESC_OFF_SWIT_Valid 1 "有效" 0 "无效" ;
+VAL_ 145 IHU_BSD_Key 1 "ON" 0 "OFF；" ;
+VAL_ 145 IHU_BSD_Key_Valid 1 "有效" 0 "无效" ;
+VAL_ 145 IHU_WPC_workSet 3 "无效 no change" 2 "Not used" 1 "开启" 0 "关闭" ;
+VAL_ 145 IHU_WPC_workSet_Valid 1 "有效" 0 "无效" ;
+VAL_ 145 IHU_Rear_traffic_Assist 1 "Active" 0 "No Active" ;
+VAL_ 145 IHU_Rear_traffic_Assist_Valid 1 "有效" 0 "无效" ;
+VAL_ 145 IHU_DoorOpenWarning 1 "Active" 0 "No Active" ;
+VAL_ 145 IHU_DoorOpenWarning_Valid 1 "有效" 0 "无效" ;
+VAL_ 145 IHU_ChangeLine_workSet 1 "Active" 0 "No Active" ;
+VAL_ 145 IHU_ChangeLine_workSet_Valid 1 "有效" 0 "无效" ;
+VAL_ 145 IHU_LDW_workSet 1 "Active" 0 "No Active" ;
+VAL_ 145 IHU_LDW_workSet_Valid 1 "有效" 0 "无效" ;
+VAL_ 145 IHU_FCW_workSet 1 "Active" 0 "No Active" ;
+VAL_ 145 IHU_FCW_workSet_Valid 1 "有效" 0 "无效" ;
+VAL_ 145 IHU_TSR_workSet 1 "Active" 0 "No Active" ;
+VAL_ 145 IHU_TSR_workSet_Valid 1 "有效" 0 "无效" ;
+VAL_ 145 IHU_TopicMode_Shift_Req 3 "无效 no change" 2 "模式3" 1 "模式2" 0 "模式1" ;
+VAL_ 145 IHU_TopicMode_Shift_Req_Valid 1 "有效" 0 "无效" ;
+VAL_ 145 IHU_VehMode_Ctrl 3 "预留" 2 "Sport模式" 1 "Comfort模式" 0 "ECO模式" ;
+VAL_ 145 IHU_VehMode_Ctrl_Valid 1 "有效" 0 "无效" ;
+VAL_ 145 IHU_Regen_Switch 3 "Not used" 2 "Not used" 1 "OPEN" 0 "OFF" ;
+VAL_ 145 IHU_Regen_Switch_Valid 1 "有效" 0 "无效" ;
+VAL_ 145 IHU_PASModeSelect 7 "Reserved；" 6 "Reserved；" 5 "Reserved；" 4 "cPSC Mode；" 3 "pPSC Mode；" 2 "POC Mode；" 1 "PSC Mode；" 0 "Function Off；" ;
+VAL_ 145 IHU_PASModeSelect_Valid 1 "有效" 0 "无效" ;
+VAL_ 145 IHU_PASDisclaimer 1 "Refuse Disclaimer；" 0 "Accept Disclaimer；" ;
+VAL_ 145 IHU_PASDisclaimer_Valid 1 "有效" 0 "无效" ;
+VAL_ 145 IHU_PASConfirm 3 "Reserved" 2 "Cancel 取消" 1 "Confirm 确认" 0 "No Select" ;
+VAL_ 145 IHU_PASConfirm_Valid 1 "有效" 0 "无效" ;
+VAL_ 145 IHU_LCA_Key 1 "on" 0 "off" ;
+VAL_ 145 IHU_LCA_Key_Valid 1 "有效" 0 "无效" ;
+VAL_ 145 IHU_SOD_Key 1 "on" 0 "off" ;
+VAL_ 145 IHU_SOD_Key_Valid 1 "有效" 0 "无效" ;
+VAL_ 145 IHU_IHC_workSet 1 "Active" 0 "No Active" ;
+VAL_ 145 IHU_IHC_workSet_Valid 1 "有效" 0 "无效" ;
+VAL_ 145 IHU_AEB_workSet 1 "Active" 0 "No Active" ;
+VAL_ 145 IHU_AEB_workSet_Valid 1 "有效" 0 "无效" ;
+VAL_ 145 IHU_PR_workSet 1 "Active" 0 "No Active" ;
+VAL_ 145 IHU_PR_workSet_Valid 1 "有效" 0 "无效" ;
+VAL_ 145 IHU_Tailgate_Set 1 "开启" 0 "关闭" ;
+VAL_ 145 IHU_Tailgate_Set_Valid 1 "有效" 0 "无效" ;
+VAL_ 145 IHU_PARK_TherManageReq 1 "ON" 0 "OFF" ;
+VAL_ 593 AVM_STAUTS 1 "ON" 0 "OFF" ;
+VAL_ 593 AVM_CHECK_IHU_READY 1 "check" 0 "no check" ;
+VAL_ 593 AVM_RESPONSE 1 "ON" 0 "OFF" ;
+VAL_ 593 AVM_ERROR 3 "System error" 2 "Controller error" 1 "Camera error" 0 "NO error" ;
+VAL_ 593 AVM_View_State_Rsp 4 "All Screen" 3 "Right" 2 "Left" 1 "Rear" 0 "Front" ;
+VAL_ 593 AVM_2D3D_State_Rsp 1 "3D" 0 "2D" ;
+VAL_ 593 AVM_Dynamic_trajectory_Rsp 1 "Pressed" 0 "Released" ;
+VAL_ 577 PAS_RLCDistance 2 "distance range of RLC is from 30cm to 60cm；" 1 "distance of RLC is less than 30cm；" 0 "No Obstacle Detected；" ;
+VAL_ 577 PAS_RLMDistance 3 "distance range of RLM is from 80cm to 150cm；" 2 "distance range of RLM is from 30cm to 80cm；" 1 "distance of RLM is less than 30cm；" 0 "No Obstacle Detected；" ;
+VAL_ 577 PAS_RRMDistance 3 "distance range of RRM is from 80cm to 150cm；" 2 "distance range of RRM is from 30cm to 80cm；" 1 "distance of RRM is less than 30cm；" 0 "No Obstacle Detected；" ;
+VAL_ 577 PAS_RRCDistance 15 "无效" 14 "无效" 13 "无效" 12 "无效" 11 "无效" 10 "无效" 9 "无效" 8 "无效" 7 "无效" 6 "无效" 5 "无效" 4 "无效" 3 "无效" 2 "distance range of RRC is from 30cm to60cm；" 1 "distance of RRC is less than 30cm；" 0 "No Obstacle Detected；" ;
+VAL_ 577 PAS_FLCDistance 2 "distance range of FLC is from 30cm to 60cm；" 1 "distance of FLC is less than 30cm；" 0 "No Obstacle Detected；" ;
+VAL_ 577 PAS_FLMDistance 3 "distance range of FLM is from 80cm to 100cm；" 2 "distance range of FLM is from 30cm to 80cm；" 1 "distance of FLM is less than 30cm；" 0 "No Obstacle Detected；" ;
+VAL_ 577 PAS_FRMDistance 3 "distance range of FRM is from 80cm to 100cm；" 2 "distance range of FRM is from 30cm to 80cm；" 1 "distance of FRM is less than 30cm；" 0 "No Obstacle Detected；" ;
+VAL_ 577 PAS_FRCDistance 2 "distance range of FRC is from 30cm to60cm；" 1 "distance of FRC is less than 30cm；" 0 "No Obstacle Detected；" ;
+VAL_ 577 PAS_WarnType 15 "Reserved" 14 "Reserved" 13 "Reserved" 12 "Reserved" 11 "Reserved" 10 "Reserved" 9 "Reserved" 8 "Reserved" 7 "系统无错误提示（鸣叫0.5s）；" 6 "错误3S报警（长鸣3s）；" 5 "长鸣区前后同时报警（前角报警0.5s，后角报警0.5s）；" 4 "间歇音3报警（预留）；" 3 "间歇音2报警（报警75ms，不报警425ms）；" 2 "间歇音1报警（报警75ms，不报警175ms）；" 1 "长鸣区报警；" 0 ":不报警；" ;
+VAL_ 577 PAS_WarnFrequency 3 "错误报警（1500Hz）" 2 "后角（750Hz）；" 1 "前角940Hz" 0 "不报警" ;
+VAL_ 577 PAS_SystemFaultFlag 3 "System Failure" 2 "Rear Failure；" 1 "Front Failure；" 0 "No Failure；" ;
+VAL_ 577 PAS_MODE 6 "Reserved；" 5 "Reserved；" 4 "Rear Active；" 3 "Front Active；" 2 "Front Rear Active；" 1 "Standby；" 0 "Off；" ;
+VAL_ 577 PAS_RLSDistance 2 "distance range of RLS is from 30cm to 60cm；" 1 "distance of RLS is less than 30cm；" 0 "No Obstacle Detected；" ;
+VAL_ 577 PAS_RRSDistance 2 "distance range of RRS is from 30cm to 60cm；" 1 "distance of RRS is less than 30cm；" 0 "No Obstacle Detected；" ;
+VAL_ 577 PAS_FLSDistance 2 "distance range of FLS is from 30cm to 60cm；" 1 "distance of FLS is less than 30cm；" 0 "No Obstacle Detected；" ;
+VAL_ 577 PAS_FRSDistance 2 "distance range of FRS is from 30cm to 60cm；" 1 "distance of FRS is less than 30cm；" 0 "No Obstacle Detected；" ;
+VAL_ 183 PAS_ParkSideInd 3 "Reserved" 2 "Right Parking （右泊车）" 1 "Left Parking （左泊车）" 0 "None" ;
+VAL_ 183 PAS_ParkSlotSearchInd 2 "Right Slot Searching（正在寻找右边停车位）" 1 "Left Slot Searching （正在寻找左边停车位）" 0 "None" ;
+VAL_ 183 PAS_SteerControlReq 2 "EPS Control" 1 "Control EPS Request" 0 "No Request" ;
+VAL_ 183 PAS_GearBoxReq 2 "Gear Shift Control Active" 1 "Gear Shift Request" 0 "No Request" ;
+VAL_ 183 PAS_DrRqst 31 "Reserved 预留" 30 "Reserved 预留" 29 "Reserved 预留" 28 "Reserved 预留" 27 "Reserved 预留" 26 "Reserved 预留" 25 "Reserved 预留" 24 "Reserved 预留" 23 "Req_Gear P and Brake 请挂入P挡并保持踩住刹车" 22 "Req_Press Brake Pedal 请保持踩住刹车" 21 "Req_Repress Dead Man Switch 请长按安全开关" 20 "Req_Buckle Seat Belt 请系好安全带" 19 "Req_Close Door 请关闭车门" 18 "Req_Release Brake 请松开刹车" 17 "Req_Slow_Down 当前车速过快，请减速" 16 "Req_Drive_Bw 请向后行驶" 15 "Req_Gear_D 请挂入D挡" 14 "Req_Gear_R 请挂入R挡" 13 "pPSC&cPSC request 此时车位水平/垂直均可泊入" 12 "cPSC request only 此时搜索到的车位只满足垂直泊入" 11 "pPSC request only 此时搜索到的车位只满足水平泊入" 10 "Req_Process bar 泊车进度条" 9 "Req_Function off 泊车系统关闭" 8 "Req_Function Select 泊入泊出功能选择" 7 "Req_Stop 请停车" 6 "Req_Drive_Fw 请向前行驶" 5 "Req_SearchingProcess 正在搜索车位" 4 "Req_Confirm_Switch 确认进入自动泊车过程" 3 "Req_Gear_P 请挂入P挡" 2 "Req_Turn_lever 请拨动转向杆，确认泊出方向" 1 "Req_Forward_Again 车位已找到，请继续向前行驶" 0 "No Request 没有请求" ;
+VAL_ 183 PAS_RecoverInterrupt_Indication 4 "Req_Recover_Brake pedal 检测到刹车被踩下，泊车暂停" 3 "Req_Recover_Seatbelt unbuckle 检测安全带松开，泊车暂停" 2 "Req_Recover_Found Obstacle In Trajectory 检测到障碍物，泊车暂停" 1 "Req_Recover_Dead Man Switch Release 请长按安全开关" 0 "None" ;
+VAL_ 183 PAS_QuitInd 20 "Req_Quit_Disclaimer 未同意免责申明，系统退出0x15~0x1F: Reserved 预留" 19 "Req_Quit_Steering Wheel Hands-On 转向干预，系统退出" 18 "Req_Quit_Gear Interrupt 档位干预，系统退出" 17 "Req_Quit_Vehicle Block 车辆无法移动，系统退出" 16 "Req_Quit_EPB_Apply 电子手刹干预，系统退出" 15 "Req_Quit_Driver_Door 检测到车门打开，系统退出" 14 "Reserved 预留" 13 "Req_Quit_No object in front 路径顺畅，请自行泊出" 12 "Req_Quit_Space limit 车位空间限制，系统退出" 11 "Req_Quit_Trajectory 轨迹超出规划，系统退出" 10 "Req_Quit_ACC  ACC激活，系统退出" 9 "Req_Quit_External ECU actvie  关联或干涉系统使能，系统退出" 8 "Req_Quit_Gear Intervention 检测到挡位被干预，系统退出" 7 "Req_Quit_Gas pedal 检测到油门被踩下，系统退出" 6 "Req_Quit_Recover_Int_Tims_Overflow 泊车中断次数超限，系统退出" 5 "Req_Quit_Move times overflow 泊车移动次数超限，系统退出" 4 "Req_Quit_Timing overflow 泊车时间超限，系统退出" 3 "Req_Quit_Speed high 车速超限，系统退出" 2 "Req_Quit_PAS_Failure 泊车辅助系统故障，系统退出" 1 "Req_Quit_External ECU failure 关联ECU故障，系统退出" 0 "No Request 没有指示" ;
+VAL_ 183 PAS_TargetGearPositionReq 7 "无效" 6 "Reserved" 5 "Reserved" 4 "Target Gear D" 3 "Target Gear N" 2 "Target Gear R" 1 "Target Gear P" 0 "No Request" ;
+VAL_ 183 PAS_ParkPercentage 101 "状态条不显示" 100 "100%" 0 "0%" ;
+VAL_ 183 PAS_DeadManButtonPress 1 "PAS Deadman button pressed" 0 "PAS Deadman Button idle；" ;
+VAL_ 183 PAS_TargetSteerAngleValid 1 "有效" 0 "无效" ;
+VAL_ 183 PAS_Mode_State 4 "cPSC Mode；" 3 "pPSC Mode；" 2 "POC Mode；" 1 "PSC Mode；" 0 "Function Off；" ;
+VAL_ 185 PAS_Sts 7 "Suspend 挂起（暂停）" 6 "Terminated 退出" 5 "Failure 故障（外部或内部）" 4 "Completed 泊车完成" 3 "Guidance Active 引导激活" 2 "Searching 使能，寻找车位" 1 "Standby 待命" 0 "Off 关闭" ;
+VAL_ 185 PAS_PASFunOpenSts 1 "ON" 0 "OFF；" ;
+VAL_ 185 PAS_ESCControlReq 2 "ESC Control" 1 "Control ESC Request" 0 "No Request" ;
+VAL_ 185 PAS_SWAngleSpdLimit 255 "Invalid" ;
+VAL_ 185 PAS_Fault 1 "Failure；" 0 "No Failure；" ;
+VAL_ 185 PAS_ESCReqMode 7 "Emergency Brake（紧急刹车模式）" 4 "Automatic Park(正常泊车刹车模式)" 3 "Brake Hold（ESC保压）" 2 "Apply Park Brake（申请EPB激活）" 1 "Prefill（预加压，可缩短刹车响应所需时间）" 0 "None （无）" ;
+VAL_ 187 EPB_WorkMode 3 "Reserved" 2 "Support AVH Function（适用于带ESC的车，带AVH功能的一直发送此信号值）" 1 "Auto Mode（适用于不带ESC的车，不带AVH）" 0 "Manual Mode（适用于不带ESC的车，不带AVH）" ;
+VAL_ 187 EPB_MaxPowerPark 1 "MaxPowerParking" 0 "Normal" ;
+VAL_ 187 EPB_LightBrakeLamp 1 "Illuminate" 0 "Not Request" ;
+VAL_ 187 EPB_AutoParkKey 3 "Error" 2 "Press Down" 1 "Reserved" 0 "Release" ;
+VAL_ 187 EPB_ManualParkKey 3 "Error" 2 "Press Down" 1 "Pull Up" 0 "Release" ;
+VAL_ 187 EPB_ParkIndLight 3 "Reserved" 2 "Lamp Flash" 1 "Lamp On" 0 "Lamp Off" ;
+VAL_ 187 EPB_FaultIndLight 3 "Reserved" 2 "Lamp Flash（没用到，预留）" 1 "Lamp On（EPB故障）" 0 "Lamp Off" ;
+VAL_ 187 EPB_ActuatorSts 7 "Reserved" 6 "DynamicBraking" 5 "Releasing" 4 "Applying" 3 "CompletelyReleased" 2 "Released" 1 "ParkApplied" 0 "Unknown" ;
+VAL_ 187 EPB_ParkBrakeValid 1 "有效" 0 "无效" ;
+VAL_ 187 EPB_DecSpdReqValid 1 "有效" 0 "无效" ;
+VAL_ 187 EPB_DecSpdReq 1 "request" 0 "No request" ;
+VAL_ 187 EPB_DisplayInfo 15 "Reserved" 14 "Reserved" 13 "Reserved" 12 "Reserved" 11 "Reserved" 10 "Reserved" 9 "Reserved" 8 "Reserved" 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "Reserved" 2 "Step on the brake pedal （仪表提示“请踩制动踏板”）" 1 "IGN OFF No parking（仪表提示“驻车功能未启动 请启动电子驻车”）" 0 "No display" ;
+VAL_ 189 SRS_CrashOutputSts 30 "FCr+LSCr+RSCr+RCr" 28 "LSCr+RSCr+RCr" 26 "FCr+RSCr+RCr" 24 "RSCr+RCr" 22 "FCr+FCr+RCr" 20 "LSCr+RCr" 18 "FCr+RCr" 16 "RCr" 14 "FCr+LSCr+RSCr" 12 "LSCr+RSCr" 10 "FCr+RSCr" 8 "RSCr" 6 "FCr+LSCr" 4 "LSCr" 2 "FCr" 0 "No Crah" ;
+VAL_ 189 SRS_AirbagFailSts 3 "Not Used" 2 "Fail present, lamp on" 1 "Fail no present,lamp flashing(Plant mode)" 0 "Fail no present, lamp off" ;
+VAL_ 189 SRS_Chime 1 "Chime Flash" 0 "Chime Off" ;
+VAL_ 189 SRS_DrSeatBeltRSts 3 "Not Used" 2 "Unbuckle" 1 "Not Used" 0 "Buckled" ;
+VAL_ 189 SRS_OCPPDSts 3 "not used" 2 "occupied_PPD+unbuckle (lamp on)" 1 "empty_PPD or PPD+bulked (lamp off)" 0 "not used" ;
+VAL_ 189 SRS_L_RearPsSeatBeltRSt 3 "Not Used" 2 "Unbuckle" 1 "Not Used" 0 "Buckled" ;
+VAL_ 189 SRS_M_RearPsSeatBeltRSt 3 "Not Used" 2 "Unbuckle" 1 "Not Used" 0 "Buckled" ;
+VAL_ 189 SRS_R_RearPsSeatBeltRSt 3 "Not Used" 2 "Unbuckle" 1 "Not Used" 0 "Buckled" ;
+VAL_ 95 EPS_SteerWheelAngle 65535 "Invalid" ;
+VAL_ 95 EPS_SteerWheelRotSpd 255 "Invalid" ;
+VAL_ 95 EPS_PASSteeringSts 1 "Steering Position is Adjusting" 0 "Steering Position is OK" ;
+VAL_ 95 EPS_SteeringAngleValid 1 "有效" 0 "无效" ;
+VAL_ 95 EPS_SteerWheelRotSpdValid 1 "有效" 0 "无效" ;
+VAL_ 95 EPS_CalibrationSts 1 "Sensor calibrated" 0 "Sensor not calibrated" ;
+VAL_ 95 EPS_SASFaultSts 1 "有效" 0 "无效" ;
+VAL_ 371 EPS_SteeringTorque 255 "Invalid" 8 "Left" 7 "Left" 6 "Left" 5 "Left" 4 "Left" 3 "Left" 2 "Left" 1 "Left" ;
+VAL_ 371 EPS_InhibitCode 7 "Reserved" 6 "Reserved" 5 "EPS failure" 4 "Excess Angle Deviation" 3 "Abnormal CAN input" 2 "Driver Interference" 1 "Over Speed" 0 "Normal Operation" ;
+VAL_ 371 EPS_SteeringTorqueValid 1 "有效" 0 "无效" ;
+VAL_ 371 EPS_MotorCurrent 4095 "Invalid" ;
+VAL_ 371 EPS_ModeSts 3 "运动模式" 2 "舒适模式" 1 "标准模式" 0 "Reserved" ;
+VAL_ 371 EPS_FaultIndLight 3 "Reserved" 2 "NoCalibrated (lamp flashing)" 1 "Fault(lamp on)" 0 "No Fault" ;
+VAL_ 371 EPS_RespControlSts 7 "Reserve" 6 "Reserve" 5 "Failure" 4 "Reply for Control" 3 "预留" 2 "Active" 1 "Available" 0 "Inhibit" ;
+VAL_ 371 EPS_ModSetInhibit 1 "允许" 0 "禁止" ;
+VAL_ 371 EPS_ControledMode 2 "Auto Steering" 1 "Manual Assist" 0 "Idle" ;
+VAL_ 373 FLC_ACCAutoCancel 2 "Function cancel" 1 "Condition dissatisfy" 0 "No request" ;
+VAL_ 373 FLC_FaultSts 3 "Reserved" 2 "Camera blocked" 1 "Service required" 0 "No error" ;
+VAL_ 373 FLC_ACCSts 4 "Exit" 3 "Active" 2 "Standby" 1 "Off" 0 "Unavailable state" ;
+VAL_ 373 FLC_ACCDrCancel 1 "Request" 0 "No request" ;
+VAL_ 373 FLC_ACCSetHeadway 4 "Distance stage 4" 3 "Distance stage 3" 2 "Distance stage 2" 1 "Distance stage 1" 0 "No gap set" ;
+VAL_ 373 FLC_ACCCIPVIndicator 1 "Request" 0 "No request" ;
+VAL_ 373 FLC_AEBState 4 "Active" 3 "Active (no intervention)" 2 "Standby" 1 "Off" 0 "Unavailable state" ;
+VAL_ 373 FLC_ACCOverrideInd 1 "Request" 0 "No request" ;
+VAL_ 373 FLC_ACCTakeoverInd 1 "Request" 0 "No request" ;
+VAL_ 373 FLC_ACCGoInd 1 "Request" 0 "No request" ;
+VAL_ 373 FLC_LDWWorkSet_Fdback 1 "Active" 0 "No Active" ;
+VAL_ 373 FLC_TSRWorkSet_Fdback 1 "Active" 0 "No Active" ;
+VAL_ 373 FLC_FCWWorkSet_Fdback 1 "Active" 0 "No Active" ;
+VAL_ 373 FLC_IHCWorkSet_Fdback 1 "Active" 0 "No Active" ;
+VAL_ 373 FLC_AEBWorkSet_Fdback 1 "Active" 0 "No Active" ;
+VAL_ 373 FLC_PRWorkSet_Fdback 1 "Active" 0 "No Active" ;
+VAL_ 191 FLC_ACCTorqueReqSts 1 "Request" 0 "No request" ;
+VAL_ 191 FLC_ACCDecReqSts 1 "Request" 0 "No request" ;
+VAL_ 191 FLC_ACCStandstillReq 1 "Request" 0 "No request" ;
+VAL_ 191 FLC_FSRFaultSts 1 "Error" 0 "No Error" ;
+VAL_ 193 FLC_AEBDecReqSts 1 "Request" 0 "No request" ;
+VAL_ 193 FLC_AEBPrefillReq 1 "Request" 0 "No request" ;
+VAL_ 193 FLC_AEBJerkReq 1 "Request" 0 "No request" ;
+VAL_ 193 FLC_AEBDecReq 4095 "Invalid" ;
+VAL_ 375 FLC_FCWWarnLevel 3 "Reserved" 2 "Warning Level 2" 1 "Warning Level 1" 0 "No warning" ;
+VAL_ 375 FLC_PRWarnLevel 3 "Reserved" 2 "Warning Level 2" 1 "Warning Level 1" 0 "No warning" ;
+VAL_ 375 FLC_LDWWarn 3 "Reserved" 2 "Right Warning" 1 "Left Warning" 0 "No warning" ;
+VAL_ 375 FLC_PRSts 4 "Active" 3 "Active (no intervention)" 2 "Standby" 1 "Off" 0 "Unavailable state" ;
+VAL_ 375 FLC_IHCHighbeamReq 2 "请求关闭" 1 "请求打开" 0 "无请求" ;
+VAL_ 375 FLC_FCWSts 4 "Active" 3 "Active (no intervention)" 2 "Standby" 1 "Off" 0 "Unavailable state" ;
+VAL_ 375 FLC_IHCSts 4 "Active" 3 "Active (no intervention)" 2 "Standby" 1 "Off" 0 "Unavailable state" ;
+VAL_ 375 FLC_LDWSts 4 "Active" 3 "Active (no intervention)" 2 "Standby" 1 "Off" 0 "Unavailable state" ;
+VAL_ 375 FLC_LDWLineDetectSts 3 "Both side lane marks detected" 2 "Right side lane mark detected" 1 "Left side lane mark detected" 0 "Neither side lane mark detected" ;
+VAL_ 375 FLC_TSRSts 4 "Active" 3 "Active (no intervention)" 2 "Standby" 1 "Off" 0 "Unavailable state" ;
+VAL_ 97 ABS_WhlSpdFrntLeRaw 32767 "Invalid" ;
+VAL_ 97 ABS_WhlSpdFrntLeRawValidFlag 1 "有效" 0 "无效" ;
+VAL_ 97 ABS_WhlSpdFrntRiRaw 32767 "Invalid" ;
+VAL_ 97 ABS_WhlSpdFrntRiRawValidFlag 1 "有效" 0 "无效" ;
+VAL_ 97 ESC_MasterCylinderPressure 4095 "Invalid" ;
+VAL_ 99 ABS_WhlSpdReLeRaw 32767 "Invalid" ;
+VAL_ 99 ABS_WhlSpdReLeRawValidFlag 1 "有效" 0 "无效" ;
+VAL_ 99 ABS_WhlSpdReRiRaw 32767 "Invalid" ;
+VAL_ 99 ABS_WhlSpdReRiRawValidFlag 1 "有效" 0 "无效" ;
+VAL_ 99 ABS_VehSpdLgt 32767 "Invalid" ;
+VAL_ 99 ABS_VehSpdLgtValidFlag 1 "有效" 0 "无效" ;
+VAL_ 99 ABS_ABSFailure 1 "failure" 0 "not failure" ;
+VAL_ 99 ESC_TCSFailure 1 "failure" 0 "not failure" ;
+VAL_ 99 ESC_ESCFailure 1 "failure" 0 "not failure" ;
+VAL_ 101 ESC_AutoHarazedBlinking 3 "无效 signal" 2 "Reserved" 1 "AutoHazardBlinking ON" 0 "AutoHazardBlinking OFF" ;
+VAL_ 101 ABS_ABSWarningLamp 1 "Warning" 0 "No warning" ;
+VAL_ 101 ESC_ESCWarningLamp 1 "Warning" 0 "No warning" ;
+VAL_ 101 ABS_EBDWarningLamp 1 "Warning" 0 "No warning" ;
+VAL_ 101 ESC_HHC_Control_Status 1 "HHC Active" 0 "HHC Not Active" ;
+VAL_ 101 ESC_HHC_Status_Fault 1 "HHC Defective" 0 "HHC Normal" ;
+VAL_ 101 ABS_BR1_St_EmergencyBrakeLight 1 "request" 0 "not request" ;
+VAL_ 101 ESC_OFF_Stat 1 "ON Stat" 0 "OFF Stat" ;
+VAL_ 103 ABS_RRWheelSpdPulse 2047 "Invalid" ;
+VAL_ 103 ABS_RLWheelSpdPulse 2047 "Invalid" ;
+VAL_ 103 ABS_FRWheelSpdPulse 2047 "Invalid" ;
+VAL_ 103 ABS_FLWheelSpdPulse 2047 "Invalid" ;
+VAL_ 103 ABS_RRWheelSpdPulseValidFlag 1 "有效" 0 "无效" ;
+VAL_ 103 ABS_RLWheelSpdPulseValidFlag 1 "有效" 0 "无效" ;
+VAL_ 103 ABS_FRWheelSpdPulseValidFlag 1 "有效" 0 "无效" ;
+VAL_ 103 ABS_FLWheelSpdPulseValidFlag 1 "有效" 0 "无效" ;
+VAL_ 105 ESC_LongAccVd 1 "有效" 0 "无效" ;
+VAL_ 105 ESC_YawRateVd 1 "有效" 0 "无效" ;
+VAL_ 105 ESC_LaterAccVd 1 "有效" 0 "无效" ;
+VAL_ 105 ABS_Diag_Session_Status 1 "有效" 0 "无效" ;
+VAL_ 105 ABS_Active 1 "active" 0 "not active" ;
+VAL_ 105 ESC_Active 1 "active" 0 "not active" ;
+VAL_ 105 ESC_Available 1 "available" 0 "not available" ;
+VAL_ 105 ESC_ACC_Request_Response 1 "Response" 0 "Not response" ;
+VAL_ 105 ESC_AEB_Request_Response 1 "Response" 0 "Not response" ;
+VAL_ 105 ESC_AEB_Prefill_Response 1 "Response" 0 "Not response" ;
+VAL_ 105 ESC_AEB_Jerk_Response 1 "Response" 0 "Not response" ;
+VAL_ 107 ABS_TorqRequestVal 65535 "Invalid" ;
+VAL_ 107 ABS_TorqRequestValValid 1 "有效" 0 "无效" ;
+VAL_ 107 ABS_TcsTorqReqActive 1 "active" 0 "not active" ;
+VAL_ 107 ABS_RegenTorqInterActive 1 "active" 0 "not active" ;
+VAL_ 107 ABS_RegenDragCtrlStatus 1 "active" 0 "not active" ;
+VAL_ 107 ABS_RegenBrakeCtrlStatus 1 "active" 0 "not active" ;
+VAL_ 107 ABS_TorqReqMode 3 "Reserved" 2 "Regen mode" 1 "TCS mode" 0 "Normal mode" ;
+VAL_ 107 ABS_EBDFailure 1 "failure" 0 "not failure" ;
+VAL_ 107 ESC_DPB_Active 1 "active" 0 "not active" ;
+VAL_ 107 ESC_DPB_inhibit 1 "inhibit" 0 "not inhibit" ;
+VAL_ 107 ESC_AH_Enabled 1 "enabled" 0 "not enabled" ;
+VAL_ 107 ESC_AH_Availability 1 "available" 0 "not available" ;
+VAL_ 107 ESC_AH_Status 1 "active" 0 "not active" ;
+VAL_ 107 ABS_EPB_Apply_Req 2 "Reserved" 1 "Release" 0 "Apply" ;
+VAL_ 107 ESC_brakestate_feedback 1 "Normal" 0 "Emergency" ;
+VAL_ 107 ESC_Hold 1 "Hold" 0 "Unhold" ;
+VAL_ 107 ESC_PAS_Response 5 "Failure" 4 "Reply for Control" 3 "Finish Hold" 2 "Active" 1 "Available" 0 "Inhibit" ;
+VAL_ 107 ESC_QDCFLC 1 "error" 0 "no error" ;
+VAL_ 107 ESC_BrakeActive 1 "Active" 0 "Inactive" ;
+VAL_ 107 ESC_InhibitCode1 1 "Abnormal CAN Input" 0 "None" ;
+VAL_ 107 ESC_InhibitCode2 1 "EPB Active" 0 "None" ;
+VAL_ 107 ESC_InhibitCode3 1 "EPB Failed" 0 "None" ;
+VAL_ 107 ESC_InhibitCode4 1 "Excess Decelerate Deviation" 0 "None" ;
+VAL_ 107 ESC_InhibitCode5 1 "Other Code" 0 "None" ;
+VAL_ 109 ESC_Wheel_Speed_RR_Direction 3 "Static" 2 "Unknow" 1 "Backforward" 0 "Forward" ;
+VAL_ 109 ESC_Wheel_Speed_RL_Direction 3 "Static" 2 "Unknow" 1 "Backforward" 0 "Forward" ;
+VAL_ 109 ESC_Wheel_Speed_FR_Direction 3 "Static" 2 "Unknow" 1 "Backforward" 0 "Forward" ;
+VAL_ 109 ESC_Wheel_Speed_FL_Direction 3 "Static" 2 "Unknow" 1 "Backforward" 0 "Forward" ;
+VAL_ 109 ESC_Moving_Direction 3 "Static" 2 "Unknow" 1 "Backforward" 0 "Forward" ;

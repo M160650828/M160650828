@@ -1,0 +1,92 @@
+[
+  {
+    "Net": "VIU0_INFO_CANFD",
+    "CANoeCANChannel": 5,
+    "NMMsgID": "0x400",
+    "WakeupMsgId": "0x47F",
+    "WakeupMsgCANType": "CAN",
+    "WakeupMsgDLC": 8,
+    "WakeupMsgData": "0x0000000000000000",
+    "WakeupMsgPeriod": 500
+  },
+  {
+    "Net": "VIU0_CN_CANFD",
+    "CANoeCANChannel": 6,
+    "NMMsgID": null,
+    "WakeupMsgId": null,
+    "WakeupMsgCANType": null,
+    "WakeupMsgDLC": null,
+    "WakeupMsgData": null,
+    "WakeupMsgPeriod": null
+  },
+  {
+    "Net": "VIU0_PT_CANFD",
+    "CANoeCANChannel": 7,
+    "NMMsgID": null,
+    "WakeupMsgId": null,
+    "WakeupMsgCANType": null,
+    "WakeupMsgDLC": null,
+    "WakeupMsgData": null,
+    "WakeupMsgPeriod": null
+  },
+  {
+    "Net": "VIU0_CH_CANFD",
+    "CANoeCANChannel": 8,
+    "NMMsgID": null,
+    "WakeupMsgId": null,
+    "WakeupMsgCANType": null,
+    "WakeupMsgDLC": null,
+    "WakeupMsgData": null,
+    "WakeupMsgPeriod": null
+  },
+  {
+    "Net": "VIU0_CFEXT_CAN",
+    "CANoeCANChannel": 9,
+    "NMMsgID": null,
+    "WakeupMsgId": null,
+    "WakeupMsgCANType": null,
+    "WakeupMsgDLC": null,
+    "WakeupMsgData": null,
+    "WakeupMsgPeriod": null
+  },
+  {
+    "Net": "VIU0_BDEXT_CAN",
+    "CANoeCANChannel": 10,
+    "NMMsgID": null,
+    "WakeupMsgId": null,
+    "WakeupMsgCANType": null,
+    "WakeupMsgDLC": null,
+    "WakeupMsgData": null,
+    "WakeupMsgPeriod": null
+  },
+  {
+    "Net": "VIU0_CF_CAN",
+    "CANoeCANChannel": 11,
+    "NMMsgID": null,
+    "WakeupMsgId": null,
+    "WakeupMsgCANType": null,
+    "WakeupMsgDLC": null,
+    "WakeupMsgData": null,
+    "WakeupMsgPeriod": null
+  },
+  {
+    "Net": "VIU0_SF_CANFD",
+    "CANoeCANChannel": 12,
+    "NMMsgID": null,
+    "WakeupMsgId": null,
+    "WakeupMsgCANType": null,
+    "WakeupMsgDLC": null,
+    "WakeupMsgData": null,
+    "WakeupMsgPeriod": null
+  },
+  {
+    "Net": "VIU0_BD_CANFD",
+    "CANoeCANChannel": 13,
+    "NMMsgID": null,
+    "WakeupMsgId": null,
+    "WakeupMsgCANType": null,
+    "WakeupMsgDLC": null,
+    "WakeupMsgData": null,
+    "WakeupMsgPeriod": null
+  }
+]

@@ -1,0 +1,925 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                        Mentor Graphics Corporation                         */
+/*                            All rights reserved                             */
+/*                                                                            */
+/* ************************************************************************** */
+/*                                                                            */
+/*  Description:   LIN Description file                                       */
+/*  System:        PPV                                                        */
+/*  Variant:       DMH                                                        */
+/*  Cluster:       PICU_LIN1                                                  */
+/*  Master:        PICU_LIN1_Ctrl                                             */
+/*  Generated at:  2025-06-23 16:09                                           */
+/*                                                                            */
+/* ************************************************************************** */
+/*                                                                            */
+/*                THIS CONFIGURATION MIGHT CONTAIN SOME ERRORS                */
+/*                 IF THE INPUT MODEL WAS NOT PROPERLY FORMED!                */
+/*                       Do Not Use this File directly!                       */
+/*                                                                            */
+/* ************************************************************************** */
+
+LIN_description_file;
+LIN_protocol_version = "2.2";
+LIN_language_version = "2.2";
+LIN_speed = 19.2 kbps;
+
+Channel_name = "";
+
+Nodes {
+	Master: PICU, 5.000 ms, 0.000 ms;
+	Slaves: EAC, EleclCmprCtrlVlvChlr, HVPTC;
+}
+
+Signals {
+	Comm_error_L1_l: 1, 0, EAC, PICU;
+	Curr_sensor_error_L1_l: 1, 0, EAC, PICU;
+	Curr_sensor_status_L1_l: 4, 0, EAC, PICU;
+	EAC_Actdschrg_Req_l: 1, 0, PICU, EAC;
+	EAC_Actdschrg_ReqInvsn_l: 1, 1, PICU, EAC;
+	EAC_drive_request_L1_l: 2, 0, PICU, EAC;
+	EAC_HVIL_Sta_l: 2, 0, EAC, PICU;
+	EAC_input_current_L1_l: 8, 0, EAC, PICU;
+	EAC_input_voltage_L1_l: 8, 0, EAC, PICU;
+	EAC_inv_temp_L1_l: 8, 0, EAC, PICU;
+	EAC_phase_curr_L1_l: 8, 0, EAC, PICU;
+	EAC_power_lim_L1_l: 8, 0, PICU, EAC;
+	EAC_Softstart_Enb_l: 1, 0, PICU, EAC;
+	EAC_speed_L1_l: 8, 0, EAC, PICU;
+	EAC_status_L1_l: 3, 0, EAC, PICU;
+	EAC_target_speed_L1_l: 8, 0, PICU, EAC;
+	EACBLNum_l: 8, 0, EAC, PICU;
+	EACHWNum_l: 8, 0, EAC, PICU;
+	EACLinCmd_l: 3, 7, PICU, EAC;
+	EACSVN_l: 32, 0, EAC, PICU;
+	EACSWNum_l: 40, 0, EAC, PICU;
+	EXVCmdIniReq_l: 3, 0, PICU, EleclCmprCtrlVlvChlr;
+	EXVCmdMvEnb_l: 1, 0, PICU, EleclCmprCtrlVlvChlr;
+	EXVCmdSetReq_l: 16, 0, PICU, EleclCmprCtrlVlvChlr;
+	EXVRespCrntIniSts_l: 2, 0, EleclCmprCtrlVlvChlr, PICU;
+	EXVRespFltSts_l: 4, 0, EleclCmprCtrlVlvChlr, PICU;
+	EXVRespOverTemWrnng_l: 2, 0, EleclCmprCtrlVlvChlr, PICU;
+	EXVRespPos_l: 16, 0, EleclCmprCtrlVlvChlr, PICU;
+	EXVRespRunSts_l: 1, 0, EleclCmprCtrlVlvChlr, PICU;
+	EXVRespVolSts_l: 2, 0, EleclCmprCtrlVlvChlr, PICU;
+	HV_Over_voltage_L_l: 1, 0, EAC, PICU;
+	HV_Under_voltage_L_l: 1, 0, EAC, PICU;
+	HVPTC_Actdschrg_Req_l: 1, 0, PICU, HVPTC;
+	HVPTC_Actdschrg_ReqInvsn_l: 1, 1, PICU, HVPTC;
+	HVPTCBLNum_l: 8, 0, HVPTC, PICU;
+	HVPTCHWNum_l: 8, 0, HVPTC, PICU;
+	HVPTCSVN_l: 32, 0, HVPTC, PICU;
+	HVPTCSWNum_l: 40, 0, HVPTC, PICU;
+	Inpower_error_L1_l: 1, 0, EAC, PICU;
+	Inpower_sensor_status_L1_l: 4, 0, EAC, PICU;
+	LV_Over_voltage_L1_l: 1, 0, EAC, PICU;
+	LV_Under_voltage_L1_l: 1, 0, EAC, PICU;
+	Over_Current_L1_l: 1, 0, EAC, PICU;
+	Over_Current_sensor_error_L1_l: 1, 0, EAC, PICU;
+	Over_Heat_L1_l: 1, 0, EAC, PICU;
+	Over_Load_L1_l: 1, 0, EAC, PICU;
+	PICU_PtcLeftSidebarTempSen_Status_l: 2, 3, PICU, HVPTC;
+	PICU_PtcLeftSidebarTempSen_Value_l: 8, 255, PICU, HVPTC;
+	PICU_PtcLeftSidebarTempSen_ValueV_l: 1, 1, PICU, HVPTC;
+	PICU_PtcRightSidebarTempSen_Status_l: 2, 3, PICU, EAC, HVPTC;
+	PICU_PtcRightSidebarTempSen_Value_l: 8, 255, PICU, EAC, HVPTC;
+	PICU_PtcRightSidebarTempSen_ValueV_l: 1, 1, PICU, EAC, HVPTC;
+	PTC_Enable_l: 1, 0, PICU, HVPTC;
+	PTC_Fail_HV_Sen_l: 1, 0, HVPTC, PICU;
+	PTC_Fail_IGBT_Driver_l: 1, 0, HVPTC, PICU;
+	PTC_Fail_IGBT_Open_l: 1, 0, HVPTC, PICU;
+	PTC_Fail_IGBT_Short_l: 1, 0, HVPTC, PICU;
+	PTC_Fail_Left_HV_Cur_Sen_l: 1, 0, HVPTC, PICU;
+	PTC_Fail_Left_Sidebar_Temp_Sen_l: 1, 0, HVPTC, PICU;
+	PTC_Fail_PCB_Temp_Sen_l: 1, 0, HVPTC, PICU;
+	PTC_Fail_Right_HV_Cur_Sen_l: 1, 0, HVPTC, PICU;
+	PTC_Fail_Right_Sidebar_Temp_Sen_l: 1, 0, HVPTC, PICU;
+	PTC_Fault_Cmd_Mgs_Timeout_l: 1, 0, HVPTC, PICU;
+	PTC_Fault_Flag_l: 1, 0, HVPTC, PICU;
+	PTC_Fault_HV_Over_l: 1, 0, HVPTC, PICU;
+	PTC_Fault_HV_Under_l: 1, 0, HVPTC, PICU;
+	PTC_Fault_Left_HV_Cur_Over_l: 1, 0, HVPTC, PICU;
+	PTC_Fault_Left_Sidebar_Temp_Over_l: 1, 0, HVPTC, PICU;
+	PTC_Fault_LV_OutRange_l: 1, 0, HVPTC, PICU;
+	PTC_Fault_PCB_Temp_Over_l: 1, 0, HVPTC, PICU;
+	PTC_Fault_Right_HV_Cur_Over_l: 1, 0, HVPTC, PICU;
+	PTC_Fault_Right_Sidebar_Temp_Over_l: 1, 0, HVPTC, PICU;
+	PTC_High_Voltage_l: 8, 254, HVPTC, PICU;
+	PTC_HVIL_Sta_l: 2, 0, HVPTC, PICU;
+	PTC_Left_HV_Current_l: 8, 254, HVPTC, PICU;
+	PTC_Left_Sidebar_Temp_l: 8, 254, HVPTC, PICU;
+	PTC_Left_Status_l: 4, 5, HVPTC, PICU;
+	PTC_PCB_Temp_l: 8, 254, HVPTC, PICU;
+	PTC_ResponseError_l: 1, 0, HVPTC, PICU;
+	PTC_Right_HV_Current_l: 8, 254, HVPTC, PICU;
+	PTC_Right_Sidebar_Temp_l: 8, 254, HVPTC, PICU;
+	PTC_Right_Status_l: 4, 5, HVPTC, PICU;
+	PTC_Set_Left_l: 8, 0, PICU, HVPTC;
+	PTC_Set_Right_l: 8, 0, PICU, HVPTC;
+	PTCLinCmd_l: 3, 7, PICU, HVPTC;
+	Stall_L1_l: 1, 0, EAC, PICU;
+	Temp_sensor1_status_L1_l: 4, 0, EAC, PICU;
+	Temp_sensor2_status_L1_l: 4, 0, EAC, PICU;
+	Temp_sensor_error_L1_l: 1, 0, EAC, PICU;
+	Voltage_sensor1_status_L1_l: 4, 0, EAC, PICU;
+	Voltage_sensor2_status_L1_l: 4, 0, EAC, PICU;
+	Voltage_sensor_error_L1_l: 1, 0, EAC, PICU;
+	Wire_Unbalance_L1_l: 1, 0, EAC, PICU;
+	ErrRespEAC: 1, 0, EAC, PICU;
+	ErrRespEleclCmprCtrlVlvChlr: 1, 0, EleclCmprCtrlVlvChlr, PICU;
+	ErrRespHVPTC: 1, 0, HVPTC, PICU;
+}
+
+
+Diagnostic_signals {
+	MasterReqB0: 8, 0;
+	MasterReqB1: 8, 0;
+	MasterReqB2: 8, 0;
+	MasterReqB3: 8, 0;
+	MasterReqB4: 8, 0;
+	MasterReqB5: 8, 0;
+	MasterReqB6: 8, 0;
+	MasterReqB7: 8, 0;
+	SlaveRespB0: 8, 0;
+	SlaveRespB1: 8, 0;
+	SlaveRespB2: 8, 0;
+	SlaveRespB3: 8, 0;
+	SlaveRespB4: 8, 0;
+	SlaveRespB5: 8, 0;
+	SlaveRespB6: 8, 0;
+	SlaveRespB7: 8, 0;
+}
+
+Frames {
+	EAC_PICU_LIN1_FrP00: 0x03, EAC, 8 {
+		EAC_HVIL_Sta_l, 11;
+		EAC_input_current_L1_l, 24;
+		EAC_input_voltage_L1_l, 16;
+		EAC_inv_temp_L1_l, 32;
+		EAC_phase_curr_L1_l, 40;
+		EAC_speed_L1_l, 0;
+		EAC_status_L1_l, 8;
+	}
+	EAC_PICU_LIN1_FrP01: 0x04, EAC, 8 {
+		Comm_error_L1_l, 6;
+		Curr_sensor_error_L1_l, 18;
+		Curr_sensor_status_L1_l, 48;
+		HV_Over_voltage_L_l, 1;
+		HV_Under_voltage_L_l, 0;
+		Inpower_error_L1_l, 19;
+		Inpower_sensor_status_L1_l, 52;
+		LV_Over_voltage_L1_l, 3;
+		LV_Under_voltage_L1_l, 2;
+		Over_Current_L1_l, 20;
+		Over_Current_sensor_error_L1_l, 21;
+		Over_Heat_L1_l, 4;
+		Over_Load_L1_l, 5;
+		Stall_L1_l, 23;
+		Temp_sensor1_status_L1_l, 32;
+		Temp_sensor2_status_L1_l, 36;
+		Temp_sensor_error_L1_l, 16;
+		Voltage_sensor1_status_L1_l, 40;
+		Voltage_sensor2_status_L1_l, 44;
+		Voltage_sensor_error_L1_l, 17;
+		Wire_Unbalance_L1_l, 22;
+		ErrRespEAC, 7; 
+	}
+	EAC_PICULIN1_600ms_PDU03: 0x05, EAC, 8 {
+		EACBLNum_l, 48;
+		EACHWNum_l, 40;
+		EACSWNum_l, 0;
+	}
+	EAC_PICULIN1_600ms_PDU04: 0x06, EAC, 8 {
+		EACSVN_l, 0;
+	}
+	EXV_PICU_FrP00: 0x35, EleclCmprCtrlVlvChlr, 8 {
+		EXVRespCrntIniSts_l, 2;
+		EXVRespFltSts_l, 8;
+		EXVRespOverTemWrnng_l, 14;
+		EXVRespPos_l, 16;
+		EXVRespRunSts_l, 4;
+		EXVRespVolSts_l, 12;
+		ErrRespEleclCmprCtrlVlvChlr, 0; 
+	}
+	PICU_EAC_LIN1_FrP01: 0x02, PICU, 8 {
+		EAC_Actdschrg_Req_l, 11;
+		EAC_Actdschrg_ReqInvsn_l, 12;
+		EAC_drive_request_L1_l, 8;
+		EAC_power_lim_L1_l, 16;
+		EAC_Softstart_Enb_l, 13;
+		EAC_target_speed_L1_l, 0;
+		EACLinCmd_l, 24;
+		PICU_PtcLeftSidebarTempSen_Status_l, 14;
+		PICU_PtcLeftSidebarTempSen_Value_l, 32;
+		PICU_PtcLeftSidebarTempSen_ValueV_l, 10;
+		PICU_PtcRightSidebarTempSen_Status_l, 40;
+		PICU_PtcRightSidebarTempSen_Value_l, 56;
+		PICU_PtcRightSidebarTempSen_ValueV_l, 30;
+	}
+	PICU_EXV_FrP00: 0x34, PICU, 8 {
+		EXVCmdIniReq_l, 24;
+		EXVCmdMvEnb_l, 16;
+		EXVCmdSetReq_l, 0;
+	}
+	PICU_PTC_LIN1_FrP00: 0x2E, PICU, 8 {
+		HVPTC_Actdschrg_Req_l, 19;
+		HVPTC_Actdschrg_ReqInvsn_l, 18;
+		PTC_Enable_l, 23;
+		PTC_Set_Left_l, 0;
+		PTC_Set_Right_l, 8;
+		PTCLinCmd_l, 20;
+	}
+	PTC_PICU_LIN1_FrP00: 0x31, HVPTC, 8 {
+		PTC_High_Voltage_l, 16;
+		PTC_HVIL_Sta_l, 0;
+		PTC_Left_HV_Current_l, 24;
+		PTC_Left_Sidebar_Temp_l, 48;
+		PTC_Left_Status_l, 8;
+		PTC_PCB_Temp_l, 40;
+		PTC_Right_HV_Current_l, 32;
+		PTC_Right_Sidebar_Temp_l, 56;
+		PTC_Right_Status_l, 12;
+	}
+	PTC_PICU_LIN1_FrP01: 0x32, HVPTC, 8 {
+		PTC_Fail_HV_Sen_l, 24;
+		PTC_Fail_IGBT_Driver_l, 30;
+		PTC_Fail_IGBT_Open_l, 31;
+		PTC_Fail_IGBT_Short_l, 32;
+		PTC_Fail_Left_HV_Cur_Sen_l, 25;
+		PTC_Fail_Left_Sidebar_Temp_Sen_l, 28;
+		PTC_Fail_PCB_Temp_Sen_l, 27;
+		PTC_Fail_Right_HV_Cur_Sen_l, 26;
+		PTC_Fail_Right_Sidebar_Temp_Sen_l, 29;
+		PTC_Fault_Cmd_Mgs_Timeout_l, 8;
+		PTC_Fault_Flag_l, 4;
+		PTC_Fault_HV_Over_l, 11;
+		PTC_Fault_HV_Under_l, 10;
+		PTC_Fault_Left_HV_Cur_Over_l, 12;
+		PTC_Fault_Left_Sidebar_Temp_Over_l, 15;
+		PTC_Fault_LV_OutRange_l, 9;
+		PTC_Fault_PCB_Temp_Over_l, 14;
+		PTC_Fault_Right_HV_Cur_Over_l, 13;
+		PTC_Fault_Right_Sidebar_Temp_Over_l, 16;
+		PTC_ResponseError_l, 5;
+		ErrRespHVPTC, 57; 
+	}
+	PTC_PICULIN1_600ms_PDU03: 0x33, HVPTC, 8 {
+		HVPTCBLNum_l, 48;
+		HVPTCHWNum_l, 40;
+		HVPTCSWNum_l, 0;
+	}
+	PTC_PICULIN1_600ms_PDU04: 0x36, HVPTC, 8 {
+		HVPTCSVN_l, 0;
+	}
+}
+
+Diagnostic_frames {
+	MasterReq: 60 {
+		MasterReqB0, 0;
+		MasterReqB1, 8;
+		MasterReqB2, 16;
+		MasterReqB3, 24;
+		MasterReqB4, 32;
+		MasterReqB5, 40;
+		MasterReqB6, 48;
+		MasterReqB7, 56;
+	}
+	SlaveResp: 61 {
+		SlaveRespB0, 0;
+		SlaveRespB1, 8;
+		SlaveRespB2, 16;
+		SlaveRespB3, 24;
+		SlaveRespB4, 32;
+		SlaveRespB5, 40;
+		SlaveRespB6, 48;
+		SlaveRespB7, 56;
+	}
+}
+
+Node_attributes {
+	EAC {
+		LIN_protocol = "2.1";
+		configured_NAD = 0x01;
+		initial_NAD = 0x01;
+		product_id = 0x05, 0x00, 0;
+		response_error = ErrRespEAC;
+		configurable_frames {
+			EAC_PICULIN1_600ms_PDU03;
+			EAC_PICULIN1_600ms_PDU04;
+			EAC_PICU_LIN1_FrP00;
+			EAC_PICU_LIN1_FrP01;
+			PICU_EAC_LIN1_FrP01;
+		}
+	}
+	EleclCmprCtrlVlvChlr {
+		LIN_protocol = "2.1";
+		configured_NAD = 0x60;
+		initial_NAD = 0x60;
+		product_id = 0x05, 0x00, 0;
+		response_error = ErrRespEleclCmprCtrlVlvChlr;
+		configurable_frames {
+			EXV_PICU_FrP00;
+			PICU_EXV_FrP00;
+		}
+	}
+	HVPTC {
+		LIN_protocol = "2.1";
+		configured_NAD = 0x03;
+		initial_NAD = 0x03;
+		product_id = 0x05, 0x00, 0;
+		response_error = ErrRespHVPTC;
+		configurable_frames {
+			PICU_EAC_LIN1_FrP01;
+			PICU_PTC_LIN1_FrP00;
+			PTC_PICULIN1_600ms_PDU03;
+			PTC_PICULIN1_600ms_PDU04;
+			PTC_PICU_LIN1_FrP00;
+			PTC_PICU_LIN1_FrP01;
+		}
+	}
+}
+
+Schedule_tables {
+	FM_DiagnosticsPICU_LIN1PICU_LIN1 {
+		MasterReq delay 50.000 ms;
+		SlaveResp delay 10.000 ms;
+	}
+	FM_Normal {
+		PICU_EAC_LIN1_FrP01 delay 10.000 ms;
+		PICU_PTC_LIN1_FrP00 delay 10.000 ms;
+		EAC_PICU_LIN1_FrP00 delay 10.000 ms;
+		EAC_PICU_LIN1_FrP01 delay 10.000 ms;
+		PTC_PICU_LIN1_FrP00 delay 10.000 ms;
+		PTC_PICU_LIN1_FrP01 delay 10.000 ms;
+		PICU_EXV_FrP00 delay 10.000 ms;
+		EXV_PICU_FrP00 delay 100.000 ms;
+		EAC_PICULIN1_600ms_PDU03 delay 10.000 ms;
+		EAC_PICULIN1_600ms_PDU04 delay 20.000 ms;
+		PICU_EAC_LIN1_FrP01 delay 10.000 ms;
+		PICU_PTC_LIN1_FrP00 delay 10.000 ms;
+		EAC_PICU_LIN1_FrP00 delay 10.000 ms;
+		EAC_PICU_LIN1_FrP01 delay 10.000 ms;
+		PTC_PICU_LIN1_FrP00 delay 10.000 ms;
+		PTC_PICU_LIN1_FrP01 delay 10.000 ms;
+		PICU_EXV_FrP00 delay 10.000 ms;
+		EXV_PICU_FrP00 delay 100.000 ms;
+		PTC_PICULIN1_600ms_PDU03 delay 30.000 ms;
+		PICU_EAC_LIN1_FrP01 delay 10.000 ms;
+		PICU_PTC_LIN1_FrP00 delay 10.000 ms;
+		EAC_PICU_LIN1_FrP00 delay 10.000 ms;
+		EAC_PICU_LIN1_FrP01 delay 10.000 ms;
+		PTC_PICU_LIN1_FrP00 delay 10.000 ms;
+		PTC_PICU_LIN1_FrP01 delay 10.000 ms;
+		PICU_EXV_FrP00 delay 10.000 ms;
+		EXV_PICU_FrP00 delay 100.000 ms;
+		PTC_PICULIN1_600ms_PDU04 delay 30.000 ms;
+	}
+}
+
+Signal_encoding_types {
+	Comm_error_L1_l {
+		logical_value, 0, "Comm_error_L1_l_0_False";
+		logical_value, 1, "Comm_error_L1_l_1_True";
+	}
+	Curr_sensor_error_L1_l {
+		logical_value, 0, "Curr_sensor_error_L1_l_0_False";
+		logical_value, 1, "Curr_sensor_error_L1_l_1_True";
+	}
+	Curr_sensor_status_L1_l {
+		logical_value, 0, "Curr_sensor_status_L1_l_0_Normal";
+		logical_value, 1, "Curr_sensor_status_L1_l_1_ShortToGnd";
+		logical_value, 2, "Curr_sensor_status_L1_l_2_ShortToBatt";
+		logical_value, 3, "Curr_sensor_status_L1_l_3_OutOfRange_Low";
+		logical_value, 4, "Curr_sensor_status_L1_l_4_OutOfRange_High";
+	}
+	EAC_Actdschrg_Req_l {
+		logical_value, 0, "EAC_Actdschrg_Req_l_0_EAC_Actdschrg_Req_False";
+		logical_value, 1, "EAC_Actdschrg_Req_l_1_EAC_Actdschrg_Req_True";
+	}
+	EAC_Actdschrg_ReqInvsn_l {
+		logical_value, 0, "EAC_Actdschrg_ReqInvsn_l_0_EAC_Actdschrg_ReqInvsn_Activedischarge";
+		logical_value, 1, "EAC_Actdschrg_ReqInvsn_l_1_EAC_Actdschrg_ReqInvsn_No_Activedischarge";
+	}
+	EAC_drive_request_L1_l {
+		logical_value, 0, "EAC_drive_request_0_Compressor_off";
+		logical_value, 1, "EAC_drive_request_1_Compressor_on";
+		logical_value, 2, "EAC_drive_request_2_Not_defined";
+		logical_value, 3, "EAC_drive_request_3_SNA";
+	}
+	EAC_HVIL_Sta_l {
+		logical_value, 0, "EAC_HVIL_Sta_0_Initial";
+		logical_value, 1, "EAC_HVIL_Sta_1_Normal";
+		logical_value, 2, "EAC_HVIL_Sta_2_Fault";
+		logical_value, 3, "EAC_HVIL_Sta_3_Short_Circuit";
+	}
+	EAC_input_current_L1_l {
+		physical_value, 0, 255, 0.5, 0.0, "A";
+	}
+	EAC_input_voltage_L1_l {
+		physical_value, 0, 255, 2.0, 0.0, "V";
+	}
+	EAC_inv_temp_L1_l {
+		physical_value, 0, 255, 1.0, -50.0, "¡æ";
+	}
+	EAC_phase_curr_L1_l {
+		physical_value, 0, 255, 0.5, 0.0, "A";
+	}
+	EAC_power_lim_L1_l {
+		physical_value, 0, 255, 0.04, 0.0, "null";
+	}
+	EAC_Softstart_Enb_l {
+		logical_value, 0, "EAC_Softstart_Enb_l_0_Normal_Start";
+		logical_value, 1, "EAC_Softstart_Enb_l_1_Soft_Start";
+	}
+	EAC_speed_L1_l {
+		physical_value, 0, 255, 50.0, 0.0, "RPM";
+	}
+	EAC_status_L1_l {
+		logical_value, 0, "EAC_status_L1_l_0_EAC_statusET_COMP_OFF";
+		logical_value, 1, "EAC_status_L1_l_1_EAC_statusET_COMP_ON";
+		logical_value, 2, "EAC_status_L1_l_2_EAC_statusET_COMP_LIMIT";
+		logical_value, 3, "EAC_status_L1_l_3_EAC_statusET_PRE_HEAT";
+		logical_value, 4, "EAC_statusET_4_SOFTSTART";
+		logical_value, 5, "EAC_status_L1_l_5_EAC_statusET_Reserved";
+		logical_value, 6, "EAC_status_L1_l_6_EAC_statusET_COMP_INIT";
+		logical_value, 7, "EAC_status_L1_l_7_EAC_statusET_COMP_SNA";
+	}
+	EAC_target_speed_L1_l {
+		physical_value, 0, 255, 50.0, 0.0, "null";
+	}
+	EACBLNum_l {
+		physical_value, 0, 255, 1.0, 0.0, "null";
+	}
+	EACHWNum_l {
+		physical_value, 0, 255, 1.0, 0.0, "null";
+	}
+	EACLinCmd_l {
+		logical_value, 0, "EACLinCmd_l_0_Normal";
+		logical_value, 1, "EACLinCmd_l_1_VCU_Flash";
+		logical_value, 2, "EACLinCmd_l_2_LIN_Sleep";
+		logical_value, 3, "EACLinCmd_l_3_LIN_Awake";
+		logical_value, 4, "EACLinCmd_l_4_LIN_Reset";
+		logical_value, 5, "EACLinCmd_l_5_ECO_Mode";
+		logical_value, 6, "EACLinCmd_l_6_Reserved";
+		logical_value, 7, "EACLinCmd_l_7_Reserved";
+	}
+	EACSVN_l {
+		physical_value, 0, 2147483647, 1.0, 0.0, "null";
+	}
+	EACSWNum_l {
+		physical_value, 0, 2147483647, 1.0, 0.0, "null";
+	}
+	EXVCmdIniReq_l {
+		logical_value, 0, "EXVCmdIniReq_0_NoRequest";
+		logical_value, 1, "EXVCmdIniReq_1_StartInitsequence";
+		logical_value, 2, "EXVCmdIniReq_2_WaitingForSequenceToFinish";
+		logical_value, 3, "EXVCmdIniReq_3_NotDefined";
+		logical_value, 4, "EXVCmdIniReq_4_NotDefined";
+		logical_value, 5, "EXVCmdIniReq_5_NotDefined";
+		logical_value, 6, "EXVCmdIniReq_6_NotDefined";
+		logical_value, 7, "EXVCmdIniReq_7_NotDefined";
+	}
+	EXVCmdMvEnb_l {
+		logical_value, 0, "EXVCmdMvEnb_0_IgnoreCommandedPosition";
+		logical_value, 1, "EXVCmdMvEnb_1_MoveToCommandedPositionl";
+	}
+	EXVCmdSetReq_l {
+		physical_value, 0, 65535, 1.0, 0.0, "null";
+	}
+	EXVRespCrntIniSts_l {
+		logical_value, 0, "EXVRespCrntIniSts_0_NotInitialized";
+		logical_value, 1, "EXVRespCrntIniSts_1_InitializationInProcess";
+		logical_value, 2, "EXVRespCrntIniSts_2_Initialized";
+		logical_value, 3, "EXVRespCrntIniSts_3_UnusedAndUndefined";
+	}
+	EXVRespFltSts_l {
+		logical_value, 0, "EXVRespFltSts_0_ActuatorNotFaulted";
+		logical_value, 1, "EXVRespFltSts_1_MotorcoilShorted";
+		logical_value, 2, "EXVRespFltSts_2_MotorcoilOpenLoad";
+		logical_value, 3, "EXVRespFltSts_3_OverTemperatureShutdown";
+		logical_value, 4, "EXVRespFltSts_4_NotDefined";
+		logical_value, 5, "EXVRespFltSts_5_MotorStall";
+		logical_value, 6, "EXVRespFltSts_6_NotDefined";
+		logical_value, 7, "EXVRespFltSts_7_NotDefined";
+		logical_value, 8, "EXVRespFltSts_8_NotDefined";
+		logical_value, 9, "EXVRespFltSts_9_NotDefined";
+		logical_value, 10, "EXVRespFltSts_10_NotDefined";
+		logical_value, 11, "EXVRespFltSts_11_NotDefined";
+		logical_value, 12, "EXVRespFltSts_12_NotDefined";
+		logical_value, 13, "EXVRespFltSts_13_NotDefined";
+		logical_value, 14, "EXVRespFltSts_14_NotDefined";
+		logical_value, 15, "EXVRespFltSts_15_NotDefined";
+	}
+	EXVRespOverTemWrnng_l {
+		logical_value, 0, "EXVRespOverTemWrnng_0_OK";
+		logical_value, 1, "EXVRespOverTemWrnng_1_HighTemperatureWarning";
+		logical_value, 2, "EXVRespOverTemWrnng_2_NotDefined";
+		logical_value, 3, "EXVRespOverTemWrnng_3_NotDefined";
+	}
+	EXVRespPos_l {
+		physical_value, 0, 65535, 1.0, 0.0, "null";
+	}
+	EXVRespRunSts_l {
+		logical_value, 0, "EXVRespRunSts_l_0_False";
+		logical_value, 1, "EXVRespRunSts_l_1_True";
+	}
+	EXVRespVolSts_l {
+		logical_value, 0, "EXVRespVolSts_0_VoltageRangeOk";
+		logical_value, 1, "EXVRespVolSts_1_Overvoltage";
+		logical_value, 2, "EXVRespVolSts_2_UnderVoltage";
+		logical_value, 3, "EXVRespVolSts_3_NotDefined";
+	}
+	HV_Over_voltage_L_l {
+		logical_value, 0, "HV_Over_voltage_L_l_0_False";
+		logical_value, 1, "HV_Over_voltage_L_l_1_True";
+	}
+	HV_Under_voltage_L_l {
+		logical_value, 0, "HV_Under_voltage_L_l_0_False";
+		logical_value, 1, "HV_Under_voltage_L_l_1_True";
+	}
+	HVPTC_Actdschrg_Req_l {
+		logical_value, 0, "HVPTC_Actdschrg_Req_l_0_HVPTC_Actdschrg_Req_False";
+		logical_value, 1, "HVPTC_Actdschrg_Req_l_1_HVPTC_Actdschrg_Req_True";
+	}
+	HVPTC_Actdschrg_ReqInvsn_l {
+		logical_value, 0, "HVPTC_Actdschrg_ReqInvsn_l_0_HVPTC_Actdschrg_ReqInvsn_Activedischarge";
+		logical_value, 1, "HVPTC_Actdschrg_ReqInvsn_l_1_HVPTC_Actdschrg_ReqInvsn_No_Activedischarge";
+	}
+	HVPTCBLNum_l {
+		physical_value, 0, 255, 1.0, 0.0, "null";
+	}
+	HVPTCHWNum_l {
+		physical_value, 0, 255, 1.0, 0.0, "null";
+	}
+	HVPTCSVN_l {
+		physical_value, 0, 2147483647, 1.0, 0.0, "null";
+	}
+	HVPTCSWNum_l {
+		physical_value, 0, 2147483647, 1.0, 0.0, "null";
+	}
+	Inpower_error_L1_l {
+		logical_value, 0, "Inpower_error_L1_l_0_False";
+		logical_value, 1, "Inpower_error_L1_l_1_True";
+	}
+	Inpower_sensor_status_L1_l {
+		logical_value, 0, "Inpower_sensor_status_L1_l_0_Normal";
+		logical_value, 1, "Inpower_sensor_status_L1_l_1_ShortToGnd";
+		logical_value, 2, "Inpower_sensor_status_L1_l_2_ShortToBatt";
+		logical_value, 3, "Inpower_sensor_status_L1_l_3_Offset_Low";
+		logical_value, 4, "Inpower_sensor_status_L1_l_4_Offset_High";
+	}
+	LV_Over_voltage_L1_l {
+		logical_value, 0, "LV_Over_voltage_L1_l_0_False";
+		logical_value, 1, "LV_Over_voltage_L1_l_1_True";
+	}
+	LV_Under_voltage_L1_l {
+		logical_value, 0, "LV_Under_voltage_L1_l_0_False";
+		logical_value, 1, "LV_Under_voltage_L1_l_1_True";
+	}
+	Over_Current_L1_l {
+		logical_value, 0, "Over_Current_L1_l_0_False";
+		logical_value, 1, "Over_Current_L1_l_1_True";
+	}
+	Over_Current_sensor_error_L1_l {
+		logical_value, 0, "Over_Current_sensor_error_L1_l_0_False";
+		logical_value, 1, "Over_Current_sensor_error_L1_l_1_True";
+	}
+	Over_Heat_L1_l {
+		logical_value, 0, "Over_Heat_L1_l_0_False";
+		logical_value, 1, "Over_Heat_L1_l_1_True";
+	}
+	Over_Load_L1_l {
+		logical_value, 0, "Over_Load_L1_l_0_False";
+		logical_value, 1, "Over_Load_L1_l_1_True";
+	}
+	PICU_PtcLeftSidebarTempSen_Status_l {
+		logical_value, 0, "PICU_PtcLeftSidebarTempSen_Status_l_0_Normal";
+		logical_value, 1, "PICU_PtcLeftSidebarTempSen_Status_l_1_short_circuit_to_GND";
+		logical_value, 2, "PICU_PtcLeftSidebarTempSen_Status_l_2_short_circuit_to_Batt_or_open_circuit";
+		logical_value, 3, "PICU_PtcLeftSidebarTempSen_Status_l_3_reserved";
+	}
+	PICU_PtcLeftSidebarTempSen_Value_l {
+		physical_value, 0, 255, 1.0, -40.0, "null";
+	}
+	PICU_PtcLeftSidebarTempSen_ValueV_l {
+		logical_value, 0, "PICU_PtcLeftSidebarTempSen_ValueV_l_0_Valid";
+		logical_value, 1, "PICU_PtcLeftSidebarTempSen_ValueV_l_1_Invalid";
+	}
+	PICU_PtcRightSidebarTempSen_Status_l {
+		logical_value, 0, "PICU_PtcRightSidebarTempSen_Status_l_0_Normal";
+		logical_value, 1, "PICU_PtcRightSidebarTempSen_Status_l_1_short_circuit_to_GND";
+		logical_value, 2, "PICU_PtcRightSidebarTempSen_Status_l_2_short_circuit_to_Batt_or_open_circuit";
+		logical_value, 3, "PICU_PtcRightSidebarTempSen_Status_l_3_reserved";
+	}
+	PICU_PtcRightSidebarTempSen_Value_l {
+		physical_value, 0, 255, 1.0, -40.0, "degC";
+	}
+	PICU_PtcRightSidebarTempSen_ValueV_l {
+		logical_value, 0, "PICU_PtcRightSidebarTempSen_ValueV_l_0_Valid";
+		logical_value, 1, "PICU_PtcRightSidebarTempSen_ValueV_l_1_Invalid";
+	}
+	PTC_Enable_l {
+		logical_value, 0, "PTC_Enable_l_0_OFF";
+		logical_value, 1, "PTC_Enable_l_1_ON";
+	}
+	PTC_Fail_HV_Sen_l {
+		logical_value, 0, "PTC_Failure_Encoding_AC_LIN1_Normal";
+		logical_value, 1, "PTC_Failure_Encoding_AC_LIN1_Failure_PTC_OFF";
+	}
+	PTC_Fail_IGBT_Driver_l {
+		logical_value, 0, "PTC_Failure_Encoding_AC_LIN1_Normal";
+		logical_value, 1, "PTC_Failure_Encoding_AC_LIN1_Failure_PTC_OFF";
+	}
+	PTC_Fail_IGBT_Open_l {
+		logical_value, 0, "PTC_Failure_Encoding_AC_LIN1_Normal";
+		logical_value, 1, "PTC_Failure_Encoding_AC_LIN1_Failure_PTC_OFF";
+	}
+	PTC_Fail_IGBT_Short_l {
+		logical_value, 0, "PTC_Failure_Encoding_AC_LIN1_Normal";
+		logical_value, 1, "PTC_Failure_Encoding_AC_LIN1_Failure_PTC_OFF";
+	}
+	PTC_Fail_Left_HV_Cur_Sen_l {
+		logical_value, 0, "PTC_Failure_Encoding_AC_LIN1_Normal";
+		logical_value, 1, "PTC_Failure_Encoding_AC_LIN1_Failure_PTC_OFF";
+	}
+	PTC_Fail_Left_Sidebar_Temp_Sen_l {
+		logical_value, 0, "PTC_Failure_Encoding_AC_LIN1_Normal";
+		logical_value, 1, "PTC_Failure_Encoding_AC_LIN1_Failure_PTC_OFF";
+	}
+	PTC_Fail_PCB_Temp_Sen_l {
+		logical_value, 0, "PTC_Failure_Encoding_AC_LIN1_Normal";
+		logical_value, 1, "PTC_Failure_Encoding_AC_LIN1_Failure_PTC_OFF";
+	}
+	PTC_Fail_Right_HV_Cur_Sen_l {
+		logical_value, 0, "PTC_Failure_Encoding_AC_LIN1_Normal";
+		logical_value, 1, "PTC_Failure_Encoding_AC_LIN1_Failure_PTC_OFF";
+	}
+	PTC_Fail_Right_Sidebar_Temp_Sen_l {
+		logical_value, 0, "PTC_Failure_Encoding_AC_LIN1_Normal";
+		logical_value, 1, "PTC_Failure_Encoding_AC_LIN1_Failure_PTC_OFF";
+	}
+	PTC_Fault_Cmd_Mgs_Timeout_l {
+		logical_value, 0, "PTC_Fault_Flag_l_Encoding_AC_LIN1_Normal";
+		logical_value, 1, "PTC_Fault_Flag_l_Encoding_AC_LIN1_Fault_PTC_OFF";
+	}
+	PTC_Fault_Flag_l {
+		logical_value, 0, "PTC_Fault_Flag_l_Encoding_AC_LIN1_Normal";
+		logical_value, 1, "PTC_Fault_Flag_l_Encoding_AC_LIN1_Fault_PTC_OFF";
+	}
+	PTC_Fault_HV_Over_l {
+		logical_value, 0, "PTC_Fault_Flag_l_Encoding_AC_LIN1_Normal";
+		logical_value, 1, "PTC_Fault_Flag_l_Encoding_AC_LIN1_Fault_PTC_OFF";
+	}
+	PTC_Fault_HV_Under_l {
+		logical_value, 0, "PTC_Fault_Flag_l_Encoding_AC_LIN1_Normal";
+		logical_value, 1, "PTC_Fault_Flag_l_Encoding_AC_LIN1_Fault_PTC_OFF";
+	}
+	PTC_Fault_Left_HV_Cur_Over_l {
+		logical_value, 0, "PTC_Fault_Flag_l_Encoding_AC_LIN1_Normal";
+		logical_value, 1, "PTC_Fault_Flag_l_Encoding_AC_LIN1_Fault_PTC_OFF";
+	}
+	PTC_Fault_Left_Sidebar_Temp_Over_l {
+		logical_value, 0, "PTC_Fault_Flag_l_Encoding_AC_LIN1_Normal";
+		logical_value, 1, "PTC_Fault_Flag_l_Encoding_AC_LIN1_Fault_PTC_OFF";
+	}
+	PTC_Fault_LV_OutRange_l {
+		logical_value, 0, "PTC_Fault_Flag_l_Encoding_AC_LIN1_Normal";
+		logical_value, 1, "PTC_Fault_Flag_l_Encoding_AC_LIN1_Fault_PTC_OFF";
+	}
+	PTC_Fault_PCB_Temp_Over_l {
+		logical_value, 0, "PTC_Fault_Flag_l_Encoding_AC_LIN1_Normal";
+		logical_value, 1, "PTC_Fault_Flag_l_Encoding_AC_LIN1_Fault_PTC_OFF";
+	}
+	PTC_Fault_Right_HV_Cur_Over_l {
+		logical_value, 0, "PTC_Fault_Flag_l_Encoding_AC_LIN1_Normal";
+		logical_value, 1, "PTC_Fault_Flag_l_Encoding_AC_LIN1_Fault_PTC_OFF";
+	}
+	PTC_Fault_Right_Sidebar_Temp_Over_l {
+		logical_value, 0, "PTC_Fault_Flag_l_Encoding_AC_LIN1_Normal";
+		logical_value, 1, "PTC_Fault_Flag_l_Encoding_AC_LIN1_Fault_PTC_OFF";
+	}
+	PTC_High_Voltage_l {
+		logical_value, 0, "PTC_High_Voltage_l_0_Not_applied";
+		physical_value, 0, 255, 2.5, 0.0, "";
+		logical_value, 254, "PTC_High_Voltage_l_Encoding_AC_LIN1_Initial_Value";
+		logical_value, 255, "PTC_High_Voltage_l_Encoding_AC_LIN1_Sensor_Error";
+	}
+	PTC_HVIL_Sta_l {
+		logical_value, 0, "PTC_HVIL_Sta_0_Initial";
+		logical_value, 1, "PTC_HVIL_Sta_1_Normal";
+		logical_value, 2, "PTC_HVIL_Sta_2_Fault";
+		logical_value, 3, "PTC_HVIL_Sta_3_Short_Circuit";
+	}
+	PTC_Left_HV_Current_l {
+		logical_value, 0, "PTC_Left_HV_Current_l_0_Not_applied";
+		physical_value, 0, 255, 0.2, 0.0, "";
+		logical_value, 254, "PTC_HV_Current_Encoding_AC_LIN1_Initial_Value";
+		logical_value, 255, "PTC_HV_Current_Encoding_AC_LIN1_Sensor_Error";
+	}
+	PTC_Left_Sidebar_Temp_l {
+		logical_value, 0, "PTC_Left_Sidebar_Temp_l_0_Not_applied";
+		physical_value, 0, 255, 1.0, -40.0, "";
+		logical_value, 254, "PTC_Sidebar_Temp_Encoding_AC_LIN1_Initial_Value";
+		logical_value, 255, "PTC_Sidebar_Temp_Encoding_AC_LIN1_Sensor_Error";
+	}
+	PTC_Left_Status_l {
+		logical_value, 0, "PTC_Status_Encoding_AC_LIN1_PTC_Heating_OFF";
+		logical_value, 1, "PTC_Status_Encoding_AC_LIN1_PTC_Heating_On";
+		logical_value, 2, "PTC_Status_Encoding_AC_LIN1_Degraded_By_Temp";
+		logical_value, 3, "PTC_Status_Encoding_AC_LIN1_Fault";
+		logical_value, 4, "PTC_Status_Encoding_AC_LIN1_Failure";
+		logical_value, 5, "PTC_Status_Encoding_AC_LIN1_Initial_value";
+	}
+	PTC_PCB_Temp_l {
+		logical_value, 0, "PTC_PCB_Temp_l_0_Not_applied";
+		physical_value, 0, 255, 1.0, -40.0, "";
+		logical_value, 254, "PTC_PCB_Temp_l_Encoding_AC_LIN1_Initial_Value";
+		logical_value, 255, "PTC_PCB_Temp_l_Encoding_AC_LIN1_Sensor_Error";
+	}
+	PTC_ResponseError_l {
+		logical_value, 0, "PTC_Fault_Flag_l_Encoding_AC_LIN1_Normal";
+		logical_value, 1, "PTC_Fault_Flag_l_Encoding_AC_LIN1_Fault_PTC_OFF";
+	}
+	PTC_Right_HV_Current_l {
+		logical_value, 0, "PTC_Right_HV_Current_l_0_Not_applied";
+		physical_value, 0, 255, 0.2, 0.0, "";
+		logical_value, 254, "PTC_HV_Current_Encoding_AC_LIN1_Initial_Value";
+		logical_value, 255, "PTC_HV_Current_Encoding_AC_LIN1_Sensor_Error";
+	}
+	PTC_Right_Sidebar_Temp_l {
+		logical_value, 0, "PTC_Right_Sidebar_Temp_l_0_Not_applied";
+		physical_value, 0, 255, 1.0, -40.0, "";
+		logical_value, 254, "PTC_Sidebar_Temp_Encoding_AC_LIN1_Initial_Value";
+		logical_value, 255, "PTC_Sidebar_Temp_Encoding_AC_LIN1_Sensor_Error";
+	}
+	PTC_Right_Status_l {
+		logical_value, 0, "PTC_Status_Encoding_AC_LIN1_PTC_Heating_OFF";
+		logical_value, 1, "PTC_Status_Encoding_AC_LIN1_PTC_Heating_On";
+		logical_value, 2, "PTC_Status_Encoding_AC_LIN1_Degraded_By_Temp";
+		logical_value, 3, "PTC_Status_Encoding_AC_LIN1_Fault";
+		logical_value, 4, "PTC_Status_Encoding_AC_LIN1_Failure";
+		logical_value, 5, "PTC_Status_Encoding_AC_LIN1_Initial_value";
+	}
+	PTC_Set_Left_l {
+		logical_value, 0, "PTC_Set_Left_l_0_Left_Zone_off";
+		physical_value, 0, 255, 1.0, 0.0, "";
+		logical_value, 255, "PTC_Set_Encoding_AC_LIN1_Invalid_value";
+	}
+	PTC_Set_Right_l {
+		logical_value, 0, "PTC_Set_Right_l_0_Right_Zone_off";
+		physical_value, 0, 255, 1.0, 0.0, "";
+		logical_value, 255, "PTC_Set_Encoding_AC_LIN1_Invalid_value";
+	}
+	PTCLinCmd_l {
+		logical_value, 0, "PTCLinCmd_l_0_Normal";
+		logical_value, 1, "PTCLinCmd_l_1_VCU_Flash";
+		logical_value, 2, "PTCLinCmd_l_2_LIN_Sleep";
+		logical_value, 3, "PTCLinCmd_l_3_LIN_Awake";
+		logical_value, 4, "PTCLinCmd_l_4_LIN_Reset";
+		logical_value, 5, "PTCLinCmd_l_5_ECO_Mode";
+		logical_value, 6, "PTCLinCmd_l_6_Reserved";
+		logical_value, 7, "PTCLinCmd_l_7_Reserved";
+	}
+	Stall_L1_l {
+		logical_value, 0, "Stall_L1_l_0_False";
+		logical_value, 1, "Stall_L1_l_1_True";
+	}
+	Temp_sensor1_status_L1_l {
+		logical_value, 0, "Temp_sensor1_status_L1_l_0_Temp_sensor1_statusET_Normal";
+		logical_value, 1, "Temp_sensor1_status_L1_l_1_Temp_sensor1_statusET_ShortToGnd";
+		logical_value, 2, "Temp_sensor1_status_L1_l_2_Temp_sensor1_statusET_ShortToBatt";
+		logical_value, 3, "Temp_sensor1_status_L1_l_3_Temp_sensor1_statusET_OutOfRange_Low";
+		logical_value, 4, "Temp_sensor1_status_L1_l_4_Temp_sensor1_statusET_OutOfRange_High";
+	}
+	Temp_sensor2_status_L1_l {
+		logical_value, 0, "Temp_sensor2_status_L1_l_0_Normal";
+		logical_value, 1, "Temp_sensor2_status_L1_l_1_ShortToGnd";
+		logical_value, 2, "Temp_sensor2_status_L1_l_2_ShortToBatt";
+		logical_value, 3, "Temp_sensor2_status_L1_l_3_OutOfRange_Low";
+		logical_value, 4, "Temp_sensor2_status_L1_l_4_OutOfRange_High";
+	}
+	Temp_sensor_error_L1_l {
+		logical_value, 0, "Temp_sensor_error_L1_l_0_False";
+		logical_value, 1, "Temp_sensor_error_L1_l_1_True";
+	}
+	Voltage_sensor1_status_L1_l {
+		logical_value, 0, "Voltage_sensor1_status_L1_l_0_Normal";
+		logical_value, 1, "Voltage_sensor1_status_L1_l_1_ShortToGnd";
+		logical_value, 2, "Voltage_sensor1_status_L1_l_2_ShortToBatt";
+		logical_value, 3, "Voltage_sensor1_status_L1_l_3_OutOfRange_Low";
+		logical_value, 4, "Voltage_sensor1_status_L1_l_4_OutOfRange_High";
+	}
+	Voltage_sensor2_status_L1_l {
+		logical_value, 0, "Voltage_sensor2_status_L1_l_0_Normal";
+		logical_value, 1, "Voltage_sensor2_status_L1_l_1_ShortToGnd";
+		logical_value, 2, "Voltage_sensor2_status_L1_l_2_ShortToBatt";
+		logical_value, 3, "Voltage_sensor2_status_L1_l_3_OutOfRange_Low";
+		logical_value, 4, "Voltage_sensor2_status_L1_l_4_OutOfRange_High";
+	}
+	Voltage_sensor_error_L1_l {
+		logical_value, 0, "Voltage_sensor_error_L1_l_0_False";
+		logical_value, 1, "Voltage_sensor_error_L1_l_1_True";
+	}
+	Wire_Unbalance_L1_l {
+		logical_value, 0, "Wire_Unbalance_L1_l_0_False";
+		logical_value, 1, "Wire_Unbalance_L1_l_1_True";
+	}
+}
+
+Signal_representation {
+	Comm_error_L1_l : Comm_error_L1_l;
+	Curr_sensor_error_L1_l : Curr_sensor_error_L1_l;
+	Curr_sensor_status_L1_l : Curr_sensor_status_L1_l;
+	EAC_Actdschrg_Req_l : EAC_Actdschrg_Req_l;
+	EAC_Actdschrg_ReqInvsn_l : EAC_Actdschrg_ReqInvsn_l;
+	EAC_drive_request_L1_l : EAC_drive_request_L1_l;
+	EAC_HVIL_Sta_l : EAC_HVIL_Sta_l;
+	EAC_input_current_L1_l : EAC_input_current_L1_l;
+	EAC_input_voltage_L1_l : EAC_input_voltage_L1_l;
+	EAC_inv_temp_L1_l : EAC_inv_temp_L1_l;
+	EAC_phase_curr_L1_l : EAC_phase_curr_L1_l;
+	EAC_power_lim_L1_l : EAC_power_lim_L1_l;
+	EAC_Softstart_Enb_l : EAC_Softstart_Enb_l;
+	EAC_speed_L1_l : EAC_speed_L1_l;
+	EAC_status_L1_l : EAC_status_L1_l;
+	EAC_target_speed_L1_l : EAC_target_speed_L1_l;
+	EACBLNum_l : EACBLNum_l;
+	EACHWNum_l : EACHWNum_l;
+	EACLinCmd_l : EACLinCmd_l;
+	EACSVN_l : EACSVN_l;
+	EACSWNum_l : EACSWNum_l;
+	EXVCmdIniReq_l : EXVCmdIniReq_l;
+	EXVCmdMvEnb_l : EXVCmdMvEnb_l;
+	EXVCmdSetReq_l : EXVCmdSetReq_l;
+	EXVRespCrntIniSts_l : EXVRespCrntIniSts_l;
+	EXVRespFltSts_l : EXVRespFltSts_l;
+	EXVRespOverTemWrnng_l : EXVRespOverTemWrnng_l;
+	EXVRespPos_l : EXVRespPos_l;
+	EXVRespRunSts_l : EXVRespRunSts_l;
+	EXVRespVolSts_l : EXVRespVolSts_l;
+	HV_Over_voltage_L_l : HV_Over_voltage_L_l;
+	HV_Under_voltage_L_l : HV_Under_voltage_L_l;
+	HVPTC_Actdschrg_Req_l : HVPTC_Actdschrg_Req_l;
+	HVPTC_Actdschrg_ReqInvsn_l : HVPTC_Actdschrg_ReqInvsn_l;
+	HVPTCBLNum_l : HVPTCBLNum_l;
+	HVPTCHWNum_l : HVPTCHWNum_l;
+	HVPTCSVN_l : HVPTCSVN_l;
+	HVPTCSWNum_l : HVPTCSWNum_l;
+	Inpower_error_L1_l : Inpower_error_L1_l;
+	Inpower_sensor_status_L1_l : Inpower_sensor_status_L1_l;
+	LV_Over_voltage_L1_l : LV_Over_voltage_L1_l;
+	LV_Under_voltage_L1_l : LV_Under_voltage_L1_l;
+	Over_Current_L1_l : Over_Current_L1_l;
+	Over_Current_sensor_error_L1_l : Over_Current_sensor_error_L1_l;
+	Over_Heat_L1_l : Over_Heat_L1_l;
+	Over_Load_L1_l : Over_Load_L1_l;
+	PICU_PtcLeftSidebarTempSen_Status_l : PICU_PtcLeftSidebarTempSen_Status_l;
+	PICU_PtcLeftSidebarTempSen_Value_l : PICU_PtcLeftSidebarTempSen_Value_l;
+	PICU_PtcLeftSidebarTempSen_ValueV_l : PICU_PtcLeftSidebarTempSen_ValueV_l;
+	PICU_PtcRightSidebarTempSen_Status_l : PICU_PtcRightSidebarTempSen_Status_l;
+	PICU_PtcRightSidebarTempSen_Value_l : PICU_PtcRightSidebarTempSen_Value_l;
+	PICU_PtcRightSidebarTempSen_ValueV_l : PICU_PtcRightSidebarTempSen_ValueV_l;
+	PTC_Enable_l : PTC_Enable_l;
+	PTC_Fail_HV_Sen_l : PTC_Fail_HV_Sen_l;
+	PTC_Fail_IGBT_Driver_l : PTC_Fail_IGBT_Driver_l;
+	PTC_Fail_IGBT_Open_l : PTC_Fail_IGBT_Open_l;
+	PTC_Fail_IGBT_Short_l : PTC_Fail_IGBT_Short_l;
+	PTC_Fail_Left_HV_Cur_Sen_l : PTC_Fail_Left_HV_Cur_Sen_l;
+	PTC_Fail_Left_Sidebar_Temp_Sen_l : PTC_Fail_Left_Sidebar_Temp_Sen_l;
+	PTC_Fail_PCB_Temp_Sen_l : PTC_Fail_PCB_Temp_Sen_l;
+	PTC_Fail_Right_HV_Cur_Sen_l : PTC_Fail_Right_HV_Cur_Sen_l;
+	PTC_Fail_Right_Sidebar_Temp_Sen_l : PTC_Fail_Right_Sidebar_Temp_Sen_l;
+	PTC_Fault_Cmd_Mgs_Timeout_l : PTC_Fault_Cmd_Mgs_Timeout_l;
+	PTC_Fault_Flag_l : PTC_Fault_Flag_l;
+	PTC_Fault_HV_Over_l : PTC_Fault_HV_Over_l;
+	PTC_Fault_HV_Under_l : PTC_Fault_HV_Under_l;
+	PTC_Fault_Left_HV_Cur_Over_l : PTC_Fault_Left_HV_Cur_Over_l;
+	PTC_Fault_Left_Sidebar_Temp_Over_l : PTC_Fault_Left_Sidebar_Temp_Over_l;
+	PTC_Fault_LV_OutRange_l : PTC_Fault_LV_OutRange_l;
+	PTC_Fault_PCB_Temp_Over_l : PTC_Fault_PCB_Temp_Over_l;
+	PTC_Fault_Right_HV_Cur_Over_l : PTC_Fault_Right_HV_Cur_Over_l;
+	PTC_Fault_Right_Sidebar_Temp_Over_l : PTC_Fault_Right_Sidebar_Temp_Over_l;
+	PTC_High_Voltage_l : PTC_High_Voltage_l;
+	PTC_HVIL_Sta_l : PTC_HVIL_Sta_l;
+	PTC_Left_HV_Current_l : PTC_Left_HV_Current_l;
+	PTC_Left_Sidebar_Temp_l : PTC_Left_Sidebar_Temp_l;
+	PTC_Left_Status_l : PTC_Left_Status_l;
+	PTC_PCB_Temp_l : PTC_PCB_Temp_l;
+	PTC_ResponseError_l : PTC_ResponseError_l;
+	PTC_Right_HV_Current_l : PTC_Right_HV_Current_l;
+	PTC_Right_Sidebar_Temp_l : PTC_Right_Sidebar_Temp_l;
+	PTC_Right_Status_l : PTC_Right_Status_l;
+	PTC_Set_Left_l : PTC_Set_Left_l;
+	PTC_Set_Right_l : PTC_Set_Right_l;
+	PTCLinCmd_l : PTCLinCmd_l;
+	Stall_L1_l : Stall_L1_l;
+	Temp_sensor1_status_L1_l : Temp_sensor1_status_L1_l;
+	Temp_sensor2_status_L1_l : Temp_sensor2_status_L1_l;
+	Temp_sensor_error_L1_l : Temp_sensor_error_L1_l;
+	Voltage_sensor1_status_L1_l : Voltage_sensor1_status_L1_l;
+	Voltage_sensor2_status_L1_l : Voltage_sensor2_status_L1_l;
+	Voltage_sensor_error_L1_l : Voltage_sensor_error_L1_l;
+	Wire_Unbalance_L1_l : Wire_Unbalance_L1_l;
+}
+

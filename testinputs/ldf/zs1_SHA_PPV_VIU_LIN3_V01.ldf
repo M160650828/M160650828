@@ -1,0 +1,510 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                        Mentor Graphics Corporation                         */
+/*                            All rights reserved                             */
+/*                                                                            */
+/* ************************************************************************** */
+/*                                                                            */
+/*  Description:   LIN Description file                                       */
+/*  System:        VIU_LIN                                                    */
+/*  Cluster:       VIU_LIN3                                                   */
+/*  Master:        VIU_LIN3_Ctrl                                              */
+/*  Generated at:  2025-04-15 18:13                                           */
+/*                                                                            */
+/* ************************************************************************** */
+/*                                                                            */
+/*                THIS CONFIGURATION MIGHT CONTAIN SOME ERRORS                */
+/*                 IF THE INPUT MODEL WAS NOT PROPERLY FORMED!                */
+/*                       Do Not Use this File directly!                       */
+/*                                                                            */
+/* ************************************************************************** */
+
+LIN_description_file;
+LIN_protocol_version = "2.1";
+LIN_language_version = "2.1";
+LIN_speed = 19.2 kbps;
+
+Channel_name = "";
+
+Nodes {
+	Master: VIU, 5.000 ms, 0.000 ms;
+	Slaves: RLSS;
+}
+
+Signals {
+	RSM_ADC_A: 14, 0, RLSS, VIU;
+	RSM_ADC_B: 14, 0, RLSS, VIU;
+	RSM_AirT: 11, 0, RLSS, VIU;
+	RSM_AmbBri: 10, 1022, RLSS, VIU;
+	RSM_AutoModActvFb: 1, 1, RLSS, VIU;
+	RSM_CondensationMod: 1, 0, RLSS, VIU;
+	RSM_DELTA_A: 10, 0, RLSS, VIU;
+	RSM_DELTA_B: 10, 0, RLSS, VIU;
+	RSM_DewPointT: 11, 0, RLSS, VIU;
+	RSM_FirstWakeupReason: 2, 0, RLSS, VIU;
+	RSM_FwBri: 10, 1022, RLSS, VIU;
+	RSM_HUDBriRawVal: 7, 127, RLSS, VIU;
+	RSM_HUDBriUnit: 2, 0, RLSS, VIU;
+	RSM_HumTFlt: 1, 0, RLSS, VIU;
+	RSM_IRBri: 8, 254, RLSS, VIU;
+	RSM_LeSolarInten: 8, 254, RLSS, VIU;
+	RSM_LiDARMod: 1, 0, RLSS, VIU;
+	RSM_LiSnsrErr: 1, 0, RLSS, VIU;
+	RSM_LiSWReason: 3, 0, RLSS, VIU;
+	RSM_LoBeamOnReq: 1, 0, RLSS, VIU;
+	RSM_OverUFlt: 1, 0, RLSS, VIU;
+	RSM_PosnLiOnReq: 1, 0, RLSS, VIU;
+	RSM_Rainfall: 2, 0, RLSS, VIU;
+	RSM_RainSnsrErr: 1, 0, RLSS, VIU;
+	RSM_RelHum: 8, 0, RLSS, VIU;
+	RSM_RiSolarInten: 8, 254, RLSS, VIU;
+	RSM_SplashReq: 1, 0, RLSS, VIU;
+	RSM_state_Chks: 8, 0, RLSS, VIU;
+	RSM_state_Cntr: 4, 0, RLSS, VIU;
+	RSM_SW_MajorVers: 3, 0, RLSS, VIU;
+	RSM_SW_MinorVers: 4, 0, RLSS, VIU;
+	RSM_UnderUFlt: 1, 0, RLSS, VIU;
+	RSM_WinClsReq: 1, 0, RLSS, VIU;
+	RSM_WinT: 11, 0, RLSS, VIU;
+	RSM_WiprPointScrapeReq: 1, 0, RLSS, VIU;
+	RSM_WiprReScrapeReq: 1, 0, RLSS, VIU;
+	RSM_WiprSpdReq: 4, 0, RLSS, VIU;
+	RSM_WiprWetnessMod: 1, 0, RLSS, VIU;
+	VIU_550nmTrsm: 7, 0, VIU, RLSS;
+	VIU_800nmTrsm: 7, 0, VIU, RLSS;
+	VIU_FrntWiprCrkAg: 8, 0, VIU, RLSS;
+	VIU_FrntWiprParkSt: 1, 0, VIU, RLSS;
+	VIU_FrntWiprSwitchSt: 3, 0, VIU, RLSS;
+	VIU_RSMAutoModeActv: 1, 1, VIU, RLSS;
+	VIU_RSMSnvty: 3, 0, VIU, RLSS;
+	VIU_state_Chks: 8, 0, VIU, RLSS;
+	VIU_state_Cntr: 4, 0, VIU, RLSS;
+	VIU_UsgMod: 3, 0, VIU, RLSS;
+	VIU_VehSpd: 13, 8190, VIU, RLSS;
+	VIU_VehSpdValid: 1, 0, VIU, RLSS;
+	VIU_WashSt: 1, 0, VIU, RLSS;
+	VIU_WinSt: 1, 0, VIU, RLSS;
+	ErrRespRLSS: 1, 0, RLSS, VIU;
+}
+
+
+Diagnostic_signals {
+	MasterReqB0: 8, 0;
+	MasterReqB1: 8, 0;
+	MasterReqB2: 8, 0;
+	MasterReqB3: 8, 0;
+	MasterReqB4: 8, 0;
+	MasterReqB5: 8, 0;
+	MasterReqB6: 8, 0;
+	MasterReqB7: 8, 0;
+	SlaveRespB0: 8, 0;
+	SlaveRespB1: 8, 0;
+	SlaveRespB2: 8, 0;
+	SlaveRespB3: 8, 0;
+	SlaveRespB4: 8, 0;
+	SlaveRespB5: 8, 0;
+	SlaveRespB6: 8, 0;
+	SlaveRespB7: 8, 0;
+}
+
+Frames {
+	RSM_state: 0x09, RLSS, 8 {
+		RSM_AmbBri, 42;
+		RSM_AutoModActvFb, 31;
+		RSM_CondensationMod, 52;
+		RSM_FwBri, 32;
+		RSM_IRBri, 56;
+		RSM_LiDARMod, 14;
+		RSM_LiSnsrErr, 21;
+		RSM_LiSWReason, 24;
+		RSM_LoBeamOnReq, 22;
+		RSM_OverUFlt, 28;
+		RSM_PosnLiOnReq, 23;
+		RSM_RainSnsrErr, 15;
+		RSM_SplashReq, 30;
+		RSM_state_Chks, 0;
+		RSM_state_Cntr, 8;
+		RSM_UnderUFlt, 27;
+		RSM_WinClsReq, 20;
+		RSM_WiprPointScrapeReq, 55;
+		RSM_WiprReScrapeReq, 54;
+		RSM_WiprSpdReq, 16;
+		RSM_WiprWetnessMod, 53;
+		ErrRespRLSS, 29; 
+	}
+	RSM_state2: 0x0A, RLSS, 8 {
+		RSM_DewPointT, 24;
+		RSM_HUDBriRawVal, 56;
+		RSM_HUDBriUnit, 36;
+		RSM_HumTFlt, 35;
+		RSM_LeSolarInten, 40;
+		RSM_Rainfall, 38;
+		RSM_RelHum, 16;
+		RSM_RiSolarInten, 48;
+		RSM_WinT, 0;
+	}
+	RSM_state3: 0x0C, RLSS, 8 {
+		RSM_ADC_A, 0;
+		RSM_ADC_B, 16;
+		RSM_DELTA_A, 30;
+		RSM_DELTA_B, 40;
+		RSM_FirstWakeupReason, 57;
+		RSM_SW_MajorVers, 50;
+		RSM_SW_MinorVers, 53;
+	}
+	RSM_state4: 0x0D, RLSS, 8 {
+		RSM_AirT, 0;
+	}
+	VIU0_RSM: 0x05, VIU, 8 {
+		VIU_550nmTrsm, 50;
+		VIU_800nmTrsm, 57;
+		VIU_FrntWiprCrkAg, 40;
+		VIU_FrntWiprParkSt, 32;
+		VIU_FrntWiprSwitchSt, 33;
+		VIU_RSMAutoModeActv, 15;
+		VIU_RSMSnvty, 36;
+		VIU_state_Chks, 0;
+		VIU_state_Cntr, 8;
+		VIU_UsgMod, 12;
+		VIU_VehSpd, 16;
+		VIU_VehSpdValid, 29;
+		VIU_WashSt, 31;
+		VIU_WinSt, 30;
+	}
+}
+
+Diagnostic_frames {
+	MasterReq: 60 {
+		MasterReqB0, 0;
+		MasterReqB1, 8;
+		MasterReqB2, 16;
+		MasterReqB3, 24;
+		MasterReqB4, 32;
+		MasterReqB5, 40;
+		MasterReqB6, 48;
+		MasterReqB7, 56;
+	}
+	SlaveResp: 61 {
+		SlaveRespB0, 0;
+		SlaveRespB1, 8;
+		SlaveRespB2, 16;
+		SlaveRespB3, 24;
+		SlaveRespB4, 32;
+		SlaveRespB5, 40;
+		SlaveRespB6, 48;
+		SlaveRespB7, 56;
+	}
+}
+
+Node_attributes {
+	RLSS {
+		LIN_protocol = "2.1";
+		configured_NAD = 0x43;
+		initial_NAD = 0x00;
+		product_id = 0x00, 0x00, 0;
+		response_error = ErrRespRLSS;
+		configurable_frames {
+			RSM_state;
+			RSM_state2;
+			RSM_state3;
+			VIU0_RSM;
+			RSM_state4;
+		}
+	}
+}
+
+Schedule_tables {
+	Diag {
+		MasterReq delay 50.000 ms;
+		SlaveResp delay 10.000 ms;
+	}
+	NORMAL {
+		VIU0_RSM delay 10.000 ms;
+		RSM_state delay 10.000 ms;
+		RSM_state2 delay 10.000 ms;
+		RSM_state3 delay 10.000 ms;
+		RSM_state4 delay 10.000 ms;
+	}
+}
+
+Signal_encoding_types {
+	RSM_ADC_A {
+		physical_value, 0, 16383, 1.0, 0.0, "";
+	}
+	RSM_ADC_B {
+		physical_value, 0, 16383, 1.0, 0.0, "";
+	}
+	RSM_AirT {
+		physical_value, 0, 1396, 0.1, -39.6, "¡æ";
+		logical_value, 2047, "RSM_AirT_2047_Invalid";
+	}
+	RSM_AmbBri {
+		physical_value, 0, 1023, 10.0, 0.0, "";
+	}
+	RSM_AutoModActvFb {
+		logical_value, 0, "RSM_AutoModActvFb_0_OFF";
+		logical_value, 1, "RSM_AutoModActvFb_1_Auto";
+	}
+	RSM_CondensationMod {
+		logical_value, 0, "RSM_CondensationMod_0_Inactive";
+		logical_value, 1, "RSM_CondensationMod_1_Active";
+	}
+	RSM_DELTA_A {
+		physical_value, 0, 1023, 5.0, 0.0, "";
+	}
+	RSM_DELTA_B {
+		physical_value, 0, 1023, 5.0, 0.0, "";
+	}
+	RSM_DewPointT {
+		physical_value, 0, 2047, 0.1, -39.6, "¡æ";
+	}
+	RSM_FirstWakeupReason {
+		logical_value, 0, "RSM_FirstWakeupReason_0_Passive_Wakeup";
+		logical_value, 1, "RSM_FirstWakeupReason_1_Active_Wakeup";
+		logical_value, 2, "RSM_FirstWakeupReason_2_Reserved";
+	}
+	RSM_FwBri {
+		physical_value, 0, 1023, 10.0, 0.0, "";
+	}
+	RSM_HUDBriRawVal {
+		physical_value, 0, 127, 1.0, 0.0, "";
+	}
+	RSM_HUDBriUnit {
+		logical_value, 0, "RSM_HUDBriUnit_0_1_lux";
+		logical_value, 1, "RSM_HUDBriUnit_1_10_lux";
+		logical_value, 2, "RSM_HUDBriUnit_2_100_lux";
+		logical_value, 3, "RSM_HUDBriUnit_3_1000_lux";
+	}
+	RSM_HumTFlt {
+		logical_value, 0, "RSM_HumTFlt_0_Normal";
+		logical_value, 1, "RSM_HumTFlt_1_Error";
+	}
+	RSM_IRBri {
+		physical_value, 0, 255, 8.0, 0.0, "";
+	}
+	RSM_LeSolarInten {
+		physical_value, 0, 255, 5.0, 0.0, "";
+	}
+	RSM_LiDARMod {
+		logical_value, 0, "RSM_LiDARMod_0_Inactive";
+		logical_value, 1, "RSM_LiDARMod_1_Active";
+	}
+	RSM_LiSnsrErr {
+		logical_value, 0, "RSM_LiSnsrErr_0_Normal";
+		logical_value, 1, "RSM_LiSnsrErr_1_Failure";
+	}
+	RSM_LiSWReason {
+		logical_value, 0, "RSM_LiSWReason_0_Day";
+		logical_value, 1, "RSM_LiSWReason_1_Others";
+		logical_value, 2, "RSM_LiSWReason_2_Dark";
+		logical_value, 3, "RSM_LiSWReason_3_Tunnel";
+		logical_value, 4, "RSM_LiSWReason_4_Darkstart";
+	}
+	RSM_LoBeamOnReq {
+		logical_value, 0, "RSM_LoBeamOnReq_0_OFF_Request";
+		logical_value, 1, "RSM_LoBeamOnReq_1_ON_Request";
+	}
+	RSM_OverUFlt {
+		logical_value, 0, "RSM_OverUFlt_0_Normal";
+		logical_value, 1, "RSM_OverUFlt_1_Overvoltage";
+	}
+	RSM_PosnLiOnReq {
+		logical_value, 0, "RSM_PosnLiOnReq_0_OFF_Request";
+		logical_value, 1, "RSM_PosnLiOnReq_1_ON_Request";
+	}
+	RSM_Rainfall {
+		logical_value, 0, "RSM_Rainfall_0_No_Rain";
+		logical_value, 1, "RSM_Rainfall_1_Light_Rain";
+		logical_value, 2, "RSM_Rainfall_2_Moderate_Rain";
+		logical_value, 3, "RSM_Rainfall_3_Heavy_Rain";
+	}
+	RSM_RainSnsrErr {
+		logical_value, 0, "RSM_RainSnsrErr_0_Normal";
+		logical_value, 1, "RSM_RainSnsrErr_1_Failure";
+	}
+	RSM_RelHum {
+		physical_value, 0, 255, 0.5, -0.5, "%";
+	}
+	RSM_RiSolarInten {
+		physical_value, 0, 255, 5.0, 0.0, "";
+	}
+	RSM_SplashReq {
+		logical_value, 0, "RSM_SplashReq_0_No_Request";
+		logical_value, 1, "RSM_SplashReq_1_Request";
+	}
+	RSM_state_Chks {
+		physical_value, 0, 255, 1.0, 0.0, "";
+	}
+	RSM_state_Cntr {
+		physical_value, 0, 15, 1.0, 0.0, "";
+	}
+	RSM_SW_MajorVers {
+		physical_value, 0, 7, 1.0, 0.0, "";
+	}
+	RSM_SW_MinorVers {
+		physical_value, 0, 15, 1.0, 0.0, "";
+	}
+	RSM_UnderUFlt {
+		logical_value, 0, "RSM_UnderUFlt_0_Normal";
+		logical_value, 1, "RSM_UnderUFlt_1_Undervoltage";
+	}
+	RSM_WinClsReq {
+		logical_value, 0, "RSM_WinClsReq_0_No_Request";
+		logical_value, 1, "RSM_WinClsReq_1_Close_Request";
+	}
+	RSM_WinT {
+		physical_value, 0, 2047, 0.1, -39.6, "¡æ";
+	}
+	RSM_WiprPointScrapeReq {
+		logical_value, 0, "RSM_WiprPointScrapeReq_0_No_Request";
+		logical_value, 1, "RSM_WiprPointScrapeReq_1_Request";
+	}
+	RSM_WiprReScrapeReq {
+		logical_value, 0, "RSM_WiprReScrapeReq_0_No_Request";
+		logical_value, 1, "RSM_WiprReScrapeReq_1_Request";
+	}
+	RSM_WiprSpdReq {
+		logical_value, 0, "RSM_WiprSpdReq_0_park";
+		logical_value, 1, "RSM_WiprSpdReq_1_30_/min";
+		logical_value, 2, "RSM_WiprSpdReq_2_reserved";
+		logical_value, 3, "RSM_WiprSpdReq_3_36_/min";
+		logical_value, 4, "RSM_WiprSpdReq_4_reserved";
+		logical_value, 5, "RSM_WiprSpdReq_5_40_/min(low_speed)";
+		logical_value, 6, "RSM_WiprSpdReq_6_reserved";
+		logical_value, 7, "RSM_WiprSpdReq_7_44_/min";
+		logical_value, 8, "RSM_WiprSpdReq_8_reserved";
+		logical_value, 9, "RSM_WiprSpdReq_9_reserved";
+		logical_value, 10, "RSM_WiprSpdReq_10_50_/min";
+		logical_value, 11, "RSM_WiprSpdReq_11_reserved";
+		logical_value, 12, "RSM_WiprSpdReq_12_54_/min";
+		logical_value, 13, "RSM_WiprSpdReq_13_reserved";
+		logical_value, 14, "RSM_WiprSpdReq_14_reserved";
+		logical_value, 15, "RSM_WiprSpdReq_15_60_/min(high_speed)";
+	}
+	RSM_WiprWetnessMod {
+		logical_value, 0, "RSM_WiprWetnessMod_0_Inactive";
+		logical_value, 1, "RSM_WiprWetnessMod_1_Active";
+	}
+	VIU_550nmTrsm {
+		physical_value, 0, 127, 5.0, 0.0, "";
+	}
+	VIU_800nmTrsm {
+		physical_value, 0, 127, 5.0, 0.0, "";
+	}
+	VIU_FrntWiprCrkAg {
+		physical_value, 0, 255, 1.0, 0.0, "degree";
+	}
+	VIU_FrntWiprParkSt {
+		logical_value, 0, "VIU_FrntWiprParkSt_0_Out_Park_Area";
+		logical_value, 1, "VIU_FrntWiprParkSt_1_In_Park_Area";
+	}
+	VIU_FrntWiprSwitchSt {
+		logical_value, 0, "VIU_FrntWiprSwitchSt_0_Stop";
+		logical_value, 1, "VIU_FrntWiprSwitchSt_1_Low_Speed";
+		logical_value, 2, "VIU_FrntWiprSwitchSt_2_High_Speed";
+		logical_value, 3, "VIU_FrntWiprSwitchSt_3_Interrupt(Reserved)";
+		logical_value, 4, "VIU_FrntWiprSwitchSt_4_Wash";
+		logical_value, 5, "VIU_FrntWiprSwitchSt_5_Auto";
+		logical_value, 6, "VIU_FrntWiprSwitchSt_6_Switch_Failure(Reserved)";
+		logical_value, 7, "VIU_FrntWiprSwitchSt_7_Invalid";
+	}
+	VIU_RSMAutoModeActv {
+		logical_value, 0, "VIU_RSMAutoModeActv_0_OFF";
+		logical_value, 1, "VIU_RSMAutoModeActv_1_Auto";
+	}
+	VIU_RSMSnvty {
+		logical_value, 0, "VIU_RSMSnvty_0_Sensitivity_1";
+		logical_value, 1, "VIU_RSMSnvty_1_Sensitivity_2";
+		logical_value, 2, "VIU_RSMSnvty_2_Sensitivity_3";
+		logical_value, 3, "VIU_RSMSnvty_3_Sensitivity_4";
+		logical_value, 4, "VIU_RSMSnvty_4_Reserved";
+		logical_value, 7, "VIU_RSMSnvty_7_Invalid";
+	}
+	VIU_state_Chks {
+		physical_value, 0, 255, 1.0, 0.0, "";
+	}
+	VIU_state_Cntr {
+		physical_value, 0, 15, 1.0, 0.0, "";
+	}
+	VIU_UsgMod {
+		logical_value, 0, "VIU_UsgMod_0_Abandoned";
+		logical_value, 1, "VIU_UsgMod_1_Inactive";
+		logical_value, 2, "VIU_UsgMod_2_Convenience";
+		logical_value, 3, "VIU_UsgMod_3_Driving";
+		logical_value, 4, "VIU_UsgMod_4_OTA_Updating";
+		logical_value, 5, "VIU_UsgMod_5_Remote";
+		logical_value, 6, "VIU_UsgMod_6_RemoteDriving";
+		logical_value, 7, "VIU_UsgMod_7_Invalid";
+	}
+	VIU_VehSpd {
+		physical_value, 0, 8191, 0.05625, 0.0, "km/h";
+	}
+	VIU_VehSpdValid {
+		logical_value, 0, "VIU_VehSpdValid_0_Invalid";
+		logical_value, 1, "VIU_VehSpdValid_1_Valid";
+	}
+	VIU_WashSt {
+		logical_value, 0, "VIU_WashSt_0_No_wash";
+		logical_value, 1, "VIU_WashSt_1_wash";
+	}
+	VIU_WinSt {
+		logical_value, 0, "VIU_WinSt_0_Complete_Close";
+		logical_value, 1, "VIU_WinSt_1_Incomplete_Close";
+	}
+}
+
+Signal_representation {
+	RSM_ADC_A : RSM_ADC_A;
+	RSM_ADC_B : RSM_ADC_B;
+	RSM_AirT : RSM_AirT;
+	RSM_AmbBri : RSM_AmbBri;
+	RSM_AutoModActvFb : RSM_AutoModActvFb;
+	RSM_CondensationMod : RSM_CondensationMod;
+	RSM_DELTA_A : RSM_DELTA_A;
+	RSM_DELTA_B : RSM_DELTA_B;
+	RSM_DewPointT : RSM_DewPointT;
+	RSM_FirstWakeupReason : RSM_FirstWakeupReason;
+	RSM_FwBri : RSM_FwBri;
+	RSM_HUDBriRawVal : RSM_HUDBriRawVal;
+	RSM_HUDBriUnit : RSM_HUDBriUnit;
+	RSM_HumTFlt : RSM_HumTFlt;
+	RSM_IRBri : RSM_IRBri;
+	RSM_LeSolarInten : RSM_LeSolarInten;
+	RSM_LiDARMod : RSM_LiDARMod;
+	RSM_LiSnsrErr : RSM_LiSnsrErr;
+	RSM_LiSWReason : RSM_LiSWReason;
+	RSM_LoBeamOnReq : RSM_LoBeamOnReq;
+	RSM_OverUFlt : RSM_OverUFlt;
+	RSM_PosnLiOnReq : RSM_PosnLiOnReq;
+	RSM_Rainfall : RSM_Rainfall;
+	RSM_RainSnsrErr : RSM_RainSnsrErr;
+	RSM_RelHum : RSM_RelHum;
+	RSM_RiSolarInten : RSM_RiSolarInten;
+	RSM_SplashReq : RSM_SplashReq;
+	RSM_state_Chks : RSM_state_Chks;
+	RSM_state_Cntr : RSM_state_Cntr;
+	RSM_SW_MajorVers : RSM_SW_MajorVers;
+	RSM_SW_MinorVers : RSM_SW_MinorVers;
+	RSM_UnderUFlt : RSM_UnderUFlt;
+	RSM_WinClsReq : RSM_WinClsReq;
+	RSM_WinT : RSM_WinT;
+	RSM_WiprPointScrapeReq : RSM_WiprPointScrapeReq;
+	RSM_WiprReScrapeReq : RSM_WiprReScrapeReq;
+	RSM_WiprSpdReq : RSM_WiprSpdReq;
+	RSM_WiprWetnessMod : RSM_WiprWetnessMod;
+	VIU_550nmTrsm : VIU_550nmTrsm;
+	VIU_800nmTrsm : VIU_800nmTrsm;
+	VIU_FrntWiprCrkAg : VIU_FrntWiprCrkAg;
+	VIU_FrntWiprParkSt : VIU_FrntWiprParkSt;
+	VIU_FrntWiprSwitchSt : VIU_FrntWiprSwitchSt;
+	VIU_RSMAutoModeActv : VIU_RSMAutoModeActv;
+	VIU_RSMSnvty : VIU_RSMSnvty;
+	VIU_state_Chks : VIU_state_Chks;
+	VIU_state_Cntr : VIU_state_Cntr;
+	VIU_UsgMod : VIU_UsgMod;
+	VIU_VehSpd : VIU_VehSpd;
+	VIU_VehSpdValid : VIU_VehSpdValid;
+	VIU_WashSt : VIU_WashSt;
+	VIU_WinSt : VIU_WinSt;
+}
+
