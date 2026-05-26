@@ -1,0 +1,307 @@
+// *************************************************************************** *
+// *                                                                           *
+// *                      Mentor Graphics Corporation                          *
+// *                          All rights reserved                              *
+// * Description:         Partial CANDB File (for EWS Node)                    *
+// * Generated at:        2025-07-25 20:33                                     *
+// * Node                 EWS                                                  *
+// *             THIS CONFIGURATION MIGHT CONTAIN SOME ERRORS                  *
+// *              IF THE INPUT MODEL WAS NOT PROPERLY FORMED!                  *
+// *                    Do Not Use this File directly!                         *
+
+
+VERSION "EWS"
+
+NS_ :
+
+BS_ :
+
+BU_ : EWS Vector_XXX
+
+BO_ 1921 Diag_EWS_F_Resp: 8 EWS
+ SG_ Diag_EWS_F_Resp_Data : 7|64@0+ (1,0) [0|0] "" Vector_XXX
+
+BO_ 1608 EWS_F_DTC: 8 EWS
+ SG_ EWS_F_FaultNum1 : 23|12@0+ (1.0,0.0) [0.0|4095.0] "" Vector_XXX
+ SG_ EWS_F_FaultNum2 : 27|12@0+ (1.0,0.0) [0.0|4095.0] "" Vector_XXX
+ SG_ EWS_F_FaultNum3 : 47|12@0+ (1.0,0.0) [0.0|4095.0] "" Vector_XXX
+ SG_ EWS_F_FaultNum4 : 51|12@0+ (1.0,0.0) [0.0|4095.0] "" Vector_XXX
+ SG_ EWS_F_FrameIndex : 12|5@0+ (1.0,0.0) [0.0|31.0] "" Vector_XXX
+ SG_ EWS_F_SupplierNum : 15|3@0+ (1.0,0.0) [0.0|7.0] "" Vector_XXX
+ SG_ EWS_F_TotalFaultNum : 7|8@0+ (1.0,0.0) [0.0|255.0] "" Vector_XXX
+
+BO_ 703 EWS_F_St: 8 EWS
+ SG_ EWS_F_BatVoltSt : 28|2@0+ (1,0) [0|3] "" Vector_XXX
+ SG_ EWS_F_HoodKnockSt : 31|2@0+ (1,0) [0|3] "" Vector_XXX
+ SG_ EWS_F_RxLost : 26|1@0+ (1,0) [0|1] "" Vector_XXX
+ SG_ EWS_F_SensorVld : 29|1@0+ (1,0) [0|1] "" Vector_XXX
+
+BO_ 1077 NM_Autosar_EWS_F: 8 EWS
+ SG_ EWS_F_SourceNodeIdentifier : 7|8@0+ (1.0,0.0) [0.0|255] "" Vector_XXX
+ SG_ EWS_F_RepeatMessageRequestBit : 8|1@0+ (1.0,0.0) [0.0|1] "" Vector_XXX
+ SG_ EWS_F_ActiveWakeupBit : 12|1@0+ (1.0,0.0) [0.0|1] "" Vector_XXX
+ SG_ EWS_F_RepeatSts : 16|1@0+ (1.0,0.0) [0.0|1] "" Vector_XXX
+ SG_ EWS_F_NMReq_Poweron : 23|1@0+ (1.0,0.0) [0.0|1] "" Vector_XXX
+ SG_ EWS_F_NMReq_Diag : 22|1@0+ (1.0,0.0) [0.0|1] "" Vector_XXX
+ SG_ EWS_F_NMReq_NM : 21|1@0+ (1.0,0.0) [0.0|1] "" Vector_XXX
+ SG_ EWS_F_FirstWakeupReason : 53|6@0+ (1.0,0.0) [0.0|1] "" Vector_XXX
+
+BO_ 1793 Diag_EWS_F_PhyReq: 8 Vector_XXX
+ SG_ Diag_EWS_F_PhyReq_Data : 7|64@0+ (1,0) [0|0] "" EWS
+
+BO_ 2015 Diag_FuncReq: 8 Vector_XXX
+ SG_ Diag_FuncReq_Data : 7|64@0+ (1,0) [0|0] "" EWS
+
+BO_ 1076 NM_Autosar_VIU0: 8 Vector_XXX
+ SG_ VIU0_SourceNodeIdentifier : 7|8@0+ (1.0,0.0) [0.0|255] "" EWS
+ SG_ VIU0_RepeatMessageRequestBit : 8|1@0+ (1.0,0.0) [0.0|1] "" EWS
+ SG_ VIU0_ActiveWakeupBit : 12|1@0+ (1.0,0.0) [0.0|1] "" EWS
+ SG_ VIU0_RepeatSts : 16|1@0+ (1.0,0.0) [0.0|1] "" EWS
+
+BO_ 450 VIU_Info_Prof1A: 8 Vector_XXX
+ SG_ VIU_CarMode : 27|4@0+ (1,0) [0|15] "" EWS
+ SG_ VIU_Info_Prof1A_Checksum : 7|8@0+ (1.0,0.0) [0.0|255.0] "" EWS
+ SG_ VIU_Info_Prof1A_Counter : 11|4@0+ (1.0,0.0) [0.0|14.0] "" EWS
+ SG_ VIU_PowerMode : 39|2@0+ (1,0) [0|3] "" EWS
+ SG_ VIU_PowerModeFltFlag : 37|2@0+ (1,0) [0|3] "" EWS
+ SG_ VIU_UsageMode : 31|4@0+ (1,0) [0|15] "" EWS
+
+BO_ 832 VIU_Route_Body3: 8 Vector_XXX
+ SG_ IPB_VehicleSpeed : 31|13@0+ (0.05625,0.0) [0.0|460.74375000000003] "km/h" EWS
+ SG_ IPB_VehicleSpeedValid : 34|1@0+ (1,0) [0|1] "" EWS
+ SG_ RSM_Rainfall : 49|2@0+ (1,0) [0|3] "" EWS
+ SG_ RSM_RainSnsrErr : 63|1@0+ (1,0) [0|1] "" EWS
+ SG_ RSM_WiprSpdReq : 53|4@0+ (1,0) [0|15] "" EWS
+ SG_ TDU_OutdTemp : 33|12@0+ (0.1,-48.0) [-48.0|80.0] "℃" EWS
+
+
+// Signal Comments
+CM_ SG_ 1608 EWS_F_FaultNum1 "故障列表1";
+CM_ SG_ 1608 EWS_F_FaultNum2 "故障列表2";
+CM_ SG_ 1608 EWS_F_FaultNum3 "故障列表3";
+CM_ SG_ 1608 EWS_F_FaultNum4 "故障列表4";
+CM_ SG_ 1608 EWS_F_FrameIndex "帧序号";
+CM_ SG_ 1608 EWS_F_SupplierNum "供应商代码";
+CM_ SG_ 1608 EWS_F_TotalFaultNum "当前故障总数";
+CM_ SG_ 703 EWS_F_BatVoltSt "电压状态";
+CM_ SG_ 703 EWS_F_HoodKnockSt "前舱盖敲击状态";
+CM_ SG_ 703 EWS_F_RxLost "通讯丢失";
+CM_ SG_ 703 EWS_F_SensorVld "传感器有效状态";
+CM_ SG_ 450 VIU_CarMode "车辆模式";
+CM_ SG_ 450 VIU_Info_Prof1A_Checksum "CRC8 Checksum(Data ID:0x00C2)";
+CM_ SG_ 450 VIU_Info_Prof1A_Counter "RollingCounter";
+CM_ SG_ 450 VIU_PowerMode "电源模式";
+CM_ SG_ 450 VIU_PowerModeFltFlag "电源模式故障状态";
+CM_ SG_ 450 VIU_UsageMode "用户模式";
+CM_ SG_ 832 IPB_VehicleSpeed "车速";
+CM_ SG_ 832 IPB_VehicleSpeedValid "车速有效位";
+CM_ SG_ 832 RSM_Rainfall "雨量大小";
+CM_ SG_ 832 RSM_RainSnsrErr "雨量传感器故障";
+CM_ SG_ 832 RSM_WiprSpdReq "雨刮速度请求";
+CM_ SG_ 832 TDU_OutdTemp "车外环境温度";
+
+// Attribute definitions
+CM_ SG_ 2015 Diag_FuncReq_Data "Diag_FuncReq_Data";
+CM_ SG_ 1793 Diag_EWS_F_PhyReq_Data "Diag_EWS_F_PhyReq_Data";
+CM_ SG_ 1921 Diag_EWS_F_Resp_Data "Diag_EWS_F_Resp_Data";
+CM_ SG_ 1077 EWS_F_SourceNodeIdentifier "EWS_F_SourceNodeIdentifier";
+CM_ SG_ 1077 EWS_F_RepeatMessageRequestBit "EWS_F_RepeatMessageRequestBit";
+CM_ SG_ 1077 EWS_F_ActiveWakeupBit "EWS_F_ActiveWakeupBit";
+CM_ SG_ 1077 EWS_F_RepeatSts "EWS_F_RepeatSts";
+CM_ SG_ 1077 EWS_F_NMReq_Poweron "EWS_F_NMReq_Poweron";
+CM_ SG_ 1077 EWS_F_NMReq_Diag "EWS_F_NMReq_Diag";
+CM_ SG_ 1077 EWS_F_NMReq_NM "EWS_F_NMReq_NM";
+CM_ SG_ 1077 EWS_F_FirstWakeupReason "EWS_F_FirstWakeupReason";
+CM_ SG_ 1076 VIU0_SourceNodeIdentifier "VIU0_SourceNodeIdentifier";
+CM_ SG_ 1076 VIU0_RepeatMessageRequestBit "VIU0_RepeatMessageRequestBit";
+CM_ SG_ 1076 VIU0_ActiveWakeupBit "VIU0_ActiveWakeupBit";
+CM_ SG_ 1076 VIU0_RepeatSts "VIU0_RepeatSts";
+BA_DEF_ BO_ "CANFD_BRS" ENUM "1","0"; // 
+BA_DEF_ BO_ "DiagRequest" ENUM "Yes","No"; // 
+BA_DEF_ BO_ "DiagResponse" ENUM "Yes","No"; // 
+BA_DEF_ BO_ "DiagState" ENUM "Yes","No"; // 
+BA_DEF_ BO_ "GenMsgILSupport" ENUM "Yes","No"; // 
+BA_DEF_ BO_ "GenMsgSendType" ENUM "Cyclic","Event","IfActive","CE","CA","NoMsgSendType";
+BA_DEF_ SG_ "GenSigSendType" ENUM "Cyclic","OnChange","OnWrite","IfActive","OnChangeWithRepetition","OnWriteWithRepetition","IfActiveWithRepetition","NoSigSendType","OnChangeAndIfActive","OnChangeAndIfActiveWithRepetition","CA","CE","Event";
+BA_DEF_ BO_ "MSGILSupport" ENUM "Yes","No"; // 
+BA_DEF_ BO_ "NmMessage" ENUM "Yes","No"; // 
+BA_DEF_ BO_ "VFrameFormat" ENUM "StandardCAN","ExtendedCAN","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","StandardCAN_FD","ExtendedCAN_FD"; // 
+BA_DEF_  "Baudrate" FLOAT 1000 1000000; // [bps]
+BA_DEF_ BO_ "GenMsgCycleTime" FLOAT 0 300000; // [ms]
+BA_DEF_ BO_ "GenMsgStartDelayTime" FLOAT 0 300000; // [ms]
+BA_DEF_ BO_ "GenMsgDelayTime" FLOAT 0 300000; // [ms]
+BA_DEF_ SG_ "GenSigStartValue" FLOAT -1.7976931348623157E308 18446744073709551615;
+BA_DEF_ BU_ "NmAsrNodeIdentifier" INT 0 255;
+BA_DEF_ BU_ "NmAsrNode" ENUM "No","Yes";
+BA_DEF_ BO_ "GenMsgNrOfRepetition" INT 0 100000;
+BA_DEF_ BO_ "GenMsgCycleTimeFast" FLOAT 0 300000;
+BA_DEF_  "DBName" STRING;
+BA_DEF_  "BusType" STRING;
+BA_DEF_  "ProtocolType" STRING;
+
+BA_DEF_DEF_ "CANFD_BRS" "1";
+BA_DEF_DEF_ "DiagRequest" "No";
+BA_DEF_DEF_ "DiagResponse" "No";
+BA_DEF_DEF_ "DiagState" "No";
+BA_DEF_DEF_ "GenMsgILSupport" "Yes";
+BA_DEF_DEF_ "GenMsgSendType" "Cyclic";
+BA_DEF_DEF_ "GenSigSendType" "Cyclic";
+BA_DEF_DEF_ "MSGILSupport" "Yes";
+BA_DEF_DEF_ "NmMessage" "No";
+BA_DEF_DEF_ "VFrameFormat" "StandardCAN_FD";
+BA_DEF_DEF_ "GenSigStartValue" 0;
+BA_DEF_DEF_ "NmAsrNodeIdentifier" 0;
+BA_DEF_DEF_ "NmAsrNode" "No";
+BA_DEF_DEF_ "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_ "DBName" "";
+BA_DEF_DEF_ "BusType" "";
+BA_DEF_DEF_ "ProtocolType" "";
+
+// Network
+BA_ "DBName" "EWS";
+BA_ "BusType" "CAN";
+BA_ "ProtocolType" "CAN";
+BA_ "Baudrate" 500000;
+// ECU: EWS
+BA_ "NmAsrNodeIdentifier" BU_ EWS 53;
+BA_ "NmAsrNode" BU_ EWS 1;
+// Frame: Diag_EWS_F_Resp
+BA_ "CANFD_BRS" BO_ 1921 1;
+BA_ "DiagResponse" BO_ 1921 0;
+BA_ "GenMsgCycleTime" BO_ 1921 0;
+BA_ "GenMsgSendType" BO_ 1921 1;
+BA_ "VFrameFormat" BO_ 1921 0;
+BA_ "GenMsgDelayTime" BO_ 1921 20.000;
+// Frame: EWS_F_DTC
+BA_ "CANFD_BRS" BO_ 1608 1;
+BA_ "VFrameFormat" BO_ 1608 0;
+BA_ "GenMsgCycleTime" BO_ 1608 500;
+BA_ "GenMsgSendType" BO_ 1608 0;
+BA_ "GenMsgStartDelayTime" BO_ 1608 0.000;
+BA_ "GenSigStartValue" SG_ 1608 EWS_F_FaultNum1 0;
+BA_ "GenSigStartValue" SG_ 1608 EWS_F_FaultNum2 0;
+BA_ "GenSigStartValue" SG_ 1608 EWS_F_FaultNum3 0;
+BA_ "GenSigStartValue" SG_ 1608 EWS_F_FaultNum4 0;
+BA_ "GenSigStartValue" SG_ 1608 EWS_F_FrameIndex 0;
+BA_ "GenSigStartValue" SG_ 1608 EWS_F_SupplierNum 0;
+BA_ "GenSigStartValue" SG_ 1608 EWS_F_TotalFaultNum 0;
+// Frame: EWS_F_St
+BA_ "CANFD_BRS" BO_ 703 1;
+BA_ "GenMsgCycleTime" BO_ 703 100;
+BA_ "GenMsgSendType" BO_ 703 3;
+BA_ "VFrameFormat" BO_ 703 0;
+BA_ "GenMsgStartDelayTime" BO_ 703 0.000;
+BA_ "GenMsgNrOfRepetition" BO_ 703 3;
+BA_ "GenMsgCycleTimeFast" BO_ 703 20.000;
+BA_ "GenSigStartValue" SG_ 703 EWS_F_BatVoltSt 0;
+BA_ "GenSigSendType" SG_ 703 EWS_F_HoodKnockSt 5;
+BA_ "GenSigStartValue" SG_ 703 EWS_F_HoodKnockSt 0;
+BA_ "GenSigStartValue" SG_ 703 EWS_F_RxLost 0;
+BA_ "GenSigStartValue" SG_ 703 EWS_F_SensorVld 0;
+// Frame: NM_Autosar_EWS_F
+BA_ "CANFD_BRS" BO_ 1077 1;
+BA_ "GenMsgCycleTime" BO_ 1077 0;
+BA_ "GenMsgSendType" BO_ 1077 1;
+BA_ "NmMessage" BO_ 1077 0;
+BA_ "VFrameFormat" BO_ 1077 0;
+BA_ "GenMsgDelayTime" BO_ 1077 10.000;
+// Frame: Diag_EWS_F_PhyReq
+BA_ "CANFD_BRS" BO_ 1793 1;
+BA_ "DiagRequest" BO_ 1793 0;
+BA_ "GenMsgCycleTime" BO_ 1793 0;
+BA_ "GenMsgSendType" BO_ 1793 1;
+BA_ "VFrameFormat" BO_ 1793 0;
+BA_ "GenMsgDelayTime" BO_ 1793 20.000;
+// Frame: Diag_FuncReq_BDEXT
+BA_ "CANFD_BRS" BO_ 2015 1;
+BA_ "DiagState" BO_ 2015 0;
+BA_ "GenMsgCycleTime" BO_ 2015 0;
+BA_ "GenMsgSendType" BO_ 2015 1;
+BA_ "VFrameFormat" BO_ 2015 0;
+BA_ "GenMsgDelayTime" BO_ 2015 20.000;
+// Frame: NM_Autosar_VIU0
+BA_ "CANFD_BRS" BO_ 1076 1;
+BA_ "GenMsgCycleTime" BO_ 1076 0;
+BA_ "GenMsgSendType" BO_ 1076 1;
+BA_ "NmMessage" BO_ 1076 0;
+BA_ "VFrameFormat" BO_ 1076 0;
+BA_ "GenMsgDelayTime" BO_ 1076 10.000;
+// Frame: VIU_Info_Prof1A
+BA_ "CANFD_BRS" BO_ 450 1;
+BA_ "VFrameFormat" BO_ 450 0;
+BA_ "GenMsgCycleTime" BO_ 450 20;
+BA_ "GenMsgSendType" BO_ 450 0;
+BA_ "GenMsgStartDelayTime" BO_ 450 0.000;
+BA_ "GenSigStartValue" SG_ 450 VIU_CarMode 14;
+BA_ "GenSigStartValue" SG_ 450 VIU_Info_Prof1A_Checksum 0;
+BA_ "GenSigStartValue" SG_ 450 VIU_Info_Prof1A_Counter 0;
+BA_ "GenSigStartValue" SG_ 450 VIU_PowerMode 0;
+BA_ "GenSigStartValue" SG_ 450 VIU_PowerModeFltFlag 0;
+BA_ "GenSigStartValue" SG_ 450 VIU_UsageMode 1;
+// Frame: VIU_Route_Body3
+BA_ "CANFD_BRS" BO_ 832 1;
+BA_ "VFrameFormat" BO_ 832 0;
+BA_ "GenMsgCycleTime" BO_ 832 100;
+BA_ "GenMsgSendType" BO_ 832 0;
+BA_ "GenMsgStartDelayTime" BO_ 832 0.000;
+BA_ "GenSigStartValue" SG_ 832 IPB_VehicleSpeed 0;
+BA_ "GenSigStartValue" SG_ 832 IPB_VehicleSpeedValid 0;
+BA_ "GenSigStartValue" SG_ 832 RSM_Rainfall 0;
+BA_ "GenSigStartValue" SG_ 832 RSM_RainSnsrErr 0;
+BA_ "GenSigStartValue" SG_ 832 RSM_WiprSpdReq 0;
+BA_ "GenSigStartValue" SG_ 832 TDU_OutdTemp 680;
+
+BA_ "GenSigSendType" SG_ 2015 Diag_FuncReq_Data 2;
+BA_ "GenSigSendType" SG_ 1793 Diag_EWS_F_PhyReq_Data 2;
+BA_ "GenSigSendType" SG_ 1921 Diag_EWS_F_Resp_Data 2;
+BA_ "GenSigSendType" SG_ 1077 EWS_F_SourceNodeIdentifier 2;
+BA_ "GenSigStartValue" SG_ 1077 EWS_F_SourceNodeIdentifier 112;
+BA_ "GenSigSendType" SG_ 1077 EWS_F_RepeatMessageRequestBit 2;
+BA_ "GenSigStartValue" SG_ 1077 EWS_F_RepeatMessageRequestBit 0;
+BA_ "GenSigSendType" SG_ 1077 EWS_F_ActiveWakeupBit 2;
+BA_ "GenSigStartValue" SG_ 1077 EWS_F_ActiveWakeupBit 0;
+BA_ "GenSigSendType" SG_ 1077 EWS_F_RepeatSts 2;
+BA_ "GenSigStartValue" SG_ 1077 EWS_F_RepeatSts 0;
+BA_ "GenSigSendType" SG_ 1077 EWS_F_NMReq_Poweron 2;
+BA_ "GenSigStartValue" SG_ 1077 EWS_F_NMReq_Poweron 0;
+BA_ "GenSigSendType" SG_ 1077 EWS_F_NMReq_Diag 2;
+BA_ "GenSigStartValue" SG_ 1077 EWS_F_NMReq_Diag 0;
+BA_ "GenSigSendType" SG_ 1077 EWS_F_NMReq_NM 2;
+BA_ "GenSigStartValue" SG_ 1077 EWS_F_NMReq_NM 0;
+BA_ "GenSigSendType" SG_ 1077 EWS_F_FirstWakeupReason 2;
+BA_ "GenSigStartValue" SG_ 1077 EWS_F_FirstWakeupReason 0;
+BA_ "GenSigSendType" SG_ 1076 VIU0_SourceNodeIdentifier 2;
+BA_ "GenSigStartValue" SG_ 1076 VIU0_SourceNodeIdentifier 0;
+BA_ "GenSigSendType" SG_ 1076 VIU0_RepeatMessageRequestBit 2;
+BA_ "GenSigStartValue" SG_ 1076 VIU0_RepeatMessageRequestBit 0;
+BA_ "GenSigSendType" SG_ 1076 VIU0_ActiveWakeupBit 2;
+BA_ "GenSigStartValue" SG_ 1076 VIU0_ActiveWakeupBit 0;
+BA_ "GenSigSendType" SG_ 1076 VIU0_RepeatSts 2;
+BA_ "GenSigStartValue" SG_ 1076 VIU0_RepeatSts 0;
+VAL_ 1077 EWS_F_RepeatMessageRequestBit 0 "No Request" 1 "Request";
+VAL_ 1077 EWS_F_ActiveWakeupBit 0 "Passvie Wakeup" 1 "Active Wakeup";
+VAL_ 1077 EWS_F_RepeatSts 0 "Not in RMS" 1 "Stay in RMS";
+VAL_ 1077 EWS_F_NMReq_Poweron 0 "Inactive" 1 "Active";
+VAL_ 1077 EWS_F_NMReq_Diag 0 "Inactive" 1 "Active";
+VAL_ 1077 EWS_F_NMReq_NM 0 "Inactive" 1 "Active";
+VAL_ 1077 EWS_F_FirstWakeupReason 0 "Inactive" 1 "Active";
+VAL_ 1076 VIU0_RepeatMessageRequestBit 0 "该报文发送节点未请求其他节点进入重复报文状态" 1 "该报文发送节点请求其他节点进入重复报文状态";
+VAL_ 1076 VIU0_ActiveWakeupBit 0 "该报文发送节点未主动唤醒网络（被其它节点唤醒）" 1 "该报文发送节点主动唤醒网络";
+VAL_ 1076 VIU0_RepeatSts 0 "节点不在重复报文状态" 1 "节点处于重复报文状态";
+VAL_ 703 EWS_F_BatVoltSt 0 "EWS_F_BatVoltSt_0_Normal" 1 "EWS_F_BatVoltSt_1_Low" 2 "EWS_F_BatVoltSt_2_High" 3 "EWS_F_BatVoltSt_3_Reserved";
+VAL_ 703 EWS_F_HoodKnockSt 0 "EWS_F_HoodKnockSt_0_Knock_Off" 1 "EWS_F_HoodKnockSt_1_Knock_On" 2 "EWS_F_HoodKnockSt_2_Reserved";
+VAL_ 703 EWS_F_RxLost 0 "EWS_F_RxLost_0_False" 1 "EWS_F_RxLost_1_True";
+VAL_ 703 EWS_F_SensorVld 0 "EWS_F_SensorVld_0_Invalid" 1 "EWS_F_SensorVld_1_Valid";
+VAL_ 450 VIU_CarMode 0 "VIU_CarMode_0_Factory" 1 "VIU_CarMode_1_Transport" 2 "VIU_CarMode_2_Dynotest" 3 "VIU_CarMode_3_Normal" 4 "VIU_CarMode_4_ExhibitionInDoor" 5 "VIU_CarMode_5_ExhibitionOutDoor" 6 "VIU_CarMode_6_reserved" 14 "VIU_CarMode_14_Initial" 15 "VIU_CarMode_15_Invalid";
+VAL_ 450 VIU_Info_Prof1A_Counter 15 "VIU_Info_Prof1A_Counter_15_Invalid";
+VAL_ 450 VIU_PowerMode 0 "VIU_PowerMode_0_OFF" 1 "VIU_PowerMode_1_ON" 2 "VIU_PowerMode_2_Reserved" 3 "VIU_PowerMode_3_Invalid";
+VAL_ 450 VIU_PowerModeFltFlag 0 "VIU_PowerModeFltFlag_0_False" 1 "VIU_PowerModeFltFlag_1_True" 2 "VIU_PowerModeFltFlag_2_Reserved" 3 "VIU_PowerModeFltFlag_3_Invalid";
+VAL_ 450 VIU_UsageMode 0 "VIU_UsageMode_0_Abandoned" 1 "VIU_UsageMode_1_Inactive" 2 "VIU_UsageMode_2_Convenience" 3 "VIU_UsageMode_3_Driving" 4 "VIU_UsageMode_4_OTA_Updating" 5 "VIU_UsageMode_5_Remote" 6 "VIU_UsageMode_6_RemoteDriving" 7 "VIU_UsageMode_7_reserved" 15 "VIU_UsageMode_15_Invalid";
+VAL_ 832 IPB_VehicleSpeed 8191 "IPB_VehicleSpeed_8191_Invalid";
+VAL_ 832 IPB_VehicleSpeedValid 0 "IPB_VehicleSpeedValid_0_Invalid" 1 "IPB_VehicleSpeedValid_1_Valid";
+VAL_ 832 RSM_Rainfall 0 "RSM_Rainfall_0_No_Rain" 1 "RSM_Rainfall_1_Light_Rain" 2 "RSM_Rainfall_2_Moderate_Rain" 3 "RSM_Rainfall_3_Heavy_Rain";
+VAL_ 832 RSM_RainSnsrErr 0 "RSM_RainSnsrErr_0_Normal" 1 "RSM_RainSnsrErr_1_Failure";
+VAL_ 832 RSM_WiprSpdReq 0 "RSM_WiprSpdReq_0_park" 1 "RSM_WiprSpdReq_1_30_/min" 2 "RSM_WiprSpdReq_2_reserved" 3 "RSM_WiprSpdReq_3_36_/min" 4 "RSM_WiprSpdReq_4_reserved" 5 "RSM_WiprSpdReq_5_40_/min(low_speed)" 6 "RSM_WiprSpdReq_6_reserved" 7 "RSM_WiprSpdReq_7_44_/min" 8 "RSM_WiprSpdReq_8_reserved" 10 "RSM_WiprSpdReq_10_50_/min" 11 "RSM_WiprSpdReq_11_reserved" 12 "RSM_WiprSpdReq_12_54_/min" 13 "RSM_WiprSpdReq_13_reserved" 15 "RSM_WiprSpdReq_15_60_/min(high_speed)";
+VAL_ 832 TDU_OutdTemp 4095 "TDU_OutdTemp_4095_Invalid";
+
+
