@@ -11,6 +11,8 @@ from uvtest.framework import TestFixture
 from common.control import TestStart, TestEnd
 from common.context import ctx
 from common.params import P
+from common.can_utils import send_canmsg, canmsg_create
+from common.utils import TimerCyclic
 from slplus.time import sl_time
 
 from testcases.can.can_module import (
@@ -255,6 +257,73 @@ def test_TG1_TC4_TerminationResistorMissingTest():
     except Exception as e:
         TestLog("FAIL", "终端电阻丢失鲁棒性测试", f"测试执行出错: {e}")
         TestLog("DEBUG", "终端电阻丢失鲁棒性测试", f"详细错误: {traceback.format_exc()}")
+
+
+def test_TG1_TC5_CANFDBRSErrorRobustnessTest():
+    """CAN FD BRS标志错误鲁棒性测试"""
+    tids = []
+    try:
+        rVnormal = P.CANInfo.Vnormal
+        rTstable_s = P.CANInfo.Tstable_s
+        rTdefaultWait = P.CANInfo.TdefaultWait_s
+        can_channel = DEFAULT_CAN_CHANNELS[0] if DEFAULT_CAN_CHANNELS else 1
+
+        TestLog("INFO", "Step1",
+                f"设置DUT电源电压为{rVnormal}V，将KL30上电，唤醒CAN网络，等待{rTstable_s}s至通信稳定")
+        ret = can_power_setup_and_communication_check(rVnormal, rTstable_s)
+        if ret != 0:
+            TestLog("FAIL", "Step1", "电源设置与通信检查失败")
+            return
+        TestLog("PASS", "Step1", "期望结果：DUT通信正常。实际结果：DUT通信正常")
+
+        ctx.can.set_filter_by_channel(can_channel)
+        ctx.can.clear_messages()
+        ctx.can.set_info('gErrorFrameCount', 0)
+
+        TestLog("INFO", "Step2",
+                "发送BRS=1的CAN FD报文（高波特率），同时混发Classic CAN报文，持续{rTdefaultWait}s")
+
+        fd_msg = canmsg_create(0x100, 15, data=0x5A, rtr=0, fdf=1, brs=1, ext=0)
+        classic_msg = canmsg_create(0x200, 8, data=0x3C, rtr=0, fdf=0, brs=0, ext=0)
+
+        TimerCyclic.start(91, 10, send_canmsg, can_channel, msg=fd_msg)
+        TimerCyclic.start(92, 20, send_canmsg, can_channel, msg=classic_msg)
+        tids = [91, 92]
+
+        sl_time().sleep(int(rTdefaultWait * 1000))
+
+        for t in tids:
+            TimerCyclic.stop(t)
+        tids.clear()
+
+        err_count = ctx.can.get_info('gErrorFrameCount') or 0
+        msg_count = len(ctx.can.messages)
+        TestLog("INFO", "Step2", f"FD/Classic混跑后: 报文={msg_count}, 错误帧={err_count}")
+
+        TestLog("INFO", "Step3", "停止FD报文发送后验证基础Classic CAN通信恢复正常")
+        ctx.can.clear_messages()
+        ctx.can.set_info('gErrorFrameCount', 0)
+        sl_time().sleep(3 * 1000)
+
+        ret = check_can_communication_state(wait_time=3)
+        if ret == 0:
+            TestLog("PASS", "Step3",
+                    f"期望结果：FD BRS错误注入后Classic CAN通信正常。实际结果：通信正常, {len(ctx.can.messages)}条报文")
+        else:
+            TestLog("FAIL", "Step3",
+                    "期望结果：FD BRS错误注入后Classic CAN通信正常。实际结果：通信异常")
+
+        TestLog("INFO", "CAN FD BRS错误鲁棒性测试", "测试完成")
+
+    except Exception as e:
+        TestLog("FAIL", "CAN FD BRS错误鲁棒性测试", f"测试执行出错: {e}")
+        TestLog("DEBUG", "CAN FD BRS错误鲁棒性测试", f"详细错误: {traceback.format_exc()}")
+    finally:
+        for t in tids:
+            try:
+                TimerCyclic.stop(t)
+            except:
+                pass
 
 
 def get_all_test_cases():

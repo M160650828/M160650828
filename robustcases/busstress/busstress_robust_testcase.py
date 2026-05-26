@@ -24,7 +24,7 @@ from testcases.can.can_module import (
 )
 
 
-class MCUMPURobustTestFixture(TestFixture):
+class BusStressTestFixture(TestFixture):
     def group_setup(self, context=None):
         can_initialization()
 
