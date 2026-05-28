@@ -1,0 +1,19 @@
+[
+  {
+    "DID": 30193,
+    "$31 01 ReqLength": 0,
+    "$31 01 RespLength": 2,
+    "$31 02 ReqLength": "No",
+    "$31 02 RespLength": "No",
+    "$31 03 ReqLength": 0,
+    "$31 03 RespLength": 2,
+    "Support \nApp": "Yes",
+    "Support \nBoot": "No",
+    "Security Unlock": "Yes",
+    "Level1": "Yes",
+    "Level3": "No",
+    "Level5": "No",
+    "NRC22": "Yes",
+    "NRC8x": "No"
+  }
+]

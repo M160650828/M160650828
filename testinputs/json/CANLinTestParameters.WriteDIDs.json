@@ -1,0 +1,86 @@
+[
+  {
+    "DID": 61840,
+    "Length": 17,
+    "Support App": "Yes",
+    "Support Boot": "No",
+    "Security Unlock": "Yes",
+    "Level1": "Yes",
+    "Level3": "No",
+    "Level5": "No",
+    "NRC22": "No",
+    "NRC8x": "No"
+  },
+  {
+    "DID": 61858,
+    "Length": 4,
+    "Support App": "Yes",
+    "Support Boot": "No",
+    "Security Unlock": "Yes",
+    "Level1": "Yes",
+    "Level3": "No",
+    "Level5": "No",
+    "NRC22": "No",
+    "NRC8x": "No"
+  },
+  {
+    "DID": 61714,
+    "Length": 8,
+    "Support App": "Yes",
+    "Support Boot": "No",
+    "Security Unlock": "Yes",
+    "Level1": "Yes",
+    "Level3": "No",
+    "Level5": "No",
+    "NRC22": "No",
+    "NRC8x": "No"
+  },
+  {
+    "DID": 61847,
+    "Length": 8,
+    "Support App": "Yes",
+    "Support Boot": "No",
+    "Security Unlock": "Yes",
+    "Level1": "Yes",
+    "Level3": "No",
+    "Level5": "No",
+    "NRC22": "No",
+    "NRC8x": "No"
+  },
+  {
+    "DID": 53557,
+    "Length": 16,
+    "Support App": "Yes",
+    "Support Boot": "No",
+    "Security Unlock": "Yes",
+    "Level1": "Yes",
+    "Level3": "No",
+    "Level5": "No",
+    "NRC22": "No",
+    "NRC8x": "No"
+  },
+  {
+    "DID": 61712,
+    "Length": 8,
+    "Support App": "Yes",
+    "Support Boot": "Yes",
+    "Security Unlock": "No",
+    "Level1": "Yes",
+    "Level3": "No",
+    "Level5": "No",
+    "NRC22": "No",
+    "NRC8x": "No"
+  },
+  {
+    "DID": 61697,
+    "Length": 8,
+    "Support App": "Yes",
+    "Support Boot": "No",
+    "Security Unlock": "Yes",
+    "Level1": "Yes",
+    "Level3": "No",
+    "Level5": "No",
+    "NRC22": "No",
+    "NRC8x": "No"
+  }
+]

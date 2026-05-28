@@ -1,7 +1,7 @@
 [
   {
     "Net": "VIU0_INFO_CANFD",
-    "CANoeCANChannel": 5,
+    "CANoeCANChannel": "30513024300058 ：1",
     "NMMsgID": "0x400",
     "WakeupMsgId": "0x47F",
     "WakeupMsgCANType": "CAN",
@@ -31,7 +31,7 @@
   },
   {
     "Net": "VIU0_CH_CANFD",
-    "CANoeCANChannel": 8,
+    "CANoeCANChannel": "30513024300052 ：2",
     "NMMsgID": null,
     "WakeupMsgId": null,
     "WakeupMsgCANType": null,

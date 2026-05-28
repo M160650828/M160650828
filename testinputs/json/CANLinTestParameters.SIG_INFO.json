@@ -1,0 +1,28 @@
+[
+  {
+    "Type": "Speed_Smaller_3km",
+    "Notes": "小于3Km时速，同一Type可以定义多个信号，使用多行",
+    "TS_Name": "预留",
+    "STEP": "预留"
+  },
+  {
+    "Type": "Speed_Larger_3km",
+    "Notes": "大于3km时速，同一Type可以定义多个信号，使用多行"
+  },
+  {
+    "Type": "Motor_Larger_1000rmp",
+    "Notes": "发动机转速大于1000rpm，同一Type可以定义多个信号，使用多行"
+  },
+  {
+    "Type": "Gear_P",
+    "Notes": "P档，同一Type可以定义多个信号，使用多行"
+  },
+  {
+    "Type": "Gear_N",
+    "Notes": "N档，同一Type可以定义多个信号，使用多行"
+  },
+  {
+    "Type": "Gear_D",
+    "Notes": "D档，同一Type可以定义多个信号，使用多行"
+  }
+]

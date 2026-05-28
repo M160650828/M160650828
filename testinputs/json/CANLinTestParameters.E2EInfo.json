@@ -1,12 +1,12 @@
 {
-  "SiganlGroupName": {
-    "SiganlName": "RSM_state_Chks",
+  "SignalGroupName": {
+    "SiganlName": "EWS_state_Chks",
     "StartByte": 0,
     "SignalLength": 8,
     "DataID": "0x0009"
   },
   "Frame": {
-    "FrameName": "RSM_State",
+    "FrameName": "EWS_State",
     "CANID": "0x9",
     "DataLength": 8,
     "Cycle": 40,
@@ -14,8 +14,8 @@
     "CANFD": 0
   },
   "Info": {
-    "Cluster": "VIU0_LIN3",
-    "Sender": "RLSM",
-    "Receiver": "VIU0_x000d_"
+    "Cluster": "VIU0_CAN3",
+    "Sender": "EWS",
+    "Receiver": "VIU0"
   }
 }

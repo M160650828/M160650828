@@ -1,6 +1,5 @@
 {
   "VarName": "VarValue",
-  "GeneralParameters": null,
   "Vnormal": 12,
   "VlowStand": 8,
   "VhighStand": 18,
@@ -10,7 +9,7 @@
   "TdefaultWait": 1000,
   "NdefaultRepeat": 1,
   "NfaultRepeat": 1,
-  "SimulationActivate": 1,
+  "SimulationActivate": 0,
   "RespId": "0xC",
   "Tawake": 100
 }

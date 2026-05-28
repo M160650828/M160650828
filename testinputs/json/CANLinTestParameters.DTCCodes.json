@@ -1,0 +1,11 @@
+[
+  {
+    "DTC Code": 61446,
+    "Failure Type": 16,
+    "SnapshotRecordNumber_00": "No",
+    "SnapshotRecordNumber_01": "Yes",
+    "SnapshotRecordNumber_02": "No",
+    "SnapshotRecordNumber_FF": "No",
+    "ExtendRecordNumber_01": "Yes"
+  }
+]

@@ -1,0 +1,1709 @@
+[
+  {
+    "DTCCode": 1588,
+    "FailureType": 75
+  },
+  {
+    "DTCCode": 1706,
+    "FailureType": 75
+  },
+  {
+    "DTCCode": 5728,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 5730,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 5731,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 5732,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 5734,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 49267,
+    "FailureType": 136
+  },
+  {
+    "DTCCode": 8448,
+    "FailureType": 19
+  },
+  {
+    "DTCCode": 8451,
+    "FailureType": 18
+  },
+  {
+    "DTCCode": 8450,
+    "FailureType": 17
+  },
+  {
+    "DTCCode": 8472,
+    "FailureType": 75
+  },
+  {
+    "DTCCode": 8472,
+    "FailureType": 25
+  },
+  {
+    "DTCCode": 8451,
+    "FailureType": 1
+  },
+  {
+    "DTCCode": 8506,
+    "FailureType": 19
+  },
+  {
+    "DTCCode": 8509,
+    "FailureType": 18
+  },
+  {
+    "DTCCode": 8508,
+    "FailureType": 17
+  },
+  {
+    "DTCCode": 8507,
+    "FailureType": 75
+  },
+  {
+    "DTCCode": 8507,
+    "FailureType": 25
+  },
+  {
+    "DTCCode": 8509,
+    "FailureType": 1
+  },
+  {
+    "DTCCode": 1669,
+    "FailureType": 19
+  },
+  {
+    "DTCCode": 1670,
+    "FailureType": 17
+  },
+  {
+    "DTCCode": 1671,
+    "FailureType": 18
+  },
+  {
+    "DTCCode": 1576,
+    "FailureType": 17
+  },
+  {
+    "DTCCode": 1577,
+    "FailureType": 18
+  },
+  {
+    "DTCCode": 513,
+    "FailureType": 19
+  },
+  {
+    "DTCCode": 609,
+    "FailureType": 17
+  },
+  {
+    "DTCCode": 610,
+    "FailureType": 18
+  },
+  {
+    "DTCCode": 514,
+    "FailureType": 19
+  },
+  {
+    "DTCCode": 612,
+    "FailureType": 17
+  },
+  {
+    "DTCCode": 613,
+    "FailureType": 18
+  },
+  {
+    "DTCCode": 515,
+    "FailureType": 19
+  },
+  {
+    "DTCCode": 615,
+    "FailureType": 17
+  },
+  {
+    "DTCCode": 616,
+    "FailureType": 18
+  },
+  {
+    "DTCCode": 516,
+    "FailureType": 19
+  },
+  {
+    "DTCCode": 624,
+    "FailureType": 17
+  },
+  {
+    "DTCCode": 625,
+    "FailureType": 18
+  },
+  {
+    "DTCCode": 9405,
+    "FailureType": 19
+  },
+  {
+    "DTCCode": 9406,
+    "FailureType": 17
+  },
+  {
+    "DTCCode": 9407,
+    "FailureType": 18
+  },
+  {
+    "DTCCode": 1092,
+    "FailureType": 19
+  },
+  {
+    "DTCCode": 1112,
+    "FailureType": 17
+  },
+  {
+    "DTCCode": 1113,
+    "FailureType": 18
+  },
+  {
+    "DTCCode": 9240,
+    "FailureType": 19
+  },
+  {
+    "DTCCode": 9241,
+    "FailureType": 17
+  },
+  {
+    "DTCCode": 9248,
+    "FailureType": 18
+  },
+  {
+    "DTCCode": 16,
+    "FailureType": 19
+  },
+  {
+    "DTCCode": 8328,
+    "FailureType": 17
+  },
+  {
+    "DTCCode": 8329,
+    "FailureType": 18
+  },
+  {
+    "DTCCode": 1754,
+    "FailureType": 19
+  },
+  {
+    "DTCCode": 1755,
+    "FailureType": 17
+  },
+  {
+    "DTCCode": 1756,
+    "FailureType": 18
+  },
+  {
+    "DTCCode": 14859,
+    "FailureType": 19
+  },
+  {
+    "DTCCode": 14860,
+    "FailureType": 17
+  },
+  {
+    "DTCCode": 14861,
+    "FailureType": 18
+  },
+  {
+    "DTCCode": 19,
+    "FailureType": 19
+  },
+  {
+    "DTCCode": 8336,
+    "FailureType": 17
+  },
+  {
+    "DTCCode": 8337,
+    "FailureType": 18
+  },
+  {
+    "DTCCode": 54,
+    "FailureType": 19
+  },
+  {
+    "DTCCode": 55,
+    "FailureType": 17
+  },
+  {
+    "DTCCode": 56,
+    "FailureType": 18
+  },
+  {
+    "DTCCode": 9226,
+    "FailureType": 19
+  },
+  {
+    "DTCCode": 9227,
+    "FailureType": 17
+  },
+  {
+    "DTCCode": 9228,
+    "FailureType": 18
+  },
+  {
+    "DTCCode": 849,
+    "FailureType": 19
+  },
+  {
+    "DTCCode": 8960,
+    "FailureType": 17
+  },
+  {
+    "DTCCode": 8961,
+    "FailureType": 18
+  },
+  {
+    "DTCCode": 850,
+    "FailureType": 19
+  },
+  {
+    "DTCCode": 8963,
+    "FailureType": 17
+  },
+  {
+    "DTCCode": 8964,
+    "FailureType": 18
+  },
+  {
+    "DTCCode": 851,
+    "FailureType": 19
+  },
+  {
+    "DTCCode": 8966,
+    "FailureType": 17
+  },
+  {
+    "DTCCode": 8967,
+    "FailureType": 18
+  },
+  {
+    "DTCCode": 852,
+    "FailureType": 19
+  },
+  {
+    "DTCCode": 8969,
+    "FailureType": 17
+  },
+  {
+    "DTCCode": 8976,
+    "FailureType": 18
+  },
+  {
+    "DTCCode": 9216,
+    "FailureType": 19
+  },
+  {
+    "DTCCode": 9217,
+    "FailureType": 17
+  },
+  {
+    "DTCCode": 9218,
+    "FailureType": 18
+  },
+  {
+    "DTCCode": 9752,
+    "FailureType": 17
+  },
+  {
+    "DTCCode": 9753,
+    "FailureType": 18
+  },
+  {
+    "DTCCode": 825,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 843,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 834,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 871,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 835,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 872,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 833,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 870,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 22,
+    "FailureType": 118
+  },
+  {
+    "DTCCode": 23,
+    "FailureType": 118
+  },
+  {
+    "DTCCode": 22,
+    "FailureType": 120
+  },
+  {
+    "DTCCode": 23,
+    "FailureType": 120
+  },
+  {
+    "DTCCode": 822,
+    "FailureType": 100
+  },
+  {
+    "DTCCode": 48,
+    "FailureType": 19
+  },
+  {
+    "DTCCode": 49,
+    "FailureType": 17
+  },
+  {
+    "DTCCode": 50,
+    "FailureType": 18
+  },
+  {
+    "DTCCode": 1033,
+    "FailureType": 135
+  },
+  {
+    "DTCCode": 1033,
+    "FailureType": 103
+  },
+  {
+    "DTCCode": 256,
+    "FailureType": 135
+  },
+  {
+    "DTCCode": 256,
+    "FailureType": 103
+  },
+  {
+    "DTCCode": 1379,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 1378,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 1673,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 1680,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 5634,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 9524,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 1603,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 1602,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 1619,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 1618,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 1689,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 1688,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 1701,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 1700,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 1748,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 1747,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 1155,
+    "FailureType": 75
+  },
+  {
+    "DTCCode": 1155,
+    "FailureType": 28
+  },
+  {
+    "DTCCode": 1155,
+    "FailureType": 29
+  },
+  {
+    "DTCCode": 1155,
+    "FailureType": 1
+  },
+  {
+    "DTCCode": 154,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 258,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 259,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 151,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 152,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 153,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 4097,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 257,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 4102,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 4118,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 275,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 274,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 276,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 264,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 263,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 4114,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 262,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 4098,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 4099,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 290,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 291,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 546,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 547,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 8501,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 4101,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 8449,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 5467,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 5465,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 5464,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 5466,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 5457,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 5463,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 5462,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 5460,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 5461,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 17,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 20,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 60,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 90,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 2756,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 3233,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 4356,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 2683,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 9931,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 280,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 279,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 182,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 281,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 283,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 278,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 296,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 535,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 180,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 179,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 181,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 9934,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 11141,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 9934,
+    "FailureType": 148
+  },
+  {
+    "DTCCode": 1036,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 1038,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 1037,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 4113,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 1030,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 1029,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 5636,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 4100,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 1028,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 1070,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 1181,
+    "FailureType": 115
+  },
+  {
+    "DTCCode": 1181,
+    "FailureType": 114
+  },
+  {
+    "DTCCode": 1181,
+    "FailureType": 33
+  },
+  {
+    "DTCCode": 1181,
+    "FailureType": 34
+  },
+  {
+    "DTCCode": 8771,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 8759,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 8785,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 8760,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 8773,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 306,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 5637,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 5638,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 346,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 347,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 83,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 5639,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 311,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 312,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 310,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 8754,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 8816,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 8817,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 314,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 318,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 315,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 319,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 4115,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 1314,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 1315,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 1313,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 84,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 807,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 808,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 805,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 806,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 5392,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 1106,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 1107,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 4116,
+    "FailureType": 42
+  },
+  {
+    "DTCCode": 4117,
+    "FailureType": 40
+  },
+  {
+    "DTCCode": 115,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 114,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 113,
+    "FailureType": 36
+  },
+  {
+    "DTCCode": 113,
+    "FailureType": 35
+  },
+  {
+    "DTCCode": 116,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 49489,
+    "FailureType": 135
+  },
+  {
+    "DTCCode": 1291,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 1056,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 789,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 768,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 1484,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 1486,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 4103,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 369,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 370,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 8342,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 8343,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 50258,
+    "FailureType": 129
+  },
+  {
+    "DTCCode": 49440,
+    "FailureType": 135
+  },
+  {
+    "DTCCode": 50281,
+    "FailureType": 129
+  },
+  {
+    "DTCCode": 49449,
+    "FailureType": 135
+  },
+  {
+    "DTCCode": 4352,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 4353,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 4354,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 50200,
+    "FailureType": 129
+  },
+  {
+    "DTCCode": 49441,
+    "FailureType": 135
+  },
+  {
+    "DTCCode": 49441,
+    "FailureType": 129
+  },
+  {
+    "DTCCode": 49772,
+    "FailureType": 135
+  },
+  {
+    "DTCCode": 62599,
+    "FailureType": 129
+  },
+  {
+    "DTCCode": 49927,
+    "FailureType": 135
+  },
+  {
+    "DTCCode": 49927,
+    "FailureType": 129
+  },
+  {
+    "DTCCode": 49948,
+    "FailureType": 135
+  },
+  {
+    "DTCCode": 49948,
+    "FailureType": 129
+  },
+  {
+    "DTCCode": 537,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 5640,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 1745,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 1026,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 1025,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 9303,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 1123,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 1122,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 9648,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 1087,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 1086,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 1090,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 1175,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 38,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 39,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 9297,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 9296,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 383,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 4736,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 4737,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 4743,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 9409,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 9223,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 5641,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 1682,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 1681,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 9938,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 9941,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 9931,
+    "FailureType": 29
+  },
+  {
+    "DTCCode": 9931,
+    "FailureType": 25
+  },
+  {
+    "DTCCode": 9940,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 9931,
+    "FailureType": 150
+  },
+  {
+    "DTCCode": 11170,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 289,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 1720,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 5376,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 5376,
+    "FailureType": 1
+  },
+  {
+    "DTCCode": 0,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 0,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 5643,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 50802,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 49515,
+    "FailureType": 135
+  },
+  {
+    "DTCCode": 49747,
+    "FailureType": 135
+  },
+  {
+    "DTCCode": 49796,
+    "FailureType": 135
+  },
+  {
+    "DTCCode": 49797,
+    "FailureType": 135
+  },
+  {
+    "DTCCode": 49508,
+    "FailureType": 135
+  },
+  {
+    "DTCCode": 49773,
+    "FailureType": 135
+  },
+  {
+    "DTCCode": 7939,
+    "FailureType": 23
+  },
+  {
+    "DTCCode": 7939,
+    "FailureType": 22
+  },
+  {
+    "DTCCode": 7940,
+    "FailureType": 17
+  },
+  {
+    "DTCCode": 7941,
+    "FailureType": 21
+  },
+  {
+    "DTCCode": 7946,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 7947,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 7948,
+    "FailureType": 17
+  },
+  {
+    "DTCCode": 7949,
+    "FailureType": 21
+  },
+  {
+    "DTCCode": 7950,
+    "FailureType": 17
+  },
+  {
+    "DTCCode": 7951,
+    "FailureType": 21
+  },
+  {
+    "DTCCode": 7952,
+    "FailureType": 17
+  },
+  {
+    "DTCCode": 7953,
+    "FailureType": 21
+  },
+  {
+    "DTCCode": 7954,
+    "FailureType": 17
+  },
+  {
+    "DTCCode": 7955,
+    "FailureType": 21
+  },
+  {
+    "DTCCode": 7957,
+    "FailureType": 21
+  },
+  {
+    "DTCCode": 7958,
+    "FailureType": 17
+  },
+  {
+    "DTCCode": 7959,
+    "FailureType": 5
+  },
+  {
+    "DTCCode": 7960,
+    "FailureType": 1
+  },
+  {
+    "DTCCode": 7961,
+    "FailureType": 28
+  },
+  {
+    "DTCCode": 7964,
+    "FailureType": 21
+  },
+  {
+    "DTCCode": 7965,
+    "FailureType": 17
+  },
+  {
+    "DTCCode": 7966,
+    "FailureType": 5
+  },
+  {
+    "DTCCode": 7967,
+    "FailureType": 1
+  },
+  {
+    "DTCCode": 7968,
+    "FailureType": 28
+  },
+  {
+    "DTCCode": 7971,
+    "FailureType": 21
+  },
+  {
+    "DTCCode": 7971,
+    "FailureType": 17
+  },
+  {
+    "DTCCode": 7972,
+    "FailureType": 5
+  },
+  {
+    "DTCCode": 7973,
+    "FailureType": 1
+  },
+  {
+    "DTCCode": 7974,
+    "FailureType": 28
+  },
+  {
+    "DTCCode": 7977,
+    "FailureType": 21
+  },
+  {
+    "DTCCode": 7977,
+    "FailureType": 17
+  },
+  {
+    "DTCCode": 7978,
+    "FailureType": 5
+  },
+  {
+    "DTCCode": 7979,
+    "FailureType": 1
+  },
+  {
+    "DTCCode": 7980,
+    "FailureType": 28
+  },
+  {
+    "DTCCode": 7983,
+    "FailureType": 21
+  },
+  {
+    "DTCCode": 7984,
+    "FailureType": 17
+  },
+  {
+    "DTCCode": 7985,
+    "FailureType": 5
+  },
+  {
+    "DTCCode": 7986,
+    "FailureType": 1
+  },
+  {
+    "DTCCode": 7981,
+    "FailureType": 28
+  },
+  {
+    "DTCCode": 7987,
+    "FailureType": 17
+  },
+  {
+    "DTCCode": 7988,
+    "FailureType": 21
+  },
+  {
+    "DTCCode": 7989,
+    "FailureType": 21
+  },
+  {
+    "DTCCode": 7990,
+    "FailureType": 17
+  },
+  {
+    "DTCCode": 7991,
+    "FailureType": 17
+  },
+  {
+    "DTCCode": 7992,
+    "FailureType": 18
+  },
+  {
+    "DTCCode": 7993,
+    "FailureType": 19
+  },
+  {
+    "DTCCode": 7994,
+    "FailureType": 75
+  },
+  {
+    "DTCCode": 7995,
+    "FailureType": 7
+  },
+  {
+    "DTCCode": 7996,
+    "FailureType": 25
+  },
+  {
+    "DTCCode": 7997,
+    "FailureType": 23
+  },
+  {
+    "DTCCode": 7998,
+    "FailureType": 22
+  },
+  {
+    "DTCCode": 7999,
+    "FailureType": 9
+  },
+  {
+    "DTCCode": 8000,
+    "FailureType": 241
+  },
+  {
+    "DTCCode": 8001,
+    "FailureType": 242
+  },
+  {
+    "DTCCode": 8002,
+    "FailureType": 243
+  },
+  {
+    "DTCCode": 8003,
+    "FailureType": 244
+  },
+  {
+    "DTCCode": 8003,
+    "FailureType": 245
+  },
+  {
+    "DTCCode": 8004,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 8006,
+    "FailureType": 1
+  },
+  {
+    "DTCCode": 8007,
+    "FailureType": 22
+  },
+  {
+    "DTCCode": 8008,
+    "FailureType": 75
+  },
+  {
+    "DTCCode": 8009,
+    "FailureType": 23
+  },
+  {
+    "DTCCode": 8010,
+    "FailureType": 1
+  },
+  {
+    "DTCCode": 8011,
+    "FailureType": 134
+  },
+  {
+    "DTCCode": 8012,
+    "FailureType": 1
+  },
+  {
+    "DTCCode": 8013,
+    "FailureType": 1
+  },
+  {
+    "DTCCode": 8014,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 8015,
+    "FailureType": 1
+  },
+  {
+    "DTCCode": 8016,
+    "FailureType": 146
+  },
+  {
+    "DTCCode": 8017,
+    "FailureType": 28
+  },
+  {
+    "DTCCode": 8018,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 8019,
+    "FailureType": 21
+  },
+  {
+    "DTCCode": 8019,
+    "FailureType": 17
+  },
+  {
+    "DTCCode": 8020,
+    "FailureType": 21
+  },
+  {
+    "DTCCode": 8021,
+    "FailureType": 17
+  },
+  {
+    "DTCCode": 8022,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 8023,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 8024,
+    "FailureType": 28
+  },
+  {
+    "DTCCode": 8025,
+    "FailureType": 21
+  },
+  {
+    "DTCCode": 8026,
+    "FailureType": 17
+  },
+  {
+    "DTCCode": 8027,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 8028,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 8029,
+    "FailureType": 134
+  },
+  {
+    "DTCCode": 8030,
+    "FailureType": 150
+  },
+  {
+    "DTCCode": 8031,
+    "FailureType": 22
+  },
+  {
+    "DTCCode": 8032,
+    "FailureType": 19
+  },
+  {
+    "DTCCode": 8033,
+    "FailureType": 17
+  },
+  {
+    "DTCCode": 8034,
+    "FailureType": 150
+  },
+  {
+    "DTCCode": 8035,
+    "FailureType": 75
+  },
+  {
+    "DTCCode": 8035,
+    "FailureType": 23
+  },
+  {
+    "DTCCode": 8036,
+    "FailureType": 28
+  },
+  {
+    "DTCCode": 8037,
+    "FailureType": 25
+  },
+  {
+    "DTCCode": 8038,
+    "FailureType": 75
+  },
+  {
+    "DTCCode": 8039,
+    "FailureType": 150
+  },
+  {
+    "DTCCode": 8040,
+    "FailureType": 150
+  },
+  {
+    "DTCCode": 8041,
+    "FailureType": 150
+  },
+  {
+    "DTCCode": 8043,
+    "FailureType": 19
+  },
+  {
+    "DTCCode": 8044,
+    "FailureType": 75
+  },
+  {
+    "DTCCode": 8045,
+    "FailureType": 113
+  },
+  {
+    "DTCCode": 8046,
+    "FailureType": 17
+  },
+  {
+    "DTCCode": 8048,
+    "FailureType": 7
+  },
+  {
+    "DTCCode": 8049,
+    "FailureType": 152
+  },
+  {
+    "DTCCode": 8050,
+    "FailureType": 23
+  },
+  {
+    "DTCCode": 8051,
+    "FailureType": 22
+  },
+  {
+    "DTCCode": 8051,
+    "FailureType": 1
+  },
+  {
+    "DTCCode": 8052,
+    "FailureType": 8
+  },
+  {
+    "DTCCode": 8053,
+    "FailureType": 7
+  },
+  {
+    "DTCCode": 8054,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 8055,
+    "FailureType": 0
+  },
+  {
+    "DTCCode": 8056,
+    "FailureType": 75
+  },
+  {
+    "DTCCode": 8057,
+    "FailureType": 18
+  },
+  {
+    "DTCCode": 8058,
+    "FailureType": 17
+  },
+  {
+    "DTCCode": 8059,
+    "FailureType": 19
+  },
+  {
+    "DTCCode": 8060,
+    "FailureType": 28
+  },
+  {
+    "DTCCode": 8061,
+    "FailureType": 99
+  },
+  {
+    "DTCCode": 8062,
+    "FailureType": 99
+  },
+  {
+    "DTCCode": 8063,
+    "FailureType": 122
+  },
+  {
+    "DTCCode": "EOF"
+  }
+]

@@ -1,6 +1,5 @@
 {
   "VarName": "VarValue",
-  "GeneralParameters": null,
   "Vnormal": 12.0,
   "NMmsgIDMin": "0x400",
   "NMmsgIDMax": "0x4FF",
@@ -38,15 +37,16 @@
   "NormalStateToRepeatMessageState": 1,
   "ReadySleepStateToRepeatMessageState": 1,
   "DiagRequestKeepWakeup_NMPDUSend": 1,
-  "NMByte0": "0x82_x000d_",
-  "NMByte1": "0x00_x000d_",
-  "NMByte2": "0x81_x000d_",
-  "NMByte3": "0xFF_x000d_",
-  "NMByte4": "0xFF_x000d_",
-  "NMByte5": "0xFF_x000d_",
-  "NMByte6": "0x00_x000d_",
-  "NMByte7": "0x00_x000d_",
+  "NMByte0": "0x82\r",
+  "NMByte1": "0x00\r",
+  "NMByte2": "0x81\r",
+  "NMByte3": "0xFF\r",
+  "NMByte4": "0xFF\r",
+  "NMByte5": "0xFF\r",
+  "NMByte6": "0x00\r",
+  "NMByte7": "0x00\r",
   "NM_DLC": 8,
   "IndirectNMParameters": null,
-  "WakeUpHardWireType": 1
+  "WakeUpHardWireType": 0,
+  "NLoopTime": 5
 }

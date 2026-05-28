@@ -1,0 +1,62 @@
+[
+  {
+    "DTC Code": 50281,
+    "Failure Type": 129,
+    "Montior Message ID": 293,
+    "Montior PDU ID": 0,
+    "Montior Message Channel": "PowerTrain CANFD",
+    "Montior Message DLC": 13,
+    "Montior Message Period": 10,
+    "Lost Time": 2000,
+    "Pass Time": 2000,
+    "FDF": 1,
+    "IsContainE2E": 1,
+    "Type": "E2E_CRC",
+    "DataID": 33061
+  },
+  {
+    "DTC Code": 49441,
+    "Failure Type": 129,
+    "Montior Message ID": 289,
+    "Montior PDU ID": 0,
+    "Montior Message Channel": "PowerTrain CANFD",
+    "Montior Message DLC": 13,
+    "Montior Message Period": 10,
+    "Lost Time": 2000,
+    "Pass Time": 2000,
+    "FDF": 1,
+    "IsContainE2E": 1,
+    "Type": "E2E_Counter",
+    "DataID": 33057
+  },
+  {
+    "DTC Code": 62599,
+    "Failure Type": 129,
+    "Montior Message ID": 283,
+    "Montior PDU ID": 0,
+    "Montior Message Channel": "PowerTrain CANFD",
+    "Montior Message DLC": 13,
+    "Montior Message Period": 10,
+    "Lost Time": 2000,
+    "Pass Time": 2000,
+    "FDF": 1,
+    "IsContainE2E": 1,
+    "Type": "E2E_CRC",
+    "DataID": 24859
+  },
+  {
+    "DTC Code": 49948,
+    "Failure Type": 129,
+    "Montior Message ID": 796,
+    "Montior PDU ID": 0,
+    "Montior Message Channel": "PowerTrain CANFD",
+    "Montior Message DLC": 13,
+    "Montior Message Period": 100,
+    "Lost Time": 2000,
+    "Pass Time": 2000,
+    "FDF": 1,
+    "IsContainE2E": 1,
+    "Type": "E2E_CRC",
+    "DataID": 33564
+  }
+]

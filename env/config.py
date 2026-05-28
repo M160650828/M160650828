@@ -71,7 +71,10 @@ def __init__():
     Model.set_linnet_configs(LIN_NETWORK_DEFS)
     Model.set_can_mapping(CAN_CHANNELS)
     Model.set_lin_mapping(LIN_CHANNELS)
-    Model.initialize()
+    try:
+        Model.initialize()
+    except Exception as e:
+        print(f"[配置初始化] 数据库初始化失败（部分功能不可用）: {e}")
 
     print("=" * 70)
     print("[配置初始化] 完成")

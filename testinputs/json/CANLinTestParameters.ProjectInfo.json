@@ -1,6 +1,6 @@
 {
   "VarName": "VarValue",
-  "NetWorkHardwareSN": 30513025310118,
+  "NetWorkHardwareSN": 30513024300068,
   "DigitalMultimeterType": "SDM3055",
   "DigitalMultimeterPort": 4,
   "DigitalMultimeterName": "USB0::0xF4EC::0x1202::SDM35HBC901178::INSTR",
@@ -21,6 +21,6 @@
   "DutConnectType": "WK5249",
   "DutPowerOnType": "WK5249",
   "ECU": null,
-  "ECUIndex": 1,
-  "ECUType": 2
+  "ECUIndex": 4,
+  "ECUType": 1
 }

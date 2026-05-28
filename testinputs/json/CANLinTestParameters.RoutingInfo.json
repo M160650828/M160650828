@@ -9,7 +9,7 @@
     "SrcMsgMinUpdateTime": null,
     "SrcMsgName": "CDC_IC1",
     "SrcSignalName": "isCDC_IC1_VehSpdDisp",
-    "SrcMsgDLC": 32,
+    "SrcMsgDLC": 13,
     "SrcStartBit": 31,
     "SrcBitLength": 9,
     "SrcByteOrder": "Motorola",
@@ -21,7 +21,7 @@
     "DestMsgMinUpdateTime": null,
     "DestMessageName": "VIU_Route_CCAN3",
     "DestSignalName": "isCDC_IC1_VehSpdDisp",
-    "DestMsgDLC": 32,
+    "DestMsgDLC": 13,
     "DestStartBit": 47,
     "DestBitLength": 9,
     "DestByteOrder": "Motorola",
@@ -29,7 +29,7 @@
     "Ttimeout": 200,
     "TimeOutValue": "0x1FF",
     "TriggerMode": null,
-    "TransmitDelayTime": "_x000d_"
+    "TransmitDelayTime": "\r"
   },
   {
     "SrcNet": "VIU0_INFO_CANFD",
@@ -41,7 +41,7 @@
     "SrcMsgMinUpdateTime": null,
     "SrcMsgName": "CDC_IC1",
     "SrcSignalName": "isCDC_PrivacyModeReq",
-    "SrcMsgDLC": 32,
+    "SrcMsgDLC": 13,
     "SrcStartBit": 107,
     "SrcBitLength": 2,
     "SrcByteOrder": "Motorola",
@@ -53,7 +53,7 @@
     "DestMsgMinUpdateTime": null,
     "DestMessageName": "VIU_Route_CCAN3",
     "DestSignalName": "isCDC_PrivacyModeReq",
-    "DestMsgDLC": 32,
+    "DestMsgDLC": 13,
     "DestStartBit": 87,
     "DestBitLength": 2,
     "DestByteOrder": "Motorola",
@@ -61,7 +61,7 @@
     "Ttimeout": 200,
     "TimeOutValue": "0x3",
     "TriggerMode": null,
-    "TransmitDelayTime": "_x000d_"
+    "TransmitDelayTime": "\r"
   },
   {
     "SrcNet": "VIU0_INFO_CANFD",
@@ -73,7 +73,7 @@
     "SrcMsgMinUpdateTime": null,
     "SrcMsgName": "CDC_State",
     "SrcSignalName": null,
-    "SrcMsgDLC": 32,
+    "SrcMsgDLC": 13,
     "SrcStartBit": null,
     "SrcBitLength": null,
     "SrcByteOrder": "Motorola",
@@ -85,7 +85,7 @@
     "DestMsgMinUpdateTime": null,
     "DestMessageName": "CDC_State",
     "DestSignalName": null,
-    "DestMsgDLC": 32,
+    "DestMsgDLC": 13,
     "DestStartBit": null,
     "DestBitLength": null,
     "DestByteOrder": "Motorola",
@@ -93,6 +93,6 @@
     "Ttimeout": null,
     "TimeOutValue": null,
     "TriggerMode": null,
-    "TransmitDelayTime": "2_x000d_"
+    "TransmitDelayTime": 2
   }
 ]
