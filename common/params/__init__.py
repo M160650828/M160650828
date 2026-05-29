@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from typing import Any, Dict, List, Optional
 
-from ._base import DEFAULT_DIR, DEFAULT_MAP, Fmt, ParamSource
+from ._base import DEFAULT_DIR, DEFAULT_MAP, Fmt, ParamSource, to_flat_dict
 from .project_info import ProjectInfoCfg
 from .ecu_info import ECUInfoCfg
 from .can_info import CANInfoCfg
@@ -41,7 +41,7 @@ class Parameters:
         chm = src.load("ChannelMapping")
         rti = src.load("RoutingInfo")
 
-        pj_raw = dict(pj) if isinstance(pj, dict) else {}
+        pj_raw = to_flat_dict(pj)
         self.ProjectInfo = ProjectInfoCfg(pj_raw)
 
         ecu_items: List[Dict[str, Any]] = []
@@ -64,10 +64,10 @@ class Parameters:
                 ecu_selected = dict(ecu_items[0])
 
         self.ECUInfo = ECUInfoCfg(ecu_selected)
-        self.CANInfo = CANInfoCfg(dict(cani) if isinstance(cani, dict) else {})
-        self.LINInfo = LINInfoCfg(dict(lini) if isinstance(lini, dict) else {})
-        self.NMInfo = NMInfoCfg(dict(nmi) if isinstance(nmi, dict) else {})
-        self.TpInfo = TpInfoCfg(dict(tpi) if isinstance(tpi, dict) else {}, ecu=self.ECUInfo)
+        self.CANInfo = CANInfoCfg(to_flat_dict(cani))
+        self.LINInfo = LINInfoCfg(to_flat_dict(lini))
+        self.NMInfo = NMInfoCfg(to_flat_dict(nmi))
+        self.TpInfo = TpInfoCfg(to_flat_dict(tpi), ecu=self.ECUInfo)
         self.E2EInfo = E2EInfoCfg(e2e if isinstance(e2e, (dict, list)) else {})
         self.ChannelMapping = ChannelMappingCfg(chm if isinstance(chm, (dict, list)) else [])
         self.RoutingInfo = RoutingInfoCfg(rti if isinstance(rti, (dict, list)) else [])
@@ -126,7 +126,7 @@ class Parameters:
         self.sig_info = SIG_INFO_CFG(sig_info if isinstance(bus_off_dtcs, (dict, list)) else [])
 
         diag_svc = src.load("DiagServiceInfo")
-        self.DiagServiceInfo = DiagServiceInfoCfg(dict(diag_svc) if isinstance(diag_svc, dict) else {})
+        self.DiagServiceInfo = DiagServiceInfoCfg(to_flat_dict(diag_svc))
 
 
 P = Parameters()

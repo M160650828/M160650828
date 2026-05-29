@@ -1,4 +1,22 @@
-{
-  "ConditionName": "VehicleSpeed",
-  "SupportServices": "10,11,14,28,85,2E,2F,31,85"
-}
+[
+  {
+    "ConditionName": "VehicleSpeed",
+    "SupportServices": "10,11,14,28,85,2E,2F,31,85",
+    "MessageID": null,
+    "MessageDLC": null,
+    "MessagePeriod": null,
+    "MessageType": null,
+    "MessageChannel": null,
+    "MessageDatabaseType": null,
+    "MessageE2EFlag": null,
+    "SignalName": null,
+    "SignalStartBit": null,
+    "SignalLength": null,
+    "SignalValidBitName": null,
+    "SignalValidBitStartBit": null,
+    "SignalValidBitLength": null,
+    "VehicleSpeedCoefficientValue": null,
+    "TriggerPhysicalValue": null,
+    "NormalPhysicalValue": null
+  }
+]

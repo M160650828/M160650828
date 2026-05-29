@@ -2,8 +2,9 @@
   {
     "SignalGroupName": "EWS_state_Chks",
     "Cluster": "VIU0_CAN3",
+    "SAE5": null,
     "TYPE": "CRCorCntr",
-    "DTC": 11189196,
+    "DTC": "0xAABBCC",
     "Node": "VIU0"
   }
 ]

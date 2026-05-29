@@ -7,7 +7,8 @@ from env.config import DEFAULT_CAN_CHANNELS, MESSAGE_COUNT_OUTPUT_INTERVAL
 from slplus.can import sl_can, register_canmsg_handler, unregister_canmsg_handler
 from slplus.runtime import sl_runtime
 
-from sl.sl_event import register_busevent_handler, unregister_busevent_handler, EventType
+#from sl.sl_event import register_busevent_handler, unregister_busevent_handler, EventType
+from slplus.can import register_busevent_handler,unregister_busevent_handler,EventType
 from slplus.event import TextEvents
 from slplus.time import sl_time
 

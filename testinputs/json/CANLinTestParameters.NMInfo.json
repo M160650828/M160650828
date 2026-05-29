@@ -1,52 +1,345 @@
-{
-  "VarName": "VarValue",
-  "Vnormal": 12.0,
-  "NMmsgIDMin": "0x400",
-  "NMmsgIDMax": "0x4FF",
-  "TimmediateDeviation": 20.0,
-  "TnormalDeviation": 10.0,
-  "TpowerOnInitial": 5,
-  "TwakeupTimeout": 10000,
-  "TactiveWakeup": 100,
-  "TpassiveWakeup": 100,
-  "TenableTx": 20,
-  "TinitialCycle": 700,
-  "TactiveKeep": 1.5,
-  "TpassiveKeep": 1.5,
-  "TlongKeep": 1.0,
-  "NtimeRepeat": 1,
-  "TwaitBusIdle": 2000.0,
-  "SpecificlParameters": null,
-  "NimmediateSend": 10,
-  "TimmediateCycle": 20,
-  "TnormalCycle": 500,
-  "TrepeatMessage": 1500,
-  "TNMtimeout": 2000,
-  "TwaitBusSleep": 2000,
-  "Tstartup": 20,
-  "CalibrationParameters": null,
-  "RepeatMessageBit0": 0,
-  "ReserveBit1": 0,
-  "ReserveBit2": 0,
-  "ReserveBit3": 0,
-  "ActiveWakeupBit4": 1,
-  "ReserveBit5": 0,
-  "ReserveBit6": 0,
-  "ReserveBit7": 0,
-  "ReserveBitValue": 0,
-  "NormalStateToRepeatMessageState": 1,
-  "ReadySleepStateToRepeatMessageState": 1,
-  "DiagRequestKeepWakeup_NMPDUSend": 1,
-  "NMByte0": "0x82\r",
-  "NMByte1": "0x00\r",
-  "NMByte2": "0x81\r",
-  "NMByte3": "0xFF\r",
-  "NMByte4": "0xFF\r",
-  "NMByte5": "0xFF\r",
-  "NMByte6": "0x00\r",
-  "NMByte7": "0x00\r",
-  "NM_DLC": 8,
-  "IndirectNMParameters": null,
-  "WakeUpHardWireType": 0,
-  "NLoopTime": 5
-}
+[
+  {
+    "VarName": "Vnormal",
+    "VarType": "float",
+    "VarValue": 12.0,
+    "VarUnit": "V",
+    "Description": "ECU供电电压"
+  },
+  {
+    "VarName": "NMmsgIDMin",
+    "VarType": "dword",
+    "VarValue": "0x400",
+    "VarUnit": null,
+    "Description": "NM报文ID范围最小值"
+  },
+  {
+    "VarName": "NMmsgIDMax",
+    "VarType": "dword",
+    "VarValue": "0x4FF",
+    "VarUnit": null,
+    "Description": "NM报文ID范围最大值"
+  },
+  {
+    "VarName": "TimmediateDeviation",
+    "VarType": "float",
+    "VarValue": 20.0,
+    "VarUnit": "%",
+    "Description": "快速发送NM报文的周期偏移范围"
+  },
+  {
+    "VarName": "TnormalDeviation",
+    "VarType": "float",
+    "VarValue": 10.0,
+    "VarUnit": "%",
+    "Description": "正常发送NM报文的周期偏移范围"
+  },
+  {
+    "VarName": "TpowerOnInitial",
+    "VarType": "dword",
+    "VarValue": 5,
+    "VarUnit": "s",
+    "Description": "DUT上电初始化完成后进入睡眠模式时间"
+  },
+  {
+    "VarName": "TwakeupTimeout",
+    "VarType": "dword",
+    "VarValue": 10000,
+    "VarUnit": "ms",
+    "Description": "从触发唤醒请求到DUT被唤等待超时时间"
+  },
+  {
+    "VarName": "TactiveWakeup",
+    "VarType": "dword",
+    "VarValue": 100,
+    "VarUnit": "ms",
+    "Description": "主动唤醒DUT发出第1帧报文的时间"
+  },
+  {
+    "VarName": "TpassiveWakeup",
+    "VarType": "dword",
+    "VarValue": 100,
+    "VarUnit": "ms",
+    "Description": "被动唤醒DUT发出第1帧报文的时间"
+  },
+  {
+    "VarName": "TenableTx",
+    "VarType": "dword",
+    "VarValue": 20,
+    "VarUnit": "ms",
+    "Description": "DUT发送应用报文使能时间"
+  },
+  {
+    "VarName": "TinitialCycle",
+    "VarType": "dword",
+    "VarValue": 700,
+    "VarUnit": "ms",
+    "Description": "DUT唤醒后发送完一轮报文的时间"
+  },
+  {
+    "VarName": "TactiveKeep",
+    "VarType": "float",
+    "VarValue": 1.5,
+    "VarUnit": "s",
+    "Description": "主动唤醒测试保持时间"
+  },
+  {
+    "VarName": "TpassiveKeep",
+    "VarType": "dword",
+    "VarValue": 1.5,
+    "VarUnit": "s",
+    "Description": "被动唤醒测试保持时间"
+  },
+  {
+    "VarName": "TlongKeep",
+    "VarType": "float",
+    "VarValue": 1.0,
+    "VarUnit": "min",
+    "Description": "正常模式长时间保持测试时间"
+  },
+  {
+    "VarName": "NtimeRepeat",
+    "VarType": "dword",
+    "VarValue": 1,
+    "VarUnit": null,
+    "Description": "时间参数测试次数"
+  },
+  {
+    "VarName": "TwaitBusIdle",
+    "VarType": "float",
+    "VarValue": 2000.0,
+    "VarUnit": "ms",
+    "Description": null
+  },
+  {
+    "VarName": "SpecificlParameters",
+    "VarType": null,
+    "VarValue": null,
+    "VarUnit": null,
+    "Description": null
+  },
+  {
+    "VarName": "NimmediateSend",
+    "VarType": "dword",
+    "VarValue": 10,
+    "VarUnit": null,
+    "Description": "快速发送NM报文的帧数"
+  },
+  {
+    "VarName": "TimmediateCycle",
+    "VarType": "dword",
+    "VarValue": 20,
+    "VarUnit": "ms",
+    "Description": "快速发送NM报文的周期"
+  },
+  {
+    "VarName": "TnormalCycle",
+    "VarType": "dword",
+    "VarValue": 500,
+    "VarUnit": "ms",
+    "Description": "正常发送NM报文的周期"
+  },
+  {
+    "VarName": "TrepeatMessage",
+    "VarType": "dword",
+    "VarValue": 1500,
+    "VarUnit": "ms",
+    "Description": "重复发送报文状态的保持时间"
+  },
+  {
+    "VarName": "TNMtimeout",
+    "VarType": "dword",
+    "VarValue": 2000,
+    "VarUnit": "ms",
+    "Description": "NM Timeout Timer时间"
+  },
+  {
+    "VarName": "TwaitBusSleep",
+    "VarType": "dword",
+    "VarValue": 2000,
+    "VarUnit": "ms",
+    "Description": "Wait Bus Sleep Timer时间"
+  },
+  {
+    "VarName": "Tstartup",
+    "VarType": "dword",
+    "VarValue": 20,
+    "VarUnit": "ms",
+    "Description": "在成功发送出第一帧网络管理报文后，节点应发送出应用报文的最大时间间隔"
+  },
+  {
+    "VarName": "CalibrationParameters",
+    "VarType": null,
+    "VarValue": null,
+    "VarUnit": null,
+    "Description": null
+  },
+  {
+    "VarName": "RepeatMessageBit0",
+    "VarType": "dword",
+    "VarValue": 0,
+    "VarUnit": null,
+    "Description": "是否支持RepeatMessageRequestBit状态位，1，支持，0，不支持"
+  },
+  {
+    "VarName": "ReserveBit1",
+    "VarType": "dword",
+    "VarValue": 0,
+    "VarUnit": null,
+    "Description": "是否支持ReserveBit1状态位，1，支持，0，不支持"
+  },
+  {
+    "VarName": "ReserveBit2",
+    "VarType": "dword",
+    "VarValue": 0,
+    "VarUnit": null,
+    "Description": "是否支持ReserveBit2状态位，1，支持，0，不支持"
+  },
+  {
+    "VarName": "ReserveBit3",
+    "VarType": "dword",
+    "VarValue": 0,
+    "VarUnit": null,
+    "Description": "是否支持ReserveBit3状态位，1，支持，0，不支持"
+  },
+  {
+    "VarName": "ActiveWakeupBit4",
+    "VarType": "dword",
+    "VarValue": 1,
+    "VarUnit": null,
+    "Description": "是否支持ActiveWakeupBit4状态位，1，支持，0，不支持"
+  },
+  {
+    "VarName": "ReserveBit5",
+    "VarType": "dword",
+    "VarValue": 0,
+    "VarUnit": null,
+    "Description": "是否支持ReserveBit5状态位，1，支持，0，不支持"
+  },
+  {
+    "VarName": "ReserveBit6",
+    "VarType": "dword",
+    "VarValue": 0,
+    "VarUnit": null,
+    "Description": "是否支持ReserveBit6状态位，1，支持，0，不支持"
+  },
+  {
+    "VarName": "ReserveBit7",
+    "VarType": "dword",
+    "VarValue": 0,
+    "VarUnit": null,
+    "Description": "是否支持ReserveBit7状态位，1，支持，0，不支持"
+  },
+  {
+    "VarName": "ReserveBitValue",
+    "VarType": "dword",
+    "VarValue": 0,
+    "VarUnit": null,
+    "Description": "保留状态位填充值，填充值为0或1"
+  },
+  {
+    "VarName": "NormalStateToRepeatMessageState",
+    "VarType": "dword",
+    "VarValue": 1,
+    "VarUnit": null,
+    "Description": "是否支持正常工作模式迁移至重复报文模式，1，支持，0，不支持"
+  },
+  {
+    "VarName": "ReadySleepStateToRepeatMessageState",
+    "VarType": "dword",
+    "VarValue": 1,
+    "VarUnit": null,
+    "Description": "是否支持准备睡眠模式迁移至重复报文模式，1，支持，0，不支持"
+  },
+  {
+    "VarName": "DiagRequestKeepWakeup_NMPDUSend",
+    "VarType": "dword",
+    "VarValue": 1,
+    "VarUnit": null,
+    "Description": "诊断报文维持网络唤醒，是否支持NMPDU发送，1，支持，0，不支持"
+  },
+  {
+    "VarName": "NMByte0",
+    "VarType": "dword",
+    "VarValue": "0x82\r",
+    "VarUnit": null,
+    "Description": "应为源节点标识符"
+  },
+  {
+    "VarName": "NMByte1",
+    "VarType": "dword",
+    "VarValue": "0x00\r",
+    "VarUnit": null,
+    "Description": "已脚本实现，"
+  },
+  {
+    "VarName": "NMByte2",
+    "VarType": "dword",
+    "VarValue": "0x81\r",
+    "VarUnit": null,
+    "Description": "应为0x81"
+  },
+  {
+    "VarName": "NMByte3",
+    "VarType": "dword",
+    "VarValue": "0xFF\r",
+    "VarUnit": null,
+    "Description": "根据实际定义"
+  },
+  {
+    "VarName": "NMByte4",
+    "VarType": "dword",
+    "VarValue": "0xFF\r",
+    "VarUnit": null,
+    "Description": "应为0xFF后续进行更改"
+  },
+  {
+    "VarName": "NMByte5",
+    "VarType": "dword",
+    "VarValue": "0xFF\r",
+    "VarUnit": null,
+    "Description": "应为0xFF后续进行更改"
+  },
+  {
+    "VarName": "NMByte6",
+    "VarType": "dword",
+    "VarValue": "0x00\r",
+    "VarUnit": null,
+    "Description": "根据实际定义"
+  },
+  {
+    "VarName": "NMByte7",
+    "VarType": "dword",
+    "VarValue": "0x00\r",
+    "VarUnit": null,
+    "Description": "根据实际定义"
+  },
+  {
+    "VarName": "NM_DLC",
+    "VarType": "int",
+    "VarValue": 8,
+    "VarUnit": null,
+    "Description": null
+  },
+  {
+    "VarName": "IndirectNMParameters",
+    "VarType": null,
+    "VarValue": null,
+    "VarUnit": null,
+    "Description": null
+  },
+  {
+    "VarName": "WakeUpHardWireType",
+    "VarType": "dword",
+    "VarValue": 0,
+    "VarUnit": null,
+    "Description": "间接网络管理唤醒方式，0：KL30，1：其他唤醒硬线"
+  },
+  {
+    "VarName": "NLoopTime",
+    "VarType": "dword",
+    "VarValue": 5,
+    "VarUnit": null,
+    "Description": "DUT休眠唤醒压力测试次数"
+  }
+]

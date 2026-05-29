@@ -1,6 +1,6 @@
 [
   {
-    "DID": 29952,
+    "DID": "0x7500",
     "Control\nOption_00": 3,
     "Control\nOption_01": "No",
     "Control\nOption_02": "No",
@@ -12,6 +12,7 @@
     "Level3": "No",
     "Level5": "No",
     "NRC22": "Yes",
-    "NRC8x": "No"
+    "NRC8x": "No",
+    "Notes": null
   }
 ]

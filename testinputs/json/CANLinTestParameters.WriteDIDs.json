@@ -1,6 +1,6 @@
 [
   {
-    "DID": 61840,
+    "DID": "0xF190",
     "Length": 17,
     "Support App": "Yes",
     "Support Boot": "No",
@@ -12,7 +12,7 @@
     "NRC8x": "No"
   },
   {
-    "DID": 61858,
+    "DID": "0xF1A2",
     "Length": 4,
     "Support App": "Yes",
     "Support Boot": "No",
@@ -24,7 +24,7 @@
     "NRC8x": "No"
   },
   {
-    "DID": 61714,
+    "DID": "0xF112",
     "Length": 8,
     "Support App": "Yes",
     "Support Boot": "No",
@@ -36,7 +36,7 @@
     "NRC8x": "No"
   },
   {
-    "DID": 61847,
+    "DID": "0xF197",
     "Length": 8,
     "Support App": "Yes",
     "Support Boot": "No",
@@ -48,7 +48,7 @@
     "NRC8x": "No"
   },
   {
-    "DID": 53557,
+    "DID": "0xD135",
     "Length": 16,
     "Support App": "Yes",
     "Support Boot": "No",
@@ -60,7 +60,7 @@
     "NRC8x": "No"
   },
   {
-    "DID": 61712,
+    "DID": "0xF110",
     "Length": 8,
     "Support App": "Yes",
     "Support Boot": "Yes",
@@ -72,7 +72,7 @@
     "NRC8x": "No"
   },
   {
-    "DID": 61697,
+    "DID": "0xF101",
     "Length": 8,
     "Support App": "Yes",
     "Support Boot": "No",

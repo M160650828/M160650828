@@ -1,1709 +1,1710 @@
 [
   {
-    "DTCCode": 1588,
-    "FailureType": 75
+    "DTCCode": "0x0634",
+    "FailureType": "0x4B"
   },
   {
-    "DTCCode": 1706,
-    "FailureType": 75
+    "DTCCode": "0x06AA",
+    "FailureType": "0x4B"
   },
   {
-    "DTCCode": 5728,
-    "FailureType": 0
+    "DTCCode": "0x1660",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 5730,
-    "FailureType": 0
+    "DTCCode": "0x1662",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 5731,
-    "FailureType": 0
+    "DTCCode": "0x1663",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 5732,
-    "FailureType": 0
+    "DTCCode": "0x1664",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 5734,
-    "FailureType": 0
+    "DTCCode": "0x1666",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 49267,
-    "FailureType": 136
+    "DTCCode": "0xC073",
+    "FailureType": "0x88"
   },
   {
-    "DTCCode": 8448,
-    "FailureType": 19
+    "DTCCode": "0x2100",
+    "FailureType": "0x13"
   },
   {
-    "DTCCode": 8451,
-    "FailureType": 18
+    "DTCCode": "0x2103",
+    "FailureType": "0x12"
   },
   {
-    "DTCCode": 8450,
-    "FailureType": 17
+    "DTCCode": "0x2102",
+    "FailureType": "0x11"
   },
   {
-    "DTCCode": 8472,
-    "FailureType": 75
+    "DTCCode": "0x2118",
+    "FailureType": "0x4B"
   },
   {
-    "DTCCode": 8472,
-    "FailureType": 25
+    "DTCCode": "0x2118",
+    "FailureType": "0x19"
   },
   {
-    "DTCCode": 8451,
-    "FailureType": 1
+    "DTCCode": "0x2103",
+    "FailureType": "0x01"
   },
   {
-    "DTCCode": 8506,
-    "FailureType": 19
+    "DTCCode": "0x213A",
+    "FailureType": "0x13"
   },
   {
-    "DTCCode": 8509,
-    "FailureType": 18
+    "DTCCode": "0x213D",
+    "FailureType": "0x12"
   },
   {
-    "DTCCode": 8508,
-    "FailureType": 17
+    "DTCCode": "0x213C",
+    "FailureType": "0x11"
   },
   {
-    "DTCCode": 8507,
-    "FailureType": 75
+    "DTCCode": "0x213B",
+    "FailureType": "0x4B"
   },
   {
-    "DTCCode": 8507,
-    "FailureType": 25
+    "DTCCode": "0x213B",
+    "FailureType": "0x19"
   },
   {
-    "DTCCode": 8509,
-    "FailureType": 1
+    "DTCCode": "0x213D",
+    "FailureType": "0x01"
   },
   {
-    "DTCCode": 1669,
-    "FailureType": 19
+    "DTCCode": "0x0685",
+    "FailureType": "0x13"
   },
   {
-    "DTCCode": 1670,
-    "FailureType": 17
+    "DTCCode": "0x0686",
+    "FailureType": "0x11"
   },
   {
-    "DTCCode": 1671,
-    "FailureType": 18
+    "DTCCode": "0x0687",
+    "FailureType": "0x12"
   },
   {
-    "DTCCode": 1576,
-    "FailureType": 17
+    "DTCCode": "0x0628",
+    "FailureType": "0x11"
   },
   {
-    "DTCCode": 1577,
-    "FailureType": 18
+    "DTCCode": "0x0629",
+    "FailureType": "0x12"
   },
   {
-    "DTCCode": 513,
-    "FailureType": 19
+    "DTCCode": "0x0201",
+    "FailureType": "0x13"
   },
   {
-    "DTCCode": 609,
-    "FailureType": 17
+    "DTCCode": "0x0261",
+    "FailureType": "0x11"
   },
   {
-    "DTCCode": 610,
-    "FailureType": 18
+    "DTCCode": "0x0262",
+    "FailureType": "0x12"
   },
   {
-    "DTCCode": 514,
-    "FailureType": 19
+    "DTCCode": "0x0202",
+    "FailureType": "0x13"
   },
   {
-    "DTCCode": 612,
-    "FailureType": 17
+    "DTCCode": "0x0264",
+    "FailureType": "0x11"
   },
   {
-    "DTCCode": 613,
-    "FailureType": 18
+    "DTCCode": "0x0265",
+    "FailureType": "0x12"
   },
   {
-    "DTCCode": 515,
-    "FailureType": 19
+    "DTCCode": "0x0203",
+    "FailureType": "0x13"
   },
   {
-    "DTCCode": 615,
-    "FailureType": 17
+    "DTCCode": "0x0267",
+    "FailureType": "0x11"
   },
   {
-    "DTCCode": 616,
-    "FailureType": 18
+    "DTCCode": "0x0268",
+    "FailureType": "0x12"
   },
   {
-    "DTCCode": 516,
-    "FailureType": 19
+    "DTCCode": "0x0204",
+    "FailureType": "0x13"
   },
   {
-    "DTCCode": 624,
-    "FailureType": 17
+    "DTCCode": "0x0270",
+    "FailureType": "0x11"
   },
   {
-    "DTCCode": 625,
-    "FailureType": 18
+    "DTCCode": "0x0271",
+    "FailureType": "0x12"
   },
   {
-    "DTCCode": 9405,
-    "FailureType": 19
+    "DTCCode": "0x24BD",
+    "FailureType": "0x13"
   },
   {
-    "DTCCode": 9406,
-    "FailureType": 17
+    "DTCCode": "0x24BE",
+    "FailureType": "0x11"
   },
   {
-    "DTCCode": 9407,
-    "FailureType": 18
+    "DTCCode": "0x24BF",
+    "FailureType": "0x12"
   },
   {
-    "DTCCode": 1092,
-    "FailureType": 19
+    "DTCCode": "0x0444",
+    "FailureType": "0x13"
   },
   {
-    "DTCCode": 1112,
-    "FailureType": 17
+    "DTCCode": "0x0458",
+    "FailureType": "0x11"
   },
   {
-    "DTCCode": 1113,
-    "FailureType": 18
+    "DTCCode": "0x0459",
+    "FailureType": "0x12"
   },
   {
-    "DTCCode": 9240,
-    "FailureType": 19
+    "DTCCode": "0x2418",
+    "FailureType": "0x13"
   },
   {
-    "DTCCode": 9241,
-    "FailureType": 17
+    "DTCCode": "0x2419",
+    "FailureType": "0x11"
   },
   {
-    "DTCCode": 9248,
-    "FailureType": 18
+    "DTCCode": "0x2420",
+    "FailureType": "0x12"
   },
   {
-    "DTCCode": 16,
-    "FailureType": 19
+    "DTCCode": "0x0010",
+    "FailureType": "0x13"
   },
   {
-    "DTCCode": 8328,
-    "FailureType": 17
+    "DTCCode": "0x2088",
+    "FailureType": "0x11"
   },
   {
-    "DTCCode": 8329,
-    "FailureType": 18
+    "DTCCode": "0x2089",
+    "FailureType": "0x12"
   },
   {
-    "DTCCode": 1754,
-    "FailureType": 19
+    "DTCCode": "0x06DA",
+    "FailureType": "0x13"
   },
   {
-    "DTCCode": 1755,
-    "FailureType": 17
+    "DTCCode": "0x06DB",
+    "FailureType": "0x11"
   },
   {
-    "DTCCode": 1756,
-    "FailureType": 18
+    "DTCCode": "0x06DC",
+    "FailureType": "0x12"
   },
   {
-    "DTCCode": 14859,
-    "FailureType": 19
+    "DTCCode": "0x3A0B",
+    "FailureType": "0x13"
   },
   {
-    "DTCCode": 14860,
-    "FailureType": 17
+    "DTCCode": "0x3A0C",
+    "FailureType": "0x11"
   },
   {
-    "DTCCode": 14861,
-    "FailureType": 18
+    "DTCCode": "0x3A0D",
+    "FailureType": "0x12"
   },
   {
-    "DTCCode": 19,
-    "FailureType": 19
+    "DTCCode": "0x0013",
+    "FailureType": "0x13"
   },
   {
-    "DTCCode": 8336,
-    "FailureType": 17
+    "DTCCode": "0x2090",
+    "FailureType": "0x11"
   },
   {
-    "DTCCode": 8337,
-    "FailureType": 18
+    "DTCCode": "0x2091",
+    "FailureType": "0x12"
   },
   {
-    "DTCCode": 54,
-    "FailureType": 19
+    "DTCCode": "0x0036",
+    "FailureType": "0x13"
   },
   {
-    "DTCCode": 55,
-    "FailureType": 17
+    "DTCCode": "0x0037",
+    "FailureType": "0x11"
   },
   {
-    "DTCCode": 56,
-    "FailureType": 18
+    "DTCCode": "0x0038",
+    "FailureType": "0x12"
   },
   {
-    "DTCCode": 9226,
-    "FailureType": 19
+    "DTCCode": "0x240A",
+    "FailureType": "0x13"
   },
   {
-    "DTCCode": 9227,
-    "FailureType": 17
+    "DTCCode": "0x240B",
+    "FailureType": "0x11"
   },
   {
-    "DTCCode": 9228,
-    "FailureType": 18
+    "DTCCode": "0x240C",
+    "FailureType": "0x12"
   },
   {
-    "DTCCode": 849,
-    "FailureType": 19
+    "DTCCode": "0x0351",
+    "FailureType": "0x13"
   },
   {
-    "DTCCode": 8960,
-    "FailureType": 17
+    "DTCCode": "0x2300",
+    "FailureType": "0x11"
   },
   {
-    "DTCCode": 8961,
-    "FailureType": 18
+    "DTCCode": "0x2301",
+    "FailureType": "0x12"
   },
   {
-    "DTCCode": 850,
-    "FailureType": 19
+    "DTCCode": "0x0352",
+    "FailureType": "0x13"
   },
   {
-    "DTCCode": 8963,
-    "FailureType": 17
+    "DTCCode": "0x2303",
+    "FailureType": "0x11"
   },
   {
-    "DTCCode": 8964,
-    "FailureType": 18
+    "DTCCode": "0x2304",
+    "FailureType": "0x12"
   },
   {
-    "DTCCode": 851,
-    "FailureType": 19
+    "DTCCode": "0x0353",
+    "FailureType": "0x13"
   },
   {
-    "DTCCode": 8966,
-    "FailureType": 17
+    "DTCCode": "0x2306",
+    "FailureType": "0x11"
   },
   {
-    "DTCCode": 8967,
-    "FailureType": 18
+    "DTCCode": "0x2307",
+    "FailureType": "0x12"
   },
   {
-    "DTCCode": 852,
-    "FailureType": 19
+    "DTCCode": "0x0354",
+    "FailureType": "0x13"
   },
   {
-    "DTCCode": 8969,
-    "FailureType": 17
+    "DTCCode": "0x2309",
+    "FailureType": "0x11"
   },
   {
-    "DTCCode": 8976,
-    "FailureType": 18
+    "DTCCode": "0x2310",
+    "FailureType": "0x12"
   },
   {
-    "DTCCode": 9216,
-    "FailureType": 19
+    "DTCCode": "0x2400",
+    "FailureType": "0x13"
   },
   {
-    "DTCCode": 9217,
-    "FailureType": 17
+    "DTCCode": "0x2401",
+    "FailureType": "0x11"
   },
   {
-    "DTCCode": 9218,
-    "FailureType": 18
+    "DTCCode": "0x2402",
+    "FailureType": "0x12"
   },
   {
-    "DTCCode": 9752,
-    "FailureType": 17
+    "DTCCode": "0x2618",
+    "FailureType": "0x11"
   },
   {
-    "DTCCode": 9753,
-    "FailureType": 18
+    "DTCCode": "0x2619",
+    "FailureType": "0x12"
   },
   {
-    "DTCCode": 825,
-    "FailureType": 0
+    "DTCCode": "0x0339",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 843,
-    "FailureType": 0
+    "DTCCode": "0x034B",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 834,
-    "FailureType": 0
+    "DTCCode": "0x0342",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 871,
-    "FailureType": 0
+    "DTCCode": "0x0367",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 835,
-    "FailureType": 0
+    "DTCCode": "0x0343",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 872,
-    "FailureType": 0
+    "DTCCode": "0x0368",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 833,
-    "FailureType": 0
+    "DTCCode": "0x0341",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 870,
-    "FailureType": 0
+    "DTCCode": "0x0366",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 22,
-    "FailureType": 118
+    "DTCCode": "0x0016",
+    "FailureType": "0x76"
   },
   {
-    "DTCCode": 23,
-    "FailureType": 118
+    "DTCCode": "0x0017",
+    "FailureType": "0x76"
   },
   {
-    "DTCCode": 22,
-    "FailureType": 120
+    "DTCCode": "0x0016",
+    "FailureType": "0x78"
   },
   {
-    "DTCCode": 23,
-    "FailureType": 120
+    "DTCCode": "0x0017",
+    "FailureType": "0x78"
   },
   {
-    "DTCCode": 822,
-    "FailureType": 100
+    "DTCCode": "0x0336",
+    "FailureType": "0x64"
   },
   {
-    "DTCCode": 48,
-    "FailureType": 19
+    "DTCCode": "0x0030",
+    "FailureType": "0x13"
   },
   {
-    "DTCCode": 49,
-    "FailureType": 17
+    "DTCCode": "0x0031",
+    "FailureType": "0x11"
   },
   {
-    "DTCCode": 50,
-    "FailureType": 18
+    "DTCCode": "0x0032",
+    "FailureType": "0x12"
   },
   {
-    "DTCCode": 1033,
-    "FailureType": 135
+    "DTCCode": "0x0409",
+    "FailureType": "0x87"
   },
   {
-    "DTCCode": 1033,
-    "FailureType": 103
+    "DTCCode": "0x0409",
+    "FailureType": "0x67"
   },
   {
-    "DTCCode": 256,
-    "FailureType": 135
+    "DTCCode": "0x0100",
+    "FailureType": "0x87"
   },
   {
-    "DTCCode": 256,
-    "FailureType": 103
+    "DTCCode": "0x0100",
+    "FailureType": "0x67"
   },
   {
-    "DTCCode": 1379,
-    "FailureType": 0
+    "DTCCode": "0x0563",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 1378,
-    "FailureType": 0
+    "DTCCode": "0x0562",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 1673,
-    "FailureType": 0
+    "DTCCode": "0x0689",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 1680,
-    "FailureType": 0
+    "DTCCode": "0x0690",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 5634,
-    "FailureType": 0
+    "DTCCode": "0x1602",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 9524,
-    "FailureType": 0
+    "DTCCode": "0x2534",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 1603,
-    "FailureType": 0
+    "DTCCode": "0x0643",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 1602,
-    "FailureType": 0
+    "DTCCode": "0x0642",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 1619,
-    "FailureType": 0
+    "DTCCode": "0x0653",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 1618,
-    "FailureType": 0
+    "DTCCode": "0x0652",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 1689,
-    "FailureType": 0
+    "DTCCode": "0x0699",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 1688,
-    "FailureType": 0
+    "DTCCode": "0x0698",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 1701,
-    "FailureType": 0
+    "DTCCode": "0x06A5",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 1700,
-    "FailureType": 0
+    "DTCCode": "0x06A4",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 1748,
-    "FailureType": 0
+    "DTCCode": "0x06D4",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 1747,
-    "FailureType": 0
+    "DTCCode": "0x06D3",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 1155,
-    "FailureType": 75
+    "DTCCode": "0x0483",
+    "FailureType": "0x4B"
   },
   {
-    "DTCCode": 1155,
-    "FailureType": 28
+    "DTCCode": "0x0483",
+    "FailureType": "0x1C"
   },
   {
-    "DTCCode": 1155,
-    "FailureType": 29
+    "DTCCode": "0x0483",
+    "FailureType": "0x1D"
   },
   {
-    "DTCCode": 1155,
-    "FailureType": 1
+    "DTCCode": "0x0483",
+    "FailureType": "0x01"
   },
   {
-    "DTCCode": 154,
-    "FailureType": 0
+    "DTCCode": "0x009A",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 258,
-    "FailureType": 0
+    "DTCCode": "0x0102",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 259,
-    "FailureType": 0
+    "DTCCode": "0x0103",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 151,
-    "FailureType": 0
+    "DTCCode": "0x0097",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 152,
-    "FailureType": 0
+    "DTCCode": "0x0098",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 153,
-    "FailureType": 0
+    "DTCCode": "0x0099",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 4097,
-    "FailureType": 0
+    "DTCCode": "0x1001",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 257,
-    "FailureType": 0
+    "DTCCode": "0x0101",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 4102,
-    "FailureType": 0
+    "DTCCode": "0x1006",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 4118,
-    "FailureType": 0
+    "DTCCode": "0x1016",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 275,
-    "FailureType": 0
+    "DTCCode": "0x0113",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 274,
-    "FailureType": 0
+    "DTCCode": "0x0112",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 276,
-    "FailureType": 0
+    "DTCCode": "0x0114",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 264,
-    "FailureType": 0
+    "DTCCode": "0x0108",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 263,
-    "FailureType": 0
+    "DTCCode": "0x0107",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 4114,
-    "FailureType": 0
+    "DTCCode": "0x1012",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 262,
-    "FailureType": 0
+    "DTCCode": "0x0106",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 4098,
-    "FailureType": 0
+    "DTCCode": "0x1002",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 4099,
-    "FailureType": 0
+    "DTCCode": "0x1003",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 290,
-    "FailureType": 0
+    "DTCCode": "0x0122",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 291,
-    "FailureType": 0
+    "DTCCode": "0x0123",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 546,
-    "FailureType": 0
+    "DTCCode": "0x0222",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 547,
-    "FailureType": 0
+    "DTCCode": "0x0223",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 8501,
-    "FailureType": 0
+    "DTCCode": "0x2135",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 4101,
-    "FailureType": 0
+    "DTCCode": "0x1005",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 8449,
-    "FailureType": 0
+    "DTCCode": "0x2101",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 5467,
-    "FailureType": 0
+    "DTCCode": "0x155B",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 5465,
-    "FailureType": 0
+    "DTCCode": "0x1559",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 5464,
-    "FailureType": 0
+    "DTCCode": "0x1558",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 5466,
-    "FailureType": 0
+    "DTCCode": "0x155A",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 5457,
-    "FailureType": 0
+    "DTCCode": "0x1551",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 5463,
-    "FailureType": 0
+    "DTCCode": "0x1557",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 5462,
-    "FailureType": 0
+    "DTCCode": "0x1556",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 5460,
-    "FailureType": 0
+    "DTCCode": "0x1554",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 5461,
-    "FailureType": 0
+    "DTCCode": "0x1555",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 17,
-    "FailureType": 0
+    "DTCCode": "0x0011",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 20,
-    "FailureType": 0
+    "DTCCode": "0x0014",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 60,
-    "FailureType": 0
+    "DTCCode": "0x003C",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 90,
-    "FailureType": 0
+    "DTCCode": "0x005A",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 2756,
-    "FailureType": 0
+    "DTCCode": "0x0AC4",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 3233,
-    "FailureType": 0
+    "DTCCode": "0x0CA1",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 4356,
-    "FailureType": 0
+    "DTCCode": "0x1104",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 2683,
-    "FailureType": 0
+    "DTCCode": "0x0A7B",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 9931,
-    "FailureType": 0
+    "DTCCode": "0x26CB",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 280,
-    "FailureType": 0
+    "DTCCode": "0x0118",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 279,
-    "FailureType": 0
+    "DTCCode": "0x0117",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 182,
-    "FailureType": 0
+    "DTCCode": "0x00B6",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 281,
-    "FailureType": 0
+    "DTCCode": "0x0119",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 283,
-    "FailureType": 0
+    "DTCCode": "0x011B",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 278,
-    "FailureType": 0
+    "DTCCode": "0x0116",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 296,
-    "FailureType": 0
+    "DTCCode": "0x0128",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 535,
-    "FailureType": 0
+    "DTCCode": "0x0217",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 180,
-    "FailureType": 0
+    "DTCCode": "0x00B4",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 179,
-    "FailureType": 0
+    "DTCCode": "0x00B3",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 181,
-    "FailureType": 0
+    "DTCCode": "0x00B5",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 9934,
-    "FailureType": 0
+    "DTCCode": "0x26CE",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 11141,
-    "FailureType": 0
+    "DTCCode": "0x2B85",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 9934,
-    "FailureType": 148
+    "DTCCode": "0x26CE",
+    "FailureType": "0x94"
   },
   {
-    "DTCCode": 1036,
-    "FailureType": 0
+    "DTCCode": "0x040C",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 1038,
-    "FailureType": 0
+    "DTCCode": "0x040E",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 1037,
-    "FailureType": 0
+    "DTCCode": "0x040D",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 4113,
-    "FailureType": 0
+    "DTCCode": "0x1011",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 1030,
-    "FailureType": 0
+    "DTCCode": "0x0406",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 1029,
-    "FailureType": 0
+    "DTCCode": "0x0405",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 5636,
-    "FailureType": 0
+    "DTCCode": "0x1604",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 4100,
-    "FailureType": 0
+    "DTCCode": "0x1004",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 1028,
-    "FailureType": 0
+    "DTCCode": "0x0404",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 1070,
-    "FailureType": 0
+    "DTCCode": "0x042E",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 1181,
-    "FailureType": 115
+    "DTCCode": "0x049D",
+    "FailureType": "0x73"
   },
   {
-    "DTCCode": 1181,
-    "FailureType": 114
+    "DTCCode": "0x049D",
+    "FailureType": "0x72"
   },
   {
-    "DTCCode": 1181,
-    "FailureType": 33
+    "DTCCode": "0x049D",
+    "FailureType": "0x21"
   },
   {
-    "DTCCode": 1181,
-    "FailureType": 34
+    "DTCCode": "0x049D",
+    "FailureType": "0x22"
   },
   {
-    "DTCCode": 8771,
-    "FailureType": 0
+    "DTCCode": "0x2243",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 8759,
-    "FailureType": 0
+    "DTCCode": "0x2237",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 8785,
-    "FailureType": 0
+    "DTCCode": "0x2251",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 8760,
-    "FailureType": 0
+    "DTCCode": "0x2238",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 8773,
-    "FailureType": 0
+    "DTCCode": "0x2245",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 306,
-    "FailureType": 0
+    "DTCCode": "0x0132",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 5637,
-    "FailureType": 0
+    "DTCCode": "0x1605",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 5638,
-    "FailureType": 0
+    "DTCCode": "0x1606",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 346,
-    "FailureType": 0
+    "DTCCode": "0x015A",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 347,
-    "FailureType": 0
+    "DTCCode": "0x015B",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 83,
-    "FailureType": 0
+    "DTCCode": "0x0053",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 5639,
-    "FailureType": 0
+    "DTCCode": "0x1607",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 311,
-    "FailureType": 0
+    "DTCCode": "0x0137",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 312,
-    "FailureType": 0
+    "DTCCode": "0x0138",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 310,
-    "FailureType": 0
+    "DTCCode": "0x0136",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 8754,
-    "FailureType": 0
+    "DTCCode": "0x2232",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 8816,
-    "FailureType": 0
+    "DTCCode": "0x2270",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 8817,
-    "FailureType": 0
+    "DTCCode": "0x2271",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 314,
-    "FailureType": 0
+    "DTCCode": "0x013A",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 318,
-    "FailureType": 0
+    "DTCCode": "0x013E",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 315,
-    "FailureType": 0
+    "DTCCode": "0x013B",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 319,
-    "FailureType": 0
+    "DTCCode": "0x013F",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 4115,
-    "FailureType": 0
+    "DTCCode": "0x1013",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 1314,
-    "FailureType": 0
+    "DTCCode": "0x0522",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 1315,
-    "FailureType": 0
+    "DTCCode": "0x0523",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 1313,
-    "FailureType": 0
+    "DTCCode": "0x0521",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 84,
-    "FailureType": 0
+    "DTCCode": "0x0054",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 807,
-    "FailureType": 0
+    "DTCCode": "0x0327",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 808,
-    "FailureType": 0
+    "DTCCode": "0x0328",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 805,
-    "FailureType": 0
+    "DTCCode": "0x0325",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 806,
-    "FailureType": 0
+    "DTCCode": "0x0326",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 5392,
-    "FailureType": 0
+    "DTCCode": "0x1510",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 1106,
-    "FailureType": 0
+    "DTCCode": "0x0452",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 1107,
-    "FailureType": 0
+    "DTCCode": "0x0453",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 4116,
-    "FailureType": 42
+    "DTCCode": "0x1014",
+    "FailureType": "0x2A"
   },
   {
-    "DTCCode": 4117,
-    "FailureType": 40
+    "DTCCode": "0x1015",
+    "FailureType": "0x28"
   },
   {
-    "DTCCode": 115,
-    "FailureType": 0
+    "DTCCode": "0x0073",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 114,
-    "FailureType": 0
+    "DTCCode": "0x0072",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 113,
-    "FailureType": 36
+    "DTCCode": "0x0071",
+    "FailureType": "0x24"
   },
   {
-    "DTCCode": 113,
-    "FailureType": 35
+    "DTCCode": "0x0071",
+    "FailureType": "0x23"
   },
   {
-    "DTCCode": 116,
-    "FailureType": 0
+    "DTCCode": "0x0074",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 49489,
-    "FailureType": 135
+    "DTCCode": "0xC151",
+    "FailureType": "0x87"
   },
   {
-    "DTCCode": 1291,
-    "FailureType": 0
+    "DTCCode": "0x050B",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 1056,
-    "FailureType": 0
+    "DTCCode": "0x0420",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 789,
-    "FailureType": 0
+    "DTCCode": "0x0315",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 768,
-    "FailureType": 0
+    "DTCCode": "0x0300",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 1484,
-    "FailureType": 0
+    "DTCCode": "0x05CC",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 1486,
-    "FailureType": 0
+    "DTCCode": "0x05CE",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 4103,
-    "FailureType": 0
+    "DTCCode": "0x1007",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 369,
-    "FailureType": 0
+    "DTCCode": "0x0171",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 370,
-    "FailureType": 0
+    "DTCCode": "0x0172",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 8342,
-    "FailureType": 0
+    "DTCCode": "0x2096",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 8343,
-    "FailureType": 0
+    "DTCCode": "0x2097",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 50258,
-    "FailureType": 129
+    "DTCCode": "0xC452",
+    "FailureType": "0x81"
   },
   {
-    "DTCCode": 49440,
-    "FailureType": 135
+    "DTCCode": "0xC120",
+    "FailureType": "0x87"
   },
   {
-    "DTCCode": 50281,
-    "FailureType": 129
+    "DTCCode": "0xC469",
+    "FailureType": "0x81"
   },
   {
-    "DTCCode": 49449,
-    "FailureType": 135
+    "DTCCode": "0xC129",
+    "FailureType": "0x87"
   },
   {
-    "DTCCode": 4352,
-    "FailureType": 0
+    "DTCCode": "0x1100",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 4353,
-    "FailureType": 0
+    "DTCCode": "0x1101",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 4354,
-    "FailureType": 0
+    "DTCCode": "0x1102",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 50200,
-    "FailureType": 129
+    "DTCCode": "0xC418",
+    "FailureType": "0x81"
   },
   {
-    "DTCCode": 49441,
-    "FailureType": 135
+    "DTCCode": "0xC121",
+    "FailureType": "0x87"
   },
   {
-    "DTCCode": 49441,
-    "FailureType": 129
+    "DTCCode": "0xC121",
+    "FailureType": "0x81"
   },
   {
-    "DTCCode": 49772,
-    "FailureType": 135
+    "DTCCode": "0xC26C",
+    "FailureType": "0x87"
   },
   {
-    "DTCCode": 62599,
-    "FailureType": 129
+    "DTCCode": "0xF487",
+    "FailureType": "0x81"
   },
   {
-    "DTCCode": 49927,
-    "FailureType": 135
+    "DTCCode": "0xC307",
+    "FailureType": "0x87"
   },
   {
-    "DTCCode": 49927,
-    "FailureType": 129
+    "DTCCode": "0xC307",
+    "FailureType": "0x81"
   },
   {
-    "DTCCode": 49948,
-    "FailureType": 135
+    "DTCCode": "0xC31C",
+    "FailureType": "0x87"
   },
   {
-    "DTCCode": 49948,
-    "FailureType": 129
+    "DTCCode": "0xC31C",
+    "FailureType": "0x81"
   },
   {
-    "DTCCode": 537,
-    "FailureType": 0
+    "DTCCode": "0x0219",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 5640,
-    "FailureType": 0
+    "DTCCode": "0x1608",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 1745,
-    "FailureType": 0
+    "DTCCode": "0x06D1",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 1026,
-    "FailureType": 0
+    "DTCCode": "0x0402",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 1025,
-    "FailureType": 0
+    "DTCCode": "0x0401",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 9303,
-    "FailureType": 0
+    "DTCCode": "0x2457",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 1123,
-    "FailureType": 0
+    "DTCCode": "0x0463",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 1122,
-    "FailureType": 0
+    "DTCCode": "0x0462",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 9648,
-    "FailureType": 0
+    "DTCCode": "0x25B0",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 1087,
-    "FailureType": 0
+    "DTCCode": "0x043F",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 1086,
-    "FailureType": 0
+    "DTCCode": "0x043E",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 1090,
-    "FailureType": 0
+    "DTCCode": "0x0442",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 1175,
-    "FailureType": 0
+    "DTCCode": "0x0497",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 38,
-    "FailureType": 0
+    "DTCCode": "0x0026",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 39,
-    "FailureType": 0
+    "DTCCode": "0x0027",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 9297,
-    "FailureType": 0
+    "DTCCode": "0x2451",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 9296,
-    "FailureType": 0
+    "DTCCode": "0x2450",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 383,
-    "FailureType": 0
+    "DTCCode": "0x017F",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 4736,
-    "FailureType": 0
+    "DTCCode": "0x1280",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 4737,
-    "FailureType": 0
+    "DTCCode": "0x1281",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 4743,
-    "FailureType": 0
+    "DTCCode": "0x1287",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 9409,
-    "FailureType": 0
+    "DTCCode": "0x24C1",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 9223,
-    "FailureType": 0
+    "DTCCode": "0x2407",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 5641,
-    "FailureType": 0
+    "DTCCode": "0x1609",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 1682,
-    "FailureType": 0
+    "DTCCode": "0x0692",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 1681,
-    "FailureType": 0
+    "DTCCode": "0x0691",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 9938,
-    "FailureType": 0
+    "DTCCode": "0x26D2",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 9941,
-    "FailureType": 0
+    "DTCCode": "0x26D5",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 9931,
-    "FailureType": 29
+    "DTCCode": "0x26CB",
+    "FailureType": "0x1D"
   },
   {
-    "DTCCode": 9931,
-    "FailureType": 25
+    "DTCCode": "0x26CB",
+    "FailureType": "0x19"
   },
   {
-    "DTCCode": 9940,
-    "FailureType": 0
+    "DTCCode": "0x26D4",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 9931,
-    "FailureType": 150
+    "DTCCode": "0x26CB",
+    "FailureType": "0x96"
   },
   {
-    "DTCCode": 11170,
-    "FailureType": 0
+    "DTCCode": "0x2BA2",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 289,
-    "FailureType": 0
+    "DTCCode": "0x0121",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 1720,
-    "FailureType": 0
+    "DTCCode": "0x06B8",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 5376,
-    "FailureType": 0
+    "DTCCode": "0x1500",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 5376,
-    "FailureType": 1
+    "DTCCode": "0x1500",
+    "FailureType": "0x01"
   },
   {
-    "DTCCode": 0,
-    "FailureType": 0
+    "DTCCode": "0x0000",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 0,
-    "FailureType": 0
+    "DTCCode": "0x0000",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 5643,
-    "FailureType": 0
+    "DTCCode": "0x160B",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 50802,
-    "FailureType": 0
+    "DTCCode": "0xC672",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 49515,
-    "FailureType": 135
+    "DTCCode": "0xC16B",
+    "FailureType": "0x87"
   },
   {
-    "DTCCode": 49747,
-    "FailureType": 135
+    "DTCCode": "0xC253",
+    "FailureType": "0x87"
   },
   {
-    "DTCCode": 49796,
-    "FailureType": 135
+    "DTCCode": "0xC284",
+    "FailureType": "0x87"
   },
   {
-    "DTCCode": 49797,
-    "FailureType": 135
+    "DTCCode": "0xC285",
+    "FailureType": "0x87"
   },
   {
-    "DTCCode": 49508,
-    "FailureType": 135
+    "DTCCode": "0xC164",
+    "FailureType": "0x87"
   },
   {
-    "DTCCode": 49773,
-    "FailureType": 135
+    "DTCCode": "0xC26D",
+    "FailureType": "0x87"
   },
   {
-    "DTCCode": 7939,
-    "FailureType": 23
+    "DTCCode": "0x1F03",
+    "FailureType": "0x17"
   },
   {
-    "DTCCode": 7939,
-    "FailureType": 22
+    "DTCCode": "0x1F03",
+    "FailureType": "0x16"
   },
   {
-    "DTCCode": 7940,
-    "FailureType": 17
+    "DTCCode": "0x1F04",
+    "FailureType": "0x11"
   },
   {
-    "DTCCode": 7941,
-    "FailureType": 21
+    "DTCCode": "0x1F05",
+    "FailureType": "0x15"
   },
   {
-    "DTCCode": 7946,
-    "FailureType": 0
+    "DTCCode": "0x1F0A",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 7947,
-    "FailureType": 0
+    "DTCCode": "0x1F0B",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 7948,
-    "FailureType": 17
+    "DTCCode": "0x1F0C",
+    "FailureType": "0x11"
   },
   {
-    "DTCCode": 7949,
-    "FailureType": 21
+    "DTCCode": "0x1F0D",
+    "FailureType": "0x15"
   },
   {
-    "DTCCode": 7950,
-    "FailureType": 17
+    "DTCCode": "0x1F0E",
+    "FailureType": "0x11"
   },
   {
-    "DTCCode": 7951,
-    "FailureType": 21
+    "DTCCode": "0x1F0F",
+    "FailureType": "0x15"
   },
   {
-    "DTCCode": 7952,
-    "FailureType": 17
+    "DTCCode": "0x1F10",
+    "FailureType": "0x11"
   },
   {
-    "DTCCode": 7953,
-    "FailureType": 21
+    "DTCCode": "0x1F11",
+    "FailureType": "0x15"
   },
   {
-    "DTCCode": 7954,
-    "FailureType": 17
+    "DTCCode": "0x1F12",
+    "FailureType": "0x11"
   },
   {
-    "DTCCode": 7955,
-    "FailureType": 21
+    "DTCCode": "0x1F13",
+    "FailureType": "0x15"
   },
   {
-    "DTCCode": 7957,
-    "FailureType": 21
+    "DTCCode": "0x1F15",
+    "FailureType": "0x15"
   },
   {
-    "DTCCode": 7958,
-    "FailureType": 17
+    "DTCCode": "0x1F16",
+    "FailureType": "0x11"
   },
   {
-    "DTCCode": 7959,
-    "FailureType": 5
+    "DTCCode": "0x1F17",
+    "FailureType": "0x05"
   },
   {
-    "DTCCode": 7960,
-    "FailureType": 1
+    "DTCCode": "0x1F18",
+    "FailureType": "0x01"
   },
   {
-    "DTCCode": 7961,
-    "FailureType": 28
+    "DTCCode": "0x1F19",
+    "FailureType": "0x1C"
   },
   {
-    "DTCCode": 7964,
-    "FailureType": 21
+    "DTCCode": "0x1F1C",
+    "FailureType": "0x15"
   },
   {
-    "DTCCode": 7965,
-    "FailureType": 17
+    "DTCCode": "0x1F1D",
+    "FailureType": "0x11"
   },
   {
-    "DTCCode": 7966,
-    "FailureType": 5
+    "DTCCode": "0x1F1E",
+    "FailureType": "0x05"
   },
   {
-    "DTCCode": 7967,
-    "FailureType": 1
+    "DTCCode": "0x1F1F",
+    "FailureType": "0x01"
   },
   {
-    "DTCCode": 7968,
-    "FailureType": 28
+    "DTCCode": "0x1F20",
+    "FailureType": "0x1C"
   },
   {
-    "DTCCode": 7971,
-    "FailureType": 21
+    "DTCCode": "0x1F23",
+    "FailureType": "0x15"
   },
   {
-    "DTCCode": 7971,
-    "FailureType": 17
+    "DTCCode": "0x1F23",
+    "FailureType": "0x11"
   },
   {
-    "DTCCode": 7972,
-    "FailureType": 5
+    "DTCCode": "0x1F24",
+    "FailureType": "0x05"
   },
   {
-    "DTCCode": 7973,
-    "FailureType": 1
+    "DTCCode": "0x1F25",
+    "FailureType": "0x01"
   },
   {
-    "DTCCode": 7974,
-    "FailureType": 28
+    "DTCCode": "0x1F26",
+    "FailureType": "0x1C"
   },
   {
-    "DTCCode": 7977,
-    "FailureType": 21
+    "DTCCode": "0x1F29",
+    "FailureType": "0x15"
   },
   {
-    "DTCCode": 7977,
-    "FailureType": 17
+    "DTCCode": "0x1F29",
+    "FailureType": "0x11"
   },
   {
-    "DTCCode": 7978,
-    "FailureType": 5
+    "DTCCode": "0x1F2A",
+    "FailureType": "0x05"
   },
   {
-    "DTCCode": 7979,
-    "FailureType": 1
+    "DTCCode": "0x1F2B",
+    "FailureType": "0x01"
   },
   {
-    "DTCCode": 7980,
-    "FailureType": 28
+    "DTCCode": "0x1F2C",
+    "FailureType": "0x1C"
   },
   {
-    "DTCCode": 7983,
-    "FailureType": 21
+    "DTCCode": "0x1F2F",
+    "FailureType": "0x15"
   },
   {
-    "DTCCode": 7984,
-    "FailureType": 17
+    "DTCCode": "0x1F30",
+    "FailureType": "0x11"
   },
   {
-    "DTCCode": 7985,
-    "FailureType": 5
+    "DTCCode": "0x1F31",
+    "FailureType": "0x05"
   },
   {
-    "DTCCode": 7986,
-    "FailureType": 1
+    "DTCCode": "0x1F32",
+    "FailureType": "0x01"
   },
   {
-    "DTCCode": 7981,
-    "FailureType": 28
+    "DTCCode": "0x1F2D",
+    "FailureType": "0x1C"
   },
   {
-    "DTCCode": 7987,
-    "FailureType": 17
+    "DTCCode": "0x1F33",
+    "FailureType": "0x11"
   },
   {
-    "DTCCode": 7988,
-    "FailureType": 21
+    "DTCCode": "0x1F34",
+    "FailureType": "0x15"
   },
   {
-    "DTCCode": 7989,
-    "FailureType": 21
+    "DTCCode": "0x1F35",
+    "FailureType": "0x15"
   },
   {
-    "DTCCode": 7990,
-    "FailureType": 17
+    "DTCCode": "0x1F36",
+    "FailureType": "0x11"
   },
   {
-    "DTCCode": 7991,
-    "FailureType": 17
+    "DTCCode": "0x1F37",
+    "FailureType": "0x11"
   },
   {
-    "DTCCode": 7992,
-    "FailureType": 18
+    "DTCCode": "0x1F38",
+    "FailureType": "0x12"
   },
   {
-    "DTCCode": 7993,
-    "FailureType": 19
+    "DTCCode": "0x1F39",
+    "FailureType": "0x13"
   },
   {
-    "DTCCode": 7994,
-    "FailureType": 75
+    "DTCCode": "0x1F3A",
+    "FailureType": "0x4B"
   },
   {
-    "DTCCode": 7995,
-    "FailureType": 7
+    "DTCCode": "0x1F3B",
+    "FailureType": "0x07"
   },
   {
-    "DTCCode": 7996,
-    "FailureType": 25
+    "DTCCode": "0x1F3C",
+    "FailureType": "0x19"
   },
   {
-    "DTCCode": 7997,
-    "FailureType": 23
+    "DTCCode": "0x1F3D",
+    "FailureType": "0x17"
   },
   {
-    "DTCCode": 7998,
-    "FailureType": 22
+    "DTCCode": "0x1F3E",
+    "FailureType": "0x16"
   },
   {
-    "DTCCode": 7999,
-    "FailureType": 9
+    "DTCCode": "0x1F3F",
+    "FailureType": "0x09"
   },
   {
-    "DTCCode": 8000,
-    "FailureType": 241
+    "DTCCode": "0x1F40",
+    "FailureType": "0xF1"
   },
   {
-    "DTCCode": 8001,
-    "FailureType": 242
+    "DTCCode": "0x1F41",
+    "FailureType": "0xF2"
   },
   {
-    "DTCCode": 8002,
-    "FailureType": 243
+    "DTCCode": "0x1F42",
+    "FailureType": "0xF3"
   },
   {
-    "DTCCode": 8003,
-    "FailureType": 244
+    "DTCCode": "0x1F43",
+    "FailureType": "0xF4"
   },
   {
-    "DTCCode": 8003,
-    "FailureType": 245
+    "DTCCode": "0x1F43",
+    "FailureType": "0xF5"
   },
   {
-    "DTCCode": 8004,
-    "FailureType": 0
+    "DTCCode": "0x1F44",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 8006,
-    "FailureType": 1
+    "DTCCode": "0x1F46",
+    "FailureType": "0x01"
   },
   {
-    "DTCCode": 8007,
-    "FailureType": 22
+    "DTCCode": "0x1F47",
+    "FailureType": "0x16"
   },
   {
-    "DTCCode": 8008,
-    "FailureType": 75
+    "DTCCode": "0x1F48",
+    "FailureType": "0x4B"
   },
   {
-    "DTCCode": 8009,
-    "FailureType": 23
+    "DTCCode": "0x1F49",
+    "FailureType": "0x17"
   },
   {
-    "DTCCode": 8010,
-    "FailureType": 1
+    "DTCCode": "0x1F4A",
+    "FailureType": "0x01"
   },
   {
-    "DTCCode": 8011,
-    "FailureType": 134
+    "DTCCode": "0x1F4B",
+    "FailureType": "0x86"
   },
   {
-    "DTCCode": 8012,
-    "FailureType": 1
+    "DTCCode": "0x1F4C",
+    "FailureType": "0x01"
   },
   {
-    "DTCCode": 8013,
-    "FailureType": 1
+    "DTCCode": "0x1F4D",
+    "FailureType": "0x01"
   },
   {
-    "DTCCode": 8014,
-    "FailureType": 0
+    "DTCCode": "0x1F4E",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 8015,
-    "FailureType": 1
+    "DTCCode": "0x1F4F",
+    "FailureType": "0x01"
   },
   {
-    "DTCCode": 8016,
-    "FailureType": 146
+    "DTCCode": "0x1F50",
+    "FailureType": "0x92"
   },
   {
-    "DTCCode": 8017,
-    "FailureType": 28
+    "DTCCode": "0x1F51",
+    "FailureType": "0x1C"
   },
   {
-    "DTCCode": 8018,
-    "FailureType": 0
+    "DTCCode": "0x1F52",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 8019,
-    "FailureType": 21
+    "DTCCode": "0x1F53",
+    "FailureType": "0x15"
   },
   {
-    "DTCCode": 8019,
-    "FailureType": 17
+    "DTCCode": "0x1F53",
+    "FailureType": "0x11"
   },
   {
-    "DTCCode": 8020,
-    "FailureType": 21
+    "DTCCode": "0x1F54",
+    "FailureType": "0x15"
   },
   {
-    "DTCCode": 8021,
-    "FailureType": 17
+    "DTCCode": "0x1F55",
+    "FailureType": "0x11"
   },
   {
-    "DTCCode": 8022,
-    "FailureType": 0
+    "DTCCode": "0x1F56",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 8023,
-    "FailureType": 0
+    "DTCCode": "0x1F57",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 8024,
-    "FailureType": 28
+    "DTCCode": "0x1F58",
+    "FailureType": "0x1C"
   },
   {
-    "DTCCode": 8025,
-    "FailureType": 21
+    "DTCCode": "0x1F59",
+    "FailureType": "0x15"
   },
   {
-    "DTCCode": 8026,
-    "FailureType": 17
+    "DTCCode": "0x1F5A",
+    "FailureType": "0x11"
   },
   {
-    "DTCCode": 8027,
-    "FailureType": 0
+    "DTCCode": "0x1F5B",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 8028,
-    "FailureType": 0
+    "DTCCode": "0x1F5C",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 8029,
-    "FailureType": 134
+    "DTCCode": "0x1F5D",
+    "FailureType": "0x86"
   },
   {
-    "DTCCode": 8030,
-    "FailureType": 150
+    "DTCCode": "0x1F5E",
+    "FailureType": "0x96"
   },
   {
-    "DTCCode": 8031,
-    "FailureType": 22
+    "DTCCode": "0x1F5F",
+    "FailureType": "0x16"
   },
   {
-    "DTCCode": 8032,
-    "FailureType": 19
+    "DTCCode": "0x1F60",
+    "FailureType": "0x13"
   },
   {
-    "DTCCode": 8033,
-    "FailureType": 17
+    "DTCCode": "0x1F61",
+    "FailureType": "0x11"
   },
   {
-    "DTCCode": 8034,
-    "FailureType": 150
+    "DTCCode": "0x1F62",
+    "FailureType": "0x96"
   },
   {
-    "DTCCode": 8035,
-    "FailureType": 75
+    "DTCCode": "0x1F63",
+    "FailureType": "0x4B"
   },
   {
-    "DTCCode": 8035,
-    "FailureType": 23
+    "DTCCode": "0x1F63",
+    "FailureType": "0x17"
   },
   {
-    "DTCCode": 8036,
-    "FailureType": 28
+    "DTCCode": "0x1F64",
+    "FailureType": "0x1C"
   },
   {
-    "DTCCode": 8037,
-    "FailureType": 25
+    "DTCCode": "0x1F65",
+    "FailureType": "0x19"
   },
   {
-    "DTCCode": 8038,
-    "FailureType": 75
+    "DTCCode": "0x1F66",
+    "FailureType": "0x4B"
   },
   {
-    "DTCCode": 8039,
-    "FailureType": 150
+    "DTCCode": "0x1F67",
+    "FailureType": "0x96"
   },
   {
-    "DTCCode": 8040,
-    "FailureType": 150
+    "DTCCode": "0x1F68",
+    "FailureType": "0x96"
   },
   {
-    "DTCCode": 8041,
-    "FailureType": 150
+    "DTCCode": "0x1F69",
+    "FailureType": "0x96"
   },
   {
-    "DTCCode": 8043,
-    "FailureType": 19
+    "DTCCode": "0x1F6B",
+    "FailureType": "0x13"
   },
   {
-    "DTCCode": 8044,
-    "FailureType": 75
+    "DTCCode": "0x1F6C",
+    "FailureType": "0x4B"
   },
   {
-    "DTCCode": 8045,
-    "FailureType": 113
+    "DTCCode": "0x1F6D",
+    "FailureType": "0x71"
   },
   {
-    "DTCCode": 8046,
-    "FailureType": 17
+    "DTCCode": "0x1F6E",
+    "FailureType": "0x11"
   },
   {
-    "DTCCode": 8048,
-    "FailureType": 7
+    "DTCCode": "0x1F70",
+    "FailureType": "0x07"
   },
   {
-    "DTCCode": 8049,
-    "FailureType": 152
+    "DTCCode": "0x1F71",
+    "FailureType": "0x98"
   },
   {
-    "DTCCode": 8050,
-    "FailureType": 23
+    "DTCCode": "0x1F72",
+    "FailureType": "0x17"
   },
   {
-    "DTCCode": 8051,
-    "FailureType": 22
+    "DTCCode": "0x1F73",
+    "FailureType": "0x16"
   },
   {
-    "DTCCode": 8051,
-    "FailureType": 1
+    "DTCCode": "0x1F73",
+    "FailureType": "0x01"
   },
   {
-    "DTCCode": 8052,
-    "FailureType": 8
+    "DTCCode": "0x1F74",
+    "FailureType": "0x08"
   },
   {
-    "DTCCode": 8053,
-    "FailureType": 7
+    "DTCCode": "0x1F75",
+    "FailureType": "0x07"
   },
   {
-    "DTCCode": 8054,
-    "FailureType": 0
+    "DTCCode": "0x1F76",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 8055,
-    "FailureType": 0
+    "DTCCode": "0x1F77",
+    "FailureType": "0x00"
   },
   {
-    "DTCCode": 8056,
-    "FailureType": 75
+    "DTCCode": "0x1F78",
+    "FailureType": "0x4B"
   },
   {
-    "DTCCode": 8057,
-    "FailureType": 18
+    "DTCCode": "0x1F79",
+    "FailureType": "0x12"
   },
   {
-    "DTCCode": 8058,
-    "FailureType": 17
+    "DTCCode": "0x1F7A",
+    "FailureType": "0x11"
   },
   {
-    "DTCCode": 8059,
-    "FailureType": 19
+    "DTCCode": "0x1F7B",
+    "FailureType": "0x13"
   },
   {
-    "DTCCode": 8060,
-    "FailureType": 28
+    "DTCCode": "0x1F7C",
+    "FailureType": "0x1C"
   },
   {
-    "DTCCode": 8061,
-    "FailureType": 99
+    "DTCCode": "0x1F7D",
+    "FailureType": "0x63"
   },
   {
-    "DTCCode": 8062,
-    "FailureType": 99
+    "DTCCode": "0x1F7E",
+    "FailureType": "0x63"
   },
   {
-    "DTCCode": 8063,
-    "FailureType": 122
+    "DTCCode": "0x1F7F",
+    "FailureType": "0x7A"
   },
   {
-    "DTCCode": "EOF"
+    "DTCCode": "EOF",
+    "FailureType": null
   }
 ]

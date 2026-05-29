@@ -1,12 +1,22 @@
 [
   {
-    "DTC Code": 1378,
-    "Failure Type": 0,
+    "DTC Code": "0x0562",
+    "Failure Type": "0x00",
+    "Channel Name": null,
+    "Config DID": null,
+    "Config \nDID Length": null,
+    "Config Byte": null,
+    "Config Bit": null,
     "Notes": "低压DTC，不能改变顺序"
   },
   {
-    "DTC Code": 1379,
-    "Failure Type": 0,
+    "DTC Code": "0x0563",
+    "Failure Type": "0x00",
+    "Channel Name": null,
+    "Config DID": null,
+    "Config \nDID Length": null,
+    "Config Byte": null,
+    "Config Bit": null,
     "Notes": "高压DTC，不能改变顺序"
   }
 ]

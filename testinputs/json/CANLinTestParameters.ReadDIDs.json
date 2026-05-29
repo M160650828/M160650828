@@ -1,6 +1,6 @@
 [
   {
-    "DID": 61849,
+    "DID": "0xF199",
     "Length": 4,
     "Support App": "Yes",
     "Support Boot": "No",
@@ -9,10 +9,11 @@
     "Level3": "No",
     "Level5": "No",
     "NRC22": "No",
-    "NRC8x": "No"
+    "NRC8x": "No",
+    "Notes": null
   },
   {
-    "DID": 61831,
+    "DID": "0xF187",
     "Length": 21,
     "Support App": "Yes",
     "Support Boot": "No",
@@ -21,10 +22,11 @@
     "Level3": "No",
     "Level5": "No",
     "NRC22": "No",
-    "NRC8x": "No"
+    "NRC8x": "No",
+    "Notes": null
   },
   {
-    "DID": 61834,
+    "DID": "0xF18A",
     "Length": 6,
     "Support App": "Yes",
     "Support Boot": "No",
@@ -33,10 +35,11 @@
     "Level3": "No",
     "Level5": "No",
     "NRC22": "No",
-    "NRC8x": "No"
+    "NRC8x": "No",
+    "Notes": null
   },
   {
-    "DID": 61840,
+    "DID": "0xF190",
     "Length": 17,
     "Support App": "Yes",
     "Support Boot": "No",
@@ -45,10 +48,11 @@
     "Level3": "No",
     "Level5": "No",
     "NRC22": "No",
-    "NRC8x": "No"
+    "NRC8x": "No",
+    "Notes": null
   },
   {
-    "DID": 61858,
+    "DID": "0xF1A2",
     "Length": 4,
     "Support App": "Yes",
     "Support Boot": "No",
@@ -57,10 +61,11 @@
     "Level3": "No",
     "Level5": "No",
     "NRC22": "No",
-    "NRC8x": "No"
+    "NRC8x": "No",
+    "Notes": null
   },
   {
-    "DID": 61843,
+    "DID": "0xF193",
     "Length": 16,
     "Support App": "Yes",
     "Support Boot": "No",
@@ -69,10 +74,11 @@
     "Level3": "No",
     "Level5": "No",
     "NRC22": "No",
-    "NRC8x": "No"
+    "NRC8x": "No",
+    "Notes": null
   },
   {
-    "DID": 61845,
+    "DID": "0xF195",
     "Length": 16,
     "Support App": "Yes",
     "Support Boot": "No",
@@ -81,10 +87,11 @@
     "Level3": "No",
     "Level5": "No",
     "NRC22": "No",
-    "NRC8x": "No"
+    "NRC8x": "No",
+    "Notes": null
   },
   {
-    "DID": 61824,
+    "DID": "0xF180",
     "Length": 16,
     "Support App": "Yes",
     "Support Boot": "No",
@@ -93,10 +100,11 @@
     "Level3": "No",
     "Level5": "No",
     "NRC22": "No",
-    "NRC8x": "No"
+    "NRC8x": "No",
+    "Notes": null
   },
   {
-    "DID": 61714,
+    "DID": "0xF112",
     "Length": 8,
     "Support App": "Yes",
     "Support Boot": "No",
@@ -105,10 +113,11 @@
     "Level3": "No",
     "Level5": "No",
     "NRC22": "No",
-    "NRC8x": "No"
+    "NRC8x": "No",
+    "Notes": null
   },
   {
-    "DID": 61847,
+    "DID": "0xF197",
     "Length": 8,
     "Support App": "Yes",
     "Support Boot": "No",
@@ -117,10 +126,11 @@
     "Level3": "No",
     "Level5": "No",
     "NRC22": "No",
-    "NRC8x": "No"
+    "NRC8x": "No",
+    "Notes": null
   },
   {
-    "DID": 61715,
+    "DID": "0xF113",
     "Length": 4,
     "Support App": "Yes",
     "Support Boot": "No",
@@ -129,10 +139,11 @@
     "Level3": "No",
     "Level5": "No",
     "NRC22": "No",
-    "NRC8x": "No"
+    "NRC8x": "No",
+    "Notes": null
   },
   {
-    "DID": 61830,
+    "DID": "0xF186",
     "Length": 1,
     "Support App": "Yes",
     "Support Boot": "No",
@@ -141,10 +152,11 @@
     "Level3": "No",
     "Level5": "No",
     "NRC22": "No",
-    "NRC8x": "No"
+    "NRC8x": "No",
+    "Notes": null
   },
   {
-    "DID": 61835,
+    "DID": "0xF18B",
     "Length": 4,
     "Support App": "Yes",
     "Support Boot": "No",
@@ -153,10 +165,11 @@
     "Level3": "No",
     "Level5": "No",
     "NRC22": "No",
-    "NRC8x": "No"
+    "NRC8x": "No",
+    "Notes": null
   },
   {
-    "DID": 61836,
+    "DID": "0xF18C",
     "Length": 24,
     "Support App": "Yes",
     "Support Boot": "No",
@@ -165,10 +178,11 @@
     "Level3": "No",
     "Level5": "No",
     "NRC22": "No",
-    "NRC8x": "No"
+    "NRC8x": "No",
+    "Notes": null
   },
   {
-    "DID": 512,
+    "DID": "0x0200",
     "Length": 1,
     "Support App": "Yes",
     "Support Boot": "No",
@@ -177,10 +191,11 @@
     "Level3": "No",
     "Level5": "No",
     "NRC22": "No",
-    "NRC8x": "No"
+    "NRC8x": "No",
+    "Notes": null
   },
   {
-    "DID": 513,
+    "DID": "0x0201",
     "Length": 1,
     "Support App": "Yes",
     "Support Boot": "No",
@@ -189,10 +204,11 @@
     "Level3": "No",
     "Level5": "No",
     "NRC22": "No",
-    "NRC8x": "No"
+    "NRC8x": "No",
+    "Notes": null
   },
   {
-    "DID": 61697,
+    "DID": "0xF101",
     "Length": 8,
     "Support App": "Yes",
     "Support Boot": "No",
@@ -201,10 +217,11 @@
     "Level3": "No",
     "Level5": "No",
     "NRC22": "No",
-    "NRC8x": "No"
+    "NRC8x": "No",
+    "Notes": null
   },
   {
-    "DID": 61712,
+    "DID": "0xF110",
     "Length": 8,
     "Support App": "Yes",
     "Support Boot": "No",
@@ -213,10 +230,11 @@
     "Level3": "No",
     "Level5": "No",
     "NRC22": "No",
-    "NRC8x": "No"
+    "NRC8x": "No",
+    "Notes": null
   },
   {
-    "DID": 26710,
+    "DID": "0x6856",
     "Length": 1,
     "Support App": "Yes",
     "Support Boot": "No",
@@ -225,10 +243,11 @@
     "Level3": "No",
     "Level5": "No",
     "NRC22": "No",
-    "NRC8x": "No"
+    "NRC8x": "No",
+    "Notes": null
   },
   {
-    "DID": 26712,
+    "DID": "0x6858",
     "Length": 1,
     "Support App": "Yes",
     "Support Boot": "No",
@@ -237,10 +256,11 @@
     "Level3": "No",
     "Level5": "No",
     "NRC22": "No",
-    "NRC8x": "No"
+    "NRC8x": "No",
+    "Notes": null
   },
   {
-    "DID": 26713,
+    "DID": "0x6859",
     "Length": 1,
     "Support App": "Yes",
     "Support Boot": "No",
@@ -249,6 +269,7 @@
     "Level3": "No",
     "Level5": "No",
     "NRC22": "No",
-    "NRC8x": "No"
+    "NRC8x": "No",
+    "Notes": null
   }
 ]

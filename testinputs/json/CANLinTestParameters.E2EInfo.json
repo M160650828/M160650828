@@ -1,21 +1,12 @@
-{
-  "SignalGroupName": {
-    "SiganlName": "EWS_state_Chks",
-    "StartByte": 0,
-    "SignalLength": 8,
-    "DataID": "0x0009"
+[
+  {
+    "SignalGroupName": "SiganlName",
+    "Frame": "FrameName",
+    "Info": "Cluster"
   },
-  "Frame": {
-    "FrameName": "EWS_State",
-    "CANID": "0x9",
-    "DataLength": 8,
-    "Cycle": 40,
-    "Extended": 0,
-    "CANFD": 0
-  },
-  "Info": {
-    "Cluster": "VIU0_CAN3",
-    "Sender": "EWS",
-    "Receiver": "VIU0"
+  {
+    "SignalGroupName": "EWS_state_Chks",
+    "Frame": "EWS_State",
+    "Info": "VIU0_CAN3"
   }
-}
+]

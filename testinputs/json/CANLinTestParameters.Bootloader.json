@@ -21,10 +21,16 @@
     "签名文件路径\n(绝对路径)": "E:\\00_shenbingxue\\framework\\testinputs\\FlashFile\\PLCM_BOD13A001_APP01.06.02_250927_HWV1.03\\pkg-cfg.xml"
   },
   {
+    "编号": null,
+    "刷写包分区\n(A:分区A, B:分区B)": null,
+    "刷写包类型\n(1:driver, 2:app, 3:cal, 4:config 其他:无效)": null,
     "刷写包路径\n(绝对路径)": "E:\\00_shenbingxue\\framework\\testinputs\\FlashFile\\PLCM_BOD13A001_APP01.06.02_250927_HWV1.03\\3-app.hex",
     "签名文件路径\n(绝对路径)": "E:\\00_shenbingxue\\framework\\testinputs\\FlashFile\\PLCM_BOD13A001_APP01.06.02_250927_HWV1.03\\pkg-cfg.xml"
   },
   {
+    "编号": null,
+    "刷写包分区\n(A:分区A, B:分区B)": null,
+    "刷写包类型\n(1:driver, 2:app, 3:cal, 4:config 其他:无效)": null,
     "刷写包路径\n(绝对路径)": "E:\\00_shenbingxue\\framework\\testinputs\\FlashFile\\PLCM_BOD13A001_APP01.06.02_250927_HWV1.03\\4-app.hex",
     "签名文件路径\n(绝对路径)": "E:\\00_shenbingxue\\framework\\testinputs\\FlashFile\\PLCM_BOD13A001_APP01.06.02_250927_HWV1.03\\pkg-cfg.xml"
   },
@@ -43,10 +49,16 @@
     "签名文件路径\n(绝对路径)": "E:\\00_shenbingxue\\framework\\testinputs\\FlashFile\\PLCM_BOD13A001_APP01.06.02_250927_HWV1.03\\pkg-cfg.xml"
   },
   {
+    "编号": null,
+    "刷写包分区\n(A:分区A, B:分区B)": null,
+    "刷写包类型\n(1:driver, 2:app, 3:cal, 4:config 其他:无效)": null,
     "刷写包路径\n(绝对路径)": "E:\\00_shenbingxue\\framework\\testinputs\\FlashFile\\PLCM_BOD13A001_APP01.06.02_250927_HWV1.03\\3-app.hex",
     "签名文件路径\n(绝对路径)": "E:\\00_shenbingxue\\framework\\testinputs\\FlashFile\\PLCM_BOD13A001_APP01.06.02_250927_HWV1.03\\pkg-cfg.xml"
   },
   {
+    "编号": null,
+    "刷写包分区\n(A:分区A, B:分区B)": null,
+    "刷写包类型\n(1:driver, 2:app, 3:cal, 4:config 其他:无效)": null,
     "刷写包路径\n(绝对路径)": "E:\\00_shenbingxue\\framework\\testinputs\\FlashFile\\PLCM_BOD13A001_APP01.06.02_250927_HWV1.03\\4-app.hex",
     "签名文件路径\n(绝对路径)": "E:\\00_shenbingxue\\framework\\testinputs\\FlashFile\\PLCM_BOD13A001_APP01.06.02_250927_HWV1.03\\pkg-cfg.xml"
   }

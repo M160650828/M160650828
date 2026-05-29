@@ -1,51 +1,242 @@
-{
-  "VarName": "VarValue",
-  "CanTpFunReqID": "0x7DF",
-  "CanTpPhyReqID": "0x661",
-  "CanTpRespID": "0x669",
-  "P2ClientTimeout": 150,
-  "P2EnhanceClientTimeout": 5100,
-  "DiagRequestTimeout": 5000,
-  "MaxRespPedCount": 10,
-  "WithFBL": 1,
-  "CanFDMode": 0,
-  "MaxCanFDDataLength": 8,
-  "DiagServicesIntervalTime": 2,
-  "APPFrameID": "0x2F3",
-  "NMFrameID": "0x42E",
-  "LowVoltage": 7,
-  "HighVoltage": 17,
-  "N_AsTimeout": 500,
-  "N_ArTimeout": 500,
-  "N_BsTimeout": 1000,
-  "N_CrTimeout": 1000,
-  "N_Ar_BrTiming": 25,
-  "N_Cs_AsTiming": 50,
-  "P2Timeout": 50,
-  "P2_Client": 150,
-  "STmin_Client": "0x0",
-  "STmin_Service": "0xA",
-  "PCIType_SF": "0x0",
-  "PCIType_FF": "0x10",
-  "PCIType_CF": "0x20",
-  "PCIType_FC": "0x30",
-  "Channel": 1,
-  "DID": "0xF184",
-  "N_AsTimeout_Boot": 25,
-  "N_ArTimeout_Boot": 25,
-  "N_BsTimeout_Boot": 25,
-  "N_CrTimeout_Boot": 25,
-  "N_Ar_BrTiming_Boot": 2,
-  "N_Cs_AsTiming_Boot": 2,
-  "ECUHWVersion": "A1111",
-  "ECUSoftID": "A1111",
-  "StayInBootSupportFlag": 0,
-  "PartSupportFlag": 0,
-  "WriteDID": "0xF190",
-  "WriteDIDData": "0x3131313131313131313131313131313131",
-  "ConfigDataDID": "0xF010",
-  "ConfigDataDIDData": "0x0000",
-  "SBLMemoryAddress": "0x0000FFFF",
-  "SBLMemorySize": "0x0000FFFF",
-  "WaitDigprotocalStable": 15000
-}
+[
+  {
+    "VarName": "CanTpFunReqID",
+    "VarValue": "0x7DF",
+    "Notes": "(0x600-0x7FF), 16进制"
+  },
+  {
+    "VarName": "CanTpPhyReqID",
+    "VarValue": "0x661",
+    "Notes": "(0x600-0x7FF), 16进制"
+  },
+  {
+    "VarName": "CanTpRespID",
+    "VarValue": "0x669",
+    "Notes": "(0x600-0x7FF), 16进制"
+  },
+  {
+    "VarName": "P2ClientTimeout",
+    "VarValue": 150,
+    "Notes": "(50-2000ms), 10进制，接收等待超时时间"
+  },
+  {
+    "VarName": "P2EnhanceClientTimeout",
+    "VarValue": 5100,
+    "Notes": "(2000-5100ms), 10进制，收到78 Response Pedding之后，接收等待超时时间"
+  },
+  {
+    "VarName": "DiagRequestTimeout",
+    "VarValue": 5000,
+    "Notes": "(150-10000ms)，10进制，发送等待超时时间，发送多帧需要等待时间"
+  },
+  {
+    "VarName": "MaxRespPedCount",
+    "VarValue": 10,
+    "Notes": "(2-20次)，10进制，最大接收78 Response Pedding次数"
+  },
+  {
+    "VarName": "WithFBL",
+    "VarValue": 1,
+    "Notes": "0，不存在；1，存在引导加载程序"
+  },
+  {
+    "VarName": "CanFDMode",
+    "VarValue": 0,
+    "Notes": "0代表CAN，1代表CANFD"
+  },
+  {
+    "VarName": "MaxCanFDDataLength",
+    "VarValue": 8,
+    "Notes": "CanFD数据最大长度，8或64有效，其他值会默认为64"
+  },
+  {
+    "VarName": "DiagServicesIntervalTime",
+    "VarValue": 2,
+    "Notes": "诊断服务间隔时间，ms （范围：2-5）"
+  },
+  {
+    "VarName": "APPFrameID",
+    "VarValue": "0x2F3",
+    "Notes": "DUT发送的应用周期报文"
+  },
+  {
+    "VarName": "NMFrameID",
+    "VarValue": "0x42E",
+    "Notes": "DUT发送的网络管理报文"
+  },
+  {
+    "VarName": "LowVoltage",
+    "VarValue": 7,
+    "Notes": "低压故障电压值，单位：V"
+  },
+  {
+    "VarName": "HighVoltage",
+    "VarValue": 17,
+    "Notes": "高压故障电压值，单位：V"
+  },
+  {
+    "VarName": "N_AsTimeout",
+    "VarValue": 500,
+    "Notes": null
+  },
+  {
+    "VarName": "N_ArTimeout",
+    "VarValue": 500,
+    "Notes": null
+  },
+  {
+    "VarName": "N_BsTimeout",
+    "VarValue": 1000,
+    "Notes": null
+  },
+  {
+    "VarName": "N_CrTimeout",
+    "VarValue": 1000,
+    "Notes": null
+  },
+  {
+    "VarName": "N_Ar_BrTiming",
+    "VarValue": 25,
+    "Notes": null
+  },
+  {
+    "VarName": "N_Cs_AsTiming",
+    "VarValue": 50,
+    "Notes": null
+  },
+  {
+    "VarName": "P2Timeout",
+    "VarValue": 50,
+    "Notes": null
+  },
+  {
+    "VarName": "P2_Client",
+    "VarValue": 150,
+    "Notes": null
+  },
+  {
+    "VarName": "STmin_Client",
+    "VarValue": "0x0",
+    "Notes": null
+  },
+  {
+    "VarName": "STmin_Service",
+    "VarValue": "0xA",
+    "Notes": null
+  },
+  {
+    "VarName": "PCIType_SF",
+    "VarValue": "0x0",
+    "Notes": null
+  },
+  {
+    "VarName": "PCIType_FF",
+    "VarValue": "0x10",
+    "Notes": null
+  },
+  {
+    "VarName": "PCIType_CF",
+    "VarValue": "0x20",
+    "Notes": null
+  },
+  {
+    "VarName": "PCIType_FC",
+    "VarValue": "0x30",
+    "Notes": null
+  },
+  {
+    "VarName": "Channel",
+    "VarValue": 1,
+    "Notes": "硬件实际测试通道"
+  },
+  {
+    "VarName": "DID",
+    "VarValue": "0xF184",
+    "Notes": "用于编程会话下的DID"
+  },
+  {
+    "VarName": "N_AsTimeout_Boot",
+    "VarValue": 25,
+    "Notes": "用于编程会话下的网络层时序参数"
+  },
+  {
+    "VarName": "N_ArTimeout_Boot",
+    "VarValue": 25,
+    "Notes": "用于编程会话下的网络层时序参数"
+  },
+  {
+    "VarName": "N_BsTimeout_Boot",
+    "VarValue": 25,
+    "Notes": "用于编程会话下的网络层时序参数"
+  },
+  {
+    "VarName": "N_CrTimeout_Boot",
+    "VarValue": 25,
+    "Notes": "用于编程会话下的网络层时序参数"
+  },
+  {
+    "VarName": "N_Ar_BrTiming_Boot",
+    "VarValue": 2,
+    "Notes": "用于编程会话下的网络层时序参数"
+  },
+  {
+    "VarName": "N_Cs_AsTiming_Boot",
+    "VarValue": 2,
+    "Notes": "用于编程会话下的网络层时序参数"
+  },
+  {
+    "VarName": "ECUHWVersion",
+    "VarValue": "A1111",
+    "Notes": "DUT硬件版本，ASCII格式"
+  },
+  {
+    "VarName": "ECUSoftID",
+    "VarValue": "A1111",
+    "Notes": "DUT的SoftID，ASCII格式"
+  },
+  {
+    "VarName": "StayInBootSupportFlag",
+    "VarValue": 0,
+    "Notes": "DUT是否支持StayInBoot指令，0：不支持；1：支持"
+  },
+  {
+    "VarName": "PartSupportFlag",
+    "VarValue": 0,
+    "Notes": "DUT是否支持AB分区，0：不支持；1：支持"
+  },
+  {
+    "VarName": "WriteDID",
+    "VarValue": "0xF190",
+    "Notes": "Level1下支持2E写入的DID"
+  },
+  {
+    "VarName": "WriteDIDData",
+    "VarValue": "0x3131313131313131313131313131313131",
+    "Notes": "Level1下支持2E写入的DID的写入的数据"
+  },
+  {
+    "VarName": "ConfigDataDID",
+    "VarValue": "0xF010",
+    "Notes": "支持2E写入的配置字DID"
+  },
+  {
+    "VarName": "ConfigDataDIDData",
+    "VarValue": "0x0000",
+    "Notes": "支持2E写入的配置字DID的写入的数据"
+  },
+  {
+    "VarName": "SBLMemoryAddress",
+    "VarValue": "0x0000FFFF",
+    "Notes": "引导加载程序起始地址"
+  },
+  {
+    "VarName": "SBLMemorySize",
+    "VarValue": "0x0000FFFF",
+    "Notes": "引导加载程序地址长度"
+  },
+  {
+    "VarName": "WaitDigprotocalStable",
+    "VarValue": 15000,
+    "Notes": "单位毫秒等待ECU协议栈稳定时间"
+  }
+]

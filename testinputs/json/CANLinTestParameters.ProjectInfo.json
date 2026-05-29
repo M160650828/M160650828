@@ -1,26 +1,163 @@
-{
-  "VarName": "VarValue",
-  "NetWorkHardwareSN": 30513024300068,
-  "DigitalMultimeterType": "SDM3055",
-  "DigitalMultimeterPort": 4,
-  "DigitalMultimeterName": "USB0::0xF4EC::0x1202::SDM35HBC901178::INSTR",
-  "PowerSupply": null,
-  "PowerOnFun": "POWERON",
-  "PowerType": "WK-PS",
-  "PowerPort": 2,
-  "PowerName": null,
-  "PowerBaudRate": 9600,
-  "QuadrantPower": null,
-  "QuadrantPowerType": "IT6431",
-  "QuadrantPowerPort": 12,
-  "QuadrantPowerName": "USB0::0x2EC7::0x6431::800626011807070009::INSTR",
-  "Scope": null,
-  "ScopeType": "PICO6000",
-  "KeysightScopeName": "USB0::0x2A8D::0x1797::CN57096598::0::INSTR",
-  "DUT": null,
-  "DutConnectType": "WK5249",
-  "DutPowerOnType": "WK5249",
-  "ECU": null,
-  "ECUIndex": 4,
-  "ECUType": 1
-}
+[
+  {
+    "VarName": "NetWorkHardwareSN",
+    "VarType": "dword",
+    "VarValue": 30513024300068,
+    "VarUnit": null,
+    "Description": "仅SolarONE工程使用(读取设备背面条形码下方14位SN号)"
+  },
+  {
+    "VarName": "DigitalMultimeterType",
+    "VarType": "char",
+    "VarValue": "SDM3055",
+    "VarUnit": null,
+    "Description": "万用表类型SDM3055，尚界未使用"
+  },
+  {
+    "VarName": "DigitalMultimeterPort",
+    "VarType": "dword",
+    "VarValue": 4,
+    "VarUnit": null,
+    "Description": "万用表端口，尚界未使用"
+  },
+  {
+    "VarName": "DigitalMultimeterName",
+    "VarType": "char",
+    "VarValue": "USB0::0xF4EC::0x1202::SDM35HBC901178::INSTR",
+    "VarUnit": null,
+    "Description": "万用表设备名称（仅适用SDM3055型号），尚界未使用"
+  },
+  {
+    "VarName": "PowerSupply",
+    "VarType": null,
+    "VarValue": null,
+    "VarUnit": null,
+    "Description": null
+  },
+  {
+    "VarName": "PowerOnFun",
+    "VarType": "char",
+    "VarValue": "POWERON",
+    "VarUnit": null,
+    "Description": "电源功能：供电电源"
+  },
+  {
+    "VarName": "PowerType",
+    "VarType": "char",
+    "VarValue": "WK-PS",
+    "VarUnit": null,
+    "Description": "电源类型   可选类型：TDK、EA、ITECH、VH1160、HSPY、WK-PS"
+  },
+  {
+    "VarName": "PowerPort",
+    "VarType": "dword",
+    "VarValue": 2,
+    "VarUnit": null,
+    "Description": "电源端口"
+  },
+  {
+    "VarName": "PowerName",
+    "VarType": "char",
+    "VarValue": null,
+    "VarUnit": null,
+    "Description": "预留"
+  },
+  {
+    "VarName": "PowerBaudRate",
+    "VarType": "dword",
+    "VarValue": 9600,
+    "VarUnit": null,
+    "Description": "电源波特率"
+  },
+  {
+    "VarName": "QuadrantPower",
+    "VarType": null,
+    "VarValue": null,
+    "VarUnit": null,
+    "Description": null
+  },
+  {
+    "VarName": "QuadrantPowerType",
+    "VarType": "char",
+    "VarValue": "IT6431",
+    "VarUnit": null,
+    "Description": "地漂电源类型：IT6431，尚界未使用"
+  },
+  {
+    "VarName": "QuadrantPowerPort",
+    "VarType": "dword",
+    "VarValue": 12,
+    "VarUnit": null,
+    "Description": "地漂电源控制接入继电器串口号，尚界未使用"
+  },
+  {
+    "VarName": "QuadrantPowerName",
+    "VarType": "char",
+    "VarValue": "USB0::0x2EC7::0x6431::800626011807070009::INSTR",
+    "VarUnit": null,
+    "Description": "地漂电源名称：仅适用IT6431型号，尚界未使用"
+  },
+  {
+    "VarName": "Scope",
+    "VarType": null,
+    "VarValue": null,
+    "VarUnit": null,
+    "Description": null
+  },
+  {
+    "VarName": "ScopeType",
+    "VarType": "char",
+    "VarValue": "PICO6000",
+    "VarUnit": null,
+    "Description": "示波器类型    可选类型：PICO6000、PICO5000、KEYSIGHT，尚界未使用"
+  },
+  {
+    "VarName": "KeysightScopeName",
+    "VarType": "char",
+    "VarValue": "USB0::0x2A8D::0x1797::CN57096598::0::INSTR",
+    "VarUnit": null,
+    "Description": "示波器名称（仅适用KEYSIGHT示波器）VISA Address，尚界未使用，尚界未使用"
+  },
+  {
+    "VarName": "DUT",
+    "VarType": null,
+    "VarValue": null,
+    "VarUnit": null,
+    "Description": null
+  },
+  {
+    "VarName": "DutConnectType",
+    "VarType": "char",
+    "VarValue": "WK5249",
+    "VarUnit": null,
+    "Description": "可选类型：ETS6124、WK5249"
+  },
+  {
+    "VarName": "DutPowerOnType",
+    "VarType": "char",
+    "VarValue": "WK5249",
+    "VarUnit": null,
+    "Description": "KL30 KL15上电设备：ETS6124、WK5249"
+  },
+  {
+    "VarName": "ECU",
+    "VarType": null,
+    "VarValue": null,
+    "VarUnit": null,
+    "Description": null
+  },
+  {
+    "VarName": "ECUIndex",
+    "VarType": "dword",
+    "VarValue": 4,
+    "VarUnit": null,
+    "Description": "指定测试的ECU，对应到参数配置表中ECUInfo的ECUIndex列"
+  },
+  {
+    "VarName": "ECUType",
+    "VarType": "dword",
+    "VarValue": 1,
+    "VarUnit": null,
+    "Description": "测试ECU类型，1:CAN,2:CANFD,3:LIN主,4:LIN从"
+  }
+]

@@ -1,48 +1,317 @@
-{
-  "VarName": "VarValue",
-  "Vnormal": 12,
-  "Tstable": 2000,
-  "VlowStand": 8,
-  "VhighStand": 18,
-  "VtestRange": 1,
-  "Vstep": 0.3,
-  "TvStepDelay": 500,
-  "BRarbitration": 500,
-  "BRdata": 2000,
-  "ExtendMsgID": "0x100",
-  "RemoteMsgID": "0x100",
-  "ExtendandRemoteMsgID": "0x99",
-  "BusloadNormal": 20,
-  "BusloadMedium": 50,
-  "BusloadHigh": 70,
-  "TperiodDeviation1": 20,
-  "TperiodDeviation2": 10,
-  "TperiodDeviation3": 30,
-  "TperiodDeviation4": 20,
-  "TperiodDeviationDelay": 1,
-  "Tinitial": 60,
-  "UnuseBitValue": 0,
-  "TreceiveMsgDelay": 1,
-  "TfaultDelay": 1,
-  "TfaultRecoveryMax": 600,
-  "TdefaultWait": 1,
-  "NdefaultRepeat": 1,
-  "NfaultRepeat": 1,
-  "PowerModeMsgID": "0x1D3",
-  "SpeedMsgID": "0x117",
-  "TimeMsgID": "0x5E2",
-  "EngineSpeedMsgID": "0x19a",
-  "GearMsgID": "0x184",
-  "OccurrenceCounterExtendedDataID": "0x1",
-  "OccurrenceCounterByteIndex": 1,
-  "AgeingCounterExtendedDataID": 0,
-  "AgeingCounterByteIndex": 0,
-  "OperationCycle": 1,
-  "Tcount": 100,
-  "TwakeupMax": 200,
-  "EnableDTCMessaegID": "0x1C2",
-  "EnableDTCSignalName": "PowerMode",
-  "EnableDTCSignalStartBit": 38,
-  "EnableDTCSignalBitLength": 10,
-  "Partner_Msg": "0x158"
-}
+[
+  {
+    "VarName": "Vnormal",
+    "VarType": "float",
+    "VarValue": 12,
+    "VarUnit": "V",
+    "Description": "ECU供电电压"
+  },
+  {
+    "VarName": "Tstable",
+    "VarType": "dword",
+    "VarValue": 2000,
+    "VarUnit": "ms",
+    "Description": "等待通信稳定时间"
+  },
+  {
+    "VarName": "VlowStand",
+    "VarType": "float",
+    "VarValue": 8,
+    "VarUnit": "V",
+    "Description": "正常通信最小电压标准值"
+  },
+  {
+    "VarName": "VhighStand",
+    "VarType": "float",
+    "VarValue": 18,
+    "VarUnit": "V",
+    "Description": "正常通信最大电压标准值"
+  },
+  {
+    "VarName": "VtestRange",
+    "VarType": "float",
+    "VarValue": 1,
+    "VarUnit": "V",
+    "Description": "测试电压调整范围"
+  },
+  {
+    "VarName": "Vstep",
+    "VarType": "float",
+    "VarValue": 0.3,
+    "VarUnit": "V",
+    "Description": "每步测试电压调整值"
+  },
+  {
+    "VarName": "TvStepDelay",
+    "VarType": "dword",
+    "VarValue": 500,
+    "VarUnit": "ms",
+    "Description": "每步测试电压调整间隔时间"
+  },
+  {
+    "VarName": "BRarbitration",
+    "VarType": "float",
+    "VarValue": 500,
+    "VarUnit": "kbit/s",
+    "Description": "仲裁场通信波特率"
+  },
+  {
+    "VarName": "BRdata",
+    "VarType": "float",
+    "VarValue": 2000,
+    "VarUnit": "kbit/s",
+    "Description": "数据场通信波特率"
+  },
+  {
+    "VarName": "ExtendMsgID",
+    "VarType": "dword",
+    "VarValue": "0x100",
+    "VarUnit": null,
+    "Description": "扩展帧报文ID"
+  },
+  {
+    "VarName": "RemoteMsgID",
+    "VarType": "dword",
+    "VarValue": "0x100",
+    "VarUnit": null,
+    "Description": "远程帧报文ID"
+  },
+  {
+    "VarName": "ExtendandRemoteMsgID",
+    "VarType": "dword",
+    "VarValue": "0x99",
+    "VarUnit": null,
+    "Description": null
+  },
+  {
+    "VarName": "BusloadNormal",
+    "VarType": "float",
+    "VarValue": 20,
+    "VarUnit": null,
+    "Description": "总线负载率标准值"
+  },
+  {
+    "VarName": "BusloadMedium",
+    "VarType": "float",
+    "VarValue": 50,
+    "VarUnit": "%",
+    "Description": "总线中负载率标准值"
+  },
+  {
+    "VarName": "BusloadHigh",
+    "VarType": "float",
+    "VarValue": 70,
+    "VarUnit": "%",
+    "Description": "总线高负载率测试值"
+  },
+  {
+    "VarName": "TperiodDeviation1",
+    "VarType": "float",
+    "VarValue": 20,
+    "VarUnit": "%",
+    "Description": "20ms以内周期报文偏移范围"
+  },
+  {
+    "VarName": "TperiodDeviation2",
+    "VarType": "float",
+    "VarValue": 10,
+    "VarUnit": "%",
+    "Description": "20ms以上周期报文偏移范围"
+  },
+  {
+    "VarName": "TperiodDeviation3",
+    "VarType": "float",
+    "VarValue": 30,
+    "VarUnit": "%",
+    "Description": "总线中负载通信速率下，20ms以内周期报文偏移范围"
+  },
+  {
+    "VarName": "TperiodDeviation4",
+    "VarType": "float",
+    "VarValue": 20,
+    "VarUnit": "%",
+    "Description": "总线中负载通信速率下，20ms以上周期报文偏移范围"
+  },
+  {
+    "VarName": "TperiodDeviationDelay",
+    "VarType": "dword",
+    "VarValue": 1,
+    "VarUnit": "min",
+    "Description": "周期报文偏移测试保持时间"
+  },
+  {
+    "VarName": "Tinitial",
+    "VarType": "dword",
+    "VarValue": 60,
+    "VarUnit": "s",
+    "Description": "DUT唤醒后，发送完1轮所有报文之后的周期时间"
+  },
+  {
+    "VarName": "UnuseBitValue",
+    "VarType": "dword",
+    "VarValue": 0,
+    "VarUnit": null,
+    "Description": "未使用位填充数据值"
+  },
+  {
+    "VarName": "TreceiveMsgDelay",
+    "VarType": "dword",
+    "VarValue": 1,
+    "VarUnit": "min",
+    "Description": "接收报文测试保持时间"
+  },
+  {
+    "VarName": "TfaultDelay",
+    "VarType": "dword",
+    "VarValue": 1,
+    "VarUnit": "min",
+    "Description": "通信故障保持时间"
+  },
+  {
+    "VarName": "TfaultRecoveryMax",
+    "VarType": "dword",
+    "VarValue": 600,
+    "VarUnit": "ms",
+    "Description": "通信故障恢复最大时间"
+  },
+  {
+    "VarName": "TdefaultWait",
+    "VarType": "dword",
+    "VarValue": 1,
+    "VarUnit": "s",
+    "Description": "默认等待时间"
+  },
+  {
+    "VarName": "NdefaultRepeat",
+    "VarType": "dword",
+    "VarValue": 1,
+    "VarUnit": null,
+    "Description": "默认重复测试次数"
+  },
+  {
+    "VarName": "NfaultRepeat",
+    "VarType": "dword",
+    "VarValue": 1,
+    "VarUnit": null,
+    "Description": "故障重复测试次数"
+  },
+  {
+    "VarName": "PowerModeMsgID",
+    "VarType": "dword",
+    "VarValue": "0x1D3",
+    "VarUnit": null,
+    "Description": null
+  },
+  {
+    "VarName": "SpeedMsgID",
+    "VarType": "dword",
+    "VarValue": "0x117",
+    "VarUnit": null,
+    "Description": null
+  },
+  {
+    "VarName": "TimeMsgID",
+    "VarType": "dword",
+    "VarValue": "0x5E2",
+    "VarUnit": null,
+    "Description": null
+  },
+  {
+    "VarName": "EngineSpeedMsgID",
+    "VarType": "dword",
+    "VarValue": "0x19a",
+    "VarUnit": null,
+    "Description": null
+  },
+  {
+    "VarName": "GearMsgID",
+    "VarType": "dword",
+    "VarValue": "0x184",
+    "VarUnit": null,
+    "Description": null
+  },
+  {
+    "VarName": "OccurrenceCounterExtendedDataID",
+    "VarType": "dword",
+    "VarValue": "0x1",
+    "VarUnit": null,
+    "Description": "包含OccurrenceCounter信息的扩展信息ID，没有写0x0"
+  },
+  {
+    "VarName": "OccurrenceCounterByteIndex",
+    "VarType": "dword",
+    "VarValue": 1,
+    "VarUnit": null,
+    "Description": "OccurrenceCounter信息在扩展信息中的字节位置"
+  },
+  {
+    "VarName": "AgeingCounterExtendedDataID",
+    "VarType": "dword",
+    "VarValue": 0,
+    "VarUnit": null,
+    "Description": "包含AgeingCounter信息的扩展信息ID，没有写0x0"
+  },
+  {
+    "VarName": "AgeingCounterByteIndex",
+    "VarType": "dword",
+    "VarValue": 0,
+    "VarUnit": null,
+    "Description": "AgeingCounter信息在扩展信息中的字节位置"
+  },
+  {
+    "VarName": "OperationCycle",
+    "VarType": "dword",
+    "VarValue": 1,
+    "VarUnit": null,
+    "Description": "0:唤醒报文休眠唤醒周期 1：IGN ON OFF周期"
+  },
+  {
+    "VarName": "Tcount",
+    "VarType": "dword",
+    "VarValue": 100,
+    "VarUnit": null,
+    "Description": "压力测试次数"
+  },
+  {
+    "VarName": "TwakeupMax",
+    "VarType": "dword",
+    "VarValue": 200,
+    "VarUnit": "ms",
+    "Description": "DUT最大唤醒时间"
+  },
+  {
+    "VarName": "EnableDTCMessaegID",
+    "VarType": "dword",
+    "VarValue": "0x1C2",
+    "VarUnit": null,
+    "Description": null
+  },
+  {
+    "VarName": "EnableDTCSignalName",
+    "VarType": "dword",
+    "VarValue": "PowerMode",
+    "VarUnit": null,
+    "Description": null
+  },
+  {
+    "VarName": "EnableDTCSignalStartBit",
+    "VarType": "dword",
+    "VarValue": 38,
+    "VarUnit": null,
+    "Description": null
+  },
+  {
+    "VarName": "EnableDTCSignalBitLength",
+    "VarType": "dword",
+    "VarValue": 10,
+    "VarUnit": null,
+    "Description": null
+  },
+  {
+    "VarName": "Partner_Msg",
+    "VarType": "dword",
+    "VarValue": "0x158",
+    "VarUnit": null,
+    "Description": null
+  }
+]

@@ -1,0 +1,36 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+test_log_report/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Backup
+*.bak
+
+# Local files
+README.md
+bootstrap.bat
+setup_git_submodules.ps1

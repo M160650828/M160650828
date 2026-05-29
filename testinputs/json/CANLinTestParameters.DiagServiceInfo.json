@@ -1,28 +1,132 @@
-{
-  "ServicesSupportedList": "0x10,0x11,0x14,0x19,0x22,0x27,0x28,0x2E,0x2F,0x31,0x34,0x35,0x36,0x37,0x3E,0x85",
-  "SID10SubFunSupportList": "0x01,0x02,0x03",
-  "SID11SubFunSupportList": 1,
-  "SID19SubFunSupportList": "0x01,0x02,0x03,0x04,0x06,0x0A",
-  "SID27SubFunSupportList": "0x01,0x02,0x03,0x04,0x05,0x06,0x09,0x0A,0x11,0x12",
-  "SID28SubFunSupportList": "0x00,0x03",
-  "SID28CommTypeSupportList": "0x01,0x03",
-  "SID3ESubFunSupportList": "0x00,0x80",
-  "SID85SubFunSupportList": "0x01,0x02",
-  "SID31SubFunSupportList": "0x01,0x02,0x03",
-  "MinSubID": 0,
-  "MaxSubID": 16,
-  "MinDID": 0,
-  "MaxDID": 16,
-  "MaxMulDIDNumber": 1,
-  "DTCStatusAvlMask": 255,
-  "WaitFaultCheckTime": 5000,
-  "SessionTime": 200,
-  "ResetTime": 5000,
-  "SID11_DefaultSession": 1,
-  "SID85_Programming": 0,
-  "SID11_Sub03_APP": 0,
-  "SID11_Sub03_Boot": 0,
-  "FunRequestTimeInterval": 2000,
-  "FirstSnapshotNum": 1,
-  "LastSnapshotNum": 2
-}
+[
+  {
+    "VarName": "ServicesSupportedList",
+    "VarValue": "0x10,0x11,0x14,0x19,0x22,0x27,0x28,0x2E,0x2F,0x31,0x34,0x35,0x36,0x37,0x3E,0x85",
+    "说明": "ECU支持的服务ID列表"
+  },
+  {
+    "VarName": "SID10SubFunSupportList",
+    "VarValue": "0x01,0x02,0x03",
+    "说明": "10服务支持的子功能"
+  },
+  {
+    "VarName": "SID11SubFunSupportList",
+    "VarValue": "0x01",
+    "说明": "11服务支持的子功能"
+  },
+  {
+    "VarName": "SID19SubFunSupportList",
+    "VarValue": "0x01,0x02,0x03,0x04,0x06,0x0A",
+    "说明": "19服务支持的子功能"
+  },
+  {
+    "VarName": "SID27SubFunSupportList",
+    "VarValue": "0x01,0x02,0x03,0x04,0x05,0x06,0x09,0x0A,0x11,0x12",
+    "说明": "27服务支持的子功能"
+  },
+  {
+    "VarName": "SID28SubFunSupportList",
+    "VarValue": "0x00,0x03",
+    "说明": "28服务支持的子功能"
+  },
+  {
+    "VarName": "SID28CommTypeSupportList",
+    "VarValue": "0x01,0x03",
+    "说明": "28服务支持的通信类型"
+  },
+  {
+    "VarName": "SID3ESubFunSupportList",
+    "VarValue": "0x00,0x80",
+    "说明": "3E服务支持的子功能"
+  },
+  {
+    "VarName": "SID85SubFunSupportList",
+    "VarValue": "0x01,0x02",
+    "说明": "85服务支持的子功能"
+  },
+  {
+    "VarName": "SID31SubFunSupportList",
+    "VarValue": "0x01,0x02,0x03",
+    "说明": "31服务支持的子功能"
+  },
+  {
+    "VarName": "MinSubID",
+    "VarValue": "0x00",
+    "说明": "最小SubID(用于NRC12遍历最小的询值,不设值时默认为0x00)"
+  },
+  {
+    "VarName": "MaxSubID",
+    "VarValue": "0x10",
+    "说明": "最大SubID(用于NRC12遍历最大的询值,不设值时默认为0x10,最大0xFF)"
+  },
+  {
+    "VarName": "MinDID",
+    "VarValue": "0x0000",
+    "说明": "最小DID(用于NRC31遍历最小的询值,不设值时默认为0x00)"
+  },
+  {
+    "VarName": "MaxDID",
+    "VarValue": "0x0010",
+    "说明": "最大DID(用于NRC31遍历最小的询值,不设值时默认为0x10,最大0xFFFF)"
+  },
+  {
+    "VarName": "MaxMulDIDNumber",
+    "VarValue": 1,
+    "说明": "22服务同时读取DID数目，1-10有效"
+  },
+  {
+    "VarName": "DTCStatusAvlMask",
+    "VarValue": "0xFF",
+    "说明": "DTC Status Available Mask  (发送端)"
+  },
+  {
+    "VarName": "WaitFaultCheckTime",
+    "VarValue": 5000,
+    "说明": "85服务功能检查测试中,等待故障检测时间,单位:ms"
+  },
+  {
+    "VarName": "SessionTime",
+    "VarValue": 200,
+    "说明": "(标称500ms),10进制,APP跳转到Boot时间以及Boot跳转转到APP时间,单位:ms"
+  },
+  {
+    "VarName": "ResetTime",
+    "VarValue": 5000,
+    "说明": "11服务请求复位后等待重启时间，单位：ms"
+  },
+  {
+    "VarName": "SID11_DefaultSession",
+    "VarValue": 1,
+    "说明": "0，不支持；1，支持，默认会话下，11 是否支持"
+  },
+  {
+    "VarName": "SID85_Programming",
+    "VarValue": 0,
+    "说明": "0, 不支持; 1, 支持, 85服务在编程会话下支持与否"
+  },
+  {
+    "VarName": "SID11_Sub03_APP",
+    "VarValue": 0,
+    "说明": "0, 不支持; 1, 支持, 11服务子服务03在APP下支持与否"
+  },
+  {
+    "VarName": "SID11_Sub03_Boot",
+    "VarValue": 0,
+    "说明": "0, 不支持; 1, 支持, 11服务子服务03在Boot下支持与否"
+  },
+  {
+    "VarName": "FunRequestTimeInterval",
+    "VarValue": 2000,
+    "说明": "连续两条功能寻址诊断请求的最小时间间隔,单位:ms"
+  },
+  {
+    "VarName": "FirstSnapshotNum",
+    "VarValue": "0X01",
+    "说明": "第一次快照数据号,不支持则写0x0"
+  },
+  {
+    "VarName": "LastSnapshotNum",
+    "VarValue": "0X02",
+    "说明": "最近一次快照数据号,不支持则写0x0"
+  }
+]

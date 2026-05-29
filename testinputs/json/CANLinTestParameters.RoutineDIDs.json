@@ -1,6 +1,6 @@
 [
   {
-    "DID": 30193,
+    "DID": "0x75F1",
     "$31 01 ReqLength": 0,
     "$31 01 RespLength": 2,
     "$31 02 ReqLength": "No",
@@ -14,6 +14,7 @@
     "Level3": "No",
     "Level5": "No",
     "NRC22": "Yes",
-    "NRC8x": "No"
+    "NRC8x": "No",
+    "Notes": null
   }
 ]

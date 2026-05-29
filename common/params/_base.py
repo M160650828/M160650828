@@ -54,6 +54,21 @@ class ParamSource:
             return {} if name not in ("ChannelMapping", "RoutingInfo") else []
 
 
+def to_flat_dict(data: Any) -> Dict[str, Any]:
+    """将 VarName/VarValue 列表格式或字典统一转为平铺字典"""
+    if isinstance(data, dict):
+        return dict(data)
+    if isinstance(data, list):
+        result = {}
+        for item in data:
+            if isinstance(item, dict):
+                key = item.get("VarName")
+                if key is not None:
+                    result[key] = item.get("VarValue")
+        return result
+    return {}
+
+
 class Fmt:
     """参数格式转换"""
     @staticmethod

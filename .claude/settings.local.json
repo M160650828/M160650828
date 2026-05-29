@@ -1,7 +1,27 @@
 {
   "permissions": {
     "allow": [
-      "Bash(C:/Users/user/AppData/Local/Python/pythoncore-3.14-64/python.exe -c ' *)"
+      "Bash(C:/Users/user/AppData/Local/Python/pythoncore-3.14-64/python.exe -c ' *)",
+      "Bash(claude --version)",
+      "Bash(claude-code --version)",
+      "Bash(code --list-extensions --show-versions)",
+      "Bash(code --install-extension anthropic.claude-code@2.1.150 --force)",
+      "Bash(code --version)",
+      "Bash(curl -s https://marketplace.visualstudio.com/_apis/public/gallery/extensionquery -H 'Content-Type: application/json' -H 'Accept: application/json;api-version=6.0-preview.1' -d '{\"filters\":[{\"criteria\":[{\"filterType\":7,\"value\":\"anthropic.claude-code\"}]}],\"flags\":1073}')",
+      "Bash(python3 -c ' *)",
+      "Bash(code --install-extension anthropic.claude-code@2.1.145 --force)",
+      "Bash(where claude *)",
+      "Read(//c/Users/user/AppData/Roaming/npm/**)",
+      "Bash(npm root *)",
+      "Bash(ls \"$\\(npm root -g\\)/claude\")",
+      "Bash(cmd.exe /c \"claude --version\")",
+      "Bash(npm list *)",
+      "Read(//c/Users/user/.claude/**)",
+      "Bash(code --list-extensions)",
+      "Bash(pip show *)",
+      "Bash(python -c \"import importlib; spec = importlib.util.find_spec\\('slplus'\\); print\\(spec.origin if spec else 'NOT FOUND'\\)\")",
+      "Bash(python *)",
+      "Read(//c/EPT/SolarRT/**)"
     ]
   }
 }

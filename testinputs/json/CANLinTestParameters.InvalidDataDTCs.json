@@ -1,8 +1,8 @@
 [
   {
-    "DTC Code": 50281,
-    "Failure Type": 129,
-    "Montior Message ID": 293,
+    "DTC Code": "0xC469",
+    "Failure Type": "0x81",
+    "Montior Message ID": "0x125",
     "Montior PDU ID": 0,
     "Montior Message Channel": "PowerTrain CANFD",
     "Montior Message DLC": 13,
@@ -12,12 +12,15 @@
     "FDF": 1,
     "IsContainE2E": 1,
     "Type": "E2E_CRC",
-    "DataID": 33061
+    "DataID": "0x8125",
+    "Valid Payload": null,
+    "Invalid Payload": null,
+    "Notes": null
   },
   {
-    "DTC Code": 49441,
-    "Failure Type": 129,
-    "Montior Message ID": 289,
+    "DTC Code": "0xC121",
+    "Failure Type": "0x81",
+    "Montior Message ID": "0x121",
     "Montior PDU ID": 0,
     "Montior Message Channel": "PowerTrain CANFD",
     "Montior Message DLC": 13,
@@ -27,12 +30,15 @@
     "FDF": 1,
     "IsContainE2E": 1,
     "Type": "E2E_Counter",
-    "DataID": 33057
+    "DataID": "0x8121",
+    "Valid Payload": null,
+    "Invalid Payload": null,
+    "Notes": null
   },
   {
-    "DTC Code": 62599,
-    "Failure Type": 129,
-    "Montior Message ID": 283,
+    "DTC Code": "0xF487",
+    "Failure Type": "0x81",
+    "Montior Message ID": "0x11B",
     "Montior PDU ID": 0,
     "Montior Message Channel": "PowerTrain CANFD",
     "Montior Message DLC": 13,
@@ -42,12 +48,15 @@
     "FDF": 1,
     "IsContainE2E": 1,
     "Type": "E2E_CRC",
-    "DataID": 24859
+    "DataID": "0x611B",
+    "Valid Payload": null,
+    "Invalid Payload": null,
+    "Notes": null
   },
   {
-    "DTC Code": 49948,
-    "Failure Type": 129,
-    "Montior Message ID": 796,
+    "DTC Code": "0xC31C",
+    "Failure Type": "0x81",
+    "Montior Message ID": "0x31C",
     "Montior PDU ID": 0,
     "Montior Message Channel": "PowerTrain CANFD",
     "Montior Message DLC": 13,
@@ -57,6 +66,9 @@
     "FDF": 1,
     "IsContainE2E": 1,
     "Type": "E2E_CRC",
-    "DataID": 33564
+    "DataID": "0x831C",
+    "Valid Payload": null,
+    "Invalid Payload": null,
+    "Notes": null
   }
 ]

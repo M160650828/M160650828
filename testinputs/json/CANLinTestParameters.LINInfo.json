@@ -1,15 +1,86 @@
-{
-  "VarName": "VarValue",
-  "Vnormal": 12,
-  "VlowStand": 8,
-  "VhighStand": 18,
-  "Vstep": 0.3,
-  "VtestRange": 1,
-  "TvStepDelay": 500,
-  "TdefaultWait": 1000,
-  "NdefaultRepeat": 1,
-  "NfaultRepeat": 1,
-  "SimulationActivate": 0,
-  "RespId": "0xC",
-  "Tawake": 100
-}
+[
+  {
+    "VarName": "Vnormal",
+    "VarType": "float",
+    "VarValue": 12,
+    "VarUnit": "V",
+    "Description": "DUT常规工作电压，典型值为12V"
+  },
+  {
+    "VarName": "VlowStand",
+    "VarType": "float",
+    "VarValue": 8,
+    "VarUnit": "V",
+    "Description": "DUT支持的最低工作电压，典型值为8V"
+  },
+  {
+    "VarName": "VhighStand",
+    "VarType": "float",
+    "VarValue": 18,
+    "VarUnit": "V",
+    "Description": "DUT支持的最低工作电压，典型值为18V"
+  },
+  {
+    "VarName": "Vstep",
+    "VarType": "float",
+    "VarValue": 0.3,
+    "VarUnit": "V",
+    "Description": "步进电压步长，典型值为0.1V"
+  },
+  {
+    "VarName": "VtestRange",
+    "VarType": "float",
+    "VarValue": 1,
+    "VarUnit": "V",
+    "Description": "测试电压范围调整阈值，典型值为2V"
+  },
+  {
+    "VarName": "TvStepDelay",
+    "VarType": "dword",
+    "VarValue": 500,
+    "VarUnit": "MS",
+    "Description": "步进电压时间间隔，典型值为1s"
+  },
+  {
+    "VarName": "TdefaultWait",
+    "VarType": "dword",
+    "VarValue": 1000,
+    "VarUnit": "MS",
+    "Description": "默认等待时间"
+  },
+  {
+    "VarName": "NdefaultRepeat",
+    "VarType": "dword",
+    "VarValue": 1,
+    "VarUnit": "/",
+    "Description": "默认重复测试次数"
+  },
+  {
+    "VarName": "NfaultRepeat",
+    "VarType": "dword",
+    "VarValue": 1,
+    "VarUnit": "/",
+    "Description": "故障重复测试次数"
+  },
+  {
+    "VarName": "SimulationActivate",
+    "VarType": "dword",
+    "VarValue": 0,
+    "VarUnit": "/",
+    "Description": "是否需要仿真节点，0否，1是，默认为0（solar脚本中 0=本端仿真主，1=本端仿真从）"
+  },
+  {
+    "VarName": "RespId",
+    "VarType": "long",
+    "VarValue": "0xC",
+    "VarUnit": null,
+    "Description": "从节点唤醒用例样件需要应答的ID"
+  },
+  {
+    "VarName": "Tawake",
+    "VarType": "dword",
+    "VarValue": 100,
+    "VarUnit": "ms",
+    "Description": "DUT初始化时间，典型值为100ms"
+  }
+]

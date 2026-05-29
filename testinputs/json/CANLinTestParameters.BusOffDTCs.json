@@ -1,7 +1,13 @@
 [
   {
-    "DTC Code": 49267,
-    "Failure Type": 136,
-    "Channel Name": "PowerTrain CANFD"
+    "DTC Code": "0xC073",
+    "Failure Type": "0x88",
+    "Channel Name": "PowerTrain CANFD",
+    "Config DID": null,
+    "Config DID Length": null,
+    "Config Byte": null,
+    "Config Bit": null,
+    "BusOFF_MAX": null,
+    "Notes": null
   }
 ]

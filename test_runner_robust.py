@@ -1,5 +1,6 @@
 import os
 import sys
+import importlib
 import traceback
 import env           # 环境初始化（路径、DLL、runtime）
 
@@ -11,6 +12,7 @@ def main():
         project_dir = os.path.dirname(os.path.abspath(__file__))
         robustcases_dir = os.path.join(project_dir, "robustcases")
         sys.path.insert(0, robustcases_dir)
+        importlib.import_module("robustcases.session_fixture")  # 注册 SessionFixture，触发 session_teardown → sl_runtime.deinit()
         discover_test_groups(robustcases_dir)
 
         # 交互式
@@ -44,6 +46,7 @@ def main():
     except Exception as e:
         print(f"\n测试执行出错: {e}")
         traceback.print_exc()
+
     finally:
         exit_code = 0 if success else 1
         print(f"\n测试结束")
