@@ -1,0 +1,40 @@
+[INFO] 测试报告初始化: 初始化测试报告生成: Test Report - 2026-05-28 17:14:41
+[INFO] 测试报告初始化: 测试会话目录: d:\SolarOne\framework-canlin\robustcases\test_log_report\20260528_171441_946_report
+[PASS] 测试报告初始化: 测试报告初始化完成
+[INFO] 测试报告: 初始化测试报告: Test Report
+[PASS] 测试报告初始化: 测试报告初始化完成
+发现测试组...
+Using Project Path: d:\SolarOne\framework-canlin\robustcases
+项目根目录: d:\SolarOne\framework-canlin\robustcases
+搜索测试文件: d:\SolarOne\framework-canlin\robustcases\testcases\**\*_testcase.py
+找到 13 个 .py 测试文件, 0 个 .pyd 测试文件
+
+============================================================
+测试执行 - 分组选择
+============================================================
+测试组:
+ 1. busstress (3个测试)
+ 2. can (5个测试)
+ 3. dtc (3个测试)
+ 4. e2e (3个测试)
+ 5. hardware (3个测试)
+ 6. lin (3个测试)
+ 7. nm (3个测试)
+ 8. power (5个测试)
+ 9. routing (3个测试)
+10. signal (3个测试)
+11. system (3个测试)
+12. tp (3个测试)
+13. uds (3个测试)
+14. 执行全部测试
+============================================================
+请选择测试组 (1-14) (单选，如: 1) 或输入 'q' 退出: 
+生成测试报告...
+测试报告已生成: d:\SolarOne\framework-canlin\robustcases\test_log_report\20260528_171441_946_report\Test_Report_20260528_171445_179.html
+
+测试统计:
+   测试组: 0 (0 0)
+   测试用例: 0 (0 0 0)
+[INFO] 测试报告: 开始测试报告生成
+[PASS] 日志销毁: 测试日志系统清理完成
+[INFO] 测试报告: 测试报告生成完成

@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>EWS - ECU Basic Network Test</title>
+    <style type="text/css">
+        @media screen {
+            body {
+                background-color: rgb(255, 255, 255);
+                font-family: arial, verdana, trebuchet, officina, sans-serif;
+            }
+
+            .TestCaseDetailBlock {
+                content-visibility: auto;
+                contain-intrinsic-size: 800px;
+            }
+        }
+
+        @media print {
+            body {
+                background-color: rgb(255, 255, 255);
+                font-family: arial, verdana, trebuchet, officina, sans-serif;
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            .HeadingTable, .SubHeadingTable, .GroupHeadingTable, .GroupEndTable {
+                border-width: 2px;
+                border-style: solid;
+                border-color: rgb(150,150,150);
+            }
+
+            .ResultBlockHeading {
+                border-width: 1px;
+                border-style: solid;
+                border-color: rgb(150,150,150);
+            }
+
+            table.ResultTable, table.OverviewTable, table.CheckStatisticsTable {
+                border-collapse: collapse;
+            }
+
+            td.DefaultCell, td.DefineCell, td.NumberCell, td.NumberCellPositiveResult, td.NumberCellNegativeResult,
+            td.NumberCellErrorResult, td.NumberCellInconclusiveResult, td.NumberCellNoneResult, td.NumberCellNoColor,
+            td.PositiveResultCell, td.NegativeResultCell, td.WarningCell, td.NoneResultCell, td.InconclusiveResultCell,
+            td.ErrorResultCell, th.TableHeadingCell {
+                border-width: 1px;
+                border-style: solid;
+                border-color: rgb(150,150,150);
+            }
+        }
+
+        a.Undecorated:hover {
+            color: red;
+        }
+
+        a.Undecorated {
+            text-decoration: none;
+        }
+
+        .NavStyle {
+            background-color: rgb(220, 221, 222);
+        }
+
+        td.LinkCell, td.UpCell {
+            width: 1px;
+            white-space: nowrap;
+        }
+
+        table {
+            margin-bottom: 10px;
+            vertical-align: top;
+            border: 0;
+            border-spacing: 1px;
+            padding: 2px;
+        }
+
+        table.ScreenOnly {
+            vertical-align: top;
+            margin-bottom: 10px;
+        }
+
+        .NoMarginBottom {
+            margin-bottom: 0px;
+        }
+
+        .HeadingTable {
+            width: 100%;
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgb(220, 221, 222);
+        }
+
+        .SubHeadingTable {
+            width: 100%;
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 25px;
+            background-color: rgb(220, 221, 222);
+        }
+
+        .GroupHeadingTable, .GroupEndTable {
+            width: 100%;
+            text-align: center;
+            margin-top: 15px;
+            padding-right: 20px;
+            background-color: rgb(220, 221, 222);
+        }
+
+        .DefaultTable {
+            padding: 0px;
+            border-spacing: 0px;
+        }
+
+        .CheckStatisticsTable {
+            margin-bottom: 8px;
+            padding-right: 20px;
+        }
+
+        .OverviewTable {
+            text-align: left;
+        }
+
+        .OverviewResultTable {
+            width: 100%;
+            margin-bottom: 0px;
+            border-spacing: 0px;
+            padding: 0px;
+            text-align: center;
+        }
+
+        .ResultTable {
+            width: 100%;
+            table-layout: fixed;
+            text-align: left;
+            padding-right: 20px;
+        }
+
+        .ResultTable th:nth-child(1), .ResultTable td:nth-child(1) {
+            width: 12em;
+        }
+
+        .ResultTable th:nth-child(2), .ResultTable td:nth-child(2) {
+            width: 8em;
+        }
+
+        .ResultTable th:nth-child(4), .ResultTable td:nth-child(4) {
+            width: 5em;
+        }
+
+        .ResultTable td, .ResultTable th {
+            white-space: normal;
+            overflow-wrap: anywhere;
+            word-break: break-word;
+        }
+
+        .ResultTable td.DefaultCell {
+            word-break: break-all;
+        }
+
+        .ResultTableInner {
+            width: 100%;
+            table-layout: fixed;
+            text-align: left;
+            padding-right: 0px;
+        }
+
+        table.ResultTable td, table.ChildLinkTable td {
+            vertical-align: top;
+        }
+
+        .GroupHeadingTable td {
+            white-space: normal;
+            overflow-wrap: anywhere;
+            word-break: break-word;
+        }
+
+        .ChildLinkTable {
+            width: 1px;
+            text-align: left;
+        }
+
+        .InfoTable {
+            text-align: left;
+            padding-right: 0px;
+            margin-bottom: 0px;
+            border-spacing: 0px;
+        }
+
+        .InfoTableExpand {
+            width: 100%;
+            text-align: left;
+            padding-right: 0px;
+            margin-bottom: 0px;
+            border-spacing: 0px;
+        }
+
+        .OverallResultTable {
+            width: 50%;
+            text-align: center;
+            margin-bottom: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: bold;
+        }
+
+        .TableHeadingCell {
+            background-color: rgb(179, 179, 179);
+            font-family: arial, verdana, trebuchet, officina, sans-serif;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .CellNoColor {
+            text-align: left;
+            vertical-align: top;
+        }
+
+        .DefineCell {
+            background-color: rgb(179, 179, 179);
+            text-align: left;
+        }
+
+        .DefaultCell, .DefaultCellBold {
+            background-color: rgb(229, 229, 229);
+            text-align: left;
+        }
+
+        .DefaultCellBold {
+            font-weight: bold;
+        }
+
+        .NumberCell {
+            background-color: rgb(229, 229, 229);
+            text-align: center;
+            min-width: 50px;
+        }
+
+        .NumberCellNegativeResult {
+            background-color: rgb(240, 0, 0);
+            text-align: center;
+            min-width: 50px;
+        }
+
+        .NumberCellPositiveResult {
+            background-color: rgb(25, 165, 88);
+            text-align: center;
+            min-width: 50px;
+        }
+
+        .NumberCellNoneResult {
+            background-color: rgb(105, 105, 105);
+            text-align: center;
+            min-width: 50px;
+        }
+
+        .NumberCellInconclusiveResult {
+            background-color: rgb(255, 165, 0);
+            text-align: center;
+            min-width: 50px;
+        }
+
+        .NumberCellErrorResult {
+            background-color: rgb(205, 0, 0);
+            text-align: center;
+            min-width: 50px;
+        }
+
+        .NumberCellNoColor {
+            text-align: center;
+        }
+
+        .PositiveResultCell {
+            background-color: rgb(25, 165, 88);
+        }
+
+        .NegativeResultCell {
+            background-color: rgb(240, 0, 0);
+        }
+
+        .NoneResultCell {
+            background-color: rgb(105, 105, 105);
+        }
+
+        .InconclusiveResultCell {
+            background-color: rgb(255, 165, 0);
+        }
+
+        .ErrorResultCell {
+            background-color: rgb(205, 0, 0);
+            white-space: nowrap;
+        }
+
+        .WarningCell {
+            background-color: rgb(255, 255, 0);
+        }
+
+        .TestcaseHeadingDefaultResult {
+            background-color: rgb(179, 179, 179);
+        }
+
+        .TestcaseHeadingPositiveResult {
+            background-color: rgb(25, 165, 88);
+        }
+
+        .TestcaseHeadingNegativeResult {
+            background-color: rgb(240, 0, 0);
+        }
+
+        .TestcaseHeadingNoneResult {
+            background-color: rgb(105, 105, 105);
+        }
+
+        .TestcaseHeadingInconclusiveResult {
+            background-color: rgb(255, 165, 0);
+        }
+
+        .TestcaseHeadingErrorResult {
+            background-color: rgb(205, 0, 0);
+        }
+
+        .PatternSeparator {
+            height: 0.2em;
+        }
+
+        .NegativeResult {
+            background-color: rgb(240, 0, 0);
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .PositiveResult {
+            background-color: rgb(25, 165, 88);
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .NoneResult {
+            background-color: rgb(105, 105, 105);
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .InconclusiveResult {
+            background-color: rgb(255, 165, 0);
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .ErrorResult {
+            background-color: rgb(205, 0, 0);
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .Heading1 {
+            font-family: arial, sans-serif;
+            font-weight: bold;
+            font-size: 26px;
+        }
+
+        .Heading2 {
+            font-family: arial, sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .Heading3 {
+            font-family: arial, sans-serif;
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        .Heading4 {
+            font-family: arial, sans-serif;
+            font-weight: bold;
+            font-size: 16px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        img {
+            margin-bottom: 10px;
+            margin-right: 10px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        .DefaultTableBackground {
+            background-color: rgb(229, 229, 229);
+            border-spacing: 0px;
+            padding: 0px;
+        }
+
+        .NegativeResultBackground {
+            background-color: rgb(240, 0, 0);
+            border-spacing: 0px;
+            padding: 0px;
+        }
+
+        .PositiveResultBackground {
+            background-color: rgb(25, 165, 88);
+            border-spacing: 0px;
+            padding: 0px;
+        }
+
+        .TestGroupHeadingBackground {
+            width: 100%;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: rgb(240, 240, 240);
+        }
+
+        .Indentation {
+            margin-left: 20px;
+        }
+
+        .footer {
+            margin-top: 30px;
+            padding: 10px;
+            background-color: rgb(240, 240, 240);
+            text-align: center;
+            font-size: 12px;
+            color: rgb(100, 100, 100);
+        }
+    </style>
+</head>
+<body>
+    <!-- 主标题 -->
+    <table class="HeadingTable">
+        <tr>
+            <td>
+                <h1>EWS - ECU Basic Network Test</h1>
+                <p>执行时间: 2026-05-28 20:13:42 - 20:15:31</p>
+                <p>总耗时: 109.16 秒</p>
+            </td>
+        </tr>
+    </table>
+
+    <!-- 测试统计概览 -->
+    <table class="SubHeadingTable">
+        <tr>
+            <td>
+                <big class="Heading2">Statistics</big>
+            </td>
+        </tr>
+    </table>
+
+    <table class="CheckStatisticsTable">
+        <tr>
+            <th class="TableHeadingCell">测试项目</th>
+            <th class="TableHeadingCell">总数</th>
+            <th class="TableHeadingCell">通过</th>
+            <th class="TableHeadingCell">失败</th>
+            <th class="TableHeadingCell">警告</th>
+            <th class="TableHeadingCell">通过率</th>
+        </tr>
+        <tr>
+            <td class="DefaultCell">测试组</td>
+            <td class="NumberCell">8</td>
+            <td class="NumberCellPositiveResult">4</td>
+            <td class="NumberCellNegativeResult">4</td>
+            <td class="NumberCell">0</td>
+            <td class="NumberCell">50.0%</td>
+        </tr>
+        <tr>
+            <td class="DefaultCell">测试用例</td>
+            <td class="NumberCell">5</td>
+            <td class="NumberCellPositiveResult">1</td>
+            <td class="NumberCellNegativeResult">4</td>
+            <td class="NumberCellInconclusiveResult">0</td>
+            <td class="NumberCell">20.0%</td>
+        </tr>
+    </table>
+
+    <!-- 测试用例结果汇总 -->
+    
+    <!-- 测试用例结果汇总 -->
+    <table class="SubHeadingTable">
+        <tr>
+            <td>
+                <big class="Heading2">Test Case Results</big>
+            </td>
+        </tr>
+    </table>
+
+    <table class="OverviewTable">
+        <tr>
+            <th class="TableHeadingCell" style="background-color: rgb(179, 179, 179);">序号</th>
+            <th class="TableHeadingCell" style="background-color: rgb(179, 179, 179);">测试组</th>
+            <th class="TableHeadingCell" style="background-color: rgb(179, 179, 179);">测试用例</th>
+            <th class="TableHeadingCell" style="background-color: rgb(179, 179, 179);">结果</th>
+        </tr>
+        <tr>
+            <td class="DefineCell">1.1</td>
+            <td class="DefaultCell" style="color: blue;"><a class="Undecorated" href="#tc-1-1" style="color: blue;">can</a></td>
+            <td class="DefaultCell" style="color: blue;"><a class="Undecorated" href="#tc-1-1" style="color: blue;">canfd/test_TG1_TC5_PhyLayer_LowVoltageRangeTest 低电压通信范围测试</a></td>
+            <td class="PositiveResultCell">pass</td>
+        </tr>
+        <tr>
+            <td class="DefineCell">2.1</td>
+            <td class="DefaultCell" style="color: blue;"><a class="Undecorated" href="#tc-2-1" style="color: blue;">e2e</a></td>
+            <td class="DefaultCell" style="color: blue;"><a class="Undecorated" href="#tc-2-1" style="color: blue;">can_e2e/test_TG1_TC1_CAN_CRC_Send_Check CAN节点发送CRC校验</a></td>
+            <td class="NegativeResultCell">fail</td>
+        </tr>
+        <tr>
+            <td class="DefineCell">3.1</td>
+            <td class="DefaultCell" style="color: blue;"><a class="Undecorated" href="#tc-3-1" style="color: blue;">lin</a></td>
+            <td class="DefaultCell" style="color: blue;"><a class="Undecorated" href="#tc-3-1" style="color: blue;">lin_master/test_TG1_TC1_PhyLayer_Resistance_Test 电阻测试</a></td>
+            <td class="NegativeResultCell">fail</td>
+        </tr>
+        <tr>
+            <td class="DefineCell">4.1</td>
+            <td class="DefaultCell" style="color: blue;"><a class="Undecorated" href="#tc-4-1" style="color: blue;">routing</a></td>
+            <td class="DefaultCell" style="color: blue;"><a class="Undecorated" href="#tc-4-1" style="color: blue;">routing_cycle/test_TG1_TC1_Routing_DestNetwork_Check_Cycle 目标网络检查</a></td>
+            <td class="NegativeResultCell">fail</td>
+        </tr>
+        <tr>
+            <td class="DefineCell">5.1</td>
+            <td class="DefaultCell" style="color: blue;"><a class="Undecorated" href="#tc-5-1" style="color: blue;">tp</a></td>
+            <td class="DefaultCell" style="color: blue;"><a class="Undecorated" href="#tc-5-1" style="color: blue;">tp_can/test_TG1_TC1_TimeoutCheck_N_AS N_As超时值检查</a></td>
+            <td class="NegativeResultCell">fail</td>
+        </tr>
+    </table>
+
+    <!-- 测试用例详细执行部分 -->
+    
+    <!-- 测试用例详细执行部分 -->
+    <table class="SubHeadingTable">
+        <tr>
+            <td>
+                <big class="Heading2">Test Case Details</big>
+            </td>
+        </tr>
+    </table>
+    <table class="GroupHeadingTable" id="tc-1-1">
+        <tr>
+            <td class="LinkCell">
+                <a class="Undecorated ToggleCaseDetail" href="#tc-1-1" aria-expanded="true">[−]</a>
+            </td>
+            <td class="TestcaseHeadingPositiveResult">
+                <big class="Heading3">1.1 Test Case canfd/test_TG1_TC5_PhyLayer_LowVoltageRangeTest 低电压通信范围测试: Passed</big>
+            </td>
+        </tr>
+    </table>
+
+    <div class="Indentation TestCaseDetailBlock">
+        <div class="Indentation">
+            <table class="DefaultTable">
+                <tr>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">Test case begin: </td>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">2026-05-28 20:14:04</td>
+                    <td class="CellNoColor">(logging timestamp 1779970444.792085)</td>
+                </tr>
+                <tr>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">Test case end: </td>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">2026-05-28 20:14:13</td>
+                    <td class="CellNoColor" nowrap>(logging timestamp 1779970453.838425)</td>
+                </tr>
+            </table>
+        </div>
+        <div class="Indentation"></div>
+        <table class="TestGroupHeadingBackground">
+            <tr>
+                <td>
+                    <big class="Heading3">Main Part of Test Case</big>
+                </td>
+            </tr>
+        </table>
+        <div class="Indentation">
+            <table class="ResultTable">
+                <tr>
+                    <th class="TableHeadingCell">Timestamp</th>
+                    <th class="TableHeadingCell">Test Step</th>
+                    <th class="TableHeadingCell">Description</th>
+                    <th class="TableHeadingCell">Result</th>
+                </tr>
+                
+                <tr>
+                    <td class="NumberCell">1779970444.820555</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">开始记录测试用例日志: 低电压通信范围测试 (canfd/test_TG1_TC5_PhyLayer_LowVoltageRangeTest), 文件: d:\SolarOne\framework-canlin\test_log_report\20260528_201344_844_report\can\canfd_test_TG1_TC5_PhyLayer_LowVoltageRangeTest_低电压通信范围测试_20260528_201404_798.blf</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970444.821030</td>
+                    <td class="DefaultCell">Step1</td>
+                    <td class="DefaultCell">设置DUT电源电压为12.0，将KL30上电，根据DUT通信唤醒方式，使用KL15上电或网络管理报文的方式唤醒CAN网络，等待2.0时间至通信稳定</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970444.821181</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">开始CAN测试设置和通信检查</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970444.821375</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">设置DUT供电电压为 12.00V</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970444.822077</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">执行KL30上电</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970444.822331</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">根据DUT通信唤醒方式，启动ECU唤醒</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970444.823727</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">唤醒消息模拟启动成功</td>
+                    <td class="PositiveResultCell">pass</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970444.823851</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">开始按周期发送唤醒报文：ID=0x47F, 周期=100ms</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970444.823939</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">等待 2.0s 至CAN通信稳定</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970444.824032</td>
+                    <td class="DefaultCell">CAN通信状态检查</td>
+                    <td class="DefaultCell">先最多等待3s事件预热，再等待 2.000s 统计通信状态</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970446.824748</td>
+                    <td class="DefaultCell">CAN通信状态</td>
+                    <td class="DefaultCell">统计窗口结果: frame_cnt = 26, gErrorFrameCount = 0</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970446.824876</td>
+                    <td class="DefaultCell"> </td>
+                    <td class="DefaultCell">期望结果：CAN通信状态检查, 实际结果：DUT通信正常，总线上有报文的传输，且无错误帧</td>
+                    <td class="PositiveResultCell">pass</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970446.824955</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">CAN测试设置和通信检查完成</td>
+                    <td class="PositiveResultCell">pass</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970446.825024</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">期望结果：DUT通信正常。实际结果：DUT通信正常</td>
+                    <td class="PositiveResultCell">pass</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970446.825144</td>
+                    <td class="DefaultCell">Step2</td>
+                    <td class="DefaultCell">将9.0V作为起始电压，以0.5时间为间隔，以0.3V为步长，逐步降压，监控DUT通信状态，重复上述操作</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970446.825324</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">停止通信电压测试, 起始电压: 9.00 V, 步进值: -0.30 V</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970450.829121</td>
+                    <td class="DefaultCell">电压阈值查找</td>
+                    <td class="DefaultCell">电压降到 7.00 V，通信仍未停止，测试结束</td>
+                    <td class="WarningCell">warning</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970450.829302</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">未找到stop阈值</td>
+                    <td class="WarningCell">warning</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970450.829920</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">停止唤醒消息模拟</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970450.830142</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">唤醒消息模拟停止成功</td>
+                    <td class="PositiveResultCell">pass</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970452.832073</td>
+                    <td class="DefaultCell">日志记录</td>
+                    <td class="DefaultCell">停止记录测试用例日志文件: 低电压通信范围测试 (canfd/test_TG1_TC5_PhyLayer_LowVoltageRangeTest)</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970452.837699</td>
+                    <td class="DefaultCell">日志记录</td>
+                    <td class="DefaultCell">日志记录已停止: FD=1</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970453.838301</td>
+                    <td class="DefaultCell">测试结束</td>
+                    <td class="DefaultCell">测试用例执行完成: </td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970453.838391</td>
+                    <td class="DefaultCell">测试结束</td>
+                    <td class="DefaultCell">执行测试结束和去初始化</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <table class="GroupHeadingTable" id="tc-2-1">
+        <tr>
+            <td class="LinkCell">
+                <a class="Undecorated ToggleCaseDetail" href="#tc-2-1" aria-expanded="true">[−]</a>
+            </td>
+            <td class="TestcaseHeadingNegativeResult">
+                <big class="Heading3">2.1 Test Case can_e2e/test_TG1_TC1_CAN_CRC_Send_Check CAN节点发送CRC校验: Failed</big>
+            </td>
+        </tr>
+    </table>
+
+    <div class="Indentation TestCaseDetailBlock">
+        <div class="Indentation">
+            <table class="DefaultTable">
+                <tr>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">Test case begin: </td>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">2026-05-28 20:14:22</td>
+                    <td class="CellNoColor">(logging timestamp 1779970462.398546)</td>
+                </tr>
+                <tr>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">Test case end: </td>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">2026-05-28 20:14:25</td>
+                    <td class="CellNoColor" nowrap>(logging timestamp 1779970465.420386)</td>
+                </tr>
+            </table>
+        </div>
+        <div class="Indentation"></div>
+        <table class="TestGroupHeadingBackground">
+            <tr>
+                <td>
+                    <big class="Heading3">Main Part of Test Case</big>
+                </td>
+            </tr>
+        </table>
+        <div class="Indentation">
+            <table class="ResultTable">
+                <tr>
+                    <th class="TableHeadingCell">Timestamp</th>
+                    <th class="TableHeadingCell">Test Step</th>
+                    <th class="TableHeadingCell">Description</th>
+                    <th class="TableHeadingCell">Result</th>
+                </tr>
+                
+                <tr>
+                    <td class="NumberCell">1779970462.407515</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">开始记录测试用例日志: CAN节点发送CRC校验 (can_e2e/test_TG1_TC1_CAN_CRC_Send_Check), 文件: d:\SolarOne\framework-canlin\test_log_report\20260528_201344_844_report\e2e\can_e2e_test_TG1_TC1_CAN_CRC_Send_Check_CAN节点发送CRC校验_20260528_201422_406.blf</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970462.407838</td>
+                    <td class="DefaultCell">CAN CRC</td>
+                    <td class="DefaultCell">开始校验</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970462.407972</td>
+                    <td class="DefaultCell">E2E配置</td>
+                    <td class="DefaultCell">JSON E2EInfo 读取失败: E2EInfo 为空</td>
+                    <td class="NegativeResultCell">fail</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970462.408082</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">E2E配置加载失败</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970462.408150</td>
+                    <td class="DefaultCell">CAN CRC</td>
+                    <td class="DefaultCell">结束</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970462.408458</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">停止唤醒消息模拟</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970464.410012</td>
+                    <td class="DefaultCell">日志记录</td>
+                    <td class="DefaultCell">停止记录测试用例日志文件: CAN节点发送CRC校验 (can_e2e/test_TG1_TC1_CAN_CRC_Send_Check)</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970464.419577</td>
+                    <td class="DefaultCell">日志记录</td>
+                    <td class="DefaultCell">日志记录已停止: FD=2</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970465.420145</td>
+                    <td class="DefaultCell">测试结束</td>
+                    <td class="DefaultCell">测试用例执行完成: </td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970465.420339</td>
+                    <td class="DefaultCell">测试结束</td>
+                    <td class="DefaultCell">执行测试结束和去初始化</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <table class="GroupHeadingTable" id="tc-3-1">
+        <tr>
+            <td class="LinkCell">
+                <a class="Undecorated ToggleCaseDetail" href="#tc-3-1" aria-expanded="true">[−]</a>
+            </td>
+            <td class="TestcaseHeadingNegativeResult">
+                <big class="Heading3">3.1 Test Case lin_master/test_TG1_TC1_PhyLayer_Resistance_Test 电阻测试: Failed</big>
+            </td>
+        </tr>
+    </table>
+
+    <div class="Indentation TestCaseDetailBlock">
+        <div class="Indentation">
+            <table class="DefaultTable">
+                <tr>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">Test case begin: </td>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">2026-05-28 20:14:29</td>
+                    <td class="CellNoColor">(logging timestamp 1779970469.075362)</td>
+                </tr>
+                <tr>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">Test case end: </td>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">2026-05-28 20:14:35</td>
+                    <td class="CellNoColor" nowrap>(logging timestamp 1779970475.193927)</td>
+                </tr>
+            </table>
+        </div>
+        <div class="Indentation"></div>
+        <table class="TestGroupHeadingBackground">
+            <tr>
+                <td>
+                    <big class="Heading3">Main Part of Test Case</big>
+                </td>
+            </tr>
+        </table>
+        <div class="Indentation">
+            <table class="ResultTable">
+                <tr>
+                    <th class="TableHeadingCell">Timestamp</th>
+                    <th class="TableHeadingCell">Test Step</th>
+                    <th class="TableHeadingCell">Description</th>
+                    <th class="TableHeadingCell">Result</th>
+                </tr>
+                
+                <tr>
+                    <td class="NumberCell">1779970469.078947</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">开始记录测试用例日志: 电阻测试 (lin_master/test_TG1_TC1_PhyLayer_Resistance_Test), 文件: d:\SolarOne\framework-canlin\test_log_report\20260528_201344_844_report\lin\lin_master_test_TG1_TC1_PhyLayer_Resistance_Test_电阻测试_20260528_201429_077.blf</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970469.079098</td>
+                    <td class="DefaultCell">Step1</td>
+                    <td class="DefaultCell">Not Suport</td>
+                    <td class="NegativeResultCell">fail</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970469.079391</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">停止唤醒消息模拟</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970471.081126</td>
+                    <td class="DefaultCell">日志记录</td>
+                    <td class="DefaultCell">停止记录测试用例日志文件: 电阻测试 (lin_master/test_TG1_TC1_PhyLayer_Resistance_Test)</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970471.090383</td>
+                    <td class="DefaultCell">日志记录</td>
+                    <td class="DefaultCell">日志记录已停止: FD=3</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970472.091077</td>
+                    <td class="DefaultCell">测试结束</td>
+                    <td class="DefaultCell">测试用例执行完成: </td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970472.091505</td>
+                    <td class="DefaultCell">LIN仿真停止</td>
+                    <td class="DefaultCell">已请求停止LIN调度与工程</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970472.191939</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">停止唤醒消息模拟</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970475.193828</td>
+                    <td class="DefaultCell">测试结束</td>
+                    <td class="DefaultCell">测试用例执行完成: </td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970475.193914</td>
+                    <td class="DefaultCell">测试结束</td>
+                    <td class="DefaultCell">执行测试结束和去初始化</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <table class="GroupHeadingTable" id="tc-4-1">
+        <tr>
+            <td class="LinkCell">
+                <a class="Undecorated ToggleCaseDetail" href="#tc-4-1" aria-expanded="true">[−]</a>
+            </td>
+            <td class="TestcaseHeadingNegativeResult">
+                <big class="Heading3">4.1 Test Case routing_cycle/test_TG1_TC1_Routing_DestNetwork_Check_Cycle 目标网络检查: Failed</big>
+            </td>
+        </tr>
+    </table>
+
+    <div class="Indentation TestCaseDetailBlock">
+        <div class="Indentation">
+            <table class="DefaultTable">
+                <tr>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">Test case begin: </td>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">2026-05-28 20:14:43</td>
+                    <td class="CellNoColor">(logging timestamp 1779970483.413164)</td>
+                </tr>
+                <tr>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">Test case end: </td>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">2026-05-28 20:14:54</td>
+                    <td class="CellNoColor" nowrap>(logging timestamp 1779970494.432313)</td>
+                </tr>
+            </table>
+        </div>
+        <div class="Indentation"></div>
+        <table class="TestGroupHeadingBackground">
+            <tr>
+                <td>
+                    <big class="Heading3">Main Part of Test Case</big>
+                </td>
+            </tr>
+        </table>
+        <div class="Indentation">
+            <table class="ResultTable">
+                <tr>
+                    <th class="TableHeadingCell">Timestamp</th>
+                    <th class="TableHeadingCell">Test Step</th>
+                    <th class="TableHeadingCell">Description</th>
+                    <th class="TableHeadingCell">Result</th>
+                </tr>
+                
+                <tr>
+                    <td class="NumberCell">1779970483.418962</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">开始记录测试用例日志: 目标网络检查 (routing_cycle/test_TG1_TC1_Routing_DestNetwork_Check_Cycle), 文件: d:\SolarOne\framework-canlin\test_log_report\20260528_201344_844_report\routing\routing_cycle_test_TG1_TC1_Routing_DestNetwork_Check_Cycle_目标网络检查_20260528_201443_416.blf</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970483.419313</td>
+                    <td class="DefaultCell">Step1</td>
+                    <td class="DefaultCell">开始CAN测试设置和通信检查 (目标电压=12.00V, 稳定时间=2.0s)</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970483.419893</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">执行KL30上电</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970483.420093</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">根据DUT通信唤醒方式，使用KL15或网络管理报文唤醒网络</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970483.421072</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">唤醒消息模拟启动成功</td>
+                    <td class="PositiveResultCell">pass</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970483.421195</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">开始按周期发送唤醒报文：ID=0x47F, 周期=100ms</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970483.421291</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">等待Tstable=2.0s时间至通信稳定，检查DUT通信状态</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970488.422470</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">通信窗口检查: 报文数=0, 错误帧数=0</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970488.422560</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">期望结果DUT正常通信（报文数&gt;0且错误帧=0） 实际结果：DUT通信未恢复(报文数=0)</td>
+                    <td class="NegativeResultCell">fail</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970488.422778</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">未找到 RoutingType 为 CycleMsg 的路由表项</td>
+                    <td class="WarningCell">warning</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970488.422989</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">停止唤醒消息模拟</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970488.423106</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">唤醒消息模拟停止成功</td>
+                    <td class="PositiveResultCell">pass</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970490.424637</td>
+                    <td class="DefaultCell">日志记录</td>
+                    <td class="DefaultCell">停止记录测试用例日志文件: 目标网络检查 (routing_cycle/test_TG1_TC1_Routing_DestNetwork_Check_Cycle)</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970490.426077</td>
+                    <td class="DefaultCell">日志记录</td>
+                    <td class="DefaultCell">日志记录已停止: FD=4</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970491.426672</td>
+                    <td class="DefaultCell">测试结束</td>
+                    <td class="DefaultCell">测试用例执行完成: </td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970491.427087</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">停止唤醒消息模拟</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970494.428785</td>
+                    <td class="DefaultCell">测试结束</td>
+                    <td class="DefaultCell">测试用例执行完成: </td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970494.432262</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">执行测试结束和去初始化</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <table class="GroupHeadingTable" id="tc-5-1">
+        <tr>
+            <td class="LinkCell">
+                <a class="Undecorated ToggleCaseDetail" href="#tc-5-1" aria-expanded="true">[−]</a>
+            </td>
+            <td class="TestcaseHeadingNegativeResult">
+                <big class="Heading3">5.1 Test Case tp_can/test_TG1_TC1_TimeoutCheck_N_AS N_As超时值检查: Failed</big>
+            </td>
+        </tr>
+    </table>
+
+    <div class="Indentation TestCaseDetailBlock">
+        <div class="Indentation">
+            <table class="DefaultTable">
+                <tr>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">Test case begin: </td>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">2026-05-28 20:15:16</td>
+                    <td class="CellNoColor">(logging timestamp 1779970516.557299)</td>
+                </tr>
+                <tr>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">Test case end: </td>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">2026-05-28 20:15:19</td>
+                    <td class="CellNoColor" nowrap>(logging timestamp 1779970519.583821)</td>
+                </tr>
+            </table>
+        </div>
+        <div class="Indentation"></div>
+        <table class="TestGroupHeadingBackground">
+            <tr>
+                <td>
+                    <big class="Heading3">Main Part of Test Case</big>
+                </td>
+            </tr>
+        </table>
+        <div class="Indentation">
+            <table class="ResultTable">
+                <tr>
+                    <th class="TableHeadingCell">Timestamp</th>
+                    <th class="TableHeadingCell">Test Step</th>
+                    <th class="TableHeadingCell">Description</th>
+                    <th class="TableHeadingCell">Result</th>
+                </tr>
+                
+                <tr>
+                    <td class="NumberCell">1779970516.561656</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">开始记录测试用例日志: N_As超时值检查 (tp_can/test_TG1_TC1_TimeoutCheck_N_AS), 文件: d:\SolarOne\framework-canlin\test_log_report\20260528_201344_844_report\tp\tp_can_test_TG1_TC1_TimeoutCheck_N_AS_N_As超时值检查_20260528_201516_560.blf</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970516.561914</td>
+                    <td class="DefaultCell">CAN测试设置</td>
+                    <td class="DefaultCell">开始CAN测试设置和通信检查</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970516.562181</td>
+                    <td class="DefaultCell">Step1</td>
+                    <td class="DefaultCell">设置DUT供电电压为 12.00V</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970516.562744</td>
+                    <td class="DefaultCell">ETS6124</td>
+                    <td class="DefaultCell">CAN1 终端电阻已启用</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970516.562851</td>
+                    <td class="DefaultCell">Step2</td>
+                    <td class="DefaultCell">执行KL30上电</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970516.563325</td>
+                    <td class="DefaultCell">Step3</td>
+                    <td class="DefaultCell">根据DUT通信唤醒方式，启动ECU唤醒</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970516.565303</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">唤醒消息模拟启动成功</td>
+                    <td class="PositiveResultCell">pass</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970516.565729</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">开始按周期发送唤醒报文：ID=0x47F, 周期=100ms</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970516.565815</td>
+                    <td class="DefaultCell">Step5</td>
+                    <td class="DefaultCell">等待 2.0s 至CAN通信稳定</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970516.565871</td>
+                    <td class="DefaultCell">CAN通信状态检查</td>
+                    <td class="DefaultCell">等待 2.0s 检查通信状态</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970516.566094</td>
+                    <td class="DefaultCell">CAN通信状态</td>
+                    <td class="DefaultCell">gECUMsgIDCount = 0, event_detected = False, gErrorFrameCount = 0</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970516.566499</td>
+                    <td class="DefaultCell">CAN通信状态检查</td>
+                    <td class="DefaultCell">DUT通信未恢复</td>
+                    <td class="NegativeResultCell">fail</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970516.568739</td>
+                    <td class="DefaultCell">CAN通信检查</td>
+                    <td class="DefaultCell">CAN通信状态检查失败</td>
+                    <td class="NegativeResultCell">fail</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970516.569807</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">停止唤醒消息模拟</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970516.570315</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">唤醒消息模拟停止成功</td>
+                    <td class="PositiveResultCell">pass</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970518.572179</td>
+                    <td class="DefaultCell">日志记录</td>
+                    <td class="DefaultCell">停止记录测试用例日志文件: N_As超时值检查 (tp_can/test_TG1_TC1_TimeoutCheck_N_AS)</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970518.582954</td>
+                    <td class="DefaultCell">日志记录</td>
+                    <td class="DefaultCell">日志记录已停止: FD=5</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970519.583669</td>
+                    <td class="DefaultCell">测试结束</td>
+                    <td class="DefaultCell">测试用例执行完成: </td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779970519.583797</td>
+                    <td class="DefaultCell">测试结束</td>
+                    <td class="DefaultCell">执行测试结束和去初始化</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+    (function () {
+        function toggleCaseDetail(event) {
+            event.preventDefault();
+            var link = event.currentTarget;
+            var heading = link.closest ? link.closest('table.GroupHeadingTable') : null;
+            if (!heading) return;
+            var detail = heading.nextElementSibling;
+            if (!detail || !detail.classList || !detail.classList.contains('TestCaseDetailBlock')) return;
+            var expanded = detail.style.display === 'none';
+            detail.style.display = expanded ? '' : 'none';
+            link.textContent = expanded ? '[−]' : '[+]';
+            link.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+        }
+
+        var links = document.querySelectorAll('a.ToggleCaseDetail');
+        for (var i = 0; i < links.length; i++) {
+            links[i].addEventListener('click', toggleCaseDetail);
+        }
+    })();
+    </script>
+
+    <!-- 报告结尾 -->
+    <div class="footer">
+        <p>测试报告生成时间: 2026-05-28 20:15:31</p>
+        <p>Generated by ECU Basic Network Test Framework</p>
+    </div>
+</body>
+</html>

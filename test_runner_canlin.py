@@ -1,13 +1,15 @@
 import os
 import traceback
 import env           # 环境初始化（路径、DLL、runtime）
+import env.test_session  # 注册标准测试 SessionFixture
 
 from uvtest.framework import run_test_framework, discover_test_groups
 def main():
     success = False
     try:
         project_dir = os.path.dirname(os.path.abspath(__file__))
-        discover_test_groups(project_dir)
+        testcases_canlin_dir = os.path.join(project_dir, "testcases_canlin")
+        discover_test_groups(testcases_canlin_dir)
 
         # 交互式
         success = run_test_framework()

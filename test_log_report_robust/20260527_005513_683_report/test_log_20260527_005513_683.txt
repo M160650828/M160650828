@@ -1,0 +1,1341 @@
+[INFO] 测试报告初始化: 初始化测试报告生成: Test Report - 2026-05-27 00:55:13
+[INFO] 测试报告初始化: 测试会话目录: d:\SolarOne\framework-canlin\robustcases\test_log_report\20260527_005513_683_report
+[PASS] 测试报告初始化: 测试报告初始化完成
+[INFO] 测试报告: 初始化测试报告: Test Report
+[PASS] 测试报告初始化: 测试报告初始化完成
+发现测试组...
+Using Project Path: d:\SolarOne\framework-canlin\robustcases
+项目根目录: d:\SolarOne\framework-canlin\robustcases
+搜索测试文件: d:\SolarOne\framework-canlin\robustcases\testcases\**\*_testcase.py
+找到 13 个 .py 测试文件, 0 个 .pyd 测试文件
+
+============================================================
+测试执行 - 分组选择
+============================================================
+测试组:
+ 1. busstress (3个测试)
+ 2. can (5个测试)
+ 3. dtc (3个测试)
+ 4. e2e (3个测试)
+ 5. hardware (3个测试)
+ 6. lin (3个测试)
+ 7. nm (3个测试)
+ 8. power (5个测试)
+ 9. routing (3个测试)
+10. signal (3个测试)
+11. system (3个测试)
+12. tp (3个测试)
+13. uds (3个测试)
+14. 执行全部测试
+============================================================
+请选择测试组 (1-14) (单选，如: 1) 或输入 'q' 退出: 
+============================================================
+can - 测试用例选择
+============================================================
+测试用例:
+ 1. can_robust/test_TG1_TC1_BusOffAutoRecoveryTest
+ 2. can_robust/test_TG1_TC2_ContinuousErrorFrameRobustnessTest
+ 3. can_robust/test_TG1_TC3_CANBusShortCircuitRecoveryTest
+ 4. can_robust/test_TG1_TC4_TerminationResistorMissingTest
+ 5. can_robust/test_TG1_TC5_CANFDBRSErrorRobustnessTest
+ 6. 执行本组全部测试
+ 7. 返回上级菜单
+============================================================
+请选择测试用例 (1-7) (支持多选，如: 1,3,5 或单选 1) 或输入 'q' 退出: 
+开始执行 can，共 1 个测试用例
+Final DLL path: C:\EPT\SolarRT\bin\ts_can.dll
+DLL load success, path:  C:\EPT\SolarRT\bin\ts_can.dll
+Final DLL path: C:\EPT\SolarRT\bin\ts_lin.dll
+DLL load success, path:  C:\EPT\SolarRT\bin\ts_lin.dll
+_sl_register_event_handler
+Final DLL path: C:\EPT\SolarRT\bin\ts_linsch.dll
+DLL load success, path:  C:\EPT\SolarRT\bin\ts_linsch.dll
+Final DLL path: C:\EPT\SolarRT\bin\ts_lintp.dll
+DLL load success, path:  C:\EPT\SolarRT\bin\ts_lintp.dll
+Final DLL path: C:\EPT\SolarRT\bin\libuv_lintp.dll
+DLL load success, path:  C:\EPT\SolarRT\bin\libuv_lintp.dll
+DLL load success, path:  C:\EPT\SolarRT\bin\ts_database.dll
+DLL load success, path:  C:\EPT\SolarRT\bin\ts_network.dll
+DLL load success, path:  C:\EPT\SolarRT\bin\ts_channel.dll
+======================================================================
+[配置初始化] d:\SolarOne\framework-canlin\env\config.py
+======================================================================
+===DBC=== 0 dict_keys([])
+===LDF=== 0 dict_keys([])
+===ARXML_CP=== 0 dict_keys([])
+New LIN network: <cdata 'void *' 0x000001BE21A440C0>
+======================================================================
+[配置初始化] 完成
+======================================================================
+
+初始化测试环境（group: testcases.can.can_robust_testcase）...
+[INFO] 开始CAN相关初始化
+[INFO] Step1: 初始化全局上下文
+[INFO] Step2: 配置和激活CAN通道
+[INFO] 激活所有DEFAULT_CAN_CHANNELS通道
+[DEBUG] 激活CAN通道 1
+really new sl_can
+[sl_can_1] 激活CAN总线...
+[sl_can_1] CAN总线激活成功
+[DEBUG] CAN通道 1 激活成功
+[INFO] 通道激活: 成功激活CAN通道 1
+[DEBUG] 激活CAN通道 2
+really new sl_can
+[sl_can_2] 激活CAN总线...
+[sl_can_2] CAN总线激活成功
+[DEBUG] CAN通道 2 激活成功
+[INFO] 通道激活: 成功激活CAN通道 2
+[PASS] 成功激活2个CAN通道用于CAN测试初始化
+[INFO] Step3: 读取数据库文件数据
+[INFO] DBC解析: 开始解析 DBC 数据库...
+[FAIL] DBC解析: 未能加载数据库
+[FAIL] 数据库文件解析失败
+测试环境初始化成功
+
+============================================================
+开始执行测试: can_robust/test_TG1_TC1_BusOffAutoRecoveryTest
+============================================================
+[DEBUG] 电源控制: 关闭DUT电源
+[DEBUG] 电源控制: 初始化: name=HSPY, port=COM5, device_addr=0
+[DEBUG] BOB: 初始化: name=, control_can=2, {'power_ch': 1, 'addr': 0}
+[DEBUG] BOB Control: CAN1 终端电阻已启用
+[DEBUG] 日志记录: 开始录制日志
+[INFO] 开始记录测试用例日志: BusOff自动恢复鲁棒性测试 (can_robust/test_TG1_TC1_BusOffAutoRecoveryTest), 文件: d:\SolarOne\framework-canlin\robustcases\test_log_report\20260527_005513_683_report\can\can_robust_test_TG1_TC1_BusOffAutoRecoveryTest_BusOff自动恢复鲁棒性测试_20260527_005532_262.blf
+[DEBUG] TestStartLogging: fd=1, path=d:\SolarOne\framework-canlin\robustcases\test_log_report\20260527_005513_683_report\can\can_robust_test_TG1_TC1_BusOffAutoRecoveryTest_BusOff自动恢复鲁棒性测试_20260527_005532_262.blf
+[INFO] Step1: 设置DUT电源电压为12.0V，将KL30上电，唤醒CAN网络，等待1.0s至通信稳定
+[INFO] 开始CAN测试设置和通信检查
+[INFO] 设置DUT供电电压为 12.00V
+[INFO] 执行KL30上电
+[INFO] 根据DUT通信唤醒方式，启动ECU唤醒
+[INFO] 使用KL15硬线唤醒
+[INFO] 等待 1.0s 至CAN通信稳定
+[INFO] CAN通信状态检查: 先最多等待3s事件预热，再等待 1.000s 统计通信状态
+[INFO] CAN通信状态: 统计窗口结果: frame_cnt = 0, gErrorFrameCount = 0
+[FAIL]  : 期望结果：CAN通信状态检查, 实际结果：DUT通信未恢复
+[FAIL] CAN通信状态检查失败
+[FAIL] Step1: 电源设置与通信检查失败，结束测试
+[DEBUG] 电源控制: 停止唤醒信号
+[DEBUG] 停止唤醒
+[DEBUG] 电源控制: 关闭DUT电源
+[DEBUG] BOB Control: CAN1 终端电阻已关闭
+[DEBUG] 电源控制: 将电源供应电压设置为0V
+[INFO] 日志记录: 停止记录测试用例日志文件: BusOff自动恢复鲁棒性测试 (can_robust/test_TG1_TC1_BusOffAutoRecoveryTest)
+[INFO] 日志记录: 日志记录已停止: FD=1
+[INFO] 测试结束: 测试用例执行完成: 
+[INFO] 测试结束: 执行测试结束和去初始化
+测试 can_robust/test_TG1_TC1_BusOffAutoRecoveryTest 执行完成 (FAIL)
+
+can 执行完成: 0/1 成功
+清理测试环境（group: testcases.can.can_robust_testcase）...
+[INFO] CAN测试去初始化: 开始CAN测试去初始化...
+[INFO] Step0: 取消注册CAN事件回调
+[INFO] 已取消注册
+[INFO] Step1: 停用CAN通道
+[sl_can_1] 停用CAN总线失败，错误码：-1
+[INFO] 成功停用CAN通道 1
+[sl_can_2] 停用CAN总线失败，错误码：-1
+[INFO] 成功停用CAN通道 2
+[INFO] Step2: 停止运行时环境
+[INFO] Step2: 清理全局上下文
+[INFO] 去初始化完成
+测试环境清理完成
+
+============================================================
+测试执行 - 分组选择
+============================================================
+测试组:
+ 1. busstress (3个测试)
+ 2. can (5个测试)
+ 3. dtc (3个测试)
+ 4. e2e (3个测试)
+ 5. hardware (3个测试)
+ 6. lin (3个测试)
+ 7. nm (3个测试)
+ 8. power (5个测试)
+ 9. routing (3个测试)
+10. signal (3个测试)
+11. system (3个测试)
+12. tp (3个测试)
+13. uds (3个测试)
+14. 执行全部测试
+============================================================
+请选择测试组 (1-14) (单选，如: 1) 或输入 'q' 退出: 
+============================================================
+busstress - 测试用例选择
+============================================================
+测试用例:
+ 1. busstress_robust/test_TG1_TC1_BusLoadStressTest
+ 2. busstress_robust/test_TG1_TC2_InterruptStormViaBusLoadTest
+ 3. busstress_robust/test_TG1_TC3_HighFrequencyMessageBurstTest
+ 4. 执行本组全部测试
+ 5. 返回上级菜单
+============================================================
+请选择测试用例 (1-5) (支持多选，如: 1,3,5 或单选 1) 或输入 'q' 退出: 
+开始执行 busstress，共 1 个测试用例
+Final DLL path: C:\EPT\SolarRT\bin\ts_busstatis.dll
+DLL load success, path:  C:\EPT\SolarRT\bin\ts_busstatis.dll
+
+初始化测试环境（group: testcases.busstress.busstress_robust_testcase）...
+[INFO] 开始CAN相关初始化
+[INFO] Step1: 初始化全局上下文
+[INFO] Step2: 配置和激活CAN通道
+[INFO] 激活所有DEFAULT_CAN_CHANNELS通道
+[DEBUG] 激活CAN通道 1
+[sl_can_1] 激活CAN总线...
+[sl_can_1] CAN总线激活成功
+[DEBUG] CAN通道 1 激活成功
+[INFO] 通道激活: 成功激活CAN通道 1
+[DEBUG] 激活CAN通道 2
+[sl_can_2] 激活CAN总线...
+[sl_can_2] CAN总线激活成功
+[DEBUG] CAN通道 2 激活成功
+[INFO] 通道激活: 成功激活CAN通道 2
+[PASS] 成功激活2个CAN通道用于CAN测试初始化
+[INFO] Step3: 读取数据库文件数据
+[INFO] DBC解析: 开始解析 DBC 数据库...
+[FAIL] DBC解析: 未能加载数据库
+[FAIL] 数据库文件解析失败
+测试环境初始化成功
+
+============================================================
+开始执行测试: busstress_robust/test_TG1_TC1_BusLoadStressTest
+============================================================
+[DEBUG] 电源控制: 关闭DUT电源
+[DEBUG] 电源控制: 初始化: name=HSPY, port=COM5, device_addr=0
+[DEBUG] BOB: 初始化: name=, control_can=2, {'power_ch': 1, 'addr': 0}
+[DEBUG] BOB Control: CAN1 终端电阻已启用
+[DEBUG] 日志记录: 开始录制日志
+[INFO] 开始记录测试用例日志: 总线负载压力鲁棒性测试 (busstress_robust/test_TG1_TC1_BusLoadStressTest), 文件: d:\SolarOne\framework-canlin\robustcases\test_log_report\20260527_005513_683_report\busstress\busstress_robust_test_TG1_TC1_BusLoadStressTest_总线负载压力鲁棒性测试_20260527_005547_819.blf
+[DEBUG] TestStartLogging: fd=2, path=d:\SolarOne\framework-canlin\robustcases\test_log_report\20260527_005513_683_report\busstress\busstress_robust_test_TG1_TC1_BusLoadStressTest_总线负载压力鲁棒性测试_20260527_005547_819.blf
+[INFO] Step1: 设置DUT电源电压为12.0V，唤醒CAN网络，等待1.0s至通信稳定
+[INFO] 开始CAN测试设置和通信检查
+[INFO] 设置DUT供电电压为 12.00V
+[INFO] 执行KL30上电
+[INFO] 根据DUT通信唤醒方式，启动ECU唤醒
+[INFO] 使用KL15硬线唤醒
+[INFO] 等待 1.0s 至CAN通信稳定
+[INFO] CAN通信状态检查: 先最多等待3s事件预热，再等待 1.000s 统计通信状态
+[INFO] CAN通信状态: 统计窗口结果: frame_cnt = 0, gErrorFrameCount = 0
+[FAIL]  : 期望结果：CAN通信状态检查, 实际结果：DUT通信未恢复
+[FAIL] CAN通信状态检查失败
+[FAIL] Step1: 电源设置与通信检查失败
+[DEBUG] 电源控制: 停止唤醒信号
+[DEBUG] 停止唤醒
+[DEBUG] 电源控制: 关闭DUT电源
+[DEBUG] BOB Control: CAN1 终端电阻已关闭
+[DEBUG] 电源控制: 将电源供应电压设置为0V
+[INFO] 日志记录: 停止记录测试用例日志文件: 总线负载压力鲁棒性测试 (busstress_robust/test_TG1_TC1_BusLoadStressTest)
+[INFO] 日志记录: 日志记录已停止: FD=2
+[INFO] 测试结束: 测试用例执行完成: 
+[INFO] 测试结束: 执行测试结束和去初始化
+测试 busstress_robust/test_TG1_TC1_BusLoadStressTest 执行完成 (FAIL)
+
+busstress 执行完成: 0/1 成功
+清理测试环境（group: testcases.busstress.busstress_robust_testcase）...
+[INFO] CAN测试去初始化: 开始CAN测试去初始化...
+[INFO] Step0: 取消注册CAN事件回调
+[INFO] 已取消注册
+[INFO] Step1: 停用CAN通道
+[sl_can_1] 停用CAN总线失败，错误码：-1
+[INFO] 成功停用CAN通道 1
+[sl_can_2] 停用CAN总线失败，错误码：-1
+[INFO] 成功停用CAN通道 2
+[INFO] Step2: 停止运行时环境
+[INFO] Step2: 清理全局上下文
+[INFO] 去初始化完成
+测试环境清理完成
+
+============================================================
+测试执行 - 分组选择
+============================================================
+测试组:
+ 1. busstress (3个测试)
+ 2. can (5个测试)
+ 3. dtc (3个测试)
+ 4. e2e (3个测试)
+ 5. hardware (3个测试)
+ 6. lin (3个测试)
+ 7. nm (3个测试)
+ 8. power (5个测试)
+ 9. routing (3个测试)
+10. signal (3个测试)
+11. system (3个测试)
+12. tp (3个测试)
+13. uds (3个测试)
+14. 执行全部测试
+============================================================
+请选择测试组 (1-14) (单选，如: 1) 或输入 'q' 退出: 
+============================================================
+dtc - 测试用例选择
+============================================================
+测试用例:
+ 1. dtc_robust/test_TG1_TC1_DTCAgingCounterRolloverTest
+ 2. dtc_robust/test_TG1_TC2_MultipleFaultSimultaneousTest
+ 3. dtc_robust/test_TG1_TC3_DTCTriggerAfterClearTest
+ 4. 执行本组全部测试
+ 5. 返回上级菜单
+============================================================
+请选择测试用例 (1-5) (支持多选，如: 1,3,5 或单选 1) 或输入 'q' 退出: 
+开始执行 dtc，共 1 个测试用例
+导入模块 testcases.dtc.dtc_robust_testcase 失败: cannot import name 'Message' from 'can' (d:\SolarOne\framework-canlin\robustcases\can\__init__.py)
+
+dtc 执行完成: 0/1 成功
+
+============================================================
+测试执行 - 分组选择
+============================================================
+测试组:
+ 1. busstress (3个测试)
+ 2. can (5个测试)
+ 3. dtc (3个测试)
+ 4. e2e (3个测试)
+ 5. hardware (3个测试)
+ 6. lin (3个测试)
+ 7. nm (3个测试)
+ 8. power (5个测试)
+ 9. routing (3个测试)
+10. signal (3个测试)
+11. system (3个测试)
+12. tp (3个测试)
+13. uds (3个测试)
+14. 执行全部测试
+============================================================
+请选择测试组 (1-14) (单选，如: 1) 或输入 'q' 退出: 
+============================================================
+e2e - 测试用例选择
+============================================================
+测试用例:
+ 1. e2e_robust/test_TG1_TC1_ContinuousCRCErrorHandlingTest
+ 2. e2e_robust/test_TG1_TC2_CounterAbnormalJumpTest
+ 3. e2e_robust/test_TG1_TC3_E2ERecoveryCapabilityTest
+ 4. 执行本组全部测试
+ 5. 返回上级菜单
+============================================================
+请选择测试用例 (1-5) (支持多选，如: 1,3,5 或单选 1) 或输入 'q' 退出: 
+开始执行 e2e，共 1 个测试用例
+导入模块 testcases.e2e.e2e_robust_testcase 失败: cannot import name 'Message' from 'can' (d:\SolarOne\framework-canlin\robustcases\can\__init__.py)
+
+e2e 执行完成: 0/1 成功
+
+============================================================
+测试执行 - 分组选择
+============================================================
+测试组:
+ 1. busstress (3个测试)
+ 2. can (5个测试)
+ 3. dtc (3个测试)
+ 4. e2e (3个测试)
+ 5. hardware (3个测试)
+ 6. lin (3个测试)
+ 7. nm (3个测试)
+ 8. power (5个测试)
+ 9. routing (3个测试)
+10. signal (3个测试)
+11. system (3个测试)
+12. tp (3个测试)
+13. uds (3个测试)
+14. 执行全部测试
+============================================================
+请选择测试组 (1-14) (单选，如: 1) 或输入 'q' 退出: 
+============================================================
+hardware - 测试用例选择
+============================================================
+测试用例:
+ 1. hardware_robust/test_TG1_TC1_RapidPowerCycleRecoveryTest
+ 2. hardware_robust/test_TG1_TC2_ExtremeVoltageBoundaryTest
+ 3. hardware_robust/test_TG1_TC3_PersistentOperationStabilityTest
+ 4. 执行本组全部测试
+ 5. 返回上级菜单
+============================================================
+请选择测试用例 (1-5) (支持多选，如: 1,3,5 或单选 1) 或输入 'q' 退出: 
+开始执行 hardware，共 1 个测试用例
+
+初始化测试环境（group: testcases.hardware.hardware_robust_testcase）...
+[INFO] 开始CAN相关初始化
+[INFO] Step1: 初始化全局上下文
+[INFO] Step2: 配置和激活CAN通道
+[INFO] 激活所有DEFAULT_CAN_CHANNELS通道
+[DEBUG] 激活CAN通道 1
+[sl_can_1] 激活CAN总线...
+[sl_can_1] CAN总线激活成功
+[DEBUG] CAN通道 1 激活成功
+[INFO] 通道激活: 成功激活CAN通道 1
+[DEBUG] 激活CAN通道 2
+[sl_can_2] 激活CAN总线...
+[sl_can_2] CAN总线激活成功
+[DEBUG] CAN通道 2 激活成功
+[INFO] 通道激活: 成功激活CAN通道 2
+[PASS] 成功激活2个CAN通道用于CAN测试初始化
+[INFO] Step3: 读取数据库文件数据
+[INFO] DBC解析: 开始解析 DBC 数据库...
+[FAIL] DBC解析: 未能加载数据库
+[FAIL] 数据库文件解析失败
+测试环境初始化成功
+
+============================================================
+开始执行测试: hardware_robust/test_TG1_TC1_RapidPowerCycleRecoveryTest
+============================================================
+[DEBUG] 电源控制: 关闭DUT电源
+[DEBUG] 电源控制: 初始化: name=HSPY, port=COM5, device_addr=0
+[DEBUG] BOB: 初始化: name=, control_can=2, {'power_ch': 1, 'addr': 0}
+[DEBUG] BOB Control: CAN1 终端电阻已启用
+[DEBUG] 日志记录: 开始录制日志
+[INFO] 开始记录测试用例日志: 多次快速上下电恢复鲁棒性测试 (hardware_robust/test_TG1_TC1_RapidPowerCycleRecoveryTest), 文件: d:\SolarOne\framework-canlin\robustcases\test_log_report\20260527_005513_683_report\hardware\hardware_robust_test_TG1_TC1_RapidPowerCycleRecoveryTest_多次快速上下电恢复鲁棒性测试_20260527_005610_251.blf
+[DEBUG] TestStartLogging: fd=3, path=d:\SolarOne\framework-canlin\robustcases\test_log_report\20260527_005513_683_report\hardware\hardware_robust_test_TG1_TC1_RapidPowerCycleRecoveryTest_多次快速上下电恢复鲁棒性测试_20260527_005610_251.blf
+[INFO] Step1: 执行20次快速KL30上下电循环（间隔100ms）
+[INFO] Step1: 已完成 10/20 次循环
+[INFO] Step1: 已完成 20/20 次循环
+[INFO] Step2: 快速上下电完成后正常上电, 设置12.0V, 唤醒DUT, 等待1.0s通信稳定
+[INFO] 开始CAN测试设置和通信检查
+[INFO] 设置DUT供电电压为 12.00V
+[INFO] 执行KL30上电
+[INFO] 根据DUT通信唤醒方式，启动ECU唤醒
+[INFO] 使用KL15硬线唤醒
+[INFO] 等待 1.0s 至CAN通信稳定
+[INFO] CAN通信状态检查: 先最多等待3s事件预热，再等待 1.000s 统计通信状态
+[INFO] CAN通信状态: 统计窗口结果: frame_cnt = 0, gErrorFrameCount = 0
+[FAIL]  : 期望结果：CAN通信状态检查, 实际结果：DUT通信未恢复
+[FAIL] CAN通信状态检查失败
+[FAIL] Step2: 20次快速上下电后DUT通信检查失败
+[DEBUG] 电源控制: 停止唤醒信号
+[DEBUG] 停止唤醒
+[DEBUG] 电源控制: 关闭DUT电源
+[DEBUG] BOB Control: CAN1 终端电阻已关闭
+[DEBUG] 电源控制: 将电源供应电压设置为0V
+[INFO] 日志记录: 停止记录测试用例日志文件: 多次快速上下电恢复鲁棒性测试 (hardware_robust/test_TG1_TC1_RapidPowerCycleRecoveryTest)
+[INFO] 日志记录: 日志记录已停止: FD=3
+[INFO] 测试结束: 测试用例执行完成: 
+[INFO] 测试结束: 执行测试结束和去初始化
+测试 hardware_robust/test_TG1_TC1_RapidPowerCycleRecoveryTest 执行完成 (FAIL)
+
+hardware 执行完成: 0/1 成功
+清理测试环境（group: testcases.hardware.hardware_robust_testcase）...
+[INFO] CAN测试去初始化: 开始CAN测试去初始化...
+[INFO] Step0: 取消注册CAN事件回调
+[INFO] 已取消注册
+[INFO] Step1: 停用CAN通道
+[sl_can_1] 停用CAN总线失败，错误码：-1
+[INFO] 成功停用CAN通道 1
+[sl_can_2] 停用CAN总线失败，错误码：-1
+[INFO] 成功停用CAN通道 2
+[INFO] Step2: 停止运行时环境
+[INFO] Step2: 清理全局上下文
+[INFO] 去初始化完成
+测试环境清理完成
+
+============================================================
+测试执行 - 分组选择
+============================================================
+测试组:
+ 1. busstress (3个测试)
+ 2. can (5个测试)
+ 3. dtc (3个测试)
+ 4. e2e (3个测试)
+ 5. hardware (3个测试)
+ 6. lin (3个测试)
+ 7. nm (3个测试)
+ 8. power (5个测试)
+ 9. routing (3个测试)
+10. signal (3个测试)
+11. system (3个测试)
+12. tp (3个测试)
+13. uds (3个测试)
+14. 执行全部测试
+============================================================
+请选择测试组 (1-14) (单选，如: 1) 或输入 'q' 退出: 
+============================================================
+lin - 测试用例选择
+============================================================
+测试用例:
+ 1. lin_robust/test_TG1_TC1_LINBusShortCircuitRecoveryTest
+ 2. lin_robust/test_TG1_TC2_LINChecksumErrorHandlingTest
+ 3. lin_robust/test_TG1_TC3_LINSleepWakeupRecoveryTest
+ 4. 执行本组全部测试
+ 5. 返回上级菜单
+============================================================
+请选择测试用例 (1-5) (支持多选，如: 1,3,5 或单选 1) 或输入 'q' 退出: 
+开始执行 lin，共 1 个测试用例
+
+初始化测试环境（group: testcases.lin.lin_robust_testcase）...
+[INFO] LIN初始化: 开始LIN协议相关初始化
+[INFO] Step4: 配置LIN通信为 master 模式
+[INFO] LIN通信设置: 开始LIN通信设置 - 模式: master
+[INFO] Step1: 设置LIN通道 None 为 master 模式
+create new sl_lin
+[INFO] 通道配置: LIN通道 None 配置为主节点模式
+[INFO] Step3: 应用LIN通道 None 配置
+[INFO] LIN通信设置: LIN通信设置完成 - 模式: master, 通道: None, LDF帧: 0
+[INFO] Step2: 初始化LIN测试环境
+[INFO] Step3: 解析LDF数据库获取帧定义
+[INFO] LDF解析: 开始解析 LDF 数据库...
+[FAIL] LDF解析: 未能加载 LDF 数据库
+[WARNING] LDF解析: LDF文件解析失败或无帧定义
+[INFO] LDF数据存储: 已将 0 个帧定义存储到全局上下文
+[sl_can_1] 激活CAN总线...
+[sl_can_1] CAN总线激活成功
+can active  True
+[INFO] 通道激活: 成功激活CAN通道 1
+[sl_can_2] 激活CAN总线...
+[sl_can_2] CAN总线激活成功
+can active  True
+[INFO] 通道激活: 成功激活CAN通道 2
+[INFO] LIN测试初始化: 基础初始化完成
+测试环境初始化成功
+
+============================================================
+开始执行测试: lin_robust/test_TG1_TC1_LINBusShortCircuitRecoveryTest
+============================================================
+[DEBUG] 电源控制: 关闭DUT电源
+[DEBUG] 电源控制: 初始化: name=HSPY, port=COM5, device_addr=0
+[DEBUG] BOB: 初始化: name=, control_can=2, {'power_ch': 1, 'addr': 0}
+[DEBUG] BOB Control: CAN1 终端电阻已启用
+[DEBUG] 日志记录: 开始录制日志
+[INFO] 开始记录测试用例日志: LIN总线短路恢复鲁棒性测试 (lin_robust/test_TG1_TC1_LINBusShortCircuitRecoveryTest), 文件: d:\SolarOne\framework-canlin\robustcases\test_log_report\20260527_005513_683_report\lin\lin_robust_test_TG1_TC1_LINBusShortCircuitRecoveryTest_LIN总线短路恢复鲁棒性测试_20260527_005623_517.blf
+[DEBUG] TestStartLogging: fd=4, path=d:\SolarOne\framework-canlin\robustcases\test_log_report\20260527_005513_683_report\lin\lin_robust_test_TG1_TC1_LINBusShortCircuitRecoveryTest_LIN总线短路恢复鲁棒性测试_20260527_005623_517.blf
+[INFO] Step1: 设置DUT电源电压为12.0V，将KL30上电，等待5.0s至通信稳定
+[INFO] 设置DUT供电电压为12.0V
+[INFO] 等待5.0s至通信稳定
+[PASS] Step1: 期望结果：DUT LIN通信正常。实际结果：DUT上电完成
+[INFO] Step2: 依次测试LIN总线故障类型: ['LIN_short_GND', 'LIN_short_BAT']
+[INFO] Step2: 注入LIN故障: LIN_short_GND, 持续5秒
+[INFO] Step2: 注入LIN故障: LIN_short_BAT, 持续5秒
+[INFO] Step3: 所有LIN故障清除后等待通信恢复
+[WARNING] Step3: 期望结果：LIN故障清除后通信恢复。实际结果：未收到LIN报文
+[INFO] LIN总线短路恢复鲁棒性测试: 测试完成
+[DEBUG] 电源控制: 停止唤醒信号
+[DEBUG] 停止唤醒
+[DEBUG] 电源控制: 关闭DUT电源
+[DEBUG] BOB Control: CAN1 终端电阻已关闭
+[DEBUG] 电源控制: 将电源供应电压设置为0V
+[INFO] 日志记录: 停止记录测试用例日志文件: LIN总线短路恢复鲁棒性测试 (lin_robust/test_TG1_TC1_LINBusShortCircuitRecoveryTest)
+[INFO] 日志记录: 日志记录已停止: FD=4
+[INFO] 测试结束: 测试用例执行完成: 
+[INFO] 测试结束: 执行测试结束和去初始化
+测试 lin_robust/test_TG1_TC1_LINBusShortCircuitRecoveryTest 执行完成 (PASS)
+
+lin 执行完成: 1/1 成功
+清理测试环境（group: testcases.lin.lin_robust_testcase）...
+[INFO] LIN测试去初始化: 开始LIN测试去初始化...
+[INFO] 回调注销: 已取消注册 LIN 适配层回调 _on_msg_lin
+[sl_can_1] 停用CAN总线失败，错误码：-1
+[INFO] 通道停用: 成功停用CAN通道 1
+[sl_can_2] 停用CAN总线失败，错误码：-1
+[INFO] 通道停用: 成功停用CAN通道 2
+[INFO] Step2: 清理LIN和CAN上下文数据
+[INFO] LIN测试去初始化: 去初始化完成
+测试环境清理完成
+
+============================================================
+测试执行 - 分组选择
+============================================================
+测试组:
+ 1. busstress (3个测试)
+ 2. can (5个测试)
+ 3. dtc (3个测试)
+ 4. e2e (3个测试)
+ 5. hardware (3个测试)
+ 6. lin (3个测试)
+ 7. nm (3个测试)
+ 8. power (5个测试)
+ 9. routing (3个测试)
+10. signal (3个测试)
+11. system (3个测试)
+12. tp (3个测试)
+13. uds (3个测试)
+14. 执行全部测试
+============================================================
+请选择测试组 (1-14) (单选，如: 1) 或输入 'q' 退出: 
+============================================================
+nm - 测试用例选择
+============================================================
+测试用例:
+ 1. nm_robust/test_TG1_TC1_RepeatedSleepWakeupCyclingTest
+ 2. nm_robust/test_TG1_TC2_NMMessageLossRecoveryTest
+ 3. nm_robust/test_TG1_TC3_AbnormalWakeupSourceTest
+ 4. 执行本组全部测试
+ 5. 返回上级菜单
+============================================================
+请选择测试用例 (1-5) (支持多选，如: 1,3,5 或单选 1) 或输入 'q' 退出: 
+开始执行 nm，共 1 个测试用例
+
+初始化测试环境（group: testcases.nm.nm_robust_testcase）...
+[INFO] NM初始化: 开始NM相关初始化
+[sl_can_1] 激活CAN总线...
+[sl_can_1] CAN总线激活成功
+[INFO] 通道激活: 成功激活CAN通道 1
+[sl_can_2] 激活CAN总线...
+[sl_can_2] CAN总线激活成功
+[INFO] 通道激活: 成功激活CAN通道 2
+[INFO] DBC解析: 开始解析 DBC 数据库...
+[FAIL] DBC解析: 未能加载数据库
+解析出来的数据库内容 {}
+[FAIL] NM初始化: DBC文件解析失败
+测试环境初始化成功
+
+============================================================
+开始执行测试: nm_robust/test_TG1_TC1_RepeatedSleepWakeupCyclingTest
+============================================================
+[DEBUG] 电源控制: 关闭DUT电源
+[DEBUG] 电源控制: 初始化: name=HSPY, port=COM5, device_addr=0
+[DEBUG] BOB: 初始化: name=, control_can=2, {'power_ch': 1, 'addr': 0}
+[DEBUG] BOB Control: CAN1 终端电阻已启用
+[DEBUG] 日志记录: 开始录制日志
+[INFO] 开始记录测试用例日志: 重复休眠唤醒循环鲁棒性测试 (nm_robust/test_TG1_TC1_RepeatedSleepWakeupCyclingTest), 文件: d:\SolarOne\framework-canlin\robustcases\test_log_report\20260527_005513_683_report\nm\nm_robust_test_TG1_TC1_RepeatedSleepWakeupCyclingTest_重复休眠唤醒循环鲁棒性测试_20260527_005657_283.blf
+[DEBUG] TestStartLogging: fd=5, path=d:\SolarOne\framework-canlin\robustcases\test_log_report\20260527_005513_683_report\nm\nm_robust_test_TG1_TC1_RepeatedSleepWakeupCyclingTest_重复休眠唤醒循环鲁棒性测试_20260527_005657_283.blf
+[INFO] Step1: 设置DUT电源电压为12.0V，执行KL30上电, 等待DUT进入睡眠
+[INFO] 等待通信停止: TNMtimeout=2000ms, 静默窗口=1000ms, 超时=5.0s
+[PASS] 通信停止，RX报文静默1009ms
+[] len(sum_current): 0
+[] sum_current: []
+[WARNING] 未读取到有效电流值，继续等待
+[] len(sum_current): 0
+[] sum_current: []
+[WARNING] 未读取到有效电流值，继续等待
+[] len(sum_current): 0
+[] sum_current: []
+[WARNING] 未读取到有效电流值，继续等待
+[] len(sum_current): 0
+[] sum_current: []
+[WARNING] 未读取到有效电流值，继续等待
+[] len(sum_current): 0
+[] sum_current: []
+[WARNING] 未读取到有效电流值，继续等待
+[FAIL] Step1: DUT未进入睡眠模式: 超时5.0s未达到睡眠电流
+[INFO] 取消被动唤醒请求
+[INFO] 取消重复报文模式请求
+[INFO] 停止仿真发送应用报文
+[DEBUG] 电源控制: 停止唤醒信号
+[DEBUG] 停止唤醒
+[DEBUG] 电源控制: 关闭DUT电源
+[DEBUG] BOB Control: CAN1 终端电阻已关闭
+[DEBUG] 电源控制: 将电源供应电压设置为0V
+[INFO] 日志记录: 停止记录测试用例日志文件: 重复休眠唤醒循环鲁棒性测试 (nm_robust/test_TG1_TC1_RepeatedSleepWakeupCyclingTest)
+[INFO] 日志记录: 日志记录已停止: FD=5
+[INFO] 测试结束: 测试用例执行完成: 
+[INFO] 测试结束: 执行测试结束和去初始化
+测试 nm_robust/test_TG1_TC1_RepeatedSleepWakeupCyclingTest 执行完成 (FAIL)
+
+nm 执行完成: 0/1 成功
+清理测试环境（group: testcases.nm.nm_robust_testcase）...
+[sl_can_1] 停用CAN总线失败，错误码：-1
+[INFO] 通道停用: 成功停用CAN通道 1
+[sl_can_2] 停用CAN总线失败，错误码：-1
+[INFO] 通道停用: 成功停用CAN通道 2
+测试环境清理完成
+
+============================================================
+测试执行 - 分组选择
+============================================================
+测试组:
+ 1. busstress (3个测试)
+ 2. can (5个测试)
+ 3. dtc (3个测试)
+ 4. e2e (3个测试)
+ 5. hardware (3个测试)
+ 6. lin (3个测试)
+ 7. nm (3个测试)
+ 8. power (5个测试)
+ 9. routing (3个测试)
+10. signal (3个测试)
+11. system (3个测试)
+12. tp (3个测试)
+13. uds (3个测试)
+14. 执行全部测试
+============================================================
+请选择测试组 (1-14) (单选，如: 1) 或输入 'q' 退出: 
+============================================================
+power - 测试用例选择
+============================================================
+测试用例:
+ 1. power_robust/test_TG1_TC1_MicroBrownoutSustainedTest
+ 2. power_robust/test_TG1_TC2_RapidVoltageFluctuationTest
+ 3. power_robust/test_TG1_TC3_ColdStartSlowVoltageRampTest
+ 4. power_robust/test_TG1_TC4_VoltageDipDuringOperationTest
+ 5. power_robust/test_TG1_TC5_RepeatedKL30PowerCycleTest
+ 6. 执行本组全部测试
+ 7. 返回上级菜单
+============================================================
+请选择测试用例 (1-7) (支持多选，如: 1,3,5 或单选 1) 或输入 'q' 退出: 
+开始执行 power，共 1 个测试用例
+
+初始化测试环境（group: testcases.power.power_robust_testcase）...
+[INFO] 开始CAN相关初始化
+[INFO] Step1: 初始化全局上下文
+[INFO] Step2: 配置和激活CAN通道
+[INFO] 激活所有DEFAULT_CAN_CHANNELS通道
+[DEBUG] 激活CAN通道 1
+[sl_can_1] 激活CAN总线...
+[sl_can_1] CAN总线激活成功
+[DEBUG] CAN通道 1 激活成功
+[INFO] 通道激活: 成功激活CAN通道 1
+[DEBUG] 激活CAN通道 2
+[sl_can_2] 激活CAN总线...
+[sl_can_2] CAN总线激活成功
+[DEBUG] CAN通道 2 激活成功
+[INFO] 通道激活: 成功激活CAN通道 2
+[PASS] 成功激活2个CAN通道用于CAN测试初始化
+[INFO] Step3: 读取数据库文件数据
+[INFO] DBC解析: 开始解析 DBC 数据库...
+[FAIL] DBC解析: 未能加载数据库
+[FAIL] 数据库文件解析失败
+测试环境初始化成功
+
+============================================================
+开始执行测试: power_robust/test_TG1_TC1_MicroBrownoutSustainedTest
+============================================================
+[DEBUG] 电源控制: 关闭DUT电源
+[DEBUG] 电源控制: 初始化: name=HSPY, port=COM5, device_addr=0
+[DEBUG] BOB: 初始化: name=, control_can=2, {'power_ch': 1, 'addr': 0}
+[DEBUG] BOB Control: CAN1 终端电阻已启用
+[DEBUG] 日志记录: 开始录制日志
+[INFO] 开始记录测试用例日志: 微欠压持续运行鲁棒性测试 (power_robust/test_TG1_TC1_MicroBrownoutSustainedTest), 文件: d:\SolarOne\framework-canlin\robustcases\test_log_report\20260527_005513_683_report\power\power_robust_test_TG1_TC1_MicroBrownoutSustainedTest_微欠压持续运行鲁棒性测试_20260527_005711_261.blf
+[DEBUG] TestStartLogging: fd=6, path=d:\SolarOne\framework-canlin\robustcases\test_log_report\20260527_005513_683_report\power\power_robust_test_TG1_TC1_MicroBrownoutSustainedTest_微欠压持续运行鲁棒性测试_20260527_005711_261.blf
+[INFO] Step1: 设置DUT电源电压为12.0V，唤醒CAN网络，等待1.0s至通信稳定
+[INFO] 开始CAN测试设置和通信检查
+[INFO] 设置DUT供电电压为 12.00V
+[INFO] 执行KL30上电
+[INFO] 根据DUT通信唤醒方式，启动ECU唤醒
+[INFO] 使用KL15硬线唤醒
+[INFO] 等待 1.0s 至CAN通信稳定
+[INFO] CAN通信状态检查: 先最多等待3s事件预热，再等待 1.000s 统计通信状态
+[INFO] CAN通信状态: 统计窗口结果: frame_cnt = 0, gErrorFrameCount = 0
+[FAIL]  : 期望结果：CAN通信状态检查, 实际结果：DUT通信未恢复
+[FAIL] CAN通信状态检查失败
+[FAIL] Step1: 电源设置与通信检查失败
+[DEBUG] 电源控制: 停止唤醒信号
+[DEBUG] 停止唤醒
+[DEBUG] 电源控制: 关闭DUT电源
+[DEBUG] BOB Control: CAN1 终端电阻已关闭
+[DEBUG] 电源控制: 将电源供应电压设置为0V
+[INFO] 日志记录: 停止记录测试用例日志文件: 微欠压持续运行鲁棒性测试 (power_robust/test_TG1_TC1_MicroBrownoutSustainedTest)
+[INFO] 日志记录: 日志记录已停止: FD=6
+[INFO] 测试结束: 测试用例执行完成: 
+[INFO] 测试结束: 执行测试结束和去初始化
+测试 power_robust/test_TG1_TC1_MicroBrownoutSustainedTest 执行完成 (FAIL)
+
+power 执行完成: 0/1 成功
+清理测试环境（group: testcases.power.power_robust_testcase）...
+[INFO] CAN测试去初始化: 开始CAN测试去初始化...
+[INFO] Step0: 取消注册CAN事件回调
+[INFO] 已取消注册
+[INFO] Step1: 停用CAN通道
+[sl_can_1] 停用CAN总线失败，错误码：-1
+[INFO] 成功停用CAN通道 1
+[sl_can_2] 停用CAN总线失败，错误码：-1
+[INFO] 成功停用CAN通道 2
+[INFO] Step2: 停止运行时环境
+[INFO] Step2: 清理全局上下文
+[INFO] 去初始化完成
+测试环境清理完成
+
+============================================================
+测试执行 - 分组选择
+============================================================
+测试组:
+ 1. busstress (3个测试)
+ 2. can (5个测试)
+ 3. dtc (3个测试)
+ 4. e2e (3个测试)
+ 5. hardware (3个测试)
+ 6. lin (3个测试)
+ 7. nm (3个测试)
+ 8. power (5个测试)
+ 9. routing (3个测试)
+10. signal (3个测试)
+11. system (3个测试)
+12. tp (3个测试)
+13. uds (3个测试)
+14. 执行全部测试
+============================================================
+请选择测试组 (1-14) (单选，如: 1) 或输入 'q' 退出: 
+============================================================
+signal - 测试用例选择
+============================================================
+测试用例:
+ 1. signal_robust/test_TG1_TC1_SignalTimeoutDetectionTest
+ 2. signal_robust/test_TG1_TC2_SignalValueOutOfRangeTest
+ 3. signal_robust/test_TG1_TC3_StaleSignalDataTest
+ 4. 执行本组全部测试
+ 5. 返回上级菜单
+============================================================
+请选择测试用例 (1-5) (支持多选，如: 1,3,5 或单选 1) 或输入 'q' 退出: 
+开始执行 signal，共 1 个测试用例
+
+初始化测试环境（group: testcases.signal.signal_robust_testcase）...
+[INFO] 开始CAN相关初始化
+[INFO] Step1: 初始化全局上下文
+[INFO] Step2: 配置和激活CAN通道
+[INFO] 激活所有DEFAULT_CAN_CHANNELS通道
+[DEBUG] 激活CAN通道 1
+[sl_can_1] 激活CAN总线...
+[sl_can_1] CAN总线激活成功
+[DEBUG] CAN通道 1 激活成功
+[INFO] 通道激活: 成功激活CAN通道 1
+[DEBUG] 激活CAN通道 2
+[sl_can_2] 激活CAN总线...
+[sl_can_2] CAN总线激活成功
+[DEBUG] CAN通道 2 激活成功
+[INFO] 通道激活: 成功激活CAN通道 2
+[PASS] 成功激活2个CAN通道用于CAN测试初始化
+[INFO] Step3: 读取数据库文件数据
+[INFO] DBC解析: 开始解析 DBC 数据库...
+[FAIL] DBC解析: 未能加载数据库
+[FAIL] 数据库文件解析失败
+测试环境初始化成功
+
+============================================================
+开始执行测试: signal_robust/test_TG1_TC1_SignalTimeoutDetectionTest
+============================================================
+[DEBUG] 电源控制: 关闭DUT电源
+[DEBUG] 电源控制: 初始化: name=HSPY, port=COM5, device_addr=0
+[DEBUG] BOB: 初始化: name=, control_can=2, {'power_ch': 1, 'addr': 0}
+[DEBUG] BOB Control: CAN1 终端电阻已启用
+[DEBUG] 日志记录: 开始录制日志
+[INFO] 开始记录测试用例日志: 信号超时检测鲁棒性测试 (signal_robust/test_TG1_TC1_SignalTimeoutDetectionTest), 文件: d:\SolarOne\framework-canlin\robustcases\test_log_report\20260527_005513_683_report\signal\signal_robust_test_TG1_TC1_SignalTimeoutDetectionTest_信号超时检测鲁棒性测试_20260527_005725_021.blf
+[DEBUG] TestStartLogging: fd=7, path=d:\SolarOne\framework-canlin\robustcases\test_log_report\20260527_005513_683_report\signal\signal_robust_test_TG1_TC1_SignalTimeoutDetectionTest_信号超时检测鲁棒性测试_20260527_005725_021.blf
+[INFO] Step1: 设置DUT电源电压为12.0V，唤醒CAN网络，等待1.0s至通信稳定
+[INFO] 开始CAN测试设置和通信检查
+[INFO] 设置DUT供电电压为 12.00V
+[INFO] 执行KL30上电
+[INFO] 根据DUT通信唤醒方式，启动ECU唤醒
+[INFO] 使用KL15硬线唤醒
+[INFO] 等待 1.0s 至CAN通信稳定
+[INFO] CAN通信状态检查: 先最多等待3s事件预热，再等待 1.000s 统计通信状态
+[INFO] CAN通信状态: 统计窗口结果: frame_cnt = 0, gErrorFrameCount = 0
+[FAIL]  : 期望结果：CAN通信状态检查, 实际结果：DUT通信未恢复
+[FAIL] CAN通信状态检查失败
+[FAIL] Step1: 电源设置与通信检查失败
+[DEBUG] 电源控制: 停止唤醒信号
+[DEBUG] 停止唤醒
+[DEBUG] 电源控制: 关闭DUT电源
+[DEBUG] BOB Control: CAN1 终端电阻已关闭
+[DEBUG] 电源控制: 将电源供应电压设置为0V
+[INFO] 日志记录: 停止记录测试用例日志文件: 信号超时检测鲁棒性测试 (signal_robust/test_TG1_TC1_SignalTimeoutDetectionTest)
+[INFO] 日志记录: 日志记录已停止: FD=7
+[INFO] 测试结束: 测试用例执行完成: 
+[INFO] 测试结束: 执行测试结束和去初始化
+测试 signal_robust/test_TG1_TC1_SignalTimeoutDetectionTest 执行完成 (FAIL)
+
+signal 执行完成: 0/1 成功
+清理测试环境（group: testcases.signal.signal_robust_testcase）...
+[INFO] CAN测试去初始化: 开始CAN测试去初始化...
+[INFO] Step0: 取消注册CAN事件回调
+[INFO] 已取消注册
+[INFO] Step1: 停用CAN通道
+[sl_can_1] 停用CAN总线失败，错误码：-1
+[INFO] 成功停用CAN通道 1
+[sl_can_2] 停用CAN总线失败，错误码：-1
+[INFO] 成功停用CAN通道 2
+[INFO] Step2: 停止运行时环境
+[INFO] Step2: 清理全局上下文
+[INFO] 去初始化完成
+测试环境清理完成
+
+============================================================
+测试执行 - 分组选择
+============================================================
+测试组:
+ 1. busstress (3个测试)
+ 2. can (5个测试)
+ 3. dtc (3个测试)
+ 4. e2e (3个测试)
+ 5. hardware (3个测试)
+ 6. lin (3个测试)
+ 7. nm (3个测试)
+ 8. power (5个测试)
+ 9. routing (3个测试)
+10. signal (3个测试)
+11. system (3个测试)
+12. tp (3个测试)
+13. uds (3个测试)
+14. 执行全部测试
+============================================================
+请选择测试组 (1-14) (单选，如: 1) 或输入 'q' 退出: 
+============================================================
+tp - 测试用例选择
+============================================================
+测试用例:
+ 1. tp_robust/test_TG1_TC1_ConsecutiveFrameLossRecoveryTest
+ 2. tp_robust/test_TG1_TC2_AbnormalSTminHandlingTest
+ 3. tp_robust/test_TG1_TC3_MultiFrameTransmissionInterruptionTest
+ 4. 执行本组全部测试
+ 5. 返回上级菜单
+============================================================
+请选择测试用例 (1-5) (支持多选，如: 1,3,5 或单选 1) 或输入 'q' 退出: 
+开始执行 tp，共 1 个测试用例
+
+初始化测试环境（group: testcases.tp.tp_robust_testcase）...
+[INFO] 开始CAN相关初始化
+[INFO] Step1: 初始化全局上下文
+[INFO] Step2: 配置和激活CAN通道
+[INFO] 激活所有DEFAULT_CAN_CHANNELS通道
+[DEBUG] 激活CAN通道 1
+[sl_can_1] 激活CAN总线...
+[sl_can_1] CAN总线激活成功
+[DEBUG] CAN通道 1 激活成功
+[INFO] 通道激活: 成功激活CAN通道 1
+[DEBUG] 激活CAN通道 2
+[sl_can_2] 激活CAN总线...
+[sl_can_2] CAN总线激活成功
+[DEBUG] CAN通道 2 激活成功
+[INFO] 通道激活: 成功激活CAN通道 2
+[PASS] 成功激活2个CAN通道用于CAN测试初始化
+[INFO] Step3: 读取数据库文件数据
+[INFO] DBC解析: 开始解析 DBC 数据库...
+[FAIL] DBC解析: 未能加载数据库
+[FAIL] 数据库文件解析失败
+测试环境初始化成功
+
+============================================================
+开始执行测试: tp_robust/test_TG1_TC1_ConsecutiveFrameLossRecoveryTest
+============================================================
+[DEBUG] 电源控制: 关闭DUT电源
+[DEBUG] 电源控制: 初始化: name=HSPY, port=COM5, device_addr=0
+[DEBUG] BOB: 初始化: name=, control_can=2, {'power_ch': 1, 'addr': 0}
+[DEBUG] BOB Control: CAN1 终端电阻已启用
+[DEBUG] 日志记录: 开始录制日志
+[INFO] 开始记录测试用例日志: 连续帧丢失恢复鲁棒性测试 (tp_robust/test_TG1_TC1_ConsecutiveFrameLossRecoveryTest), 文件: d:\SolarOne\framework-canlin\robustcases\test_log_report\20260527_005513_683_report\tp\tp_robust_test_TG1_TC1_ConsecutiveFrameLossRecoveryTest_连续帧丢失恢复鲁棒性测试_20260527_005735_058.blf
+[DEBUG] TestStartLogging: fd=8, path=d:\SolarOne\framework-canlin\robustcases\test_log_report\20260527_005513_683_report\tp\tp_robust_test_TG1_TC1_ConsecutiveFrameLossRecoveryTest_连续帧丢失恢复鲁棒性测试_20260527_005735_058.blf
+[INFO] Step1: 设置DUT电源电压为12.0V，唤醒CAN网络，等待1.0s至通信稳定
+[INFO] CAN测试设置: 开始CAN测试设置和通信检查
+[INFO] Step1: 设置DUT供电电压为 12.00V
+[INFO] ETS6124: CAN1 终端电阻已启用
+[INFO] Step2: 执行KL30上电
+[INFO] Step3: 根据DUT通信唤醒方式，启动ECU唤醒
+[INFO] 使用KL15硬线唤醒
+[INFO] Step5: 等待 1.0s 至CAN通信稳定
+[INFO] CAN通信状态检查: 等待 1.0s 检查通信状态
+[INFO] CAN通信状态: gECUMsgIDCount = 0, event_detected = False, gErrorFrameCount = 0
+[FAIL] CAN通信状态检查: DUT通信未恢复
+[FAIL] CAN通信检查: CAN通信状态检查失败
+[DEBUG] 电源控制: 停止唤醒信号
+[DEBUG] 停止唤醒
+[DEBUG] 电源控制: 关闭DUT电源
+[DEBUG] BOB Control: CAN1 终端电阻已关闭
+[DEBUG] 电源控制: 将电源供应电压设置为0V
+[INFO] 日志记录: 停止记录测试用例日志文件: 连续帧丢失恢复鲁棒性测试 (tp_robust/test_TG1_TC1_ConsecutiveFrameLossRecoveryTest)
+[INFO] 日志记录: 日志记录已停止: FD=8
+[INFO] 测试结束: 测试用例执行完成: 
+[INFO] 测试结束: 执行测试结束和去初始化
+测试 tp_robust/test_TG1_TC1_ConsecutiveFrameLossRecoveryTest 执行完成 (FAIL)
+
+tp 执行完成: 0/1 成功
+清理测试环境（group: testcases.tp.tp_robust_testcase）...
+[INFO] CAN测试去初始化: 开始CAN测试去初始化...
+[INFO] Step0: 取消注册CAN事件回调
+[INFO] 已取消注册
+[INFO] Step1: 停用CAN通道
+[sl_can_1] 停用CAN总线失败，错误码：-1
+[INFO] 成功停用CAN通道 1
+[sl_can_2] 停用CAN总线失败，错误码：-1
+[INFO] 成功停用CAN通道 2
+[INFO] Step2: 停止运行时环境
+[INFO] Step2: 清理全局上下文
+[INFO] 去初始化完成
+测试环境清理完成
+
+============================================================
+测试执行 - 分组选择
+============================================================
+测试组:
+ 1. busstress (3个测试)
+ 2. can (5个测试)
+ 3. dtc (3个测试)
+ 4. e2e (3个测试)
+ 5. hardware (3个测试)
+ 6. lin (3个测试)
+ 7. nm (3个测试)
+ 8. power (5个测试)
+ 9. routing (3个测试)
+10. signal (3个测试)
+11. system (3个测试)
+12. tp (3个测试)
+13. uds (3个测试)
+14. 执行全部测试
+============================================================
+请选择测试组 (1-14) (单选，如: 1) 或输入 'q' 退出: 
+============================================================
+uds - 测试用例选择
+============================================================
+测试用例:
+ 1. uds_robust/test_TG1_TC1_InvalidSubFunctionRequestTest
+ 2. uds_robust/test_TG1_TC2_ServiceSequenceDisorderTest
+ 3. uds_robust/test_TG1_TC3_NRCStressTest
+ 4. 执行本组全部测试
+ 5. 返回上级菜单
+============================================================
+请选择测试用例 (1-5) (支持多选，如: 1,3,5 或单选 1) 或输入 'q' 退出: 
+开始执行 uds，共 1 个测试用例
+导入模块 testcases.uds.uds_robust_testcase 失败: cannot import name 'Message' from 'can' (d:\SolarOne\framework-canlin\robustcases\can\__init__.py)
+
+uds 执行完成: 0/1 成功
+
+============================================================
+测试执行 - 分组选择
+============================================================
+测试组:
+ 1. busstress (3个测试)
+ 2. can (5个测试)
+ 3. dtc (3个测试)
+ 4. e2e (3个测试)
+ 5. hardware (3个测试)
+ 6. lin (3个测试)
+ 7. nm (3个测试)
+ 8. power (5个测试)
+ 9. routing (3个测试)
+10. signal (3个测试)
+11. system (3个测试)
+12. tp (3个测试)
+13. uds (3个测试)
+14. 执行全部测试
+============================================================
+请选择测试组 (1-14) (单选，如: 1) 或输入 'q' 退出: 
+执行全部测试组...
+
+开始执行 busstress，共 3 个测试用例
+
+初始化测试环境（group: testcases.busstress.busstress_robust_testcase）...
+[INFO] 开始CAN相关初始化
+[INFO] Step1: 初始化全局上下文
+[INFO] Step2: 配置和激活CAN通道
+[INFO] 激活所有DEFAULT_CAN_CHANNELS通道
+[DEBUG] 激活CAN通道 1
+[sl_can_1] 激活CAN总线...
+[sl_can_1] CAN总线激活成功
+[DEBUG] CAN通道 1 激活成功
+[INFO] 通道激活: 成功激活CAN通道 1
+[DEBUG] 激活CAN通道 2
+[sl_can_2] 激活CAN总线...
+[sl_can_2] CAN总线激活成功
+[DEBUG] CAN通道 2 激活成功
+[INFO] 通道激活: 成功激活CAN通道 2
+[PASS] 成功激活2个CAN通道用于CAN测试初始化
+[INFO] Step3: 读取数据库文件数据
+[INFO] DBC解析: 开始解析 DBC 数据库...
+[FAIL] DBC解析: 未能加载数据库
+[FAIL] 数据库文件解析失败
+测试环境初始化成功
+
+============================================================
+开始执行测试: busstress_robust/test_TG1_TC1_BusLoadStressTest
+============================================================
+[DEBUG] 电源控制: 关闭DUT电源
+[DEBUG] 电源控制: 初始化: name=HSPY, port=COM5, device_addr=0
+[DEBUG] BOB: 初始化: name=, control_can=2, {'power_ch': 1, 'addr': 0}
+[DEBUG] BOB Control: CAN1 终端电阻已启用
+[DEBUG] 日志记录: 开始录制日志
+[INFO] 开始记录测试用例日志: 总线负载压力鲁棒性测试 (busstress_robust/test_TG1_TC1_BusLoadStressTest), 文件: d:\SolarOne\framework-canlin\robustcases\test_log_report\20260527_005513_683_report\busstress\busstress_robust_test_TG1_TC1_BusLoadStressTest_总线负载压力鲁棒性测试_20260527_005754_166.blf
+[DEBUG] TestStartLogging: fd=9, path=d:\SolarOne\framework-canlin\robustcases\test_log_report\20260527_005513_683_report\busstress\busstress_robust_test_TG1_TC1_BusLoadStressTest_总线负载压力鲁棒性测试_20260527_005754_166.blf
+[INFO] Step1: 设置DUT电源电压为12.0V，唤醒CAN网络，等待1.0s至通信稳定
+[INFO] 开始CAN测试设置和通信检查
+[INFO] 设置DUT供电电压为 12.00V
+[INFO] 执行KL30上电
+[INFO] 根据DUT通信唤醒方式，启动ECU唤醒
+[INFO] 使用KL15硬线唤醒
+[INFO] 等待 1.0s 至CAN通信稳定
+[INFO] CAN通信状态检查: 先最多等待3s事件预热，再等待 1.000s 统计通信状态
+[INFO] CAN通信状态: 统计窗口结果: frame_cnt = 0, gErrorFrameCount = 0
+[FAIL]  : 期望结果：CAN通信状态检查, 实际结果：DUT通信未恢复
+[FAIL] CAN通信状态检查失败
+[FAIL] Step1: 电源设置与通信检查失败
+[DEBUG] 电源控制: 停止唤醒信号
+[DEBUG] 停止唤醒
+[DEBUG] 电源控制: 关闭DUT电源
+[DEBUG] BOB Control: CAN1 终端电阻已关闭
+[DEBUG] 电源控制: 将电源供应电压设置为0V
+[INFO] 日志记录: 停止记录测试用例日志文件: 总线负载压力鲁棒性测试 (busstress_robust/test_TG1_TC1_BusLoadStressTest)
+[INFO] 日志记录: 日志记录已停止: FD=9
+[INFO] 测试结束: 测试用例执行完成: 
+[INFO] 测试结束: 执行测试结束和去初始化
+测试 busstress_robust/test_TG1_TC1_BusLoadStressTest 执行完成 (FAIL)
+
+============================================================
+开始执行测试: busstress_robust/test_TG1_TC2_InterruptStormViaBusLoadTest
+============================================================
+[DEBUG] 电源控制: 关闭DUT电源
+[DEBUG] 电源控制: 初始化: name=HSPY, port=COM5, device_addr=0
+[DEBUG] BOB: 初始化: name=, control_can=2, {'power_ch': 1, 'addr': 0}
+[DEBUG] BOB Control: CAN1 终端电阻已启用
+[DEBUG] 日志记录: 开始录制日志
+[INFO] 开始记录测试用例日志: 中断风暴模拟鲁棒性测试（通过极高总线负载模拟） (busstress_robust/test_TG1_TC2_InterruptStormViaBusLoadTest), 文件: d:\SolarOne\framework-canlin\robustcases\test_log_report\20260527_005513_683_report\busstress\busstress_robust_test_TG1_TC2_InterruptStormViaBusLoadTest_中断风暴模拟鲁棒性测试_通过极高总线负载模拟__20260527_005801_193.blf
+[DEBUG] TestStartLogging: fd=10, path=d:\SolarOne\framework-canlin\robustcases\test_log_report\20260527_005513_683_report\busstress\busstress_robust_test_TG1_TC2_InterruptStormViaBusLoadTest_中断风暴模拟鲁棒性测试_通过极高总线负载模拟__20260527_005801_193.blf
+[INFO] Step1: 设置DUT电源电压为12.0V，唤醒CAN网络，等待1.0s至通信稳定
+[INFO] 开始CAN测试设置和通信检查
+[INFO] 设置DUT供电电压为 12.00V
+[INFO] 执行KL30上电
+[INFO] 根据DUT通信唤醒方式，启动ECU唤醒
+[INFO] 使用KL15硬线唤醒
+[INFO] 等待 1.0s 至CAN通信稳定
+[INFO] CAN通信状态检查: 先最多等待3s事件预热，再等待 1.000s 统计通信状态
+[INFO] CAN通信状态: 统计窗口结果: frame_cnt = 0, gErrorFrameCount = 0
+[FAIL]  : 期望结果：CAN通信状态检查, 实际结果：DUT通信未恢复
+[FAIL] CAN通信状态检查失败
+[FAIL] Step1: 电源设置与通信检查失败
+[DEBUG] 电源控制: 停止唤醒信号
+[DEBUG] 停止唤醒
+[DEBUG] 电源控制: 关闭DUT电源
+[DEBUG] BOB Control: CAN1 终端电阻已关闭
+[DEBUG] 电源控制: 将电源供应电压设置为0V
+[INFO] 日志记录: 停止记录测试用例日志文件: 中断风暴模拟鲁棒性测试（通过极高总线负载模拟） (busstress_robust/test_TG1_TC2_InterruptStormViaBusLoadTest)
+[INFO] 日志记录: 日志记录已停止: FD=10
+[INFO] 测试结束: 测试用例执行完成: 
+[INFO] 测试结束: 执行测试结束和去初始化
+测试 busstress_robust/test_TG1_TC2_InterruptStormViaBusLoadTest 执行完成 (FAIL)
+
+============================================================
+开始执行测试: busstress_robust/test_TG1_TC3_HighFrequencyMessageBurstTest
+============================================================
+[DEBUG] 电源控制: 关闭DUT电源
+[DEBUG] 电源控制: 初始化: name=HSPY, port=COM5, device_addr=0
+[DEBUG] BOB: 初始化: name=, control_can=2, {'power_ch': 1, 'addr': 0}
+[DEBUG] BOB Control: CAN1 终端电阻已启用
+[DEBUG] 日志记录: 开始录制日志
+[INFO] 开始记录测试用例日志: 高频率报文突发鲁棒性测试 (busstress_robust/test_TG1_TC3_HighFrequencyMessageBurstTest), 文件: d:\SolarOne\framework-canlin\robustcases\test_log_report\20260527_005513_683_report\busstress\busstress_robust_test_TG1_TC3_HighFrequencyMessageBurstTest_高频率报文突发鲁棒性测试_20260527_005808_313.blf
+[DEBUG] TestStartLogging: fd=11, path=d:\SolarOne\framework-canlin\robustcases\test_log_report\20260527_005513_683_report\busstress\busstress_robust_test_TG1_TC3_HighFrequencyMessageBurstTest_高频率报文突发鲁棒性测试_20260527_005808_313.blf
+[INFO] Step1: 设置DUT电源电压为12.0V，唤醒CAN网络，等待1.0s至通信稳定
+[INFO] 开始CAN测试设置和通信检查
+[INFO] 设置DUT供电电压为 12.00V
+[INFO] 执行KL30上电
+[INFO] 根据DUT通信唤醒方式，启动ECU唤醒
+[INFO] 使用KL15硬线唤醒
+[INFO] 等待 1.0s 至CAN通信稳定
+[INFO] CAN通信状态检查: 先最多等待3s事件预热，再等待 1.000s 统计通信状态
+[INFO] CAN通信状态: 统计窗口结果: frame_cnt = 0, gErrorFrameCount = 0
+[FAIL]  : 期望结果：CAN通信状态检查, 实际结果：DUT通信未恢复
+[FAIL] CAN通信状态检查失败
+[FAIL] Step1: 电源设置与通信检查失败
+[DEBUG] 电源控制: 停止唤醒信号
+[DEBUG] 停止唤醒
+[DEBUG] 电源控制: 关闭DUT电源
+[DEBUG] BOB Control: CAN1 终端电阻已关闭
+[DEBUG] 电源控制: 将电源供应电压设置为0V
+[INFO] 日志记录: 停止记录测试用例日志文件: 高频率报文突发鲁棒性测试 (busstress_robust/test_TG1_TC3_HighFrequencyMessageBurstTest)
+[INFO] 日志记录: 日志记录已停止: FD=11
+[INFO] 测试结束: 测试用例执行完成: 
+[INFO] 测试结束: 执行测试结束和去初始化
+测试 busstress_robust/test_TG1_TC3_HighFrequencyMessageBurstTest 执行完成 (FAIL)
+
+busstress 执行完成: 0/3 成功
+清理测试环境（group: testcases.busstress.busstress_robust_testcase）...
+[INFO] CAN测试去初始化: 开始CAN测试去初始化...
+[INFO] Step0: 取消注册CAN事件回调
+[INFO] 已取消注册
+[INFO] Step1: 停用CAN通道
+[sl_can_1] 停用CAN总线失败，错误码：-1
+[INFO] 成功停用CAN通道 1
+[sl_can_2] 停用CAN总线失败，错误码：-1
+[INFO] 成功停用CAN通道 2
+[INFO] Step2: 停止运行时环境
+[INFO] Step2: 清理全局上下文
+[INFO] 去初始化完成
+测试环境清理完成
+
+开始执行 can，共 5 个测试用例
+
+初始化测试环境（group: testcases.can.can_robust_testcase）...
+[INFO] 开始CAN相关初始化
+[INFO] Step1: 初始化全局上下文
+[INFO] Step2: 配置和激活CAN通道
+[INFO] 激活所有DEFAULT_CAN_CHANNELS通道
+[DEBUG] 激活CAN通道 1
+[sl_can_1] 激活CAN总线...
+[sl_can_1] CAN总线激活成功
+[DEBUG] CAN通道 1 激活成功
+[INFO] 通道激活: 成功激活CAN通道 1
+[DEBUG] 激活CAN通道 2
+[sl_can_2] 激活CAN总线...
+[sl_can_2] CAN总线激活成功
+[DEBUG] CAN通道 2 激活成功
+[INFO] 通道激活: 成功激活CAN通道 2
+[PASS] 成功激活2个CAN通道用于CAN测试初始化
+[INFO] Step3: 读取数据库文件数据
+[INFO] DBC解析: 开始解析 DBC 数据库...
+[FAIL] DBC解析: 未能加载数据库
+[FAIL] 数据库文件解析失败
+测试环境初始化成功
+
+============================================================
+开始执行测试: can_robust/test_TG1_TC1_BusOffAutoRecoveryTest
+============================================================
+[DEBUG] 电源控制: 关闭DUT电源
+[DEBUG] 电源控制: 初始化: name=HSPY, port=COM5, device_addr=0
+[DEBUG] BOB: 初始化: name=, control_can=2, {'power_ch': 1, 'addr': 0}
+[DEBUG] BOB Control: CAN1 终端电阻已启用
+[DEBUG] 日志记录: 开始录制日志
+[INFO] 开始记录测试用例日志: BusOff自动恢复鲁棒性测试 (can_robust/test_TG1_TC1_BusOffAutoRecoveryTest), 文件: d:\SolarOne\framework-canlin\robustcases\test_log_report\20260527_005513_683_report\can\can_robust_test_TG1_TC1_BusOffAutoRecoveryTest_BusOff自动恢复鲁棒性测试_20260527_005815_527.blf
+[DEBUG] TestStartLogging: fd=12, path=d:\SolarOne\framework-canlin\robustcases\test_log_report\20260527_005513_683_report\can\can_robust_test_TG1_TC1_BusOffAutoRecoveryTest_BusOff自动恢复鲁棒性测试_20260527_005815_527.blf
+[INFO] Step1: 设置DUT电源电压为12.0V，将KL30上电，唤醒CAN网络，等待1.0s至通信稳定
+[INFO] 开始CAN测试设置和通信检查
+[INFO] 设置DUT供电电压为 12.00V
+[INFO] 执行KL30上电
+[INFO] 根据DUT通信唤醒方式，启动ECU唤醒
+[INFO] 使用KL15硬线唤醒
+[INFO] 等待 1.0s 至CAN通信稳定
+[INFO] CAN通信状态检查: 先最多等待3s事件预热，再等待 1.000s 统计通信状态
+[INFO] CAN通信状态: 统计窗口结果: frame_cnt = 0, gErrorFrameCount = 0
+[FAIL]  : 期望结果：CAN通信状态检查, 实际结果：DUT通信未恢复
+[FAIL] CAN通信状态检查失败
+[FAIL] Step1: 电源设置与通信检查失败，结束测试
+[DEBUG] 电源控制: 停止唤醒信号
+[DEBUG] 停止唤醒
+[DEBUG] 电源控制: 关闭DUT电源
+[DEBUG] BOB Control: CAN1 终端电阻已关闭
+[DEBUG] 电源控制: 将电源供应电压设置为0V
+[INFO] 日志记录: 停止记录测试用例日志文件: BusOff自动恢复鲁棒性测试 (can_robust/test_TG1_TC1_BusOffAutoRecoveryTest)
+[INFO] 日志记录: 日志记录已停止: FD=12
+[INFO] 测试结束: 测试用例执行完成: 
+[INFO] 测试结束: 执行测试结束和去初始化
+测试 can_robust/test_TG1_TC1_BusOffAutoRecoveryTest 执行完成 (FAIL)
+
+============================================================
+开始执行测试: can_robust/test_TG1_TC2_ContinuousErrorFrameRobustnessTest
+============================================================
+[DEBUG] 电源控制: 关闭DUT电源
+[DEBUG] 电源控制: 初始化: name=HSPY, port=COM5, device_addr=0
+[DEBUG] BOB: 初始化: name=, control_can=2, {'power_ch': 1, 'addr': 0}
+[DEBUG] BOB Control: CAN1 终端电阻已启用
+[DEBUG] 日志记录: 开始录制日志
+[INFO] 开始记录测试用例日志: 持续错误帧注入鲁棒性测试 (can_robust/test_TG1_TC2_ContinuousErrorFrameRobustnessTest), 文件: d:\SolarOne\framework-canlin\robustcases\test_log_report\20260527_005513_683_report\can\can_robust_test_TG1_TC2_ContinuousErrorFrameRobustnessTest_持续错误帧注入鲁棒性测试_20260527_005822_733.blf
+[DEBUG] TestStartLogging: fd=13, path=d:\SolarOne\framework-canlin\robustcases\test_log_report\20260527_005513_683_report\can\can_robust_test_TG1_TC2_ContinuousErrorFrameRobustnessTest_持续错误帧注入鲁棒性测试_20260527_005822_733.blf
+[INFO] Step1: 设置DUT电源电压为12.0V，将KL30上电，唤醒CAN网络，等待1.0s至通信稳定
+[INFO] 开始CAN测试设置和通信检查
+[INFO] 设置DUT供电电压为 12.00V
+[INFO] 执行KL30上电
+[INFO] 根据DUT通信唤醒方式，启动ECU唤醒
+[INFO] 使用KL15硬线唤醒
+[INFO] 等待 1.0s 至CAN通信稳定
+[INFO] CAN通信状态检查: 先最多等待3s事件预热，再等待 1.000s 统计通信状态
+[INFO] CAN通信状态: 统计窗口结果: frame_cnt = 0, gErrorFrameCount = 0
+[FAIL]  : 期望结果：CAN通信状态检查, 实际结果：DUT通信未恢复
+[FAIL] CAN通信状态检查失败
+[FAIL] Step1: 电源设置与通信检查失败，结束测试
+[DEBUG] 电源控制: 停止唤醒信号
+[DEBUG] 停止唤醒
+[DEBUG] 电源控制: 关闭DUT电源
+[DEBUG] BOB Control: CAN1 终端电阻已关闭
+[DEBUG] 电源控制: 将电源供应电压设置为0V
+[INFO] 日志记录: 停止记录测试用例日志文件: 持续错误帧注入鲁棒性测试 (can_robust/test_TG1_TC2_ContinuousErrorFrameRobustnessTest)
+[INFO] 日志记录: 日志记录已停止: FD=13
+[INFO] 测试结束: 测试用例执行完成: 
+[INFO] 测试结束: 执行测试结束和去初始化
+测试 can_robust/test_TG1_TC2_ContinuousErrorFrameRobustnessTest 执行完成 (FAIL)
+
+============================================================
+开始执行测试: can_robust/test_TG1_TC3_CANBusShortCircuitRecoveryTest
+============================================================
+[DEBUG] 电源控制: 关闭DUT电源
+[DEBUG] 电源控制: 初始化: name=HSPY, port=COM5, device_addr=0
+[DEBUG] BOB: 初始化: name=, control_can=2, {'power_ch': 1, 'addr': 0}
+[DEBUG] BOB Control: CAN1 终端电阻已启用
+[DEBUG] 日志记录: 开始录制日志
+[INFO] 开始记录测试用例日志: CAN总线短路恢复鲁棒性测试 (can_robust/test_TG1_TC3_CANBusShortCircuitRecoveryTest), 文件: d:\SolarOne\framework-canlin\robustcases\test_log_report\20260527_005513_683_report\can\can_robust_test_TG1_TC3_CANBusShortCircuitRecoveryTest_CAN总线短路恢复鲁棒性测试_20260527_005829_951.blf
+[DEBUG] TestStartLogging: fd=14, path=d:\SolarOne\framework-canlin\robustcases\test_log_report\20260527_005513_683_report\can\can_robust_test_TG1_TC3_CANBusShortCircuitRecoveryTest_CAN总线短路恢复鲁棒性测试_20260527_005829_951.blf
+[INFO] Step1: 设置DUT电源电压为12.0V，将KL30上电，唤醒CAN网络，等待1.0s至通信稳定
+[INFO] 开始CAN测试设置和通信检查
+[INFO] 设置DUT供电电压为 12.00V
+[INFO] 执行KL30上电
+[INFO] 根据DUT通信唤醒方式，启动ECU唤醒
+[INFO] 使用KL15硬线唤醒
+[INFO] 等待 1.0s 至CAN通信稳定
+[INFO] CAN通信状态检查: 先最多等待3s事件预热，再等待 1.000s 统计通信状态
+[INFO] CAN通信状态: 统计窗口结果: frame_cnt = 0, gErrorFrameCount = 0
+[FAIL]  : 期望结果：CAN通信状态检查, 实际结果：DUT通信未恢复
+[FAIL] CAN通信状态检查失败
+[FAIL] Step1: 电源设置与通信检查失败，结束测试
+[DEBUG] 电源控制: 停止唤醒信号
+[DEBUG] 停止唤醒
+[DEBUG] 电源控制: 关闭DUT电源
+[DEBUG] BOB Control: CAN1 终端电阻已关闭
+[DEBUG] 电源控制: 将电源供应电压设置为0V
+[INFO] 日志记录: 停止记录测试用例日志文件: CAN总线短路恢复鲁棒性测试 (can_robust/test_TG1_TC3_CANBusShortCircuitRecoveryTest)
+[INFO] 日志记录: 日志记录已停止: FD=14
+[INFO] 测试结束: 测试用例执行完成: 
+[INFO] 测试结束: 执行测试结束和去初始化
+测试 can_robust/test_TG1_TC3_CANBusShortCircuitRecoveryTest 执行完成 (FAIL)
+
+============================================================
+开始执行测试: can_robust/test_TG1_TC4_TerminationResistorMissingTest
+============================================================
+[DEBUG] 电源控制: 关闭DUT电源
+[DEBUG] 电源控制: 初始化: name=HSPY, port=COM5, device_addr=0
+[DEBUG] BOB: 初始化: name=, control_can=2, {'power_ch': 1, 'addr': 0}
+[DEBUG] BOB Control: CAN1 终端电阻已启用
+[DEBUG] 日志记录: 开始录制日志
+[INFO] 开始记录测试用例日志: 终端电阻丢失鲁棒性测试 (can_robust/test_TG1_TC4_TerminationResistorMissingTest), 文件: d:\SolarOne\framework-canlin\robustcases\test_log_report\20260527_005513_683_report\can\can_robust_test_TG1_TC4_TerminationResistorMissingTest_终端电阻丢失鲁棒性测试_20260527_005837_156.blf
+[DEBUG] TestStartLogging: fd=15, path=d:\SolarOne\framework-canlin\robustcases\test_log_report\20260527_005513_683_report\can\can_robust_test_TG1_TC4_TerminationResistorMissingTest_终端电阻丢失鲁棒性测试_20260527_005837_156.blf
+[INFO] Step1: 设置DUT电源电压为12.0V，启用终端电阻，将KL30上电，唤醒CAN网络，等待1.0s至通信稳定
+[INFO] 开始CAN测试设置和通信检查
+[INFO] 设置DUT供电电压为 12.00V
+[INFO] 执行KL30上电
+[INFO] 根据DUT通信唤醒方式，启动ECU唤醒
+[INFO] 使用KL15硬线唤醒
+[INFO] 等待 1.0s 至CAN通信稳定
+[INFO] CAN通信状态检查: 先最多等待3s事件预热，再等待 1.000s 统计通信状态
+[INFO] CAN通信状态: 统计窗口结果: frame_cnt = 0, gErrorFrameCount = 0
+[FAIL]  : 期望结果：CAN通信状态检查, 实际结果：DUT通信未恢复
+[FAIL] CAN通信状态检查失败
+[FAIL] Step1: 电源设置与通信检查失败，结束测试
+[DEBUG] 电源控制: 停止唤醒信号
+[DEBUG] 停止唤醒
+[DEBUG] 电源控制: 关闭DUT电源
+[DEBUG] BOB Control: CAN1 终端电阻已关闭
+[DEBUG] 电源控制: 将电源供应电压设置为0V
+[INFO] 日志记录: 停止记录测试用例日志文件: 终端电阻丢失鲁棒性测试 (can_robust/test_TG1_TC4_TerminationResistorMissingTest)
+[INFO] 日志记录: 日志记录已停止: FD=15
+[INFO] 测试结束: 测试用例执行完成: 
+[INFO] 测试结束: 执行测试结束和去初始化
+测试 can_robust/test_TG1_TC4_TerminationResistorMissingTest 执行完成 (FAIL)
+
+============================================================
+开始执行测试: can_robust/test_TG1_TC5_CANFDBRSErrorRobustnessTest
+============================================================
+[DEBUG] 电源控制: 关闭DUT电源
+[DEBUG] 电源控制: 初始化: name=HSPY, port=COM5, device_addr=0
+[DEBUG] BOB: 初始化: name=, control_can=2, {'power_ch': 1, 'addr': 0}
+[DEBUG] BOB Control: CAN1 终端电阻已启用
+[DEBUG] 日志记录: 开始录制日志
+[INFO] 开始记录测试用例日志: CAN FD BRS标志错误鲁棒性测试 (can_robust/test_TG1_TC5_CANFDBRSErrorRobustnessTest), 文件: d:\SolarOne\framework-canlin\robustcases\test_log_report\20260527_005513_683_report\can\can_robust_test_TG1_TC5_CANFDBRSErrorRobustnessTest_CAN_FD_BRS标志错误鲁棒性测试_20260527_005844_356.blf
+[DEBUG] TestStartLogging: fd=16, path=d:\SolarOne\framework-canlin\robustcases\test_log_report\20260527_005513_683_report\can\can_robust_test_TG1_TC5_CANFDBRSErrorRobustnessTest_CAN_FD_BRS标志错误鲁棒性测试_20260527_005844_356.blf
+[INFO] Step1: 设置DUT电源电压为12.0V，将KL30上电，唤醒CAN网络，等待1.0s至通信稳定
+[INFO] 开始CAN测试设置和通信检查
+[INFO] 设置DUT供电电压为 12.00V
+[INFO] 执行KL30上电
+[INFO] 根据DUT通信唤醒方式，启动ECU唤醒
+[INFO] 使用KL15硬线唤醒
+[INFO] 等待 1.0s 至CAN通信稳定
+[INFO] CAN通信状态检查: 先最多等待3s事件预热，再等待 1.000s 统计通信状态
+[INFO] CAN通信状态: 统计窗口结果: frame_cnt = 0, gErrorFrameCount = 0
+[FAIL]  : 期望结果：CAN通信状态检查, 实际结果：DUT通信未恢复
+[FAIL] CAN通信状态检查失败
+[FAIL] Step1: 电源设置与通信检查失败
+[DEBUG] 电源控制: 停止唤醒信号
+[DEBUG] 停止唤醒
+[DEBUG] 电源控制: 关闭DUT电源
+
+
+用户中断，测试执行退出
+已清空测试组缓存，并重置项目根目录（异常/中断）
+清理测试环境（group: testcases.can.can_robust_testcase）...
+[INFO] CAN测试去初始化: 开始CAN测试去初始化...
+[INFO] Step0: 取消注册CAN事件回调
+[INFO] 已取消注册
+[INFO] Step1: 停用CAN通道
+[sl_can_1] 停用CAN总线失败，错误码：-1
+[INFO] 成功停用CAN通道 1
+[sl_can_2] 停用CAN总线失败，错误码：-1
+[INFO] 成功停用CAN通道 2
+[INFO] Step2: 停止运行时环境
+[INFO] Step2: 清理全局上下文
+[INFO] 去初始化完成
+测试环境清理完成
+
+生成测试报告...
+测试报告已生成: d:\SolarOne\framework-canlin\robustcases\test_log_report\20260527_005513_683_report\Test_Report_20260527_005850_159.html
+
+测试统计:
+   测试组: 11 (4 7)
+   测试用例: 16 (1 14 0)
+   通过率: 6.2%
+[INFO] 测试报告: 开始测试报告生成
+[PASS] 日志销毁: 测试日志系统清理完成
+[INFO] 测试报告: 测试报告生成完成

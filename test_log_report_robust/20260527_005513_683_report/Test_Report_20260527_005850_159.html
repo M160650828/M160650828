@@ -1,0 +1,2988 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Test Report</title>
+    <style type="text/css">
+        @media screen {
+            body {
+                background-color: rgb(255, 255, 255);
+                font-family: arial, verdana, trebuchet, officina, sans-serif;
+            }
+        }
+
+        @media print {
+            body {
+                background-color: rgb(255, 255, 255);
+                font-family: arial, verdana, trebuchet, officina, sans-serif;
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            .HeadingTable, .SubHeadingTable, .GroupHeadingTable, .GroupEndTable {
+                border-width: 2px;
+                border-style: solid;
+                border-color: rgb(150,150,150);
+            }
+
+            .ResultBlockHeading {
+                border-width: 1px;
+                border-style: solid;
+                border-color: rgb(150,150,150);
+            }
+
+            table.ResultTable, table.OverviewTable, table.CheckStatisticsTable {
+                border-collapse: collapse;
+            }
+
+            td.DefaultCell, td.DefineCell, td.NumberCell, td.NumberCellPositiveResult, td.NumberCellNegativeResult,
+            td.NumberCellErrorResult, td.NumberCellInconclusiveResult, td.NumberCellNoneResult, td.NumberCellNoColor,
+            td.PositiveResultCell, td.NegativeResultCell, td.WarningCell, td.NoneResultCell, td.InconclusiveResultCell,
+            td.ErrorResultCell, th.TableHeadingCell {
+                border-width: 1px;
+                border-style: solid;
+                border-color: rgb(150,150,150);
+            }
+        }
+
+        a.Undecorated:hover {
+            color: red;
+        }
+
+        a.Undecorated {
+            text-decoration: none;
+        }
+
+        .NavStyle {
+            background-color: rgb(220, 221, 222);
+        }
+
+        td.LinkCell, td.UpCell {
+            width: 1px;
+            white-space: nowrap;
+        }
+
+        table {
+            margin-bottom: 10px;
+            vertical-align: top;
+            border: 0;
+            border-spacing: 1px;
+            padding: 2px;
+        }
+
+        table.ScreenOnly {
+            vertical-align: top;
+            margin-bottom: 10px;
+        }
+
+        .NoMarginBottom {
+            margin-bottom: 0px;
+        }
+
+        .HeadingTable {
+            width: 100%;
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgb(220, 221, 222);
+        }
+
+        .SubHeadingTable {
+            width: 100%;
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 25px;
+            background-color: rgb(220, 221, 222);
+        }
+
+        .GroupHeadingTable, .GroupEndTable {
+            width: 100%;
+            text-align: center;
+            margin-top: 15px;
+            padding-right: 20px;
+            background-color: rgb(220, 221, 222);
+        }
+
+        .DefaultTable {
+            padding: 0px;
+            border-spacing: 0px;
+        }
+
+        .CheckStatisticsTable {
+            margin-bottom: 8px;
+            padding-right: 20px;
+        }
+
+        .OverviewTable {
+            text-align: left;
+        }
+
+        .OverviewResultTable {
+            width: 100%;
+            margin-bottom: 0px;
+            border-spacing: 0px;
+            padding: 0px;
+            text-align: center;
+        }
+
+        .ResultTable {
+            width: 100%;
+            text-align: left;
+            padding-right: 20px;
+        }
+
+        .ResultTableInner {
+            width: 100%;
+            text-align: left;
+            padding-right: 0px;
+        }
+
+        table.ResultTable td, table.ChildLinkTable td {
+            vertical-align: top;
+        }
+
+        .ChildLinkTable {
+            width: 1px;
+            text-align: left;
+        }
+
+        .InfoTable {
+            text-align: left;
+            padding-right: 0px;
+            margin-bottom: 0px;
+            border-spacing: 0px;
+        }
+
+        .InfoTableExpand {
+            width: 100%;
+            text-align: left;
+            padding-right: 0px;
+            margin-bottom: 0px;
+            border-spacing: 0px;
+        }
+
+        .OverallResultTable {
+            width: 50%;
+            text-align: center;
+            margin-bottom: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: bold;
+        }
+
+        .TableHeadingCell {
+            background-color: rgb(179, 179, 179);
+            font-family: arial, verdana, trebuchet, officina, sans-serif;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .CellNoColor {
+            text-align: left;
+            vertical-align: top;
+        }
+
+        .DefineCell {
+            background-color: rgb(179, 179, 179);
+            text-align: left;
+        }
+
+        .DefaultCell, .DefaultCellBold {
+            background-color: rgb(229, 229, 229);
+            text-align: left;
+        }
+
+        .DefaultCellBold {
+            font-weight: bold;
+        }
+
+        .NumberCell {
+            background-color: rgb(229, 229, 229);
+            text-align: center;
+            min-width: 50px;
+        }
+
+        .NumberCellNegativeResult {
+            background-color: rgb(240, 0, 0);
+            text-align: center;
+            min-width: 50px;
+        }
+
+        .NumberCellPositiveResult {
+            background-color: rgb(25, 165, 88);
+            text-align: center;
+            min-width: 50px;
+        }
+
+        .NumberCellNoneResult {
+            background-color: rgb(105, 105, 105);
+            text-align: center;
+            min-width: 50px;
+        }
+
+        .NumberCellInconclusiveResult {
+            background-color: rgb(255, 165, 0);
+            text-align: center;
+            min-width: 50px;
+        }
+
+        .NumberCellErrorResult {
+            background-color: rgb(205, 0, 0);
+            text-align: center;
+            min-width: 50px;
+        }
+
+        .NumberCellNoColor {
+            text-align: center;
+        }
+
+        .PositiveResultCell {
+            background-color: rgb(25, 165, 88);
+        }
+
+        .NegativeResultCell {
+            background-color: rgb(240, 0, 0);
+        }
+
+        .NoneResultCell {
+            background-color: rgb(105, 105, 105);
+        }
+
+        .InconclusiveResultCell {
+            background-color: rgb(255, 165, 0);
+        }
+
+        .ErrorResultCell {
+            background-color: rgb(205, 0, 0);
+            white-space: nowrap;
+        }
+
+        .WarningCell {
+            background-color: rgb(255, 255, 0);
+        }
+
+        .TestcaseHeadingDefaultResult {
+            background-color: rgb(179, 179, 179);
+        }
+
+        .TestcaseHeadingPositiveResult {
+            background-color: rgb(25, 165, 88);
+        }
+
+        .TestcaseHeadingNegativeResult {
+            background-color: rgb(240, 0, 0);
+        }
+
+        .TestcaseHeadingNoneResult {
+            background-color: rgb(105, 105, 105);
+        }
+
+        .TestcaseHeadingInconclusiveResult {
+            background-color: rgb(255, 165, 0);
+        }
+
+        .TestcaseHeadingErrorResult {
+            background-color: rgb(205, 0, 0);
+        }
+
+        .PatternSeparator {
+            height: 0.2em;
+        }
+
+        .NegativeResult {
+            background-color: rgb(240, 0, 0);
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .PositiveResult {
+            background-color: rgb(25, 165, 88);
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .NoneResult {
+            background-color: rgb(105, 105, 105);
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .InconclusiveResult {
+            background-color: rgb(255, 165, 0);
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .ErrorResult {
+            background-color: rgb(205, 0, 0);
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .Heading1 {
+            font-family: arial, sans-serif;
+            font-weight: bold;
+            font-size: 26px;
+        }
+
+        .Heading2 {
+            font-family: arial, sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .Heading3 {
+            font-family: arial, sans-serif;
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        .Heading4 {
+            font-family: arial, sans-serif;
+            font-weight: bold;
+            font-size: 16px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        img {
+            margin-bottom: 10px;
+            margin-right: 10px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        .DefaultTableBackground {
+            background-color: rgb(229, 229, 229);
+            border-spacing: 0px;
+            padding: 0px;
+        }
+
+        .NegativeResultBackground {
+            background-color: rgb(240, 0, 0);
+            border-spacing: 0px;
+            padding: 0px;
+        }
+
+        .PositiveResultBackground {
+            background-color: rgb(25, 165, 88);
+            border-spacing: 0px;
+            padding: 0px;
+        }
+
+        .TestGroupHeadingBackground {
+            width: 100%;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: rgb(240, 240, 240);
+        }
+
+        .Indentation {
+            margin-left: 20px;
+        }
+
+        .footer {
+            margin-top: 30px;
+            padding: 10px;
+            background-color: rgb(240, 240, 240);
+            text-align: center;
+            font-size: 12px;
+            color: rgb(100, 100, 100);
+        }
+    </style>
+</head>
+<body>
+    <!-- 主标题 -->
+    <table class="HeadingTable">
+        <tr>
+            <td>
+                <h1>Test Report</h1>
+                <p>执行时间: 2026-05-27 00:55:13 - 00:58:50</p>
+                <p>总耗时: 216.58 秒</p>
+            </td>
+        </tr>
+    </table>
+
+    <!-- 测试统计概览 -->
+    <table class="SubHeadingTable">
+        <tr>
+            <td>
+                <big class="Heading2">Statistics</big>
+            </td>
+        </tr>
+    </table>
+
+    <table class="CheckStatisticsTable">
+        <tr>
+            <th class="TableHeadingCell">测试项目</th>
+            <th class="TableHeadingCell">总数</th>
+            <th class="TableHeadingCell">通过</th>
+            <th class="TableHeadingCell">失败</th>
+            <th class="TableHeadingCell">警告</th>
+            <th class="TableHeadingCell">通过率</th>
+        </tr>
+        <tr>
+            <td class="DefaultCell">测试组</td>
+            <td class="NumberCell">11</td>
+            <td class="NumberCellPositiveResult">4</td>
+            <td class="NumberCellNegativeResult">7</td>
+            <td class="NumberCell">0</td>
+            <td class="NumberCell">36.4%</td>
+        </tr>
+        <tr>
+            <td class="DefaultCell">测试用例</td>
+            <td class="NumberCell">16</td>
+            <td class="NumberCellPositiveResult">1</td>
+            <td class="NumberCellNegativeResult">14</td>
+            <td class="NumberCellInconclusiveResult">0</td>
+            <td class="NumberCell">6.2%</td>
+        </tr>
+    </table>
+
+    <!-- 测试用例结果汇总 -->
+    
+    <!-- 测试用例结果汇总 -->
+    <table class="SubHeadingTable">
+        <tr>
+            <td>
+                <big class="Heading2">Test Case Results</big>
+            </td>
+        </tr>
+    </table>
+
+    <table class="OverviewTable">
+        <tr>
+            <th class="TableHeadingCell" style="background-color: rgb(179, 179, 179);">序号</th>
+            <th class="TableHeadingCell" style="background-color: rgb(179, 179, 179);">测试组</th>
+            <th class="TableHeadingCell" style="background-color: rgb(179, 179, 179);">测试用例</th>
+            <th class="TableHeadingCell" style="background-color: rgb(179, 179, 179);">结果</th>
+        </tr>
+        <tr>
+            <td class="DefineCell">1.1</td>
+            <td class="DefaultCell" style="color: blue;"><a class="Undecorated" href="#tc-1-1" style="color: blue;">can</a></td>
+            <td class="DefaultCell" style="color: blue;"><a class="Undecorated" href="#tc-1-1" style="color: blue;">can_robust/test_TG1_TC1_BusOffAutoRecoveryTest BusOff自动恢复鲁棒性测试</a></td>
+            <td class="NegativeResultCell">fail</td>
+        </tr>
+        <tr>
+            <td class="DefineCell">1.2</td>
+            <td class="DefaultCell" style="color: blue;"><a class="Undecorated" href="#tc-1-2" style="color: blue;">can</a></td>
+            <td class="DefaultCell" style="color: blue;"><a class="Undecorated" href="#tc-1-2" style="color: blue;">can_robust/test_TG1_TC1_BusOffAutoRecoveryTest_2 BusOff自动恢复鲁棒性测试</a></td>
+            <td class="NegativeResultCell">fail</td>
+        </tr>
+        <tr>
+            <td class="DefineCell">1.3</td>
+            <td class="DefaultCell" style="color: blue;"><a class="Undecorated" href="#tc-1-3" style="color: blue;">can</a></td>
+            <td class="DefaultCell" style="color: blue;"><a class="Undecorated" href="#tc-1-3" style="color: blue;">can_robust/test_TG1_TC2_ContinuousErrorFrameRobustnessTest 持续错误帧注入鲁棒性测试</a></td>
+            <td class="NegativeResultCell">fail</td>
+        </tr>
+        <tr>
+            <td class="DefineCell">1.4</td>
+            <td class="DefaultCell" style="color: blue;"><a class="Undecorated" href="#tc-1-4" style="color: blue;">can</a></td>
+            <td class="DefaultCell" style="color: blue;"><a class="Undecorated" href="#tc-1-4" style="color: blue;">can_robust/test_TG1_TC3_CANBusShortCircuitRecoveryTest CAN总线短路恢复鲁棒性测试</a></td>
+            <td class="NegativeResultCell">fail</td>
+        </tr>
+        <tr>
+            <td class="DefineCell">1.5</td>
+            <td class="DefaultCell" style="color: blue;"><a class="Undecorated" href="#tc-1-5" style="color: blue;">can</a></td>
+            <td class="DefaultCell" style="color: blue;"><a class="Undecorated" href="#tc-1-5" style="color: blue;">can_robust/test_TG1_TC4_TerminationResistorMissingTest 终端电阻丢失鲁棒性测试</a></td>
+            <td class="NegativeResultCell">fail</td>
+        </tr>
+        <tr>
+            <td class="DefineCell">1.6</td>
+            <td class="DefaultCell" style="color: blue;"><a class="Undecorated" href="#tc-1-6" style="color: blue;">can</a></td>
+            <td class="DefaultCell" style="color: blue;"><a class="Undecorated" href="#tc-1-6" style="color: blue;">can_robust/test_TG1_TC5_CANFDBRSErrorRobustnessTest CAN FD BRS标志错误鲁棒性测试</a></td>
+            <td class="WarningCell">running</td>
+        </tr>
+        <tr>
+            <td class="DefineCell">2.1</td>
+            <td class="DefaultCell" style="color: blue;"><a class="Undecorated" href="#tc-2-1" style="color: blue;">busstress</a></td>
+            <td class="DefaultCell" style="color: blue;"><a class="Undecorated" href="#tc-2-1" style="color: blue;">busstress_robust/test_TG1_TC1_BusLoadStressTest 总线负载压力鲁棒性测试</a></td>
+            <td class="NegativeResultCell">fail</td>
+        </tr>
+        <tr>
+            <td class="DefineCell">2.2</td>
+            <td class="DefaultCell" style="color: blue;"><a class="Undecorated" href="#tc-2-2" style="color: blue;">busstress</a></td>
+            <td class="DefaultCell" style="color: blue;"><a class="Undecorated" href="#tc-2-2" style="color: blue;">busstress_robust/test_TG1_TC1_BusLoadStressTest_2 总线负载压力鲁棒性测试</a></td>
+            <td class="NegativeResultCell">fail</td>
+        </tr>
+        <tr>
+            <td class="DefineCell">2.3</td>
+            <td class="DefaultCell" style="color: blue;"><a class="Undecorated" href="#tc-2-3" style="color: blue;">busstress</a></td>
+            <td class="DefaultCell" style="color: blue;"><a class="Undecorated" href="#tc-2-3" style="color: blue;">busstress_robust/test_TG1_TC2_InterruptStormViaBusLoadTest 中断风暴模拟鲁棒性测试（通过极高总线负载模拟）</a></td>
+            <td class="NegativeResultCell">fail</td>
+        </tr>
+        <tr>
+            <td class="DefineCell">2.4</td>
+            <td class="DefaultCell" style="color: blue;"><a class="Undecorated" href="#tc-2-4" style="color: blue;">busstress</a></td>
+            <td class="DefaultCell" style="color: blue;"><a class="Undecorated" href="#tc-2-4" style="color: blue;">busstress_robust/test_TG1_TC3_HighFrequencyMessageBurstTest 高频率报文突发鲁棒性测试</a></td>
+            <td class="NegativeResultCell">fail</td>
+        </tr>
+        <tr>
+            <td class="DefineCell">3.1</td>
+            <td class="DefaultCell" style="color: blue;"><a class="Undecorated" href="#tc-3-1" style="color: blue;">hardware</a></td>
+            <td class="DefaultCell" style="color: blue;"><a class="Undecorated" href="#tc-3-1" style="color: blue;">hardware_robust/test_TG1_TC1_RapidPowerCycleRecoveryTest 多次快速上下电恢复鲁棒性测试</a></td>
+            <td class="NegativeResultCell">fail</td>
+        </tr>
+        <tr>
+            <td class="DefineCell">4.1</td>
+            <td class="DefaultCell" style="color: blue;"><a class="Undecorated" href="#tc-4-1" style="color: blue;">lin</a></td>
+            <td class="DefaultCell" style="color: blue;"><a class="Undecorated" href="#tc-4-1" style="color: blue;">lin_robust/test_TG1_TC1_LINBusShortCircuitRecoveryTest LIN总线短路恢复鲁棒性测试</a></td>
+            <td class="PositiveResultCell">pass</td>
+        </tr>
+        <tr>
+            <td class="DefineCell">5.1</td>
+            <td class="DefaultCell" style="color: blue;"><a class="Undecorated" href="#tc-5-1" style="color: blue;">nm</a></td>
+            <td class="DefaultCell" style="color: blue;"><a class="Undecorated" href="#tc-5-1" style="color: blue;">nm_robust/test_TG1_TC1_RepeatedSleepWakeupCyclingTest 重复休眠唤醒循环鲁棒性测试</a></td>
+            <td class="NegativeResultCell">fail</td>
+        </tr>
+        <tr>
+            <td class="DefineCell">6.1</td>
+            <td class="DefaultCell" style="color: blue;"><a class="Undecorated" href="#tc-6-1" style="color: blue;">power</a></td>
+            <td class="DefaultCell" style="color: blue;"><a class="Undecorated" href="#tc-6-1" style="color: blue;">power_robust/test_TG1_TC1_MicroBrownoutSustainedTest 微欠压持续运行鲁棒性测试</a></td>
+            <td class="NegativeResultCell">fail</td>
+        </tr>
+        <tr>
+            <td class="DefineCell">7.1</td>
+            <td class="DefaultCell" style="color: blue;"><a class="Undecorated" href="#tc-7-1" style="color: blue;">signal</a></td>
+            <td class="DefaultCell" style="color: blue;"><a class="Undecorated" href="#tc-7-1" style="color: blue;">signal_robust/test_TG1_TC1_SignalTimeoutDetectionTest 信号超时检测鲁棒性测试</a></td>
+            <td class="NegativeResultCell">fail</td>
+        </tr>
+        <tr>
+            <td class="DefineCell">8.1</td>
+            <td class="DefaultCell" style="color: blue;"><a class="Undecorated" href="#tc-8-1" style="color: blue;">tp</a></td>
+            <td class="DefaultCell" style="color: blue;"><a class="Undecorated" href="#tc-8-1" style="color: blue;">tp_robust/test_TG1_TC1_ConsecutiveFrameLossRecoveryTest 连续帧丢失恢复鲁棒性测试</a></td>
+            <td class="NegativeResultCell">fail</td>
+        </tr>
+    </table>
+
+    <!-- 测试用例详细执行部分 -->
+    
+    <!-- 测试用例详细执行部分 -->
+    <table class="SubHeadingTable">
+        <tr>
+            <td>
+                <big class="Heading2">Test Case Details</big>
+            </td>
+        </tr>
+    </table>
+    <table class="GroupHeadingTable" id="tc-1-1">
+        <tr>
+            <td class="LinkCell">
+                <a class="Undecorated" href="javascript:void(0)">[−]</a>
+            </td>
+            <td class="TestcaseHeadingNegativeResult">
+                <big class="Heading3">1.1 Test Case can_robust/test_TG1_TC1_BusOffAutoRecoveryTest BusOff自动恢复鲁棒性测试: Failed</big>
+            </td>
+        </tr>
+    </table>
+
+    <div class="Indentation">
+        <div class="Indentation">
+            <table class="DefaultTable">
+                <tr>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">Test case begin: </td>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">2026-05-27 00:55:32</td>
+                    <td class="CellNoColor">(logging timestamp 1779814532.240324)</td>
+                </tr>
+                <tr>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">Test case end: </td>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">2026-05-27 00:55:39</td>
+                    <td class="CellNoColor" nowrap>(logging timestamp 1779814539.367234)</td>
+                </tr>
+            </table>
+        </div>
+        <div class="Indentation"></div>
+        <table class="TestGroupHeadingBackground">
+            <tr>
+                <td>
+                    <big class="Heading3">Main Part of Test Case</big>
+                </td>
+            </tr>
+        </table>
+        <div class="Indentation">
+            <table class="ResultTable">
+                <tr>
+                    <th class="TableHeadingCell">Timestamp</th>
+                    <th class="TableHeadingCell">Test Step</th>
+                    <th class="TableHeadingCell">Description</th>
+                    <th class="TableHeadingCell">Result</th>
+                </tr>
+                
+                <tr>
+                    <td class="NumberCell">1779814532.337314</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">开始记录测试用例日志: BusOff自动恢复鲁棒性测试 (can_robust/test_TG1_TC1_BusOffAutoRecoveryTest), 文件: d:\SolarOne\framework-canlin\robustcases\test_log_report\20260527_005513_683_report\can\can_robust_test_TG1_TC1_BusOffAutoRecoveryTest_BusOff自动恢复鲁棒性测试_20260527_005532_262.blf</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814532.337684</td>
+                    <td class="DefaultCell">Step1</td>
+                    <td class="DefaultCell">设置DUT电源电压为12.0V，将KL30上电，唤醒CAN网络，等待1.0s至通信稳定</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814532.337887</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">开始CAN测试设置和通信检查</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814532.337977</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">设置DUT供电电压为 12.00V</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814532.338051</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">执行KL30上电</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814532.338107</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">根据DUT通信唤醒方式，启动ECU唤醒</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814532.338221</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">使用KL15硬线唤醒</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814532.338288</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">等待 1.0s 至CAN通信稳定</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814532.338357</td>
+                    <td class="DefaultCell">CAN通信状态检查</td>
+                    <td class="DefaultCell">先最多等待3s事件预热，再等待 1.000s 统计通信状态</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814536.349184</td>
+                    <td class="DefaultCell">CAN通信状态</td>
+                    <td class="DefaultCell">统计窗口结果: frame_cnt = 0, gErrorFrameCount = 0</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814536.349327</td>
+                    <td class="DefaultCell"> </td>
+                    <td class="DefaultCell">期望结果：CAN通信状态检查, 实际结果：DUT通信未恢复</td>
+                    <td class="NegativeResultCell">fail</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814536.349417</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">CAN通信状态检查失败</td>
+                    <td class="NegativeResultCell">fail</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814536.349479</td>
+                    <td class="DefaultCell">Step1</td>
+                    <td class="DefaultCell">电源设置与通信检查失败，结束测试</td>
+                    <td class="NegativeResultCell">fail</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814538.350560</td>
+                    <td class="DefaultCell">日志记录</td>
+                    <td class="DefaultCell">停止记录测试用例日志文件: BusOff自动恢复鲁棒性测试 (can_robust/test_TG1_TC1_BusOffAutoRecoveryTest)</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814538.366178</td>
+                    <td class="DefaultCell">日志记录</td>
+                    <td class="DefaultCell">日志记录已停止: FD=1</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814539.367132</td>
+                    <td class="DefaultCell">测试结束</td>
+                    <td class="DefaultCell">测试用例执行完成: </td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814539.367210</td>
+                    <td class="DefaultCell">测试结束</td>
+                    <td class="DefaultCell">执行测试结束和去初始化</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <table class="GroupHeadingTable" id="tc-1-2">
+        <tr>
+            <td class="LinkCell">
+                <a class="Undecorated" href="javascript:void(0)">[−]</a>
+            </td>
+            <td class="TestcaseHeadingNegativeResult">
+                <big class="Heading3">1.2 Test Case can_robust/test_TG1_TC1_BusOffAutoRecoveryTest_2 BusOff自动恢复鲁棒性测试: Failed</big>
+            </td>
+        </tr>
+    </table>
+
+    <div class="Indentation">
+        <div class="Indentation">
+            <table class="DefaultTable">
+                <tr>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">Test case begin: </td>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">2026-05-27 00:58:15</td>
+                    <td class="CellNoColor">(logging timestamp 1779814695.525988)</td>
+                </tr>
+                <tr>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">Test case end: </td>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">2026-05-27 00:58:22</td>
+                    <td class="CellNoColor" nowrap>(logging timestamp 1779814702.730140)</td>
+                </tr>
+            </table>
+        </div>
+        <div class="Indentation"></div>
+        <table class="TestGroupHeadingBackground">
+            <tr>
+                <td>
+                    <big class="Heading3">Main Part of Test Case</big>
+                </td>
+            </tr>
+        </table>
+        <div class="Indentation">
+            <table class="ResultTable">
+                <tr>
+                    <th class="TableHeadingCell">Timestamp</th>
+                    <th class="TableHeadingCell">Test Step</th>
+                    <th class="TableHeadingCell">Description</th>
+                    <th class="TableHeadingCell">Result</th>
+                </tr>
+                
+                <tr>
+                    <td class="NumberCell">1779814695.528059</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">开始记录测试用例日志: BusOff自动恢复鲁棒性测试 (can_robust/test_TG1_TC1_BusOffAutoRecoveryTest), 文件: d:\SolarOne\framework-canlin\robustcases\test_log_report\20260527_005513_683_report\can\can_robust_test_TG1_TC1_BusOffAutoRecoveryTest_BusOff自动恢复鲁棒性测试_20260527_005815_527.blf</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814695.528304</td>
+                    <td class="DefaultCell">Step1</td>
+                    <td class="DefaultCell">设置DUT电源电压为12.0V，将KL30上电，唤醒CAN网络，等待1.0s至通信稳定</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814695.528428</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">开始CAN测试设置和通信检查</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814695.528542</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">设置DUT供电电压为 12.00V</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814695.528644</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">执行KL30上电</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814695.528728</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">根据DUT通信唤醒方式，启动ECU唤醒</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814695.528824</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">使用KL15硬线唤醒</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814695.528913</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">等待 1.0s 至CAN通信稳定</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814695.529002</td>
+                    <td class="DefaultCell">CAN通信状态检查</td>
+                    <td class="DefaultCell">先最多等待3s事件预热，再等待 1.000s 统计通信状态</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814699.640125</td>
+                    <td class="DefaultCell">CAN通信状态</td>
+                    <td class="DefaultCell">统计窗口结果: frame_cnt = 0, gErrorFrameCount = 0</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814699.640360</td>
+                    <td class="DefaultCell"> </td>
+                    <td class="DefaultCell">期望结果：CAN通信状态检查, 实际结果：DUT通信未恢复</td>
+                    <td class="NegativeResultCell">fail</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814699.640543</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">CAN通信状态检查失败</td>
+                    <td class="NegativeResultCell">fail</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814699.640675</td>
+                    <td class="DefaultCell">Step1</td>
+                    <td class="DefaultCell">电源设置与通信检查失败，结束测试</td>
+                    <td class="NegativeResultCell">fail</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814701.692505</td>
+                    <td class="DefaultCell">日志记录</td>
+                    <td class="DefaultCell">停止记录测试用例日志文件: BusOff自动恢复鲁棒性测试 (can_robust/test_TG1_TC1_BusOffAutoRecoveryTest)</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814701.703709</td>
+                    <td class="DefaultCell">日志记录</td>
+                    <td class="DefaultCell">日志记录已停止: FD=12</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814702.729884</td>
+                    <td class="DefaultCell">测试结束</td>
+                    <td class="DefaultCell">测试用例执行完成: </td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814702.730106</td>
+                    <td class="DefaultCell">测试结束</td>
+                    <td class="DefaultCell">执行测试结束和去初始化</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <table class="GroupHeadingTable" id="tc-1-3">
+        <tr>
+            <td class="LinkCell">
+                <a class="Undecorated" href="javascript:void(0)">[−]</a>
+            </td>
+            <td class="TestcaseHeadingNegativeResult">
+                <big class="Heading3">1.3 Test Case can_robust/test_TG1_TC2_ContinuousErrorFrameRobustnessTest 持续错误帧注入鲁棒性测试: Failed</big>
+            </td>
+        </tr>
+    </table>
+
+    <div class="Indentation">
+        <div class="Indentation">
+            <table class="DefaultTable">
+                <tr>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">Test case begin: </td>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">2026-05-27 00:58:22</td>
+                    <td class="CellNoColor">(logging timestamp 1779814702.731009)</td>
+                </tr>
+                <tr>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">Test case end: </td>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">2026-05-27 00:58:29</td>
+                    <td class="CellNoColor" nowrap>(logging timestamp 1779814709.949567)</td>
+                </tr>
+            </table>
+        </div>
+        <div class="Indentation"></div>
+        <table class="TestGroupHeadingBackground">
+            <tr>
+                <td>
+                    <big class="Heading3">Main Part of Test Case</big>
+                </td>
+            </tr>
+        </table>
+        <div class="Indentation">
+            <table class="ResultTable">
+                <tr>
+                    <th class="TableHeadingCell">Timestamp</th>
+                    <th class="TableHeadingCell">Test Step</th>
+                    <th class="TableHeadingCell">Description</th>
+                    <th class="TableHeadingCell">Result</th>
+                </tr>
+                
+                <tr>
+                    <td class="NumberCell">1779814702.745903</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">开始记录测试用例日志: 持续错误帧注入鲁棒性测试 (can_robust/test_TG1_TC2_ContinuousErrorFrameRobustnessTest), 文件: d:\SolarOne\framework-canlin\robustcases\test_log_report\20260527_005513_683_report\can\can_robust_test_TG1_TC2_ContinuousErrorFrameRobustnessTest_持续错误帧注入鲁棒性测试_20260527_005822_733.blf</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814702.746062</td>
+                    <td class="DefaultCell">Step1</td>
+                    <td class="DefaultCell">设置DUT电源电压为12.0V，将KL30上电，唤醒CAN网络，等待1.0s至通信稳定</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814702.746137</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">开始CAN测试设置和通信检查</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814702.746264</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">设置DUT供电电压为 12.00V</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814702.746468</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">执行KL30上电</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814702.746627</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">根据DUT通信唤醒方式，启动ECU唤醒</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814702.746719</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">使用KL15硬线唤醒</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814702.746823</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">等待 1.0s 至CAN通信稳定</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814702.746952</td>
+                    <td class="DefaultCell">CAN通信状态检查</td>
+                    <td class="DefaultCell">先最多等待3s事件预热，再等待 1.000s 统计通信状态</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814706.856682</td>
+                    <td class="DefaultCell">CAN通信状态</td>
+                    <td class="DefaultCell">统计窗口结果: frame_cnt = 0, gErrorFrameCount = 0</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814706.856922</td>
+                    <td class="DefaultCell"> </td>
+                    <td class="DefaultCell">期望结果：CAN通信状态检查, 实际结果：DUT通信未恢复</td>
+                    <td class="NegativeResultCell">fail</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814706.857142</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">CAN通信状态检查失败</td>
+                    <td class="NegativeResultCell">fail</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814706.857395</td>
+                    <td class="DefaultCell">Step1</td>
+                    <td class="DefaultCell">电源设置与通信检查失败，结束测试</td>
+                    <td class="NegativeResultCell">fail</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814708.910567</td>
+                    <td class="DefaultCell">日志记录</td>
+                    <td class="DefaultCell">停止记录测试用例日志文件: 持续错误帧注入鲁棒性测试 (can_robust/test_TG1_TC2_ContinuousErrorFrameRobustnessTest)</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814708.923357</td>
+                    <td class="DefaultCell">日志记录</td>
+                    <td class="DefaultCell">日志记录已停止: FD=13</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814709.949291</td>
+                    <td class="DefaultCell">测试结束</td>
+                    <td class="DefaultCell">测试用例执行完成: </td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814709.949540</td>
+                    <td class="DefaultCell">测试结束</td>
+                    <td class="DefaultCell">执行测试结束和去初始化</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <table class="GroupHeadingTable" id="tc-1-4">
+        <tr>
+            <td class="LinkCell">
+                <a class="Undecorated" href="javascript:void(0)">[−]</a>
+            </td>
+            <td class="TestcaseHeadingNegativeResult">
+                <big class="Heading3">1.4 Test Case can_robust/test_TG1_TC3_CANBusShortCircuitRecoveryTest CAN总线短路恢复鲁棒性测试: Failed</big>
+            </td>
+        </tr>
+    </table>
+
+    <div class="Indentation">
+        <div class="Indentation">
+            <table class="DefaultTable">
+                <tr>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">Test case begin: </td>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">2026-05-27 00:58:29</td>
+                    <td class="CellNoColor">(logging timestamp 1779814709.950337)</td>
+                </tr>
+                <tr>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">Test case end: </td>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">2026-05-27 00:58:37</td>
+                    <td class="CellNoColor" nowrap>(logging timestamp 1779814717.154476)</td>
+                </tr>
+            </table>
+        </div>
+        <div class="Indentation"></div>
+        <table class="TestGroupHeadingBackground">
+            <tr>
+                <td>
+                    <big class="Heading3">Main Part of Test Case</big>
+                </td>
+            </tr>
+        </table>
+        <div class="Indentation">
+            <table class="ResultTable">
+                <tr>
+                    <th class="TableHeadingCell">Timestamp</th>
+                    <th class="TableHeadingCell">Test Step</th>
+                    <th class="TableHeadingCell">Description</th>
+                    <th class="TableHeadingCell">Result</th>
+                </tr>
+                
+                <tr>
+                    <td class="NumberCell">1779814709.963759</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">开始记录测试用例日志: CAN总线短路恢复鲁棒性测试 (can_robust/test_TG1_TC3_CANBusShortCircuitRecoveryTest), 文件: d:\SolarOne\framework-canlin\robustcases\test_log_report\20260527_005513_683_report\can\can_robust_test_TG1_TC3_CANBusShortCircuitRecoveryTest_CAN总线短路恢复鲁棒性测试_20260527_005829_951.blf</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814709.964079</td>
+                    <td class="DefaultCell">Step1</td>
+                    <td class="DefaultCell">设置DUT电源电压为12.0V，将KL30上电，唤醒CAN网络，等待1.0s至通信稳定</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814709.964159</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">开始CAN测试设置和通信检查</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814709.964214</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">设置DUT供电电压为 12.00V</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814709.964380</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">执行KL30上电</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814709.964466</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">根据DUT通信唤醒方式，启动ECU唤醒</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814709.964553</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">使用KL15硬线唤醒</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814709.964662</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">等待 1.0s 至CAN通信稳定</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814709.964895</td>
+                    <td class="DefaultCell">CAN通信状态检查</td>
+                    <td class="DefaultCell">先最多等待3s事件预热，再等待 1.000s 统计通信状态</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814714.067758</td>
+                    <td class="DefaultCell">CAN通信状态</td>
+                    <td class="DefaultCell">统计窗口结果: frame_cnt = 0, gErrorFrameCount = 0</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814714.067843</td>
+                    <td class="DefaultCell"> </td>
+                    <td class="DefaultCell">期望结果：CAN通信状态检查, 实际结果：DUT通信未恢复</td>
+                    <td class="NegativeResultCell">fail</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814714.067944</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">CAN通信状态检查失败</td>
+                    <td class="NegativeResultCell">fail</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814714.068062</td>
+                    <td class="DefaultCell">Step1</td>
+                    <td class="DefaultCell">电源设置与通信检查失败，结束测试</td>
+                    <td class="NegativeResultCell">fail</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814716.120073</td>
+                    <td class="DefaultCell">日志记录</td>
+                    <td class="DefaultCell">停止记录测试用例日志文件: CAN总线短路恢复鲁棒性测试 (can_robust/test_TG1_TC3_CANBusShortCircuitRecoveryTest)</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814716.128012</td>
+                    <td class="DefaultCell">日志记录</td>
+                    <td class="DefaultCell">日志记录已停止: FD=14</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814717.154260</td>
+                    <td class="DefaultCell">测试结束</td>
+                    <td class="DefaultCell">测试用例执行完成: </td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814717.154431</td>
+                    <td class="DefaultCell">测试结束</td>
+                    <td class="DefaultCell">执行测试结束和去初始化</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <table class="GroupHeadingTable" id="tc-1-5">
+        <tr>
+            <td class="LinkCell">
+                <a class="Undecorated" href="javascript:void(0)">[−]</a>
+            </td>
+            <td class="TestcaseHeadingNegativeResult">
+                <big class="Heading3">1.5 Test Case can_robust/test_TG1_TC4_TerminationResistorMissingTest 终端电阻丢失鲁棒性测试: Failed</big>
+            </td>
+        </tr>
+    </table>
+
+    <div class="Indentation">
+        <div class="Indentation">
+            <table class="DefaultTable">
+                <tr>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">Test case begin: </td>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">2026-05-27 00:58:37</td>
+                    <td class="CellNoColor">(logging timestamp 1779814717.154984)</td>
+                </tr>
+                <tr>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">Test case end: </td>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">2026-05-27 00:58:44</td>
+                    <td class="CellNoColor" nowrap>(logging timestamp 1779814724.354730)</td>
+                </tr>
+            </table>
+        </div>
+        <div class="Indentation"></div>
+        <table class="TestGroupHeadingBackground">
+            <tr>
+                <td>
+                    <big class="Heading3">Main Part of Test Case</big>
+                </td>
+            </tr>
+        </table>
+        <div class="Indentation">
+            <table class="ResultTable">
+                <tr>
+                    <th class="TableHeadingCell">Timestamp</th>
+                    <th class="TableHeadingCell">Test Step</th>
+                    <th class="TableHeadingCell">Description</th>
+                    <th class="TableHeadingCell">Result</th>
+                </tr>
+                
+                <tr>
+                    <td class="NumberCell">1779814717.156927</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">开始记录测试用例日志: 终端电阻丢失鲁棒性测试 (can_robust/test_TG1_TC4_TerminationResistorMissingTest), 文件: d:\SolarOne\framework-canlin\robustcases\test_log_report\20260527_005513_683_report\can\can_robust_test_TG1_TC4_TerminationResistorMissingTest_终端电阻丢失鲁棒性测试_20260527_005837_156.blf</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814717.157180</td>
+                    <td class="DefaultCell">Step1</td>
+                    <td class="DefaultCell">设置DUT电源电压为12.0V，启用终端电阻，将KL30上电，唤醒CAN网络，等待1.0s至通信稳定</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814717.157267</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">开始CAN测试设置和通信检查</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814717.157386</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">设置DUT供电电压为 12.00V</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814717.157465</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">执行KL30上电</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814717.157593</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">根据DUT通信唤醒方式，启动ECU唤醒</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814717.157825</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">使用KL15硬线唤醒</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814717.158059</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">等待 1.0s 至CAN通信稳定</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814717.158133</td>
+                    <td class="DefaultCell">CAN通信状态检查</td>
+                    <td class="DefaultCell">先最多等待3s事件预热，再等待 1.000s 统计通信状态</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814721.264461</td>
+                    <td class="DefaultCell">CAN通信状态</td>
+                    <td class="DefaultCell">统计窗口结果: frame_cnt = 0, gErrorFrameCount = 0</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814721.264636</td>
+                    <td class="DefaultCell"> </td>
+                    <td class="DefaultCell">期望结果：CAN通信状态检查, 实际结果：DUT通信未恢复</td>
+                    <td class="NegativeResultCell">fail</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814721.264726</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">CAN通信状态检查失败</td>
+                    <td class="NegativeResultCell">fail</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814721.264853</td>
+                    <td class="DefaultCell">Step1</td>
+                    <td class="DefaultCell">电源设置与通信检查失败，结束测试</td>
+                    <td class="NegativeResultCell">fail</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814723.317400</td>
+                    <td class="DefaultCell">日志记录</td>
+                    <td class="DefaultCell">停止记录测试用例日志文件: 终端电阻丢失鲁棒性测试 (can_robust/test_TG1_TC4_TerminationResistorMissingTest)</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814723.328681</td>
+                    <td class="DefaultCell">日志记录</td>
+                    <td class="DefaultCell">日志记录已停止: FD=15</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814724.354505</td>
+                    <td class="DefaultCell">测试结束</td>
+                    <td class="DefaultCell">测试用例执行完成: </td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814724.354694</td>
+                    <td class="DefaultCell">测试结束</td>
+                    <td class="DefaultCell">执行测试结束和去初始化</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <table class="GroupHeadingTable" id="tc-1-6">
+        <tr>
+            <td class="LinkCell">
+                <a class="Undecorated" href="javascript:void(0)">[−]</a>
+            </td>
+            <td class="TestcaseHeadingInconclusiveResult">
+                <big class="Heading3">1.6 Test Case can_robust/test_TG1_TC5_CANFDBRSErrorRobustnessTest CAN FD BRS标志错误鲁棒性测试: RUNNING</big>
+            </td>
+        </tr>
+    </table>
+
+    <div class="Indentation">
+        <div class="Indentation">
+            <table class="DefaultTable">
+                <tr>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">Test case begin: </td>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">2026-05-27 00:58:44</td>
+                    <td class="CellNoColor">(logging timestamp 1779814724.355160)</td>
+                </tr>
+                <tr>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">Test case end: </td>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">N/A</td>
+                    <td class="CellNoColor" nowrap>(logging timestamp 0.000000)</td>
+                </tr>
+            </table>
+        </div>
+        <div class="Indentation"></div>
+        <table class="TestGroupHeadingBackground">
+            <tr>
+                <td>
+                    <big class="Heading3">Main Part of Test Case</big>
+                </td>
+            </tr>
+        </table>
+        <div class="Indentation">
+            <table class="ResultTable">
+                <tr>
+                    <th class="TableHeadingCell">Timestamp</th>
+                    <th class="TableHeadingCell">Test Step</th>
+                    <th class="TableHeadingCell">Description</th>
+                    <th class="TableHeadingCell">Result</th>
+                </tr>
+                
+                <tr>
+                    <td class="NumberCell">1779814724.357471</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">开始记录测试用例日志: CAN FD BRS标志错误鲁棒性测试 (can_robust/test_TG1_TC5_CANFDBRSErrorRobustnessTest), 文件: d:\SolarOne\framework-canlin\robustcases\test_log_report\20260527_005513_683_report\can\can_robust_test_TG1_TC5_CANFDBRSErrorRobustnessTest_CAN_FD_BRS标志错误鲁棒性测试_20260527_005844_356.blf</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814724.357676</td>
+                    <td class="DefaultCell">Step1</td>
+                    <td class="DefaultCell">设置DUT电源电压为12.0V，将KL30上电，唤醒CAN网络，等待1.0s至通信稳定</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814724.357781</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">开始CAN测试设置和通信检查</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814724.357838</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">设置DUT供电电压为 12.00V</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814724.357890</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">执行KL30上电</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814724.357927</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">根据DUT通信唤醒方式，启动ECU唤醒</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814724.357968</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">使用KL15硬线唤醒</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814724.358016</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">等待 1.0s 至CAN通信稳定</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814724.358107</td>
+                    <td class="DefaultCell">CAN通信状态检查</td>
+                    <td class="DefaultCell">先最多等待3s事件预热，再等待 1.000s 统计通信状态</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814728.463038</td>
+                    <td class="DefaultCell">CAN通信状态</td>
+                    <td class="DefaultCell">统计窗口结果: frame_cnt = 0, gErrorFrameCount = 0</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814728.463173</td>
+                    <td class="DefaultCell"> </td>
+                    <td class="DefaultCell">期望结果：CAN通信状态检查, 实际结果：DUT通信未恢复</td>
+                    <td class="NegativeResultCell">fail</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814728.463270</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">CAN通信状态检查失败</td>
+                    <td class="NegativeResultCell">fail</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814728.463336</td>
+                    <td class="DefaultCell">Step1</td>
+                    <td class="DefaultCell">电源设置与通信检查失败</td>
+                    <td class="NegativeResultCell">fail</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814730.159108</td>
+                    <td class="DefaultCell">CAN测试去初始化</td>
+                    <td class="DefaultCell">开始CAN测试去初始化...</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814730.159194</td>
+                    <td class="DefaultCell">Step0</td>
+                    <td class="DefaultCell">取消注册CAN事件回调</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814730.159267</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">已取消注册</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814730.159330</td>
+                    <td class="DefaultCell">Step1</td>
+                    <td class="DefaultCell">停用CAN通道</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814730.159455</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">成功停用CAN通道 1</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814730.159606</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">成功停用CAN通道 2</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814730.159665</td>
+                    <td class="DefaultCell">Step2</td>
+                    <td class="DefaultCell">停止运行时环境</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814730.159757</td>
+                    <td class="DefaultCell">Step2</td>
+                    <td class="DefaultCell">清理全局上下文</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814730.159814</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">去初始化完成</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <table class="GroupHeadingTable" id="tc-2-1">
+        <tr>
+            <td class="LinkCell">
+                <a class="Undecorated" href="javascript:void(0)">[−]</a>
+            </td>
+            <td class="TestcaseHeadingNegativeResult">
+                <big class="Heading3">2.1 Test Case busstress_robust/test_TG1_TC1_BusLoadStressTest 总线负载压力鲁棒性测试: Failed</big>
+            </td>
+        </tr>
+    </table>
+
+    <div class="Indentation">
+        <div class="Indentation">
+            <table class="DefaultTable">
+                <tr>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">Test case begin: </td>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">2026-05-27 00:55:47</td>
+                    <td class="CellNoColor">(logging timestamp 1779814547.818782)</td>
+                </tr>
+                <tr>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">Test case end: </td>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">2026-05-27 00:55:54</td>
+                    <td class="CellNoColor" nowrap>(logging timestamp 1779814554.846564)</td>
+                </tr>
+            </table>
+        </div>
+        <div class="Indentation"></div>
+        <table class="TestGroupHeadingBackground">
+            <tr>
+                <td>
+                    <big class="Heading3">Main Part of Test Case</big>
+                </td>
+            </tr>
+        </table>
+        <div class="Indentation">
+            <table class="ResultTable">
+                <tr>
+                    <th class="TableHeadingCell">Timestamp</th>
+                    <th class="TableHeadingCell">Test Step</th>
+                    <th class="TableHeadingCell">Description</th>
+                    <th class="TableHeadingCell">Result</th>
+                </tr>
+                
+                <tr>
+                    <td class="NumberCell">1779814547.820865</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">开始记录测试用例日志: 总线负载压力鲁棒性测试 (busstress_robust/test_TG1_TC1_BusLoadStressTest), 文件: d:\SolarOne\framework-canlin\robustcases\test_log_report\20260527_005513_683_report\busstress\busstress_robust_test_TG1_TC1_BusLoadStressTest_总线负载压力鲁棒性测试_20260527_005547_819.blf</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814547.821267</td>
+                    <td class="DefaultCell">Step1</td>
+                    <td class="DefaultCell">设置DUT电源电压为12.0V，唤醒CAN网络，等待1.0s至通信稳定</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814547.821362</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">开始CAN测试设置和通信检查</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814547.821430</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">设置DUT供电电压为 12.00V</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814547.821488</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">执行KL30上电</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814547.821537</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">根据DUT通信唤醒方式，启动ECU唤醒</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814547.821609</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">使用KL15硬线唤醒</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814547.821731</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">等待 1.0s 至CAN通信稳定</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814547.821815</td>
+                    <td class="DefaultCell">CAN通信状态检查</td>
+                    <td class="DefaultCell">先最多等待3s事件预热，再等待 1.000s 统计通信状态</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814551.832771</td>
+                    <td class="DefaultCell">CAN通信状态</td>
+                    <td class="DefaultCell">统计窗口结果: frame_cnt = 0, gErrorFrameCount = 0</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814551.832896</td>
+                    <td class="DefaultCell"> </td>
+                    <td class="DefaultCell">期望结果：CAN通信状态检查, 实际结果：DUT通信未恢复</td>
+                    <td class="NegativeResultCell">fail</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814551.832991</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">CAN通信状态检查失败</td>
+                    <td class="NegativeResultCell">fail</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814551.833093</td>
+                    <td class="DefaultCell">Step1</td>
+                    <td class="DefaultCell">电源设置与通信检查失败</td>
+                    <td class="NegativeResultCell">fail</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814553.834476</td>
+                    <td class="DefaultCell">日志记录</td>
+                    <td class="DefaultCell">停止记录测试用例日志文件: 总线负载压力鲁棒性测试 (busstress_robust/test_TG1_TC1_BusLoadStressTest)</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814553.845575</td>
+                    <td class="DefaultCell">日志记录</td>
+                    <td class="DefaultCell">日志记录已停止: FD=2</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814554.846361</td>
+                    <td class="DefaultCell">测试结束</td>
+                    <td class="DefaultCell">测试用例执行完成: </td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814554.846529</td>
+                    <td class="DefaultCell">测试结束</td>
+                    <td class="DefaultCell">执行测试结束和去初始化</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <table class="GroupHeadingTable" id="tc-2-2">
+        <tr>
+            <td class="LinkCell">
+                <a class="Undecorated" href="javascript:void(0)">[−]</a>
+            </td>
+            <td class="TestcaseHeadingNegativeResult">
+                <big class="Heading3">2.2 Test Case busstress_robust/test_TG1_TC1_BusLoadStressTest_2 总线负载压力鲁棒性测试: Failed</big>
+            </td>
+        </tr>
+    </table>
+
+    <div class="Indentation">
+        <div class="Indentation">
+            <table class="DefaultTable">
+                <tr>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">Test case begin: </td>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">2026-05-27 00:57:54</td>
+                    <td class="CellNoColor">(logging timestamp 1779814674.165070)</td>
+                </tr>
+                <tr>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">Test case end: </td>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">2026-05-27 00:58:01</td>
+                    <td class="CellNoColor" nowrap>(logging timestamp 1779814681.190778)</td>
+                </tr>
+            </table>
+        </div>
+        <div class="Indentation"></div>
+        <table class="TestGroupHeadingBackground">
+            <tr>
+                <td>
+                    <big class="Heading3">Main Part of Test Case</big>
+                </td>
+            </tr>
+        </table>
+        <div class="Indentation">
+            <table class="ResultTable">
+                <tr>
+                    <th class="TableHeadingCell">Timestamp</th>
+                    <th class="TableHeadingCell">Test Step</th>
+                    <th class="TableHeadingCell">Description</th>
+                    <th class="TableHeadingCell">Result</th>
+                </tr>
+                
+                <tr>
+                    <td class="NumberCell">1779814674.167085</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">开始记录测试用例日志: 总线负载压力鲁棒性测试 (busstress_robust/test_TG1_TC1_BusLoadStressTest), 文件: d:\SolarOne\framework-canlin\robustcases\test_log_report\20260527_005513_683_report\busstress\busstress_robust_test_TG1_TC1_BusLoadStressTest_总线负载压力鲁棒性测试_20260527_005754_166.blf</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814674.167278</td>
+                    <td class="DefaultCell">Step1</td>
+                    <td class="DefaultCell">设置DUT电源电压为12.0V，唤醒CAN网络，等待1.0s至通信稳定</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814674.167357</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">开始CAN测试设置和通信检查</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814674.167414</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">设置DUT供电电压为 12.00V</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814674.167471</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">执行KL30上电</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814674.167531</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">根据DUT通信唤醒方式，启动ECU唤醒</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814674.167590</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">使用KL15硬线唤醒</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814674.167641</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">等待 1.0s 至CAN通信稳定</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814674.167703</td>
+                    <td class="DefaultCell">CAN通信状态检查</td>
+                    <td class="DefaultCell">先最多等待3s事件预热，再等待 1.000s 统计通信状态</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814678.177391</td>
+                    <td class="DefaultCell">CAN通信状态</td>
+                    <td class="DefaultCell">统计窗口结果: frame_cnt = 0, gErrorFrameCount = 0</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814678.177487</td>
+                    <td class="DefaultCell"> </td>
+                    <td class="DefaultCell">期望结果：CAN通信状态检查, 实际结果：DUT通信未恢复</td>
+                    <td class="NegativeResultCell">fail</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814678.177550</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">CAN通信状态检查失败</td>
+                    <td class="NegativeResultCell">fail</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814678.177732</td>
+                    <td class="DefaultCell">Step1</td>
+                    <td class="DefaultCell">电源设置与通信检查失败</td>
+                    <td class="NegativeResultCell">fail</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814680.178975</td>
+                    <td class="DefaultCell">日志记录</td>
+                    <td class="DefaultCell">停止记录测试用例日志文件: 总线负载压力鲁棒性测试 (busstress_robust/test_TG1_TC1_BusLoadStressTest)</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814680.189993</td>
+                    <td class="DefaultCell">日志记录</td>
+                    <td class="DefaultCell">日志记录已停止: FD=9</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814681.190491</td>
+                    <td class="DefaultCell">测试结束</td>
+                    <td class="DefaultCell">测试用例执行完成: </td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814681.190737</td>
+                    <td class="DefaultCell">测试结束</td>
+                    <td class="DefaultCell">执行测试结束和去初始化</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <table class="GroupHeadingTable" id="tc-2-3">
+        <tr>
+            <td class="LinkCell">
+                <a class="Undecorated" href="javascript:void(0)">[−]</a>
+            </td>
+            <td class="TestcaseHeadingNegativeResult">
+                <big class="Heading3">2.3 Test Case busstress_robust/test_TG1_TC2_InterruptStormViaBusLoadTest 中断风暴模拟鲁棒性测试（通过极高总线负载模拟）: Failed</big>
+            </td>
+        </tr>
+    </table>
+
+    <div class="Indentation">
+        <div class="Indentation">
+            <table class="DefaultTable">
+                <tr>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">Test case begin: </td>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">2026-05-27 00:58:01</td>
+                    <td class="CellNoColor">(logging timestamp 1779814681.191346)</td>
+                </tr>
+                <tr>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">Test case end: </td>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">2026-05-27 00:58:08</td>
+                    <td class="CellNoColor" nowrap>(logging timestamp 1779814688.311385)</td>
+                </tr>
+            </table>
+        </div>
+        <div class="Indentation"></div>
+        <table class="TestGroupHeadingBackground">
+            <tr>
+                <td>
+                    <big class="Heading3">Main Part of Test Case</big>
+                </td>
+            </tr>
+        </table>
+        <div class="Indentation">
+            <table class="ResultTable">
+                <tr>
+                    <th class="TableHeadingCell">Timestamp</th>
+                    <th class="TableHeadingCell">Test Step</th>
+                    <th class="TableHeadingCell">Description</th>
+                    <th class="TableHeadingCell">Result</th>
+                </tr>
+                
+                <tr>
+                    <td class="NumberCell">1779814681.206760</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">开始记录测试用例日志: 中断风暴模拟鲁棒性测试（通过极高总线负载模拟） (busstress_robust/test_TG1_TC2_InterruptStormViaBusLoadTest), 文件: d:\SolarOne\framework-canlin\robustcases\test_log_report\20260527_005513_683_report\busstress\busstress_robust_test_TG1_TC2_InterruptStormViaBusLoadTest_中断风暴模拟鲁棒性测试_通过极高总线负载模拟__20260527_005801_193.blf</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814681.207059</td>
+                    <td class="DefaultCell">Step1</td>
+                    <td class="DefaultCell">设置DUT电源电压为12.0V，唤醒CAN网络，等待1.0s至通信稳定</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814681.207168</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">开始CAN测试设置和通信检查</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814681.207229</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">设置DUT供电电压为 12.00V</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814681.207286</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">执行KL30上电</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814681.207352</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">根据DUT通信唤醒方式，启动ECU唤醒</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814681.207494</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">使用KL15硬线唤醒</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814681.207642</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">等待 1.0s 至CAN通信稳定</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814681.207740</td>
+                    <td class="DefaultCell">CAN通信状态检查</td>
+                    <td class="DefaultCell">先最多等待3s事件预热，再等待 1.000s 统计通信状态</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814685.222149</td>
+                    <td class="DefaultCell">CAN通信状态</td>
+                    <td class="DefaultCell">统计窗口结果: frame_cnt = 0, gErrorFrameCount = 0</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814685.222207</td>
+                    <td class="DefaultCell"> </td>
+                    <td class="DefaultCell">期望结果：CAN通信状态检查, 实际结果：DUT通信未恢复</td>
+                    <td class="NegativeResultCell">fail</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814685.222241</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">CAN通信状态检查失败</td>
+                    <td class="NegativeResultCell">fail</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814685.222409</td>
+                    <td class="DefaultCell">Step1</td>
+                    <td class="DefaultCell">电源设置与通信检查失败</td>
+                    <td class="NegativeResultCell">fail</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814687.273753</td>
+                    <td class="DefaultCell">日志记录</td>
+                    <td class="DefaultCell">停止记录测试用例日志文件: 中断风暴模拟鲁棒性测试（通过极高总线负载模拟） (busstress_robust/test_TG1_TC2_InterruptStormViaBusLoadTest)</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814687.285072</td>
+                    <td class="DefaultCell">日志记录</td>
+                    <td class="DefaultCell">日志记录已停止: FD=10</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814688.311140</td>
+                    <td class="DefaultCell">测试结束</td>
+                    <td class="DefaultCell">测试用例执行完成: </td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814688.311351</td>
+                    <td class="DefaultCell">测试结束</td>
+                    <td class="DefaultCell">执行测试结束和去初始化</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <table class="GroupHeadingTable" id="tc-2-4">
+        <tr>
+            <td class="LinkCell">
+                <a class="Undecorated" href="javascript:void(0)">[−]</a>
+            </td>
+            <td class="TestcaseHeadingNegativeResult">
+                <big class="Heading3">2.4 Test Case busstress_robust/test_TG1_TC3_HighFrequencyMessageBurstTest 高频率报文突发鲁棒性测试: Failed</big>
+            </td>
+        </tr>
+    </table>
+
+    <div class="Indentation">
+        <div class="Indentation">
+            <table class="DefaultTable">
+                <tr>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">Test case begin: </td>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">2026-05-27 00:58:08</td>
+                    <td class="CellNoColor">(logging timestamp 1779814688.312006)</td>
+                </tr>
+                <tr>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">Test case end: </td>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">2026-05-27 00:58:15</td>
+                    <td class="CellNoColor" nowrap>(logging timestamp 1779814695.521843)</td>
+                </tr>
+            </table>
+        </div>
+        <div class="Indentation"></div>
+        <table class="TestGroupHeadingBackground">
+            <tr>
+                <td>
+                    <big class="Heading3">Main Part of Test Case</big>
+                </td>
+            </tr>
+        </table>
+        <div class="Indentation">
+            <table class="ResultTable">
+                <tr>
+                    <th class="TableHeadingCell">Timestamp</th>
+                    <th class="TableHeadingCell">Test Step</th>
+                    <th class="TableHeadingCell">Description</th>
+                    <th class="TableHeadingCell">Result</th>
+                </tr>
+                
+                <tr>
+                    <td class="NumberCell">1779814688.315132</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">开始记录测试用例日志: 高频率报文突发鲁棒性测试 (busstress_robust/test_TG1_TC3_HighFrequencyMessageBurstTest), 文件: d:\SolarOne\framework-canlin\robustcases\test_log_report\20260527_005513_683_report\busstress\busstress_robust_test_TG1_TC3_HighFrequencyMessageBurstTest_高频率报文突发鲁棒性测试_20260527_005808_313.blf</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814688.315394</td>
+                    <td class="DefaultCell">Step1</td>
+                    <td class="DefaultCell">设置DUT电源电压为12.0V，唤醒CAN网络，等待1.0s至通信稳定</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814688.315474</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">开始CAN测试设置和通信检查</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814688.315558</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">设置DUT供电电压为 12.00V</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814688.315630</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">执行KL30上电</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814688.315668</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">根据DUT通信唤醒方式，启动ECU唤醒</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814688.315704</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">使用KL15硬线唤醒</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814688.315738</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">等待 1.0s 至CAN通信稳定</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814688.315774</td>
+                    <td class="DefaultCell">CAN通信状态检查</td>
+                    <td class="DefaultCell">先最多等待3s事件预热，再等待 1.000s 统计通信状态</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814692.431491</td>
+                    <td class="DefaultCell">CAN通信状态</td>
+                    <td class="DefaultCell">统计窗口结果: frame_cnt = 0, gErrorFrameCount = 0</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814692.431654</td>
+                    <td class="DefaultCell"> </td>
+                    <td class="DefaultCell">期望结果：CAN通信状态检查, 实际结果：DUT通信未恢复</td>
+                    <td class="NegativeResultCell">fail</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814692.431812</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">CAN通信状态检查失败</td>
+                    <td class="NegativeResultCell">fail</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814692.431866</td>
+                    <td class="DefaultCell">Step1</td>
+                    <td class="DefaultCell">电源设置与通信检查失败</td>
+                    <td class="NegativeResultCell">fail</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814694.483873</td>
+                    <td class="DefaultCell">日志记录</td>
+                    <td class="DefaultCell">停止记录测试用例日志文件: 高频率报文突发鲁棒性测试 (busstress_robust/test_TG1_TC3_HighFrequencyMessageBurstTest)</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814694.495655</td>
+                    <td class="DefaultCell">日志记录</td>
+                    <td class="DefaultCell">日志记录已停止: FD=11</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814695.521656</td>
+                    <td class="DefaultCell">测试结束</td>
+                    <td class="DefaultCell">测试用例执行完成: </td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814695.521816</td>
+                    <td class="DefaultCell">测试结束</td>
+                    <td class="DefaultCell">执行测试结束和去初始化</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <table class="GroupHeadingTable" id="tc-3-1">
+        <tr>
+            <td class="LinkCell">
+                <a class="Undecorated" href="javascript:void(0)">[−]</a>
+            </td>
+            <td class="TestcaseHeadingNegativeResult">
+                <big class="Heading3">3.1 Test Case hardware_robust/test_TG1_TC1_RapidPowerCycleRecoveryTest 多次快速上下电恢复鲁棒性测试: Failed</big>
+            </td>
+        </tr>
+    </table>
+
+    <div class="Indentation">
+        <div class="Indentation">
+            <table class="DefaultTable">
+                <tr>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">Test case begin: </td>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">2026-05-27 00:56:10</td>
+                    <td class="CellNoColor">(logging timestamp 1779814570.250427)</td>
+                </tr>
+                <tr>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">Test case end: </td>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">2026-05-27 00:56:19</td>
+                    <td class="CellNoColor" nowrap>(logging timestamp 1779814579.287547)</td>
+                </tr>
+            </table>
+        </div>
+        <div class="Indentation"></div>
+        <table class="TestGroupHeadingBackground">
+            <tr>
+                <td>
+                    <big class="Heading3">Main Part of Test Case</big>
+                </td>
+            </tr>
+        </table>
+        <div class="Indentation">
+            <table class="ResultTable">
+                <tr>
+                    <th class="TableHeadingCell">Timestamp</th>
+                    <th class="TableHeadingCell">Test Step</th>
+                    <th class="TableHeadingCell">Description</th>
+                    <th class="TableHeadingCell">Result</th>
+                </tr>
+                
+                <tr>
+                    <td class="NumberCell">1779814570.252685</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">开始记录测试用例日志: 多次快速上下电恢复鲁棒性测试 (hardware_robust/test_TG1_TC1_RapidPowerCycleRecoveryTest), 文件: d:\SolarOne\framework-canlin\robustcases\test_log_report\20260527_005513_683_report\hardware\hardware_robust_test_TG1_TC1_RapidPowerCycleRecoveryTest_多次快速上下电恢复鲁棒性测试_20260527_005610_251.blf</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814570.252949</td>
+                    <td class="DefaultCell">Step1</td>
+                    <td class="DefaultCell">执行20次快速KL30上下电循环（间隔100ms）</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814571.262266</td>
+                    <td class="DefaultCell">Step1</td>
+                    <td class="DefaultCell">已完成 10/20 次循环</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814572.270841</td>
+                    <td class="DefaultCell">Step1</td>
+                    <td class="DefaultCell">已完成 20/20 次循环</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814572.270972</td>
+                    <td class="DefaultCell">Step2</td>
+                    <td class="DefaultCell">快速上下电完成后正常上电, 设置12.0V, 唤醒DUT, 等待1.0s通信稳定</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814572.271023</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">开始CAN测试设置和通信检查</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814572.271064</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">设置DUT供电电压为 12.00V</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814572.271133</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">执行KL30上电</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814572.271186</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">根据DUT通信唤醒方式，启动ECU唤醒</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814572.271327</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">使用KL15硬线唤醒</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814572.271398</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">等待 1.0s 至CAN通信稳定</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814572.271449</td>
+                    <td class="DefaultCell">CAN通信状态检查</td>
+                    <td class="DefaultCell">先最多等待3s事件预热，再等待 1.000s 统计通信状态</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814576.273782</td>
+                    <td class="DefaultCell">CAN通信状态</td>
+                    <td class="DefaultCell">统计窗口结果: frame_cnt = 0, gErrorFrameCount = 0</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814576.273874</td>
+                    <td class="DefaultCell"> </td>
+                    <td class="DefaultCell">期望结果：CAN通信状态检查, 实际结果：DUT通信未恢复</td>
+                    <td class="NegativeResultCell">fail</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814576.273950</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">CAN通信状态检查失败</td>
+                    <td class="NegativeResultCell">fail</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814576.274082</td>
+                    <td class="DefaultCell">Step2</td>
+                    <td class="DefaultCell">20次快速上下电后DUT通信检查失败</td>
+                    <td class="NegativeResultCell">fail</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814578.275539</td>
+                    <td class="DefaultCell">日志记录</td>
+                    <td class="DefaultCell">停止记录测试用例日志文件: 多次快速上下电恢复鲁棒性测试 (hardware_robust/test_TG1_TC1_RapidPowerCycleRecoveryTest)</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814578.286527</td>
+                    <td class="DefaultCell">日志记录</td>
+                    <td class="DefaultCell">日志记录已停止: FD=3</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814579.287341</td>
+                    <td class="DefaultCell">测试结束</td>
+                    <td class="DefaultCell">测试用例执行完成: </td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814579.287515</td>
+                    <td class="DefaultCell">测试结束</td>
+                    <td class="DefaultCell">执行测试结束和去初始化</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <table class="GroupHeadingTable" id="tc-4-1">
+        <tr>
+            <td class="LinkCell">
+                <a class="Undecorated" href="javascript:void(0)">[−]</a>
+            </td>
+            <td class="TestcaseHeadingPositiveResult">
+                <big class="Heading3">4.1 Test Case lin_robust/test_TG1_TC1_LINBusShortCircuitRecoveryTest LIN总线短路恢复鲁棒性测试: Passed</big>
+            </td>
+        </tr>
+    </table>
+
+    <div class="Indentation">
+        <div class="Indentation">
+            <table class="DefaultTable">
+                <tr>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">Test case begin: </td>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">2026-05-27 00:56:23</td>
+                    <td class="CellNoColor">(logging timestamp 1779814583.516776)</td>
+                </tr>
+                <tr>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">Test case end: </td>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">2026-05-27 00:56:52</td>
+                    <td class="CellNoColor" nowrap>(logging timestamp 1779814612.538598)</td>
+                </tr>
+            </table>
+        </div>
+        <div class="Indentation"></div>
+        <table class="TestGroupHeadingBackground">
+            <tr>
+                <td>
+                    <big class="Heading3">Main Part of Test Case</big>
+                </td>
+            </tr>
+        </table>
+        <div class="Indentation">
+            <table class="ResultTable">
+                <tr>
+                    <th class="TableHeadingCell">Timestamp</th>
+                    <th class="TableHeadingCell">Test Step</th>
+                    <th class="TableHeadingCell">Description</th>
+                    <th class="TableHeadingCell">Result</th>
+                </tr>
+                
+                <tr>
+                    <td class="NumberCell">1779814583.519340</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">开始记录测试用例日志: LIN总线短路恢复鲁棒性测试 (lin_robust/test_TG1_TC1_LINBusShortCircuitRecoveryTest), 文件: d:\SolarOne\framework-canlin\robustcases\test_log_report\20260527_005513_683_report\lin\lin_robust_test_TG1_TC1_LINBusShortCircuitRecoveryTest_LIN总线短路恢复鲁棒性测试_20260527_005623_517.blf</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814583.519608</td>
+                    <td class="DefaultCell">Step1</td>
+                    <td class="DefaultCell">设置DUT电源电压为12.0V，将KL30上电，等待5.0s至通信稳定</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814583.519681</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">设置DUT供电电压为12.0V</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814583.519752</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">等待5.0s至通信稳定</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814588.520598</td>
+                    <td class="DefaultCell">Step1</td>
+                    <td class="DefaultCell">期望结果：DUT LIN通信正常。实际结果：DUT上电完成</td>
+                    <td class="PositiveResultCell">pass</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814588.520795</td>
+                    <td class="DefaultCell">Step2</td>
+                    <td class="DefaultCell">依次测试LIN总线故障类型: ['LIN_short_GND', 'LIN_short_BAT']</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814588.520960</td>
+                    <td class="DefaultCell">Step2</td>
+                    <td class="DefaultCell">注入LIN故障: LIN_short_GND, 持续5秒</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814596.522200</td>
+                    <td class="DefaultCell">Step2</td>
+                    <td class="DefaultCell">注入LIN故障: LIN_short_BAT, 持续5秒</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814604.522933</td>
+                    <td class="DefaultCell">Step3</td>
+                    <td class="DefaultCell">所有LIN故障清除后等待通信恢复</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814609.523506</td>
+                    <td class="DefaultCell">Step3</td>
+                    <td class="DefaultCell">期望结果：LIN故障清除后通信恢复。实际结果：未收到LIN报文</td>
+                    <td class="WarningCell">warning</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814609.523740</td>
+                    <td class="DefaultCell">LIN总线短路恢复鲁棒性测试</td>
+                    <td class="DefaultCell">测试完成</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814611.525956</td>
+                    <td class="DefaultCell">日志记录</td>
+                    <td class="DefaultCell">停止记录测试用例日志文件: LIN总线短路恢复鲁棒性测试 (lin_robust/test_TG1_TC1_LINBusShortCircuitRecoveryTest)</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814611.537703</td>
+                    <td class="DefaultCell">日志记录</td>
+                    <td class="DefaultCell">日志记录已停止: FD=4</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814612.538414</td>
+                    <td class="DefaultCell">测试结束</td>
+                    <td class="DefaultCell">测试用例执行完成: </td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814612.538553</td>
+                    <td class="DefaultCell">测试结束</td>
+                    <td class="DefaultCell">执行测试结束和去初始化</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <table class="GroupHeadingTable" id="tc-5-1">
+        <tr>
+            <td class="LinkCell">
+                <a class="Undecorated" href="javascript:void(0)">[−]</a>
+            </td>
+            <td class="TestcaseHeadingNegativeResult">
+                <big class="Heading3">5.1 Test Case nm_robust/test_TG1_TC1_RepeatedSleepWakeupCyclingTest 重复休眠唤醒循环鲁棒性测试: Failed</big>
+            </td>
+        </tr>
+    </table>
+
+    <div class="Indentation">
+        <div class="Indentation">
+            <table class="DefaultTable">
+                <tr>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">Test case begin: </td>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">2026-05-27 00:56:57</td>
+                    <td class="CellNoColor">(logging timestamp 1779814617.281371)</td>
+                </tr>
+                <tr>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">Test case end: </td>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">2026-05-27 00:57:08</td>
+                    <td class="CellNoColor" nowrap>(logging timestamp 1779814628.346937)</td>
+                </tr>
+            </table>
+        </div>
+        <div class="Indentation"></div>
+        <table class="TestGroupHeadingBackground">
+            <tr>
+                <td>
+                    <big class="Heading3">Main Part of Test Case</big>
+                </td>
+            </tr>
+        </table>
+        <div class="Indentation">
+            <table class="ResultTable">
+                <tr>
+                    <th class="TableHeadingCell">Timestamp</th>
+                    <th class="TableHeadingCell">Test Step</th>
+                    <th class="TableHeadingCell">Description</th>
+                    <th class="TableHeadingCell">Result</th>
+                </tr>
+                
+                <tr>
+                    <td class="NumberCell">1779814617.284583</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">开始记录测试用例日志: 重复休眠唤醒循环鲁棒性测试 (nm_robust/test_TG1_TC1_RepeatedSleepWakeupCyclingTest), 文件: d:\SolarOne\framework-canlin\robustcases\test_log_report\20260527_005513_683_report\nm\nm_robust_test_TG1_TC1_RepeatedSleepWakeupCyclingTest_重复休眠唤醒循环鲁棒性测试_20260527_005657_283.blf</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814617.284918</td>
+                    <td class="DefaultCell">Step1</td>
+                    <td class="DefaultCell">设置DUT电源电压为12.0V，执行KL30上电, 等待DUT进入睡眠</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814619.285809</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">等待通信停止: TNMtimeout=2000ms, 静默窗口=1000ms, 超时=5.0s</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814620.295118</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">通信停止，RX报文静默1009ms</td>
+                    <td class="PositiveResultCell">pass</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814621.301210</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">未读取到有效电流值，继续等待</td>
+                    <td class="WarningCell">warning</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814622.305476</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">未读取到有效电流值，继续等待</td>
+                    <td class="WarningCell">warning</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814623.309689</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">未读取到有效电流值，继续等待</td>
+                    <td class="WarningCell">warning</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814624.315645</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">未读取到有效电流值，继续等待</td>
+                    <td class="WarningCell">warning</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814625.320651</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">未读取到有效电流值，继续等待</td>
+                    <td class="WarningCell">warning</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814625.320891</td>
+                    <td class="DefaultCell">Step1</td>
+                    <td class="DefaultCell">DUT未进入睡眠模式: 超时5.0s未达到睡眠电流</td>
+                    <td class="NegativeResultCell">fail</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814625.321251</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">取消被动唤醒请求</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814625.321416</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">取消重复报文模式请求</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814625.321602</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">停止仿真发送应用报文</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814627.325344</td>
+                    <td class="DefaultCell">日志记录</td>
+                    <td class="DefaultCell">停止记录测试用例日志文件: 重复休眠唤醒循环鲁棒性测试 (nm_robust/test_TG1_TC1_RepeatedSleepWakeupCyclingTest)</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814627.346159</td>
+                    <td class="DefaultCell">日志记录</td>
+                    <td class="DefaultCell">日志记录已停止: FD=5</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814628.346691</td>
+                    <td class="DefaultCell">测试结束</td>
+                    <td class="DefaultCell">测试用例执行完成: </td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814628.346904</td>
+                    <td class="DefaultCell">测试结束</td>
+                    <td class="DefaultCell">执行测试结束和去初始化</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <table class="GroupHeadingTable" id="tc-6-1">
+        <tr>
+            <td class="LinkCell">
+                <a class="Undecorated" href="javascript:void(0)">[−]</a>
+            </td>
+            <td class="TestcaseHeadingNegativeResult">
+                <big class="Heading3">6.1 Test Case power_robust/test_TG1_TC1_MicroBrownoutSustainedTest 微欠压持续运行鲁棒性测试: Failed</big>
+            </td>
+        </tr>
+    </table>
+
+    <div class="Indentation">
+        <div class="Indentation">
+            <table class="DefaultTable">
+                <tr>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">Test case begin: </td>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">2026-05-27 00:57:11</td>
+                    <td class="CellNoColor">(logging timestamp 1779814631.260708)</td>
+                </tr>
+                <tr>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">Test case end: </td>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">2026-05-27 00:57:18</td>
+                    <td class="CellNoColor" nowrap>(logging timestamp 1779814638.295402)</td>
+                </tr>
+            </table>
+        </div>
+        <div class="Indentation"></div>
+        <table class="TestGroupHeadingBackground">
+            <tr>
+                <td>
+                    <big class="Heading3">Main Part of Test Case</big>
+                </td>
+            </tr>
+        </table>
+        <div class="Indentation">
+            <table class="ResultTable">
+                <tr>
+                    <th class="TableHeadingCell">Timestamp</th>
+                    <th class="TableHeadingCell">Test Step</th>
+                    <th class="TableHeadingCell">Description</th>
+                    <th class="TableHeadingCell">Result</th>
+                </tr>
+                
+                <tr>
+                    <td class="NumberCell">1779814631.273759</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">开始记录测试用例日志: 微欠压持续运行鲁棒性测试 (power_robust/test_TG1_TC1_MicroBrownoutSustainedTest), 文件: d:\SolarOne\framework-canlin\robustcases\test_log_report\20260527_005513_683_report\power\power_robust_test_TG1_TC1_MicroBrownoutSustainedTest_微欠压持续运行鲁棒性测试_20260527_005711_261.blf</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814631.274046</td>
+                    <td class="DefaultCell">Step1</td>
+                    <td class="DefaultCell">设置DUT电源电压为12.0V，唤醒CAN网络，等待1.0s至通信稳定</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814631.274134</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">开始CAN测试设置和通信检查</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814631.274219</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">设置DUT供电电压为 12.00V</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814631.274273</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">执行KL30上电</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814631.274333</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">根据DUT通信唤醒方式，启动ECU唤醒</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814631.274462</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">使用KL15硬线唤醒</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814631.274544</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">等待 1.0s 至CAN通信稳定</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814631.274616</td>
+                    <td class="DefaultCell">CAN通信状态检查</td>
+                    <td class="DefaultCell">先最多等待3s事件预热，再等待 1.000s 统计通信状态</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814635.281146</td>
+                    <td class="DefaultCell">CAN通信状态</td>
+                    <td class="DefaultCell">统计窗口结果: frame_cnt = 0, gErrorFrameCount = 0</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814635.281240</td>
+                    <td class="DefaultCell"> </td>
+                    <td class="DefaultCell">期望结果：CAN通信状态检查, 实际结果：DUT通信未恢复</td>
+                    <td class="NegativeResultCell">fail</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814635.281390</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">CAN通信状态检查失败</td>
+                    <td class="NegativeResultCell">fail</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814635.281482</td>
+                    <td class="DefaultCell">Step1</td>
+                    <td class="DefaultCell">电源设置与通信检查失败</td>
+                    <td class="NegativeResultCell">fail</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814637.282289</td>
+                    <td class="DefaultCell">日志记录</td>
+                    <td class="DefaultCell">停止记录测试用例日志文件: 微欠压持续运行鲁棒性测试 (power_robust/test_TG1_TC1_MicroBrownoutSustainedTest)</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814637.294610</td>
+                    <td class="DefaultCell">日志记录</td>
+                    <td class="DefaultCell">日志记录已停止: FD=6</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814638.295245</td>
+                    <td class="DefaultCell">测试结束</td>
+                    <td class="DefaultCell">测试用例执行完成: </td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814638.295381</td>
+                    <td class="DefaultCell">测试结束</td>
+                    <td class="DefaultCell">执行测试结束和去初始化</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <table class="GroupHeadingTable" id="tc-7-1">
+        <tr>
+            <td class="LinkCell">
+                <a class="Undecorated" href="javascript:void(0)">[−]</a>
+            </td>
+            <td class="TestcaseHeadingNegativeResult">
+                <big class="Heading3">7.1 Test Case signal_robust/test_TG1_TC1_SignalTimeoutDetectionTest 信号超时检测鲁棒性测试: Failed</big>
+            </td>
+        </tr>
+    </table>
+
+    <div class="Indentation">
+        <div class="Indentation">
+            <table class="DefaultTable">
+                <tr>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">Test case begin: </td>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">2026-05-27 00:57:25</td>
+                    <td class="CellNoColor">(logging timestamp 1779814645.020057)</td>
+                </tr>
+                <tr>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">Test case end: </td>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">2026-05-27 00:57:32</td>
+                    <td class="CellNoColor" nowrap>(logging timestamp 1779814652.058722)</td>
+                </tr>
+            </table>
+        </div>
+        <div class="Indentation"></div>
+        <table class="TestGroupHeadingBackground">
+            <tr>
+                <td>
+                    <big class="Heading3">Main Part of Test Case</big>
+                </td>
+            </tr>
+        </table>
+        <div class="Indentation">
+            <table class="ResultTable">
+                <tr>
+                    <th class="TableHeadingCell">Timestamp</th>
+                    <th class="TableHeadingCell">Test Step</th>
+                    <th class="TableHeadingCell">Description</th>
+                    <th class="TableHeadingCell">Result</th>
+                </tr>
+                
+                <tr>
+                    <td class="NumberCell">1779814645.033516</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">开始记录测试用例日志: 信号超时检测鲁棒性测试 (signal_robust/test_TG1_TC1_SignalTimeoutDetectionTest), 文件: d:\SolarOne\framework-canlin\robustcases\test_log_report\20260527_005513_683_report\signal\signal_robust_test_TG1_TC1_SignalTimeoutDetectionTest_信号超时检测鲁棒性测试_20260527_005725_021.blf</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814645.034235</td>
+                    <td class="DefaultCell">Step1</td>
+                    <td class="DefaultCell">设置DUT电源电压为12.0V，唤醒CAN网络，等待1.0s至通信稳定</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814645.034349</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">开始CAN测试设置和通信检查</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814645.034466</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">设置DUT供电电压为 12.00V</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814645.034618</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">执行KL30上电</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814645.034716</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">根据DUT通信唤醒方式，启动ECU唤醒</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814645.034800</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">使用KL15硬线唤醒</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814645.034848</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">等待 1.0s 至CAN通信稳定</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814645.034893</td>
+                    <td class="DefaultCell">CAN通信状态检查</td>
+                    <td class="DefaultCell">先最多等待3s事件预热，再等待 1.000s 统计通信状态</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814649.043783</td>
+                    <td class="DefaultCell">CAN通信状态</td>
+                    <td class="DefaultCell">统计窗口结果: frame_cnt = 0, gErrorFrameCount = 0</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814649.043899</td>
+                    <td class="DefaultCell"> </td>
+                    <td class="DefaultCell">期望结果：CAN通信状态检查, 实际结果：DUT通信未恢复</td>
+                    <td class="NegativeResultCell">fail</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814649.044046</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">CAN通信状态检查失败</td>
+                    <td class="NegativeResultCell">fail</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814649.044213</td>
+                    <td class="DefaultCell">Step1</td>
+                    <td class="DefaultCell">电源设置与通信检查失败</td>
+                    <td class="NegativeResultCell">fail</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814651.045898</td>
+                    <td class="DefaultCell">日志记录</td>
+                    <td class="DefaultCell">停止记录测试用例日志文件: 信号超时检测鲁棒性测试 (signal_robust/test_TG1_TC1_SignalTimeoutDetectionTest)</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814651.057717</td>
+                    <td class="DefaultCell">日志记录</td>
+                    <td class="DefaultCell">日志记录已停止: FD=7</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814652.058483</td>
+                    <td class="DefaultCell">测试结束</td>
+                    <td class="DefaultCell">测试用例执行完成: </td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814652.058690</td>
+                    <td class="DefaultCell">测试结束</td>
+                    <td class="DefaultCell">执行测试结束和去初始化</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <table class="GroupHeadingTable" id="tc-8-1">
+        <tr>
+            <td class="LinkCell">
+                <a class="Undecorated" href="javascript:void(0)">[−]</a>
+            </td>
+            <td class="TestcaseHeadingNegativeResult">
+                <big class="Heading3">8.1 Test Case tp_robust/test_TG1_TC1_ConsecutiveFrameLossRecoveryTest 连续帧丢失恢复鲁棒性测试: Failed</big>
+            </td>
+        </tr>
+    </table>
+
+    <div class="Indentation">
+        <div class="Indentation">
+            <table class="DefaultTable">
+                <tr>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">Test case begin: </td>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">2026-05-27 00:57:35</td>
+                    <td class="CellNoColor">(logging timestamp 1779814655.057071)</td>
+                </tr>
+                <tr>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">Test case end: </td>
+                    <td style="padding-right: 0.5em;" class="CellNoColor">2026-05-27 00:57:39</td>
+                    <td class="CellNoColor" nowrap>(logging timestamp 1779814659.078265)</td>
+                </tr>
+            </table>
+        </div>
+        <div class="Indentation"></div>
+        <table class="TestGroupHeadingBackground">
+            <tr>
+                <td>
+                    <big class="Heading3">Main Part of Test Case</big>
+                </td>
+            </tr>
+        </table>
+        <div class="Indentation">
+            <table class="ResultTable">
+                <tr>
+                    <th class="TableHeadingCell">Timestamp</th>
+                    <th class="TableHeadingCell">Test Step</th>
+                    <th class="TableHeadingCell">Description</th>
+                    <th class="TableHeadingCell">Result</th>
+                </tr>
+                
+                <tr>
+                    <td class="NumberCell">1779814655.058840</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">开始记录测试用例日志: 连续帧丢失恢复鲁棒性测试 (tp_robust/test_TG1_TC1_ConsecutiveFrameLossRecoveryTest), 文件: d:\SolarOne\framework-canlin\robustcases\test_log_report\20260527_005513_683_report\tp\tp_robust_test_TG1_TC1_ConsecutiveFrameLossRecoveryTest_连续帧丢失恢复鲁棒性测试_20260527_005735_058.blf</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814655.059139</td>
+                    <td class="DefaultCell">Step1</td>
+                    <td class="DefaultCell">设置DUT电源电压为12.0V，唤醒CAN网络，等待1.0s至通信稳定</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814655.059205</td>
+                    <td class="DefaultCell">CAN测试设置</td>
+                    <td class="DefaultCell">开始CAN测试设置和通信检查</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814655.059260</td>
+                    <td class="DefaultCell">Step1</td>
+                    <td class="DefaultCell">设置DUT供电电压为 12.00V</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814655.059323</td>
+                    <td class="DefaultCell">ETS6124</td>
+                    <td class="DefaultCell">CAN1 终端电阻已启用</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814655.059429</td>
+                    <td class="DefaultCell">Step2</td>
+                    <td class="DefaultCell">执行KL30上电</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814655.059599</td>
+                    <td class="DefaultCell">Step3</td>
+                    <td class="DefaultCell">根据DUT通信唤醒方式，启动ECU唤醒</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814655.059776</td>
+                    <td class="DefaultCell"></td>
+                    <td class="DefaultCell">使用KL15硬线唤醒</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814655.059910</td>
+                    <td class="DefaultCell">Step5</td>
+                    <td class="DefaultCell">等待 1.0s 至CAN通信稳定</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814655.059985</td>
+                    <td class="DefaultCell">CAN通信状态检查</td>
+                    <td class="DefaultCell">等待 1.0s 检查通信状态</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814656.063630</td>
+                    <td class="DefaultCell">CAN通信状态</td>
+                    <td class="DefaultCell">gECUMsgIDCount = 0, event_detected = False, gErrorFrameCount = 0</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814656.063739</td>
+                    <td class="DefaultCell">CAN通信状态检查</td>
+                    <td class="DefaultCell">DUT通信未恢复</td>
+                    <td class="NegativeResultCell">fail</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814656.063784</td>
+                    <td class="DefaultCell">CAN通信检查</td>
+                    <td class="DefaultCell">CAN通信状态检查失败</td>
+                    <td class="NegativeResultCell">fail</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814658.064916</td>
+                    <td class="DefaultCell">日志记录</td>
+                    <td class="DefaultCell">停止记录测试用例日志文件: 连续帧丢失恢复鲁棒性测试 (tp_robust/test_TG1_TC1_ConsecutiveFrameLossRecoveryTest)</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814658.077495</td>
+                    <td class="DefaultCell">日志记录</td>
+                    <td class="DefaultCell">日志记录已停止: FD=8</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814659.078082</td>
+                    <td class="DefaultCell">测试结束</td>
+                    <td class="DefaultCell">测试用例执行完成: </td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+                <tr>
+                    <td class="NumberCell">1779814659.078236</td>
+                    <td class="DefaultCell">测试结束</td>
+                    <td class="DefaultCell">执行测试结束和去初始化</td>
+                    <td class="DefaultCell">-</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- 报告结尾 -->
+    <div class="footer">
+        <p>测试报告生成时间: 2026-05-27 00:58:50</p>
+        <p>Generated by ECU Basic Network Test Framework</p>
+    </div>
+</body>
+</html>
