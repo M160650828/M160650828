@@ -10,10 +10,10 @@ def main():
     success = False
     try:
         project_dir = os.path.dirname(os.path.abspath(__file__))
-        testcases_dir = os.path.join(project_dir, "testcases_robust")
+        testcases_robust_dir = os.path.join(project_dir, "testcases_robust")
         sys.path.insert(0, project_dir)
         importlib.import_module("testcases_robust.session_fixture")  # 注册 SessionFixture
-        discover_test_groups(testcases_dir)
+        discover_test_groups(testcases_robust_dir)
 
         # 交互式
         success = run_test_framework()
@@ -42,9 +42,7 @@ def main():
     except Exception as e:
         print(f"\n测试执行出错: {e}")
         traceback.print_exc()
-    git remote -v
-    git config --global --get http.proxy
-    git config --global --get https.proxy    finally:
+    finally:
         exit_code = 0 if success else 1
         print(f"\n测试结束")
         os._exit(exit_code)
