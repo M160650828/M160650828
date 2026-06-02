@@ -14,6 +14,8 @@ build/
 
 # IDE
 .vscode/
+.sixth
+.claude
 .idea/
 *.swp
 *.swo
@@ -22,7 +24,8 @@ build/
 # Logs
 *.log
 test_log_report/
-
+test_log_report_canlin
+test_log_report_robust
 # OS
 .DS_Store
 Thumbs.db

@@ -42,7 +42,9 @@ def main():
     except Exception as e:
         print(f"\n测试执行出错: {e}")
         traceback.print_exc()
-    finally:
+    git remote -v
+    git config --global --get http.proxy
+    git config --global --get https.proxy    finally:
         exit_code = 0 if success else 1
         print(f"\n测试结束")
         os._exit(exit_code)
